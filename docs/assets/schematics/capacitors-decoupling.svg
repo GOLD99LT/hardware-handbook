@@ -1,0 +1,39 @@
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="320" fill="#ffffff"/>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">IC 电源去耦电容组合</text>
+
+  <!-- VCC 主轨 -->
+  <line x1="60" y1="80" x2="660" y2="80" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="40" y="76" font-size="16" fill="#2b3a4a">VCC</text>
+  <circle cx="150" cy="80" r="4.5" fill="#2b3a4a"/>
+  <circle cx="360" cy="80" r="4.5" fill="#2b3a4a"/>
+  <circle cx="560" cy="80" r="4.5" fill="#2b3a4a"/>
+
+  <!-- 100uF 电解 -->
+  <line x1="150" y1="80" x2="150" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="132" y1="130" x2="168" y2="130" stroke="#2b3a4a" stroke-width="2.6"/>
+  <path d="M132,150 q18,-10 36,0" stroke="#2b3a4a" stroke-width="2.6" fill="none"/>
+  <line x1="150" y1="150" x2="150" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="176" y="142" font-size="15" fill="#1a4f8b" font-weight="700">100µF 电解(bulk)</text>
+
+  <!-- 10uF MLCC -->
+  <line x1="360" y1="80" x2="360" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="342" y1="130" x2="378" y2="130" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="342" y1="150" x2="378" y2="150" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="360" y1="150" x2="360" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="386" y="145" font-size="15" fill="#1a4f8b" font-weight="700">10µF MLCC(中频)</text>
+
+  <!-- 0.1uF MLCC -->
+  <line x1="560" y1="80" x2="560" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="542" y1="130" x2="578" y2="130" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="542" y1="150" x2="578" y2="150" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="560" y1="150" x2="560" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="586" y="145" font-size="15" fill="#1a4f8b" font-weight="700">0.1µF(高频)</text>
+
+  <!-- 公共地 -->
+  <line x1="150" y1="200" x2="560" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="340" y1="200" x2="340" y2="222" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="326" y1="222" x2="354" y2="222" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="331" y1="229" x2="349" y2="229" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="335" y1="236" x2="345" y2="236" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

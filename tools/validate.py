@@ -1,0 +1,124 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+validate.py — 手册客观质检：frontmatter 完整性、id 一致/唯一、part 与目录一致、
+图片与交叉引用死链、echarts JSON、公式/容器/details 配对、孤儿章节。
+
+用法：python tools/validate.py
+复用 build_single_html 的 frontmatter/SUMMARY 解析，保证口径一致。
+"""
+import os, re, sys, json
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+import build_single_html as B
+
+DOCS = B.DOCS
+errors, warnings = [], []
+def err(f, m): errors.append('%s: %s' % (f, m))
+def warn(f, m): warnings.append('%s: %s' % (f, m))
+
+DIR_PART = {'basics':1, 'components':2, 'opamp':3, 'digital':4, 'mcu':5,
+            'power':6, 'pcb':7, 'practice':8, 'quizbank':9}
+
+parts = B.parse_summary()
+summary_paths = []
+for p in parts:
+    for _t, rel in p['items']:
+        summary_paths.append(rel)
+
+seen_ids, md_files = {}, []
+for rel in summary_paths:
+    fp = os.path.join(DOCS, rel.replace('/', os.sep))
+    if not os.path.exists(fp):
+        continue  # 未生产占位，构建时已 warn
+    text = open(fp, encoding='utf-8').read()
+    fm, body = B.split_frontmatter(text)
+    fid = os.path.basename(rel)[:-3]
+    md_files.append((rel, fp, fm, body, fid))
+
+    # ---- frontmatter ----
+    for key in ('id', 'title', 'part', 'order', 'tags', 'difficulty', 'status'):
+        if key not in fm or fm[key] in (None, '', []):
+            err(rel, 'frontmatter 缺少或为空: %s' % key)
+    if not fm.get('sources'):
+        err(rel, 'frontmatter 缺少 sources（至少 1 条）')
+    if fm.get('id') and fm['id'] != fid:
+        err(rel, 'id(%s) 与文件名(%s) 不一致' % (fm['id'], fid))
+    _id = fm.get('id') or fid
+    if _id in seen_ids:
+        err(rel, 'id 重复: %s（与 %s）' % (_id, seen_ids[_id]))
+    else:
+        seen_ids[_id] = rel
+    top = rel.split('/')[0]
+    exp = DIR_PART.get(top)
+    if exp and 'part' in fm and fm['part'] != exp:
+        err(rel, 'part=%s 与目录 %s（应为 %s）不一致' % (fm['part'], top, exp))
+    if 'difficulty' in fm and fm['difficulty'] not in (1, 2, 3):
+        err(rel, 'difficulty 非法: %r' % fm['difficulty'])
+    if 'status' in fm and fm['status'] not in ('draft', 'published', 'deprecated'):
+        err(rel, 'status 非法: %r' % fm['status'])
+    if 'order' in fm and not isinstance(fm['order'], int):
+        err(rel, 'order 应为整数: %r' % fm['order'])
+
+    # ---- 图片引用 ----
+    for m in re.finditer(r'!\[[^\]]*\]\(([^)]+)\)', body):
+        target = m.group(1).strip()
+        if target.startswith(('http', 'data:')):
+            continue
+        t = target.split()[0]
+        if not os.path.exists(os.path.normpath(os.path.join(os.path.dirname(fp), t))):
+            err(rel, '图片不存在: %s' % target)
+
+    # ---- 普通链接（先剔除图片）----
+    body_no_img = re.sub(r'!\[[^\]]*\]\([^)]+\)', '', body)
+    for m in re.finditer(r'\[[^\]]+\]\(([^)]+)\)', body_no_img):
+        target = m.group(1).strip()
+        if target.startswith(('http', '#', 'data:')) or not target:
+            continue
+        t = target.split()[0]
+        if not os.path.exists(os.path.normpath(os.path.join(os.path.dirname(fp), t))):
+            err(rel, '链接目标不存在（死链）: %s' % target)
+
+    # ---- echarts ----
+    for blk in re.finditer(r'```echarts\s*\n(.*?)```', body, re.S):
+        try:
+            json.loads(blk.group(1))
+        except Exception as e:
+            err(rel, 'echarts JSON 非法: %s' % e)
+
+    # ---- 配对 ----
+    if body.count('$$') % 2 != 0:
+        err(rel, '块公式 $$ 不配对（奇数个）')
+    opens = len(re.findall(r'^:::[ \t]+\S+', body, re.M))
+    closes = len(re.findall(r'^:::[ \t]*$', body, re.M))
+    if opens != closes:
+        err(rel, '自定义容器 ::: 不配对（开始 %s / 结束 %s）' % (opens, closes))
+    do = len(re.findall(r'<details', body))
+    dc = len(re.findall(r'</details>', body))
+    if do != dc:
+        err(rel, 'details 不配对（开始 %s / 结束 %s）' % (do, dc))
+
+    # ---- 结构 ----
+    if not re.search(r'^#\s+', body, re.M):
+        err(rel, '缺少一级标题 #')
+    h2 = len(re.findall(r'^##\s+', body, re.M))
+    if h2 < 3:
+        warn(rel, '二级标题过少（%s），模块可能不全' % h2)
+
+# ---- 孤儿章节（磁盘有、SUMMARY 无）----
+for root, _d, files in os.walk(DOCS):
+    for f in files:
+        if f.endswith('.md') and f not in ('SUMMARY.md', 'LICENSE-docs.md'):
+            rel = os.path.relpath(os.path.join(root, f), DOCS).replace(os.sep, '/')
+            if rel not in summary_paths:
+                warn(rel, '磁盘文件未出现在 SUMMARY（孤儿章节）')
+
+print('==== validate 报告 ====')
+print('已检查章节: %d' % len(md_files))
+print('SUMMARY 占位（未生产）: %d' % (len(summary_paths) - len(md_files)))
+print('硬错误 %d，提醒 %d' % (len(errors), len(warnings)))
+for e in errors:
+    print(' [ERROR] ' + e)
+for w in warnings:
+    print(' [warn] ' + w)
+sys.exit(1 if errors else 0)

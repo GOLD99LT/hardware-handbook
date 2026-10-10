@@ -1,0 +1,49 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/></marker></defs>
+  <rect width="760" height="420" fill="#ffffff"/>
+  <text x="24" y="26" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">双运放差分放大器 Two-Op-Amp Difference</text>
+  <polygon points="180,105.0 180,175.0 290,140" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="196" y="129.5" font-size="22" fill="#2b3a4a" text-anchor="start" font-weight="700">−</text>
+  <text x="196" y="164.5" font-size="22" fill="#2b3a4a" text-anchor="start" font-weight="700">+</text>
+  <text x="235.0" y="197.0" font-size="13" fill="#5c6772" text-anchor="middle">A1</text>
+  <polygon points="480,245.0 480,315.0 590,280" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="496" y="269.5" font-size="22" fill="#2b3a4a" text-anchor="start" font-weight="700">−</text>
+  <text x="496" y="304.5" font-size="22" fill="#2b3a4a" text-anchor="start" font-weight="700">+</text>
+  <text x="535.0" y="337.0" font-size="13" fill="#5c6772" text-anchor="middle">A2</text>
+  <line x1="60" y1="157.5" x2="180" y2="157.5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="30" y="162.5" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">V1</text>
+  <line x1="290" y1="140" x2="360" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="290" cy="140" r="4.5" fill="#2b3a4a"/>
+  <line x1="290" y1="140" x2="302.0" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="302.0" y="128" width="46" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="348.0" y1="140" x2="360" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="325.0" y="120" font-size="15" fill="#1a4f8b" text-anchor="middle" font-weight="700">R1</text>
+  <line x1="290" y1="140" x2="290" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="180" y1="90" x2="212.0" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="212.0" y="78" width="46" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="258.0" y1="90" x2="290" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="235.0" y="70" font-size="15" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rf</text>
+  <line x1="180" y1="90" x2="180" y2="122.5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="60" y1="262.5" x2="160" y2="262.5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="30" y="267.5" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">V2</text>
+  <line x1="160" y1="262.5" x2="182.0" y2="262.5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="182.0" y="250.5" width="46" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="228.0" y1="262.5" x2="250" y2="262.5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="205.0" y="242.5" font-size="15" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rg</text>
+  <line x1="250" y1="262.5" x2="480" y2="262.5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="480" cy="262.5" r="4.5" fill="#2b3a4a"/>
+  <line x1="290" y1="140" x2="360" y2="297.5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="360" y1="297.5" x2="397.0" y2="297.5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="397.0" y="285.5" width="46" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="443.0" y1="297.5" x2="480" y2="297.5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="420.0" y="277.5" font-size="15" fill="#1a4f8b" text-anchor="middle" font-weight="700">R2</text>
+  <line x1="590" y1="280" x2="700" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="708" y="285" font-size="15" fill="#2b3a4a" text-anchor="start" font-weight="700">Vout</text>
+  <circle cx="590" cy="280" r="4.5" fill="#2b3a4a"/>
+  <line x1="590" y1="280" x2="590" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="480" y1="200" x2="512.0" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="512.0" y="188" width="46" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="558.0" y1="200" x2="590" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="535.0" y="180" font-size="15" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rf</text>
+  <line x1="480" y1="200" x2="480" y2="262.5" stroke="#2b3a4a" stroke-width="2.2"/>
+</svg>

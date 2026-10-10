@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 700 460" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="700" height="460" fill="#ffffff"/>
+  <!-- ============ 上：串联 ============ -->
+  <text x="40" y="60" font-size="18" fill="#1a4f8b" font-weight="700">串联 Series</text>
+  <line x1="100" y1="110" x2="100" y2="135" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="82" y1="135" x2="118" y2="135" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="90" y1="148" x2="110" y2="148" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="82" y1="161" x2="118" y2="161" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="90" y1="174" x2="110" y2="174" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="100" y1="174" x2="100" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="100" y1="110" x2="250" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="250" y="98" width="90" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="340" y1="110" x2="430" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="430" y="98" width="90" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="520" y1="110" x2="600" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="600" y1="110" x2="600" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="100" y1="200" x2="600" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="295" y="88" font-size="17" fill="#1a4f8b" text-anchor="middle" font-weight="700">R₁</text>
+  <text x="475" y="88" font-size="17" fill="#1a4f8b" text-anchor="middle" font-weight="700">R₂</text>
+  <text x="350" y="230" font-size="15" fill="#222a32" text-anchor="middle">电流相同，电压相加：V = V₁ + V₂，R总 = R₁ + R₂</text>
+
+  <!-- ============ 下：并联 ============ -->
+  <text x="40" y="285" font-size="18" fill="#1a4f8b" font-weight="700">并联 Parallel</text>
+  <line x1="100" y1="320" x2="100" y2="345" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="82" y1="345" x2="118" y2="345" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="90" y1="358" x2="110" y2="358" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="82" y1="371" x2="118" y2="371" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="90" y1="384" x2="110" y2="384" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="100" y1="384" x2="100" y2="410" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="100" y1="320" x2="600" y2="320" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="100" y1="410" x2="600" y2="410" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- R1 竖直支路 -->
+  <line x1="280" y1="320" x2="280" y2="345" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="268" y="345" width="24" height="40" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="280" y1="385" x2="280" y2="410" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="248" y="370" font-size="17" fill="#1a4f8b" text-anchor="end" font-weight="700">R₁</text>
+  <!-- R2 竖直支路 -->
+  <line x1="440" y1="320" x2="440" y2="345" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="428" y="345" width="24" height="40" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="440" y1="385" x2="440" y2="410" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="408" y="370" font-size="17" fill="#1a4f8b" text-anchor="end" font-weight="700">R₂</text>
+  <!-- 节点 -->
+  <circle cx="280" cy="320" r="4.5" fill="#2b3a4a"/>
+  <circle cx="440" cy="320" r="4.5" fill="#2b3a4a"/>
+  <circle cx="280" cy="410" r="4.5" fill="#2b3a4a"/>
+  <circle cx="440" cy="410" r="4.5" fill="#2b3a4a"/>
+  <text x="350" y="445" font-size="15" fill="#222a32" text-anchor="middle">电压相同，电流相加：I = I₁ + I₂，1/R总 = 1/R₁ + 1/R₂</text>
+</svg>

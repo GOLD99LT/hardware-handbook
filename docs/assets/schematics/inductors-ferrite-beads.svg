@@ -1,0 +1,28 @@
+<svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="280" fill="#ffffff"/>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">电感器与磁珠：符号与结构</text>
+
+  <!-- 空芯电感 -->
+  <line x1="60" y1="100" x2="110" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M110,100 q12,-24 24,0 q12,24 24,0 q12,-24 24,0 q12,24 24,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="206" y1="100" x2="260" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="158" y="140" font-size="14" fill="#5c6772" text-anchor="middle">空芯电感</text>
+
+  <!-- 带磁芯电感 -->
+  <line x1="330" y1="100" x2="380" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M380,100 q12,-24 24,0 q12,24 24,0 q12,-24 24,0 q12,24 24,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="476" y1="100" x2="530" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="380" y1="82" x2="500" y2="82" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="430" y="140" font-size="14" fill="#5c6772" text-anchor="middle">磁芯功率电感</text>
+
+  <!-- 磁珠 -->
+  <line x1="560" y1="100" x2="600" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="600" y="88" width="70" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M604,110 q6,-14 12,0 q6,14 12,0 q6,-14 12,0 q6,14 12,0" fill="none" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="670" y1="100" x2="700" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="635" y="140" font-size="14" fill="#5c6772" text-anchor="middle">磁珠 FB</text>
+
+  <!-- 结构说明 -->
+  <text x="60" y="200" font-size="14" fill="#222a32">结构：铜线绕在磁芯（铁氧体/粉芯）上，圈数越多电感量越大；</text>
+  <text x="60" y="226" font-size="13" fill="#5c6772">储能 E = ½·L·I²；饱和时磁芯进入饱和区，电感量骤降。</text>
+</svg>

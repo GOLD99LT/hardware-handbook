@@ -1,0 +1,38 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">NMOS 低边开关</text>
+
+  <!-- 栅极驱动 -->
+  <text x="40" y="120" font-size="15" fill="#2b3a4a">栅驱信号</text>
+  <line x1="40" y1="130" x2="120" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="120" y="118" width="70" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="155" y="110" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rg=22Ω</text>
+  <line x1="190" y1="130" x2="260" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- NMOS -->
+  <line x1="260" y1="100" x2="260" y2="160" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="290" y1="100" x2="290" y2="160" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="290" y1="100" x2="290" y2="70" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="290" y1="160" x2="290" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="290,160 278,166 290,172" fill="#2b3a4a"/>
+  <text x="300" y="135" font-size="13" fill="#5c6772">Q1(NMOS)</text>
+
+  <!-- 负载到 VCC -->
+  <line x1="290" y1="70" x2="430" y2="70" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="360" y="58" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">负载(LED/电机)</text>
+  <text x="440" y="76" font-size="15" fill="#2b3a4a">+VCC</text>
+
+  <!-- 栅源泄放电阻 -->
+  <line x1="260" y1="130" x2="230" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="230" y1="130" x2="230" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="218" y="150" width="24" height="40" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="200" y="176" font-size="12" fill="#5c6772" text-anchor="end">Rgs=100k</text>
+
+  <!-- 源极接地 -->
+  <line x1="290" y1="200" x2="290" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="230" y1="200" x2="290" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="260" y1="240" x2="260" y2="252" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="246" y1="252" x2="274" y2="252" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="251" y1="259" x2="269" y2="259" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="255" y1="266" x2="265" y2="266" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="680" height="400" fill="#ffffff"/>
+  <!-- 电源 Vs -->
+  <line x1="110" y1="140" x2="110" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="92" y1="200" x2="128" y2="200" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="100" y1="213" x2="120" y2="213" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="92" y1="226" x2="128" y2="226" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="100" y1="239" x2="120" y2="239" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="110" y1="239" x2="110" y2="330" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="78" y="212" font-size="16" fill="#1a4f8b" font-weight="700">Vs</text>
+  <!-- R1 水平：电源 -> 节点1 -->
+  <line x1="110" y1="140" x2="210" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="210" y="128" width="80" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="290" y1="140" x2="340" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="250" y="118" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">R₁</text>
+  <!-- 节点1 -->
+  <circle cx="340" cy="140" r="4.5" fill="#2b3a4a"/>
+  <text x="340" y="122" font-size="17" fill="#b5642e" text-anchor="middle" font-weight="700">V₁（未知节点）</text>
+  <!-- R2 竖直：节点1 -> 地 -->
+  <line x1="340" y1="140" x2="340" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="328" y="200" width="24" height="44" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="340" y1="244" x2="340" y2="330" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="316" y="228" font-size="16" fill="#1a4f8b" text-anchor="end" font-weight="700">R₂</text>
+  <!-- R3 水平：节点1 -> 节点2 -->
+  <line x1="340" y1="140" x2="430" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="430" y="128" width="80" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="510" y1="140" x2="560" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="470" y="118" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">R₃</text>
+  <!-- 节点2 -->
+  <circle cx="560" cy="140" r="4.5" fill="#2b3a4a"/>
+  <text x="560" y="100" font-size="17" fill="#b5642e" text-anchor="middle" font-weight="700">V₂（未知节点）</text>
+  <!-- R4 竖直：节点2 -> 地 -->
+  <line x1="560" y1="140" x2="560" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="548" y="200" width="24" height="44" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="560" y1="244" x2="560" y2="330" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="536" y="228" font-size="16" fill="#1a4f8b" text-anchor="end" font-weight="700">R₄</text>
+  <!-- 地母线 + 接地符号 -->
+  <line x1="110" y1="330" x2="560" y2="330" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="340" y1="330" x2="340" y2="345" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="326" y1="345" x2="354" y2="345" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="331" y1="352" x2="349" y2="352" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="335" y1="359" x2="345" y2="359" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="380" y="362" font-size="15" fill="#222a32">参考地 0V</text>
+</svg>

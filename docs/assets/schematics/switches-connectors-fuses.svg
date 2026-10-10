@@ -1,0 +1,27 @@
+<svg viewBox="0 0 720 240" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="240" fill="#ffffff"/>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">开关、连接器、保险丝符号</text>
+
+  <!-- 按键开关 -->
+  <line x1="60" y1="110" x2="130" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="130" cy="110" r="3.5" fill="#fff" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="130" y1="110" x2="168" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="172" cy="110" r="3.5" fill="#fff" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="172" y1="110" x2="210" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="135" y="150" font-size="14" fill="#5c6772" text-anchor="middle">按键 Switch</text>
+
+  <!-- 连接器/排针 -->
+  <rect x="300" y="90" width="120" height="40" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="320" y1="90" x2="320" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="350" y1="90" x2="350" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="380" y1="90" x2="380" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="410" y1="90" x2="410" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="360" y="150" font-size="14" fill="#5c6772" text-anchor="middle">连接器 Connector</text>
+
+  <!-- 保险丝 -->
+  <line x1="490" y1="110" x2="540" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="540" y="98" width="80" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="548" y1="110" x2="612" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="620" y1="110" x2="660" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="580" y="150" font-size="14" fill="#5c6772" text-anchor="middle">保险丝 Fuse</text>
+</svg>

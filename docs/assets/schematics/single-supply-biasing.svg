@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="760" height="420" fill="#ffffff"/>
+  <defs>
+    <marker id="arrowR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/>
+    </marker>
+  </defs>
+  <!-- Vcc 分压 R1/R2 -->
+  <line x1="80" y1="50" x2="80" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="80" y="42" font-size="18" fill="#2b3a4a" text-anchor="middle">Vcc</text>
+  <rect x="68" y="100" width="24" height="44" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="80" y1="144" x2="80" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="68" y="250" width="24" height="44" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="80" y1="200" x2="80" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="80" y1="294" x2="80" y2="340" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="66" y1="340" x2="94" y2="340" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="71" y1="347" x2="89" y2="347" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="75" y1="354" x2="85" y2="354" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="58" y="128" font-size="16" fill="#1a4f8b" text-anchor="end" font-weight="700">R₁</text>
+  <text x="58" y="278" font-size="16" fill="#1a4f8b" text-anchor="end" font-weight="700">R₂</text>
+  <!-- 旁路电容 C_bypass -->
+  <line x1="80" y1="200" x2="180" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="180" y1="200" x2="180" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="165" y1="250" x2="195" y2="250" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="165" y1="266" x2="195" y2="266" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="180" y1="266" x2="180" y2="340" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="166" y1="340" x2="194" y2="340" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="171" y1="347" x2="189" y2="347" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="175" y1="354" x2="185" y2="354" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="200" y="262" font-size="16" fill="#1a4f8b" font-weight="700">C旁路</text>
+  <!-- Vin 经 C_in 到同相端节点 -->
+  <line x1="40" y1="305" x2="100" y2="305" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="100" y1="290" x2="100" y2="320" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="116" y1="290" x2="116" y2="320" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="116" y1="305" x2="400" y2="305" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="40" y="290" font-size="18" fill="#2b3a4a">Vin</text>
+  <text x="108" y="285" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">Cin</text>
+  <!-- 偏置线：B 节点 -> 同相端 -->
+  <line x1="180" y1="200" x2="300" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="300" y1="200" x2="300" y2="305" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 运放 -->
+  <polygon points="400,180 400,340 560,260" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="418" y="222" font-size="22" fill="#2b3a4a" font-weight="700">−</text>
+  <text x="418" y="312" font-size="22" fill="#2b3a4a" font-weight="700">+</text>
+  <!-- Rg：反相端到地 -->
+  <line x1="400" y1="215" x2="350" y2="215" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="350" y1="215" x2="350" y2="290" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="338" y="290" width="24" height="44" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="350" y1="334" x2="350" y2="380" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="336" y1="380" x2="364" y2="380" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="341" y1="387" x2="359" y2="387" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="345" y1="394" x2="355" y2="394" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="332" y="318" font-size="16" fill="#1a4f8b" text-anchor="end" font-weight="700">Rg</text>
+  <!-- Rf：反相端到输出 -->
+  <line x1="400" y1="215" x2="480" y2="215" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="480" y="203" width="80" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="560" y1="215" x2="620" y2="215" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="620" y1="215" x2="620" y2="260" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="520" y="198" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rf</text>
+  <!-- 输出线 -->
+  <line x1="560" y1="260" x2="690" y2="260" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#arrowR)"/>
+  <text x="700" y="266" font-size="20" fill="#2b3a4a">Vout</text>
+  <!-- 节点圆点 -->
+  <circle cx="80" cy="200" r="4.5" fill="#2b3a4a"/>
+  <circle cx="300" cy="305" r="4.5" fill="#2b3a4a"/>
+  <circle cx="620" cy="260" r="4.5" fill="#2b3a4a"/>
+</svg>

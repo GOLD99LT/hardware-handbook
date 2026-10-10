@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 560 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="560" height="320" fill="#ffffff"/>
+  <!-- 坐标轴 -->
+  <line x1="80" y1="160" x2="500" y2="160" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="280" y1="40" x2="280" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 箭头 -->
+  <polygon points="500,160 490,155 490,165" fill="#2b3a4a"/>
+  <polygon points="280,40 275,50 285,50" fill="#2b3a4a"/>
+  <text x="505" y="165" font-size="15" fill="#222a32">实部 Re</text>
+  <text x="290" y="48" font-size="15" fill="#222a32">虚部 Im</text>
+  <!-- 向量 Z = R + jX -->
+  <line x1="280" y1="160" x2="430" y2="90" stroke="#b5642e" stroke-width="2.6"/>
+  <polygon points="430,90 418,92 424,100" fill="#b5642e"/>
+  <!-- 投影：R 和 X -->
+  <line x1="430" y1="90" x2="430" y2="160" stroke="#1a4f8b" stroke-width="2" stroke-dasharray="5,4"/>
+  <line x1="280" y1="160" x2="430" y2="160" stroke="#1a4f8b" stroke-width="2" stroke-dasharray="5,4"/>
+  <text x="355" y="180" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">R（实部）</text>
+  <text x="445" y="130" font-size="16" fill="#1a4f8b" font-weight="700">X（虚部）</text>
+  <text x="360" y="118" font-size="17" fill="#b5642e" font-weight="700">|Z|</text>
+  <!-- 角度弧线 -->
+  <path d="M320,160 A40,40 0 0 0 316,143" fill="none" stroke="#222a32" stroke-width="1.6"/>
+  <text x="325" y="150" font-size="14" fill="#222a32">θ</text>
+  <text x="280" y="305" font-size="15" fill="#222a32" text-anchor="middle">复数阻抗 Z = R + jX；模 |Z|=√(R²+X²)，幅角 θ=arctan(X/R)</text>
+</svg>

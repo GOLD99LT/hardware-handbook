@@ -1,0 +1,25 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">二极管：符号与伏安特性</text>
+
+  <!-- 二极管符号 -->
+  <line x1="60" y1="110" x2="130" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="130,92 130,128 162,110" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="162" y1="94" x2="162" y2="126" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="162" y1="110" x2="230" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="120" y="90" font-size="13" fill="#5c6772">阳极 A</text>
+  <text x="170" y="90" font-size="13" fill="#5c6772">阴极 K</text>
+
+  <!-- 伏安特性曲线坐标 -->
+  <line x1="330" y1="230" x2="680" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="430" y1="60" x2="430" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="672" y="248" font-size="12" fill="#5c6772">V</text>
+  <text x="412" y="66" font-size="12" fill="#5c6772">I</text>
+  <!-- 正向：0.7V 后急剧上升 -->
+  <path d="M430,230 L455,229 L470,220 L478,180 L486,120 L495,80" fill="none" stroke="#1a4f8b" stroke-width="2.4"/>
+  <text x="500" y="90" font-size="12" fill="#1a4f8b">正向导通(VF≈0.7V)</text>
+  <!-- 反向：近零，击穿段 -->
+  <path d="M430,230 L360,231 L330,232 L320,238 L312,250" fill="none" stroke="#b5642e" stroke-width="2.4"/>
+  <text x="300" y="270" font-size="12" fill="#b5642e">反向击穿</text>
+  <text x="455" y="248" font-size="11" fill="#5c6772">0</text>
+</svg>

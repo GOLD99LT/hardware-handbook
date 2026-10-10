@@ -1,0 +1,25 @@
+# 参考资料原文（体积大，仅本地缓存，不入库）
+sources/
+sources/**
+
+# 构建产物
+dist/
+dist/**
+
+# 截图/自检临时目录
+_shots/
+**/_shots/
+
+# 自动修复前的本地备份（不入库）
+_backup/
+**/_backup/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+desktop.ini

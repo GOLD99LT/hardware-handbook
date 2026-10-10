@@ -1,0 +1,616 @@
+# 参考资料清单
+# 由 tools/merge_sources.py 合并 sources/index-a.yaml|index-b.yaml|index-c.yaml 生成。
+# 调研阶段只做索引、一句话摘要与本地参考缓存，不整段搬运；书籍只列书目。
+# 字段：name / url / type(repo|app-note|course|book|video|tool) /
+#   vendor 或 license / stars / last_active / rating(A|B|C) / chapters[] / summary
+# 本地缓存：cloned+clone_path（浅克隆于 sources/repos）、note_path（要点于 sources/notes）。
+
+official:
+- name: TI Precision Labs - Op Amps
+  url: https://ti.com/precisionlabs-opamps
+  type: course
+  license: vendor
+  rating: A
+  chapters: [opamp-overview, ideal-opamp, feedback-topologies, stability-bode, supply-rails, cmrr-psrr, offset-bias, gbp-slew-rate, noise]
+  summary: TI 官方运放系统课程，含视频、实验、测验，公认最佳运放教材
+- name: TI Precision Labs - Other (ADC, Power, etc.)
+  url: https://ti.com/precisionlabs
+  type: course
+  rating: A
+  chapters: [adc, power-specs]
+  summary: 同一课程体系，覆盖 ADC、电源、接口等
+- name: TI Application Notes (SLOA/SBOA series)
+  url: https://www.ti.com/lit/apindex.html
+  type: app-note
+  rating: A
+  chapters: []
+  summary: 具体运放电路设计与计算笔记，按主题检索
+- name: Analog Devices Analog Dialogue
+  url: https://www.analog.com/en/analog-dialogue.html
+  type: app-note
+  rating: A
+  chapters: []
+  summary: ADI 技术月刊，电路与信号链应用文章
+- name: ADI MT Tutorials (Mini Tutorials)
+  url: https://www.analog.com/en/resources/technical-articles.html
+  type: app-note
+  rating: A
+  chapters: []
+  summary: 短小精悍的概念教程集合
+- name: LTspice & ADI design guides
+  url: https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html
+  type: tool
+  rating: A
+  chapters: [ltspice]
+  summary: 免费 SPICE 仿真工具与官方案例
+- name: Op Amps for Everyone (Ron Mancini, TI, SLOD006B)
+  url: https://www.ti.com/lit/an/slod006b/slod006b.pdf
+  type: app-note
+  vendor: Texas Instruments
+  rating: A
+  chapters: [opamp-overview, ideal-opamp, open-loop-feedback, feedback-topologies, offset-bias, gbp-slew-rate, voltage-follower, inverting-amplifier, non-inverting-amplifier, summing-amplifier, integrator-differentiator, first-order-filters, comparator-hysteresis, oscillators, precision-rectifier-peak-samplehold]
+  summary: TI 官方运放设计参考全书（免费 PDF），从理想假设到各类实用电路与参数，运放章最常用工具书
+  note_path: null
+- name: Single-Supply Op-Amp Circuit Collection (TI, SLOA058)
+  url: https://www.ti.com/lit/an/sloa058/sloa058.pdf
+  type: app-note
+  vendor: Texas Instruments
+  rating: A
+  chapters: [single-supply-biasing, voltage-follower, inverting-amplifier, non-inverting-amplifier, analog-signal-chain]
+  summary: TI 单电源运放电路集：虚地 Vcc/2 偏置、交流耦合放大、电平搬移的可直接套用电路
+  note_path: null
+- name: A Deeper Look into Difference Amplifiers (ADI Analog Dialogue, Harry Holt)
+  url: https://www.analog.com/en/resources/analog-dialogue/articles/deeper-look-into-difference-amplifiers.html
+  type: app-note
+  vendor: Analog Devices
+  rating: A
+  chapters: [differential-amplifier, cmrr-psrr, offset-bias, vi-iv-converter, supply-rails, stability-bode, instrumentation-amplifier]
+  summary: 基于量产案例讲四电阻差分对：电阻失配对 CMRR 的定量限制、噪声增益放大失调、开尔文检测、输入间接电容致振荡
+  note_path: sources/notes/adi-difference-amplifier.md
+- name: MT-035 Op Amp Inputs, Outputs, Single-Supply & Rail-to-Rail Issues (ADI Mini Tutorial)
+  url: https://www.analog.com/en/technical-articles.html
+  type: app-note
+  vendor: Analog Devices
+  rating: A
+  chapters: [supply-rails, cmrr-psrr, single-supply-biasing, offset-bias, analog-signal-chain]
+  summary: ADI 小教程：输入共模范围、输出摆幅/轨到轨真相、单供电与 VOL/VOH 边界
+  note_path: null
+- name: MT-049 Op Amp Total Output Noise Calculations for Single-Pole System (ADI Mini Tutorial)
+  url: https://www.analog.com/en/technical-articles.html
+  type: app-note
+  vendor: Analog Devices
+  rating: A
+  chapters: [noise, gbp-slew-rate, first-order-filters]
+  summary: ADI 小教程：把电压/电流噪声谱密度在噪声增益与带宽下积分成总输出噪声的方法
+  note_path: null
+- name: A Designer's Guide to Instrumentation Amplifiers (Kitchin & Counts, ADI)
+  url: https://www.analog.com/en/products/precision-instrumentation-amplifier.html
+  type: app-note
+  vendor: Analog Devices
+  rating: A
+  chapters: [instrumentation-amplifier, differential-amplifier, vi-iv-converter, cmrr-psrr, analog-signal-chain]
+  summary: ADI 免费手册：三运放仪表放大器结构、增益/CMR/桥路与传感器接口设计要点
+  note_path: null
+- name: TI SLVA477A — Basic Calculation of a Buck Converter's Power Stage
+  url: https://www.ti.com/lit/an/slva477a/slva477a.pdf
+  type: app-note
+  vendor: Texas Instruments
+  rating: A
+  chapters: [buck, power-component-selection]
+  summary: CCM 模式 buck 功率级全套工程公式：占空比、电感纹波与选型、峰值开关电流、输入/输出电容与 ESR 纹波、反馈分压电阻
+  note_path: sources/notes/ti-buck-power-stage.md
+- name: onsemi AND8301-D — EMC Specifications and PCB Guidelines for SMPS Devices
+  url: https://www.onsemi.com/pub/Collateral/AND8301-D.PDF
+  type: app-note
+  vendor: onsemi
+  rating: A
+  chapters: [emi-emc, pcb-stackup, routing, analog-digital-power-routing, power-integrity-decoupling, buck]
+  summary: 以同步 buck 控制器实测对照，给出四层叠层、功能分区、地平面/开槽/环路、走线宽度拐角、去耦电容放置等 EMC 布局规则
+  note_path: sources/notes/onsemi-emc-pcb-layout.md
+- name: ADI AN-149 — Modeling and Loop Compensation Design of Switching Mode Power Supplies
+  url: https://www.analog.com/media/en/technical-documentation/application-notes/an149fa.pdf
+  type: app-note
+  vendor: Analog Devices (Linear Technology)
+  rating: A
+  chapters: [smps-control-loop, buck, boost-buckboost]
+  summary: SMPS 平均化建模与环路补偿的经典笔记，覆盖电压/电流模式控制、功率级小信号模型与补偿网络设计
+  note_path: null
+- name: TI SLVA680A — ESD Protection Layout Guide
+  url: https://www.ti.com/lit/an/slva680a/slva680a.pdf
+  type: app-note
+  vendor: Texas Instruments
+  rating: A
+  chapters: [esd-protection, shielding-filtering-grounding]
+  summary: TVS/ESD 防护布局要点：TVS 紧贴连接器、缩短 ESD 泄放回路面、保护 IC 远离 TVS、避免分支(stub)、直接走线
+  note_path: null
+- name: ADI LTpowerCAD / LTpowerPlanner design tool
+  url: https://www.analog.com/en/design-center/design-tools-and-calculators.html
+  type: tool
+  vendor: Analog Devices
+  rating: A
+  chapters: [buck, boost-buckboost, ldo, power-component-selection, smps-control-loop]
+  summary: 免费电源设计工具，按规格五步完成选型→功率级→效率损耗→环路波特图/负载瞬态，可导出 LTspice 做完整仿真验证
+  note_path: null
+- name: TI WEBENCH Power Designer
+  url: https://www.ti.com/design-resources/technologies/analog-power-management/webench.html
+  type: tool
+  vendor: Texas Instruments
+  rating: A
+  chapters: [buck, boost-buckboost, flyback, power-component-selection]
+  summary: 在线电源架构与选型/热仿真工具，按输入输出规格自动给出多种拓扑方案与 BOM，并预估效率与成本
+  note_path: null
+- name: ADI AN-158F — Designing Power Supply Parameters in Five Simple Steps with LTpowerCAD
+  url: https://www.analog.com/en/resources/app-notes/an-158f.html
+  type: app-note
+  vendor: Analog Devices
+  rating: B
+  chapters: [buck, power-component-selection, smps-control-loop]
+  summary: 用 LTpowerCAD 做电源关键参数"纸面设计"的分步实操指南，适合新手把抽象公式落到具体器件
+  note_path: null
+- name: TI LDO Application Notes Topical Index
+  url: https://www.ti.com/product-category/power-management/linear-ldo-regulators/overview.html
+  type: app-note
+  vendor: Texas Instruments
+  rating: B
+  chapters: [ldo]
+  summary: TI LDO 应用笔记主题索引，按 PSRR、噪声、稳定性、散热等主题分类，便于检索 LDO 选型与稳定性资料
+  note_path: null
+- name: ADI — Low-Dropout Linear Regulator (LDO) Application Tutorial
+  url: https://www.analog.com/en/resources/technical-articles/lowdropout-linear-regulator-ldo-application-tutorial.html
+  type: app-note
+  vendor: Analog Devices
+  rating: B
+  chapters: [ldo, linear-supply, grounding]
+  summary: LDO 原理与应用教程：压差、PSRR、噪声、输出电容稳定性、与开关电源的 EMI 取舍
+  note_path: null
+- name: TI TIDA-010268 — 5s–7s Battery Pack Reference Design
+  url: https://www.ti.com/lit/ug/tiduf44/tiduf44.pdf
+  type: app-note
+  vendor: Texas Instruments
+  rating: B
+  chapters: [battery-charger, power-component-selection]
+  summary: 锂电池组参考设计指南，含保护 MOSFET 控制、buck 电源、输入电容纹波电流计算等充电/电池管理实践
+  note_path: null
+- name: onsemi AND9596/D — A Quick PCB Thermal Calculation for Power Electronic Devices with Exposed Pad
+  url: https://www.onsemi.com/pub/Collateral/AND9596-D.PDF
+  type: app-note
+  vendor: onsemi
+  rating: B
+  chapters: [thermal-design]
+  summary: 带裸露焊盘(Exposed Pad)功率器件的 PCB 散热快速估算方法，关联铜箔面积与热阻
+  note_path: null
+- name: onsemi Hot-Swap / eFuse / Smart Fuse Design Resources
+  url: https://www.onsemi.com/design/interactive-block-diagrams/computing/ai-data-center/hot-swap
+  type: app-note
+  vendor: onsemi
+  rating: B
+  chapters: [power-monitoring-loadswitch, power-component-selection]
+  summary: 热插拔、电子保险丝与智能开关的设计资源与布局指南（含 AND90303 Smart Fuse Layout），覆盖负载开关、过流/过压保护与上电监控
+  note_path: null
+- name: STM32 硬件设计 Wiki（电源/去耦/原理图自查）
+  url: https://wiki.stmicroelectronics.cn/stm32mcu/wiki/Basics_of_power_supply_design_for_MCU
+  type: app-note
+  vendor: STMicroelectronics
+  rating: A
+  chapters: [minimum-system, gpio, peripheral-design, clock-reset-design, watchdog-rtc-lowpower]
+  summary: ST 官方 MCU 电源设计与去耦体系 wiki，配合 AN2586/AN4080/AN6274 硬件开发入门与 AN2867 晶振设计指南，是 STM32 最小系统的权威依据
+  note_path: sources/notes/mcu-minimum-system.md
+- name: ESP32 硬件设计指南（Schematic Checklist / PCB Layout）
+  url: https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32/schematic-checklist.html
+  type: app-note
+  vendor: Espressif
+  rating: A
+  chapters: [minimum-system, clock-reset-design, watchdog-rtc-lowpower, peripheral-design]
+  summary: 乐鑫官方原理图/PCB 检查清单：3.3V 供电电流、晶振走线包地、去耦电容取值、深睡眠电容，带 RF 的 MCU 最小系统范例
+  note_path: sources/notes/mcu-minimum-system.md
+- name: The RS-485 Design Guide (SLLA272D)
+  url: https://www.ti.com/lit/an/slla272d/slla272d.pdf
+  type: app-note
+  vendor: Texas Instruments
+  rating: A
+  chapters: [rs485-can]
+  summary: TI RS-485 总线设计权威指南：120Ω 两端终端匹配、fail-safe 偏置、单位负载、拓扑与保护
+  note_path: sources/notes/ti-rs485-can.md
+- name: Introduction to the Controller Area Network (SLOA101B)
+  url: https://www.ti.com/lit/an/sloa101b/sloa101b.pdf
+  type: app-note
+  vendor: Texas Instruments
+  rating: A
+  chapters: [rs485-can]
+  summary: TI CAN 总线入门应用笔记：ISO 11898 电平、1Mbps@40m、stub≤0.3m、两端 120Ω 终端与差分电平
+  note_path: sources/notes/ti-rs485-can.md
+- name: ABCs of Probes Primer
+  url: https://www.tek.com/vn/documents/whitepaper/abcs-probes-primer
+  type: app-note
+  vendor: Tektronix
+  rating: A
+  chapters: [oscilloscope]
+  summary: 泰克探头入门白皮书：系统带宽 3~5 倍法则、探头电容负载、10X/1X 补偿、接地环路与探头选型
+  note_path: sources/notes/tek-probe-basics.md
+- name: External IO and Metastability（SparkFun FPGA 教程系列）
+  url: https://learn.sparkfun.com/tutorials/external-io-and-metastability/metastability
+  type: course
+  vendor: SparkFun
+  rating: A
+  chapters: [timing-analysis-metastability, clock-reset-design, fpga-verilog]
+  summary: SparkFun 免费 FPGA 教程中的亚稳态章节：异步输入为何使触发器亚稳、两级同步器原理与复位同步释放
+  note_path: sources/notes/metastability-clockreset.md
+- name: Programming an FPGA（SparkFun Alchitry/Verilog 系列）
+  url: https://learn.sparkfun.com/tutorials/programming-an-fpga/all
+  type: course
+  vendor: SparkFun
+  rating: A
+  chapters: [fpga-verilog, flip-flops, registers-counters, timer-pwm]
+  summary: SparkFun 从零开始的 FPGA/HDL 入门系列，含 Verilog 基础语法、点灯、PWM、约束文件，图文友好
+  note_path: null
+- name: Serial Communication（UART / RS-232 / TTL 电平）
+  url: https://learn.sparkfun.com/tutorials/serial-communication
+  type: course
+  vendor: SparkFun
+  rating: A
+  chapters: [uart-rs232, logic-levels, level-shifter, tri-state-bus-pull]
+  summary: 异步串口原理：9600 8N1 帧结构、TTL 0/3.3V 与 RS-232 ±13V 反相电平、RX/TX 交叉与总线冲突
+  note_path: null
+- name: I2C（SparkFun Learn）
+  url: https://learn.sparkfun.com/tutorials/i2c
+  type: course
+  vendor: SparkFun
+  rating: A
+  chapters: [i2c-spi, level-shifter, tri-state-bus-pull]
+  summary: I2C 硬件层详解：开漏线 + 上拉（经验 4.7kΩ）、开始/停止条件、ACK/NACK、时钟拉伸、多电压电平对接
+  note_path: null
+- name: SPI（SparkFun Learn）
+  url: https://learn.sparkfun.com/tutorials/spi
+  type: course
+  vendor: SparkFun
+  rating: A
+  chapters: [i2c-spi]
+  summary: SPI 全双工四线、片选扩展、与 I2C/UART 的取舍对比，以及高速模式与移位寄存器硬件
+  note_path: null
+- name: How to Use a Multimeter
+  url: https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/all
+  type: course
+  vendor: SparkFun
+  rating: A
+  chapters: [multimeter, debug-methodology, troubleshooting-cases]
+  summary: 万用表入门：电压并联/电流串联/电阻断电测、通断档排查连接、保险丝与表笔安全
+  note_path: null
+- name: How to Solder（Through-Hole / SMD）
+  url: https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering/all
+  type: course
+  vendor: SparkFun
+  rating: A
+  chapters: [soldering]
+  summary: SparkFun 焊接系列：直插焊接、锡丝/助焊剂、吸锡带拆焊、SMD 热风与返修，含焊点良率判断
+  note_path: null
+- name: ADI Mini Tutorial MT-001~MT-044（数据转换器专题）
+  url: https://www.analog.com/en/resources/technical-articles.html
+  type: app-note
+  vendor: Analog Devices
+  rating: A
+  chapters: [adc, dac]
+  summary: ADI 短小精悍的数据转换器教程：SAR/Σ-Δ/流水线架构、采样保持、INL/DNL/参考电压与驱动，MCU 内置 ADC 参数直觉
+  note_path: sources/notes/adc-basics.md
+- name: Step Up Your Function Generator（Keysight）
+  url: https://www.keysight.com/us/en/lib/resources/user-manuals/step-up-your-function-generator-experience-and-knowledge-446859.html
+  type: course
+  vendor: Keysight
+  rating: B
+  chapters: [signal-generator-load]
+  summary: 是德科技函数发生器使用指南：波形/频率/幅度/直流偏置设置，配合电子负载与电源做带载测试
+  note_path: null
+github:
+- name: awesome-electronics (kitspace)
+  url: https://github.com/kitspace/awesome-electronics
+  type: repo
+  stars: 8198
+  last_active: 2026-09
+  license: CC0-1.0
+  rating: A
+  chapters: [voltage-current-power, ohms-law, series-parallel, kcl-kvl, capacitor-rc, inductor-rl, rlc-resonance, diodes, bjt, mosfet, opamp-overview, analog-signal-chain, eda-tools, schematic-library, placement, routing, dfm-process, pcb-stackup, soldering, development-flow, bom-version-cost, multimeter, oscilloscope, ltspice, peripheral-design]
+  summary: Kitspace 维护的电子工程师资源大清单（教程/课程/仿真器/EDA/元件库/PCB 制造/分销/社区），既是选型与流程入口，也是发现其余资料的索引枢纽
+  cloned: true
+  clone_path: sources/repos/awesome-electronics
+- name: open-electronics
+  url: https://github.com/ajaymnk/open-electronics
+  type: repo
+  stars: 756
+  last_active: 未核实
+  license: 未核实
+  rating: B
+  chapters: [voltage-current-power, ohms-law, series-parallel, diodes, zener-led-tvs, bjt, mosfet, crystal-oscillator, switches-connectors-fuses, opamp-overview]
+  summary: 面向爱好者的电子资源链接集，含书单（Horowitz/Scherz/Platt 等）与仿真/社区站，偏入门
+  cloned: true
+  clone_path: sources/repos/open-electronics
+- name: KiCad/kicad-source-mirror
+  url: https://github.com/KiCad/kicad-source-mirror
+  type: repo
+  stars: 3008
+  last_active: 2026-10
+  license: GPL-3.0
+  rating: A
+  chapters: [eda-tools, schematic-library]
+  summary: 开源 EDA 套件 KiCad 的 GitHub 只读镜像（官方开发主仓在 GitLab），含原理图/PCB 设计器与封装体系
+  cloned: false
+  clone_path: null
+- name: KiCad/kicad-symbols
+  url: https://github.com/KiCad/kicad-symbols
+  type: repo
+  stars: 769
+  last_active: 2021-归档
+  license: NOASSERTION
+  rating: B
+  chapters: [schematic-library]
+  summary: KiCad 官方符号库历史仓库（已归档，新版符号/封装库随 KiCad 本体分发），可查库组织与命名规范
+  cloned: false
+  clone_path: null
+- name: Awesome-Embedded (nhivp)
+  url: https://github.com/nhivp/Awesome-Embedded
+  type: repo
+  stars: 9200
+  last_active: 2024-07
+  license: Unlicense
+  rating: A
+  chapters: [mcu-overview, minimum-system, gpio, interrupts, peripheral-design, development-flow]
+  summary: 嵌入式编程与 MCU 生态精选清单，覆盖 STM32/ESP8266/MSP430 工具链、RTOS、bootloader 等，入门路径清晰
+  cloned: true
+  clone_path: sources/repos/awesome-embedded
+- name: logisim-evolution
+  url: https://github.com/logisim-evolution/logisim-evolution
+  type: repo
+  stars: 7700
+  last_active: '2026'
+  license: GPL-3.0
+  rating: A
+  chapters: [number-systems, logic-gates-boole, combinational-logic, flip-flops, registers-counters, tri-state-bus-pull, memory]
+  summary: 开源数字逻辑设计与仿真工具，拖拽搭建门电路/触发器/计数器/存储器并实时看波形，学数电最好的动手仿真环境
+  cloned: true
+  clone_path: sources/repos/logisim-evolution
+- name: pulseview (sigrokproject)
+  url: https://github.com/sigrokproject/pulseview
+  type: repo
+  stars: 798
+  last_active: '2026'
+  license: GPL-3.0
+  rating: A
+  chapters: [logic-analyzer-spectrum, i2c-spi, uart-rs232, debug-methodology]
+  summary: sigrok 开源信号分析套件的 Qt 前端，配合廉价 USB 逻辑分析仪可解析 I2C/SPI/UART，是硬件调试的免费利器
+  cloned: true
+  clone_path: sources/repos/pulseview
+- name: awesome-hdl (hdl/awesome)
+  url: https://github.com/hdl/awesome
+  type: repo
+  stars: 178
+  last_active: 未核实（仓库自述已停更）
+  license: CC0-1.0
+  rating: C
+  chapters: [fpga-verilog, timing-analysis-metastability]
+  summary: HDL 设计与验证工具/框架索引（Verilator、Yosys、cocotb 等），虽停更但链接仍有参考价值；未克隆
+  cloned: false
+  clone_path: null
+books:
+- name: The Art of Electronics (3rd Edition)
+  author: Paul Horowitz, Winfield Hill
+  isbn: 9780521809269
+  year: 2015
+  rating: A
+  chapters: [resistors, smd-packages-e-series, special-resistors, capacitors, capacitor-parameters, inductors-ferrite-beads, diodes, zener-led-tvs, bjt, mosfet, igbt-scr-relay-optocoupler, crystal-oscillator, switches-connectors-fuses, bjt-amplifiers, power-amplifiers, opamp-overview, comparator-hysteresis, oscillators, 555-timer, precision-rectifier-peak-samplehold, analog-switch-mux, noise, linear-regulator-reference]
+  summary: 公认硬件百科全书，器件与模拟电路设计的案头权威，偏工程取舍
+- name: Practical Electronics for Inventors (4th Edition)
+  author: Paul Scherz, Simon Monk
+  isbn: 9781260459866
+  year: 2016
+  rating: A
+  chapters: [voltage-current-power, ohms-law, series-parallel, transformer, mains-three-phase, electrical-safety, resistors, capacitors, diodes, switches-connectors-fuses, 555-timer]
+  summary: 入门到实战的器件与电路图解，适合基础与元器件篇核对直观说明
+- name: Design with Operational Amplifiers and Analog Integrated Circuits (4th Edition)
+  author: Sergio Franco
+  isbn: 9780073380470
+  year: 2014
+  rating: A
+  chapters: [ideal-opamp, feedback-topologies, stability-bode, gbp-slew-rate, noise, inverting-amplifier, non-inverting-amplifier, differential-amplifier, integrator-differentiator, first-order-filters, sallen-key-filters, bandpass-bandstop, impedance]
+  summary: 运放设计经典教材，反馈拓扑、稳定性/频率补偿与有源滤波推导系统严谨
+- name: Analysis and Design of Analog Integrated Circuits (5th Edition)
+  author: Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer
+  isbn: 9780470245996
+  year: 2009
+  rating: A
+  chapters: [bjt-amplifiers, small-signal-model, power-amplifiers, opamp-overview, offset-bias, noise]
+  summary: 模拟集成电路研究生教材，BJT/小信号模型与运放内部级的深入推导
+- name: Microelectronic Circuits (8th Edition)
+  author: Adel S. Sedra, Kenneth C. Smith, Tony Chan Carusone, Vincent Gaudet
+  isbn: 9780190853464
+  year: 2019
+  rating: A
+  chapters: [diodes, bjt, mosfet, bjt-amplifiers, small-signal-model, power-amplifiers]
+  summary: 全球广泛采用的模电教材，二极管/BJT/MOS 与放大组态讲得最系统
+- name: Op Amps for Everyone (2nd Edition, Newnes)
+  author: Ron Mancini (Ed.)
+  isbn: 9780750677011
+  year: 2003
+  rating: A
+  chapters: [opamp-overview, ideal-opamp, feedback-topologies, inverting-amplifier, non-inverting-amplifier, summing-amplifier, first-order-filters, comparator-hysteresis]
+  summary: 与 TI 免费 SLOD006B 对应的纸质版，运放参数与实用电路速查
+- name: Electronic Devices and Circuit Theory (11th Edition)
+  author: Robert Boylestad, Louis Nashelsky
+  isbn: 9780132622264
+  year: 2012
+  rating: B
+  chapters: [diodes, zener-led-tvs, bjt, mosfet, bjt-amplifiers]
+  summary: 经典器件教材，二极管整流与 BJT/FET 工作区讲解细致
+- name: The Circuit Designer's Companion (3rd Edition)
+  author: Peter Wilson (Tim Williams 原著)
+  isbn: 9780750687843
+  year: 2012
+  rating: B
+  chapters: [capacitor-parameters, inductors-ferrite-beads, supply-rails, linear-regulator-reference, analog-switch-mux]
+  summary: 工程师实践手册：去耦、供电、器件选型与 PCB 级模拟设计要点
+- name: Troubleshooting Analog Circuits
+  author: Robert A. Pease
+  isbn: 9780750694995
+  year: 1991
+  rating: B
+  chapters: [offset-bias, noise, stability-bode, comparator-hysteresis, precision-rectifier-peak-samplehold]
+  summary: Bob Pease 模拟排障经验集，常见怪问题与根因分析，经典老资料
+- name: The Art and Science of Analog Circuit Design
+  author: Jim Williams
+  isbn: 9780750670845
+  year: 1995
+  rating: B
+  chapters: [precision-rectifier-peak-samplehold, linear-regulator-reference, oscillators, noise, power-amplifiers]
+  summary: Jim Williams 模拟电路设计随笔与实用电路，经典老资料
+- name: Switching Power Supplies A–Z (2nd ed.)
+  author: Sanjaya Maniktala
+  isbn: 978-0123865335
+  year: 2012
+  rating: A
+  chapters: [buck, boost-buckboost, power-component-selection, smps-control-loop, flyback, emi-emc]
+  summary: 极其实操的开关电源设计书，含大量工程近似、磁件设计与 EMI 对策，从拓扑一路讲到环路与纹波
+- name: Switching Power Supply Design (3rd ed.)
+  author: Abraham I. Pressman, Keith Billings, Taylor Morey
+  isbn: 978-0071482721
+  year: 2009
+  rating: A
+  chapters: [linear-supply, ldo, buck, boost-buckboost, flyback, power-component-selection]
+  summary: 开关电源设计权威参考书，覆盖线性与隔离拓扑、变压器/磁件、反馈与保护，行业标准教材
+- name: Fundamentals of Power Electronics (2nd ed.)
+  author: Robert W. Erickson, Dragan Maksimovic
+  isbn: 978-0792372707
+  year: 2001
+  rating: A
+  chapters: [power-specs, buck, boost-buckboost, smps-control-loop, flyback]
+  summary: 电力电子理论教材，统一的变换器建模、平均开关模型与交流小信号分析，是环路理论的根基
+- name: Electromagnetic Compatibility Engineering
+  author: Henry W. Ott
+  isbn: 978-0470189306
+  year: 2009
+  rating: A
+  chapters: [emi-emc, shielding-filtering-grounding, grounding, esd-protection, power-integrity-decoupling]
+  summary: EMC 工程最实用权威著作，系统讲噪声机理、接地、屏蔽、滤波与 PCB 布局的定量方法
+- name: 'High Speed Digital Design: A Handbook of Black Magic'
+  author: Howard Johnson, Martin Graham
+  isbn: 978-0133957242
+  year: 1993
+  rating: A
+  chapters: [signal-integrity, crosstalk-differential, routing, pcb-stackup]
+  summary: 高速数字设计"黑魔法"经典，讲传输线、反射、端接、串扰与地弹，SI 入门必读
+- name: 'High Speed Signal Propagation: Advanced Black Magic'
+  author: Howard Johnson
+  isbn: 978-0130844088
+  year: 2003
+  rating: A
+  chapters: [signal-integrity, crosstalk-differential]
+  summary: 上一卷的进阶篇，深入信号完整性建模、差分与有损介质中的高速信号传播
+- name: Digital Design (6th ed., with Verilog/VHDL/SystemVerilog)
+  author: M. Morris Mano, Michael D. Ciletti
+  isbn: '9780134549897'
+  year: 2018
+  rating: A
+  chapters: [number-systems, logic-gates-boole, combinational-logic, flip-flops, registers-counters, timing-analysis-metastability, tri-state-bus-pull, logic-levels, memory, level-shifter, fpga-verilog]
+  summary: 数电经典教材：数制/布尔代数/卡诺图/触发器/时序分析/三态/存储器，第六版含 Verilog 入门
+- name: The Definitive Guide to ARM Cortex-M3 and Cortex-M4 Processors (3rd ed.)
+  author: Joseph Yiu
+  isbn: '9780124080829'
+  year: 2013
+  rating: A
+  chapters: [mcu-overview, minimum-system, gpio, interrupts, timer-pwm, watchdog-rtc-lowpower, memory]
+  summary: Cortex-M 内核权威指南：NVIC 中断、存储器映射、定时器、低功耗模式与调试，STM32 类 MCU 的底层内功
+- name: The Designer's Guide to the Cortex-M Processor Family (3rd ed.)
+  author: Trevor Martin
+  isbn: '9780323854948'
+  year: 2022
+  rating: B
+  chapters: [mcu-overview, gpio, interrupts, peripheral-design]
+  summary: Cortex-M 外设与设计实践指南，偏工程落地，与 Yiu 互补
+- name: 'Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems'
+  author: David J. Agans
+  isbn: '9780814474570'
+  year: 2006
+  rating: A
+  chapters: [debug-methodology, troubleshooting-cases, development-flow]
+  summary: 软硬件调试方法论经典九法则：理解系统/让它复现/别空想去看/分而治之/一次改一个变量，硬件排障同样适用
+other:
+- name: Lessons In Electric Circuits (Tony R. Kuphaldt, 开源教材)
+  url: https://www.ibiblio.org/kuphaldt/electricCircuits/
+  type: course
+  rating: A
+  chapters: [voltage-current-power, ohms-law, series-parallel, kcl-kvl, nodal-mesh-analysis, capacitor-rc, inductor-rl, dc-ac, impedance, rlc-resonance, diodes, zener-led-tvs, bjt, diode-circuits, math-basics]
+  summary: 6 卷免费开源教材，DC/AC/半导体/参考/实验，苏格拉底式习题，覆盖第一篇全部基础
+  note_path: sources/notes/free-textbooks-digest.md
+- name: 'Operational Amplifiers: Theory and Practice (2nd ed., J. K. Roberge, MIT)'
+  url: https://web.mit.edu/klund/www/books/op2e.html
+  type: course
+  rating: A
+  chapters: [ideal-opamp, open-loop-feedback, feedback-topologies, stability-bode, gbp-slew-rate]
+  summary: MIT 免费在线运放教材，从闭环增益到反馈系统与稳定性的学院派系统推导
+  note_path: sources/notes/free-textbooks-digest.md
+- name: NEETS (Navy Electricity and Electronics Training Series)
+  url: https://www.electriciantraining.tpub.com/
+  type: course
+  rating: B
+  chapters: [voltage-current-power, transformer, mains-three-phase, electrical-safety, diodes, zener-led-tvs, igbt-scr-relay-optocoupler, oscillators]
+  summary: 美国海军电子培训公版教材，工程图多、覆盖市电/安全/SCR/继电器
+  note_path: sources/notes/free-textbooks-digest.md
+- name: 'Ultimate Electronics: Practical Circuit Design and Analysis (CircuitLab)'
+  url: https://www.circuitlab.com/textbook/
+  type: course
+  rating: B
+  chapters: [bjt-amplifiers, small-signal-model, power-amplifiers, first-order-filters, sallen-key-filters, bandpass-bandstop]
+  summary: 免费在线书，原理图可交互仿真，放大器与有源滤波器讲得直观
+  note_path: sources/notes/free-textbooks-digest.md
+- name: Khan Academy · Electrical Engineering
+  url: https://www.khanacademy.org/science/electrical-engineering
+  type: course
+  rating: B
+  chapters: [voltage-current-power, ohms-law, series-parallel, kcl-kvl, capacitor-rc, inductor-rl]
+  summary: 互动式电路入门，适合建立电压/电流/暂态直觉
+  note_path: null
+- name: Falstad Circuit JS 在线仿真器
+  url: https://www.falstad.com/circuit/
+  type: tool
+  rating: B
+  chapters: [capacitor-rc, inductor-rl, rlc-resonance, dc-ac, impedance]
+  summary: 浏览器内 SPICE、电子流动可视化，适合演示暂态与谐振波形
+  note_path: sources/notes/free-textbooks-digest.md
+- name: Saturn PCB Design Toolkit
+  url: https://saturnpcb.com/saturn-pcb-toolkit/
+  type: tool
+  rating: B
+  chapters: [routing, pcb-stackup, signal-integrity, crosstalk-differential, thermal-design]
+  summary: 免费 PCB 计算集：载流线宽、微带/带状线阻抗、差分对、过孔电流、铜箔散热等常用工程计算器
+- name: From Nand to Tetris（Nand2Tetris 官方课程）
+  url: https://www.nand2tetris.org/
+  type: course
+  rating: A
+  chapters: [number-systems, logic-gates-boole, combinational-logic, flip-flops, registers-counters, memory]
+  summary: 全球知名公开课：从与非门一路搭出 CPU 与编译器，把数电与组成原理串成一条线；教材 CC BY-NC-SA
+- name: 江协科技 STM32 入门教程（中文免费视频）
+  url: https://jiangxiekeji.com/
+  type: video
+  rating: B
+  chapters: [mcu-overview, minimum-system, gpio, interrupts, timer-pwm, uart-rs232, i2c-spi, rs485-can]
+  summary: 中文圈最流行的 STM32 免费入门课（B 站 50 集），面包板+模块式教学，GPIO/中断/定时器/串口/I2C/CAN 全覆盖
+- name: sigrok 开源信号分析平台
+  url: https://sigrok.org/
+  type: tool
+  rating: A
+  chapters: [logic-analyzer-spectrum]
+  summary: 跨平台开源信号分析生态，支持廉价 USB 逻辑分析仪、示波器、万用表等多种硬件，PulseView 为其 GUI
+- name: USB in a Nutshell
+  url: https://www.beyondlogic.org/usbnutshell/
+  type: course
+  rating: B
+  chapters: [usb-ethernet]
+  summary: 免费经典 USB 2.0 标准导读：把 650 页标准拆成外设设计者该读的章节，电气/枚举/传输类型讲得清楚
+- name: FIDES 电子可靠性预计方法论
+  url: https://www.fides-reliability.org/
+  type: tool
+  rating: B
+  chapters: [reliability-derating]
+  summary: 基于失效物理的可靠性预计方法（IMDR 项目），降额/环境应力/现场数据建模，对应 IPC-9592、Telcordia 体系
+- name: IEC/安规认证体系索引（IEC 62368-1、FCC Part 15、CCC）
+  url: https://www.iec.ch/
+  type: course
+  rating: B
+  chapters: [safety-certification]
+  summary: 安规认证入口：IEC 62368-1（音视频/IT 设备安全）、FCC Part 15（电磁兼容）、欧盟 CE、中国 CCC 的标准体系索引

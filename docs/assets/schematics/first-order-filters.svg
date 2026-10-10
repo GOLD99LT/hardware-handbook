@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="420" fill="#ffffff"/>
+  <defs>
+    <marker id="arrowR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/>
+    </marker>
+  </defs>
+  <!-- 输入线 + R1 -->
+  <line x1="40" y1="180" x2="110" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="110" y="168" width="120" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="230" y1="180" x2="300" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="170" y="158" font-size="19" fill="#1a4f8b" text-anchor="middle" font-weight="700">R₁</text>
+  <text x="40" y="165" font-size="20" fill="#2b3a4a">Vin</text>
+  <!-- 运放三角形 -->
+  <polygon points="300,110 300,250 450,180" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="322" y="172" font-size="24" fill="#2b3a4a" font-weight="700">−</text>
+  <text x="322" y="222" font-size="24" fill="#2b3a4a" font-weight="700">+</text>
+  <!-- 同相端接地 -->
+  <line x1="300" y1="215" x2="300" y2="330" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="286" y1="330" x2="314" y2="330" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="291" y1="337" x2="309" y2="337" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="295" y1="344" x2="305" y2="344" stroke="#2b3a4a" stroke-width="2.4"/>
+  <!-- 反馈：N 节点与输出节点上引 -->
+  <line x1="300" y1="180" x2="300" y2="30" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="510" y1="180" x2="510" y2="30" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- Rf 并联支路（上） -->
+  <line x1="300" y1="30" x2="360" y2="30" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="360" y="18" width="150" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="435" y="12" font-size="19" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rf</text>
+  <!-- Cf 并联支路（中） -->
+  <line x1="300" y1="64" x2="380" y2="64" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="380" y1="49" x2="380" y2="79" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="396" y1="49" x2="396" y2="79" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="396" y1="64" x2="510" y2="64" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="388" y="100" font-size="19" fill="#1a4f8b" text-anchor="middle" font-weight="700">Cf</text>
+  <!-- 输出线 -->
+  <line x1="450" y1="180" x2="620" y2="180" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#arrowR)"/>
+  <text x="632" y="186" font-size="20" fill="#2b3a4a">Vout</text>
+  <!-- 节点圆点 -->
+  <circle cx="300" cy="180" r="4.5" fill="#2b3a4a"/>
+  <circle cx="510" cy="180" r="4.5" fill="#2b3a4a"/>
+  <text x="294" y="200" font-size="15" fill="#b5642e" font-weight="700" text-anchor="end">N 虚地</text>
+</svg>

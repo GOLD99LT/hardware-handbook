@@ -1,0 +1,28 @@
+<svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="220" fill="#ffffff"/>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">真实电容串联等效模型</text>
+
+  <!-- 输入端子 -->
+  <circle cx="60" cy="110" r="4.5" fill="#2b3a4a"/>
+  <line x1="60" y1="110" x2="110" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- ESL 电感 -->
+  <path d="M110,110 q10,-22 20,0 q10,22 20,0 q10,-22 20,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="190" y1="110" x2="240" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="150" y="80" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">ESL</text>
+
+  <!-- ESR 电阻 -->
+  <rect x="240" y="98" width="90" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="330" y1="110" x2="380" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="285" y="145" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">ESR</text>
+
+  <!-- C 电容 -->
+  <line x1="380" y1="92" x2="380" y2="128" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="398" y1="92" x2="398" y2="128" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="398" y1="110" x2="560" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="389" y="80" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">C</text>
+
+  <circle cx="560" cy="110" r="4.5" fill="#2b3a4a"/>
+  <text x="60" y="150" font-size="13" fill="#5c6772">引脚</text>
+  <text x="560" y="150" font-size="13" fill="#5c6772">引脚</text>
+</svg>

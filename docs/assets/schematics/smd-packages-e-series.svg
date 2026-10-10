@@ -1,0 +1,32 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">常见贴片电阻封装（按比例）</text>
+
+  <!-- 0402 -->
+  <rect x="60" y="90" width="60" height="30" fill="#e9e2d0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="60" y="90" width="9" height="30" fill="#c8ccd0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="111" y="90" width="9" height="30" fill="#c8ccd0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="90" y="140" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">0402</text>
+  <text x="90" y="158" font-size="12" fill="#5c6772" text-anchor="middle">1.0×0.5mm · 1/16W</text>
+
+  <!-- 0603 -->
+  <rect x="190" y="90" width="96" height="48" fill="#e9e2d0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="190" y="90" width="14" height="48" fill="#c8ccd0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="272" y="90" width="14" height="48" fill="#c8ccd0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="238" y="160" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">0603</text>
+  <text x="238" y="178" font-size="12" fill="#5c6772" text-anchor="middle">1.6×0.8mm · 1/10W</text>
+
+  <!-- 0805 -->
+  <rect x="360" y="90" width="120" height="75" fill="#e9e2d0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="360" y="90" width="18" height="75" fill="#c8ccd0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="462" y="90" width="18" height="75" fill="#c8ccd0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="420" y="185" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">0805（量产甜点）</text>
+  <text x="420" y="203" font-size="12" fill="#5c6772" text-anchor="middle">2.0×1.25mm · 1/8W</text>
+
+  <!-- 1206 -->
+  <rect x="540" y="90" width="192" height="96" fill="#e9e2d0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="540" y="90" width="24" height="96" fill="#c8ccd0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="708" y="90" width="24" height="96" fill="#c8ccd0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="636" y="208" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">1206</text>
+  <text x="636" y="226" font-size="12" fill="#5c6772" text-anchor="middle">3.2×1.6mm · 1/4W</text>
+</svg>

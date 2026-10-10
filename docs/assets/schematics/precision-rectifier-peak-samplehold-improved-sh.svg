@@ -1,0 +1,35 @@
+<svg viewBox="0 0 880 520" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+<rect width="880" height="520" fill="#ffffff"/>
+<defs><marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/></marker></defs>
+<text x="40" y="150" font-size="18" fill="#1a4f8b" text-anchor="start" font-weight="700">Vin</text>
+<line x1="40" y1="150" x2="150" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="150" y1="150" x2="191.0" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+<circle cx="191.0" cy="150" r="3.5" fill="#ffffff" stroke="#2b3a4a" stroke-width="2"/>
+<circle cx="219.0" cy="150" r="3.5" fill="#ffffff" stroke="#2b3a4a" stroke-width="2"/>
+<line x1="191.0" y1="150" x2="223.0" y2="134" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="219.0" y1="150" x2="260" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+<text x="205.0" y="128" font-size="18" fill="#1a4f8b" text-anchor="middle" font-weight="700">S(采样)</text>
+<line x1="260" y1="150" x2="360" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="360" y1="150" x2="360" y2="211.0" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="346" y1="211.0" x2="374" y2="211.0" stroke="#2b3a4a" stroke-width="2.6"/>
+<line x1="346" y1="219.0" x2="374" y2="219.0" stroke="#2b3a4a" stroke-width="2.6"/>
+<line x1="360" y1="219.0" x2="360" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+<text x="376" y="221.0" font-size="18" fill="#1a4f8b" text-anchor="start" font-weight="700">Ch</text>
+<line x1="360" y1="274" x2="360" y2="294" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="346" y1="294" x2="374" y2="294" stroke="#2b3a4a" stroke-width="2.4"/>
+<line x1="351" y1="301" x2="369" y2="301" stroke="#2b3a4a" stroke-width="2.4"/>
+<line x1="355" y1="308" x2="365" y2="308" stroke="#2b3a4a" stroke-width="2.4"/>
+<circle cx="360" cy="150" r="4.5" fill="#2b3a4a"/>
+<polygon points="440,88 440,212 570,150" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+<text x="456" y="124" font-size="22" fill="#2b3a4a" text-anchor="start" font-weight="700">−</text>
+<text x="456" y="180" font-size="22" fill="#2b3a4a" text-anchor="start" font-weight="700">+</text>
+<text x="498" y="208" font-size="14" fill="#2b3a4a" text-anchor="middle">BUF</text>
+<line x1="360" y1="150" x2="380" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="440" y1="122" x2="380" y2="122" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="440" y1="178" x2="570" y2="178" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="570" y1="150" x2="570" y2="178" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="570" y1="150" x2="760" y2="150" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="770" y="156" font-size="18" fill="#1a4f8b" text-anchor="start" font-weight="700">Vhold</text>
+<text x="205" y="120" font-size="13" fill="#b5642e" text-anchor="middle" font-weight="700">采样脉冲</text>
+
+</svg>

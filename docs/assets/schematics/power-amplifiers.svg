@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 480 450" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="480" height="450" fill="#ffffff"/>
+  <defs>
+    <marker id="arrP" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/>
+    </marker>
+  </defs>
+
+  <!-- V+ / V- 轨 -->
+  <line x1="120" y1="70" x2="300" y2="70" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="120" y="55" font-size="16" fill="#b5642e" font-weight="700">+Vcc</text>
+  <line x1="120" y1="400" x2="300" y2="400" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="120" y="425" font-size="16" fill="#b5642e" font-weight="700">−Vee</text>
+
+  <!-- Q1 NPN（上） -->
+  <circle cx="210" cy="160" r="30" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="180" y1="145" x2="180" y2="175" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="180" y1="148" x2="225" y2="118" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="225" y1="118" x2="225" y2="70" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="180" y1="172" x2="225" y2="202" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="208,196 216,188 219,199" fill="#2b3a4a"/>
+  <line x1="225" y1="202" x2="225" y2="235" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="258" y="165" font-size="15" fill="#1a4f8b" font-weight="700">Q1 (NPN)</text>
+
+  <!-- Q2 PNP（下，发射极箭头朝内） -->
+  <circle cx="210" cy="320" r="30" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="180" y1="305" x2="180" y2="335" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="180" y1="308" x2="225" y2="278" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="208,284 216,292 219,281" fill="#fff"/>
+  <line x1="180" y1="332" x2="225" y2="362" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="225" y1="362" x2="225" y2="400" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="258" y="325" font-size="15" fill="#1a4f8b" font-weight="700">Q2 (PNP)</text>
+
+  <!-- 基极公共线 + 输入 -->
+  <line x1="180" y1="160" x2="180" y2="320" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="180" y1="240" x2="60" y2="240" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#arrP)"/>
+  <text x="60" y="232" font-size="16" fill="#2b3a4a">Vin</text>
+
+  <!-- 输出 -->
+  <circle cx="225" cy="235" r="4.5" fill="#2b3a4a"/>
+  <line x1="225" y1="235" x2="400" y2="235" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#arrP)"/>
+  <text x="408" y="241" font-size="16" fill="#2b3a4a">Vout → RL</text>
+</svg>

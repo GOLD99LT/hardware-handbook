@@ -1,0 +1,43 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/></marker></defs>
+  <rect width="760" height="420" fill="#ffffff"/>
+  <text x="24" y="26" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">电荷泵产生负电源 Charge-Pump Negative Supply</text>
+  <line x1="60" y1="90" x2="700" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="60" y="80" font-size="15" fill="#b5642e" text-anchor="start" font-weight="700">+5V</text>
+  <circle cx="110" cy="300" r="26" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M96,306 l0,-12 l10,0 l0,-10 l10,0 l0,22" fill="none" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="136" y1="300" x2="200" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="70" y="345" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">CLK</text>
+  <line x1="200" y1="300" x2="242.0" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="242.0" y1="287" x2="242.0" y2="313" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="258.0" y1="287" x2="258.0" y2="313" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="258.0" y1="300" x2="300" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="250.0" y="332" font-size="15" fill="#1a4f8b" text-anchor="middle" font-weight="700">Cfly</text>
+  <circle cx="300" cy="300" r="4.5" fill="#2b3a4a"/>
+  <line x1="300" y1="300" x2="300" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="300" y1="200" x2="300" y2="133.0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="288,157.0 312,157.0 300,141.0" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="287" y1="141.0" x2="313" y2="141.0" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="300" y1="141.0" x2="300" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="318" y="150.0" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">D1</text>
+  <circle cx="300" cy="90" r="4.5" fill="#2b3a4a"/>
+  <line x1="380" y1="300" x2="380" y2="328.0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="368,328.0 392,328.0 380,344.0" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="367" y1="344.0" x2="393" y2="344.0" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="380" y1="344.0" x2="380" y2="380" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="398" y="345.0" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">D2</text>
+  <line x1="300" y1="300" x2="380" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="380" y1="380" x2="640" y2="380" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="648" y="385" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">−Vout</text>
+  <line x1="520" y1="380" x2="520" y2="282.0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="507" y1="282.0" x2="533" y2="282.0" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="507" y1="298.0" x2="533" y2="298.0" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="520" y1="298.0" x2="520" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="540" y="295.0" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">Cout</text>
+  <circle cx="520" cy="380" r="4.5" fill="#2b3a4a"/>
+  <line x1="520" y1="200" x2="520" y2="160" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="520" y1="140" x2="520" y2="160" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="506" y1="160" x2="534" y2="160" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="511" y1="167" x2="529" y2="167" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="515" y1="174" x2="525" y2="174" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

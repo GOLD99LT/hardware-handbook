@@ -1,0 +1,31 @@
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="320" fill="#ffffff"/>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">电容器：电路符号与类型</text>
+
+  <!-- 无极性电容符号 -->
+  <line x1="60" y1="110" x2="140" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="140" y1="92" x2="140" y2="128" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="158" y1="92" x2="158" y2="128" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="158" y1="110" x2="240" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="149" y="80" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">C</text>
+  <text x="149" y="155" font-size="13" fill="#5c6772" text-anchor="middle">无极性（陶瓷/薄膜）</text>
+
+  <!-- 有极性电解符号 -->
+  <line x1="300" y1="110" x2="380" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="380" y1="92" x2="380" y2="128" stroke="#2b3a4a" stroke-width="2.6"/>
+  <path d="M398,92 L398,128" stroke="#2b3a4a" stroke-width="2.6" fill="none"/>
+  <path d="M398,92 q10,18 0,36" stroke="#2b3a4a" stroke-width="2.6" fill="none"/>
+  <line x1="398" y1="110" x2="480" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="372" y="88" font-size="14" fill="#b23f2d" font-weight="700">+</text>
+  <text x="389" y="155" font-size="13" fill="#5c6772" text-anchor="middle">有极性（电解/钽）</text>
+
+  <!-- MLCC 贴片外形 -->
+  <rect x="540" y="96" width="110" height="28" fill="#e9e2d0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="540" y="96" width="14" height="28" fill="#c8ccd0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="636" y="96" width="14" height="28" fill="#c8ccd0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="595" y="155" font-size="13" fill="#5c6772" text-anchor="middle">MLCC 贴片陶瓷</text>
+
+  <!-- 内部结构说明 -->
+  <text x="60" y="230" font-size="14" fill="#222a32">内部结构：两块金属极板 + 中间绝缘介质层；多层叠加以增大有效面积。</text>
+  <text x="60" y="258" font-size="13" fill="#5c6772">容量 C = ε·A/d（ε 介质介电常数，A 极板面积，d 极板间距）。</text>
+</svg>

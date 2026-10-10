@@ -1,0 +1,41 @@
+<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="260" fill="#ffffff"/>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">晶振：符号与等效模型</text>
+
+  <!-- 晶振符号（矩形+极板） -->
+  <line x1="60" y1="110" x2="140" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="140" y="85" width="120" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="170" y1="85" x2="170" y2="135" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="230" y1="85" x2="230" y2="135" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="260" y1="110" x2="330" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="200" y="75" font-size="15" fill="#1a4f8b" text-anchor="middle" font-weight="700">Xtal</text>
+  <text x="200" y="160" font-size="13" fill="#5c6772" text-anchor="middle">电路符号（石英谐振器）</text>
+
+  <!-- 等效 RLC 模型 -->
+  <text x="430" y="80" font-size="14" fill="#222a32">等效电路：动态支路 Rm-Lm-Cm 串联，并 C0</text>
+  <!-- 端子 -->
+  <circle cx="430" cy="120" r="4" fill="#2b3a4a"/>
+  <line x1="430" y1="120" x2="460" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- Rm -->
+  <rect x="460" y="108" width="40" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="480" y="100" font-size="12" fill="#1a4f8b" text-anchor="middle">Rm</text>
+  <line x1="500" y1="120" x2="520" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- Lm -->
+  <path d="M520,120 q6,-14 12,0 q6,14 12,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="538" y="100" font-size="12" fill="#1a4f8b" text-anchor="middle">Lm</text>
+  <line x1="544" y1="120" x2="560" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- Cm -->
+  <line x1="560" y1="106" x2="560" y2="134" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="572" y1="106" x2="572" y2="134" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="566" y="100" font-size="12" fill="#1a4f8b" text-anchor="middle">Cm</text>
+  <line x1="572" y1="120" x2="640" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="640" cy="120" r="4" fill="#2b3a4a"/>
+  <!-- C0 并联 -->
+  <line x1="430" y1="120" x2="430" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="640" y1="120" x2="640" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="520" y1="180" x2="550" y2="180" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="520" y1="196" x2="550" y2="196" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="535" y1="180" x2="535" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="535" y1="196" x2="535" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="560" y="192" font-size="12" fill="#1a4f8b">C0</text>
+</svg>

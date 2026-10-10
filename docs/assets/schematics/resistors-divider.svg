@@ -1,0 +1,34 @@
+<svg viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="380" fill="#ffffff"/>
+  <defs>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/>
+    </marker>
+  </defs>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">电阻分压采样电路</text>
+
+  <!-- Vin 输入 -->
+  <text x="40" y="90" font-size="18" fill="#2b3a4a">Vin(电池)</text>
+  <line x1="40" y1="100" x2="180" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="180" cy="100" r="4.5" fill="#2b3a4a"/>
+
+  <!-- R1 向下 -->
+  <line x1="180" y1="100" x2="180" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="168" y="140" width="24" height="90" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="180" y1="230" x2="180" y2="270" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="205" y="190" font-size="17" fill="#1a4f8b" font-weight="700">R1=100k</text>
+
+  <!-- 输出节点 Vout -->
+  <circle cx="180" cy="270" r="4.5" fill="#2b3a4a"/>
+  <line x1="180" y1="270" x2="420" y2="270" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#arr)"/>
+  <text x="430" y="276" font-size="18" fill="#2b3a4a">Vout→ADC</text>
+
+  <!-- R2 到地 -->
+  <line x1="180" y1="270" x2="180" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="168" y="300" width="24" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="180" y1="350" x2="180" y2="360" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="166" y1="360" x2="194" y2="360" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="171" y1="367" x2="189" y2="367" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="175" y1="374" x2="185" y2="374" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="205" y="332" font-size="17" fill="#1a4f8b" font-weight="700">R2=16k</text>
+</svg>

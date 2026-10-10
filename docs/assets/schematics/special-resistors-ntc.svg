@@ -1,0 +1,34 @@
+<svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="360" fill="#ffffff"/>
+  <defs>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/>
+    </marker>
+  </defs>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">NTC 热敏电阻测温分压</text>
+
+  <!-- 3.3V -->
+  <text x="120" y="70" font-size="18" fill="#2b3a4a">+3.3V</text>
+  <line x1="150" y1="80" x2="150" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- NTC -->
+  <rect x="138" y="110" width="24" height="80" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="141" y1="186" x2="159" y2="114" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="150" y1="190" x2="150" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="172" y="155" font-size="16" fill="#1a4f8b" font-weight="700">NTC 10kΩ</text>
+  <text x="172" y="173" font-size="13" fill="#5c6772">B=3380</text>
+
+  <!-- 输出节点 -->
+  <circle cx="150" cy="230" r="4.5" fill="#2b3a4a"/>
+  <line x1="150" y1="230" x2="430" y2="230" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#arr)"/>
+  <text x="440" y="236" font-size="18" fill="#2b3a4a">Vout→ADC</text>
+
+  <!-- R 到地 -->
+  <line x1="150" y1="230" x2="150" y2="260" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="138" y="260" width="24" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="150" y1="310" x2="150" y2="322" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="136" y1="322" x2="164" y2="322" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="141" y1="329" x2="159" y2="329" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="145" y1="336" x2="155" y2="336" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="172" y="292" font-size="16" fill="#1a4f8b" font-weight="700">R=10kΩ</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg viewBox="0 0 880 520" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+<rect width="880" height="520" fill="#ffffff"/>
+<defs><marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/></marker></defs>
+<text x="40" y="150" font-size="18" fill="#1a4f8b" text-anchor="start" font-weight="700">Vin</text>
+<line x1="40" y1="150" x2="62.0" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+<rect x="62.0" y="139" width="46" height="22" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="108.0" y1="150" x2="130" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+<text x="85.0" y="134" font-size="18" fill="#1a4f8b" text-anchor="middle" font-weight="700">R1</text>
+<line x1="130" y1="150" x2="210" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="210" y1="150" x2="232.0" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+<rect x="232.0" y="139" width="46" height="22" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="278.0" y1="150" x2="300" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+<text x="255.0" y="134" font-size="18" fill="#1a4f8b" text-anchor="middle" font-weight="700">R2</text>
+<line x1="300" y1="150" x2="420" y2="278" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="210" y1="150" x2="210" y2="101.0" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="196" y1="101.0" x2="224" y2="101.0" stroke="#2b3a4a" stroke-width="2.6"/>
+<line x1="196" y1="109.0" x2="224" y2="109.0" stroke="#2b3a4a" stroke-width="2.6"/>
+<line x1="210" y1="109.0" x2="210" y2="60" stroke="#2b3a4a" stroke-width="2.2"/>
+<text x="226" y="111.0" font-size="18" fill="#1a4f8b" text-anchor="start" font-weight="700">C1</text>
+<line x1="210" y1="60" x2="550" y2="60" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="550" y1="60" x2="550" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="420" y1="278" x2="420" y2="360" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="420" y1="330" x2="420" y2="341.0" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="406" y1="341.0" x2="434" y2="341.0" stroke="#2b3a4a" stroke-width="2.6"/>
+<line x1="406" y1="349.0" x2="434" y2="349.0" stroke="#2b3a4a" stroke-width="2.6"/>
+<line x1="420" y1="349.0" x2="420" y2="360" stroke="#2b3a4a" stroke-width="2.2"/>
+<text x="436" y="351.0" font-size="18" fill="#1a4f8b" text-anchor="start" font-weight="700">C2</text>
+<line x1="420" y1="340" x2="420" y2="360" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="406" y1="360" x2="434" y2="360" stroke="#2b3a4a" stroke-width="2.4"/>
+<line x1="411" y1="367" x2="429" y2="367" stroke="#2b3a4a" stroke-width="2.4"/>
+<line x1="415" y1="374" x2="425" y2="374" stroke="#2b3a4a" stroke-width="2.4"/>
+<line x1="420" y1="222" x2="420" y2="320" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="420" y1="290" x2="420" y2="302.0" stroke="#2b3a4a" stroke-width="2.2"/>
+<rect x="409" y="302.0" width="22" height="46" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="420" y1="348.0" x2="420" y2="360" stroke="#2b3a4a" stroke-width="2.2"/>
+<text x="436" y="331.0" font-size="18" fill="#1a4f8b" text-anchor="start" font-weight="700">Ra</text>
+<line x1="420" y1="340" x2="420" y2="360" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="406" y1="360" x2="434" y2="360" stroke="#2b3a4a" stroke-width="2.4"/>
+<line x1="411" y1="367" x2="429" y2="367" stroke="#2b3a4a" stroke-width="2.4"/>
+<line x1="415" y1="374" x2="425" y2="374" stroke="#2b3a4a" stroke-width="2.4"/>
+<line x1="420" y1="222" x2="420" y2="118.0" stroke="#2b3a4a" stroke-width="2.2"/>
+<rect x="409" y="118.0" width="22" height="46" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="420" y1="164.0" x2="420" y2="60" stroke="#2b3a4a" stroke-width="2.2"/>
+<text x="436" y="147.0" font-size="18" fill="#1a4f8b" text-anchor="start" font-weight="700">Rb</text>
+<line x1="420" y1="60" x2="550" y2="60" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="550" y1="60" x2="550" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+<text x="414" y="200" font-size="15" fill="#b5642e" text-anchor="end" font-weight="700">K=1+Rb/Ra</text>
+<line x1="550" y1="250" x2="760" y2="250" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="770" y="256" font-size="18" fill="#1a4f8b" text-anchor="start" font-weight="700">Vout</text>
+<circle cx="210" cy="150" r="4.5" fill="#2b3a4a"/>
+<circle cx="420" cy="278" r="4.5" fill="#2b3a4a"/>
+<circle cx="550" cy="250" r="4.5" fill="#2b3a4a"/>
+<circle cx="420" cy="222" r="4.5" fill="#2b3a4a"/>
+
+</svg>

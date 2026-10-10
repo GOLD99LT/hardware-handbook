@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="480" height="380" fill="#ffffff"/>
+  <defs>
+    <marker id="arrSg" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/>
+    </marker>
+  </defs>
+
+  <!-- C 轨 / E 轨 -->
+  <line x1="60" y1="80" x2="400" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="60" y1="290" x2="400" y2="290" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 输入 -> r_pi -->
+  <line x1="30" y1="180" x2="120" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="120" y="168" width="120" height="24" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="240" y1="180" x2="320" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="320" y1="180" x2="320" y2="290" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="30" y="170" font-size="15" fill="#2b3a4a">v_in</text>
+  <text x="180" y="158" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">rπ</text>
+  <text x="180" y="215" font-size="15" fill="#b5642e" text-anchor="middle">vπ</text>
+
+  <!-- gm·vπ 受控源 -->
+  <line x1="180" y1="80" x2="180" y2="118" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="180" cy="140" r="22" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="180" y1="128" x2="180" y2="150" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#arrSg)"/>
+  <line x1="180" y1="162" x2="180" y2="290" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="212" y="146" font-size="15" fill="#1a4f8b" font-weight="700">gm·vπ</text>
+
+  <!-- ro -->
+  <line x1="260" y1="80" x2="260" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="248" y="110" width="24" height="60" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="260" y1="170" x2="260" y2="290" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="284" y="145" font-size="16" fill="#1a4f8b" font-weight="700">ro</text>
+
+  <!-- 输出 -->
+  <line x1="400" y1="80" x2="445" y2="80" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#arrSg)"/>
+  <text x="452" y="85" font-size="15" fill="#2b3a4a">v_out</text>
+
+  <!-- 接地 -->
+  <line x1="120" y1="290" x2="120" y2="305" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="106" y1="305" x2="134" y2="305" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="111" y1="312" x2="129" y2="312" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="115" y1="319" x2="125" y2="319" stroke="#2b3a4a" stroke-width="2.4"/>
+
+  <!-- 节点 -->
+  <circle cx="180" cy="80" r="4.5" fill="#2b3a4a"/>
+  <circle cx="260" cy="80" r="4.5" fill="#2b3a4a"/>
+  <circle cx="320" cy="290" r="4.5" fill="#2b3a4a"/>
+  <circle cx="180" cy="290" r="4.5" fill="#2b3a4a"/>
+  <circle cx="260" cy="290" r="4.5" fill="#2b3a4a"/>
+</svg>

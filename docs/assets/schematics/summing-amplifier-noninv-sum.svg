@@ -1,0 +1,42 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/></marker></defs>
+  <rect width="760" height="420" fill="#ffffff"/>
+  <text x="24" y="26" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">同相求和电路 Non-inverting Summing</text>
+  <polygon points="360,185.0 360,275.0 490,230" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="376" y="214.5" font-size="22" fill="#2b3a4a" text-anchor="start" font-weight="700">−</text>
+  <text x="376" y="259.5" font-size="22" fill="#2b3a4a" text-anchor="start" font-weight="700">+</text>
+  <circle cx="200" cy="120" r="4.5" fill="#2b3a4a"/>
+  <line x1="60" y1="90" x2="200" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="100" x2="97.0" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="97.0" y="88" width="46" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="143.0" y1="100" x2="150" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="120.0" y="80" font-size="15" fill="#1a4f8b" text-anchor="middle" font-weight="700">R1</text>
+  <line x1="60" y1="150" x2="200" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="130" x2="97.0" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="97.0" y="118" width="46" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="143.0" y1="130" x2="150" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="120.0" y="110" font-size="15" fill="#1a4f8b" text-anchor="middle" font-weight="700">R2</text>
+  <text x="30" y="95" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">V1</text>
+  <text x="30" y="155" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">V2</text>
+  <line x1="200" y1="120" x2="360" y2="252.5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="490" y1="230" x2="680" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="688" y="235" font-size="15" fill="#2b3a4a" text-anchor="start" font-weight="700">Vout</text>
+  <circle cx="490" cy="230" r="4.5" fill="#2b3a4a"/>
+  <line x1="490" y1="230" x2="560" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="560" y1="230" x2="560" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="430" y1="110" x2="472.0" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="472.0" y="98" width="46" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="518.0" y1="110" x2="560" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="495.0" y="90" font-size="15" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rf</text>
+  <line x1="360" y1="207.5" x2="430" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="430" y1="110" x2="430" y2="207.5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="360" y1="207.5" x2="360" y2="360" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="360" y1="207.5" x2="360" y2="260.75" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="348" y="260.75" width="24" height="46" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="360" y1="306.75" x2="360" y2="360" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="380" y="288.75" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">R1g</text>
+  <line x1="360" y1="340" x2="360" y2="360" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="346" y1="360" x2="374" y2="360" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="351" y1="367" x2="369" y2="367" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="355" y1="374" x2="365" y2="374" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

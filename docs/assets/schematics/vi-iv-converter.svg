@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="380" fill="#ffffff"/>
+  <defs>
+    <marker id="arrowR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/>
+    </marker>
+  </defs>
+  <!-- 运放三角形 -->
+  <polygon points="300,100 300,260 450,180" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="322" y="162" font-size="22" fill="#2b3a4a" font-weight="700">−</text>
+  <text x="322" y="232" font-size="22" fill="#2b3a4a" font-weight="700">+</text>
+  <!-- 光电二极管：反相端到地 -->
+  <line x1="300" y1="160" x2="300" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="288,200 312,200 300,224" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="286" y1="228" x2="314" y2="228" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="300" y1="228" x2="300" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="286" y1="300" x2="314" y2="300" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="291" y1="307" x2="309" y2="307" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="295" y1="314" x2="305" y2="314" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="322" y="218" font-size="17" fill="#1a4f8b" font-weight="700">光电二极管</text>
+  <!-- 入射光箭头 -->
+  <line x1="250" y1="195" x2="278" y2="210" stroke="#4f9e63" stroke-width="1.8"/>
+  <polygon points="278,210 269,210 274,217" fill="#4f9e63"/>
+  <line x1="258" y1="220" x2="286" y2="235" stroke="#4f9e63" stroke-width="1.8"/>
+  <polygon points="286,235 277,235 282,242" fill="#4f9e63"/>
+  <!-- 同相端接地 -->
+  <line x1="300" y1="220" x2="300" y2="260" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- Rf 反馈 -->
+  <line x1="300" y1="160" x2="300" y2="50" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="300" y1="50" x2="380" y2="50" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="380" y="38" width="100" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="480" y1="50" x2="510" y2="50" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="510" y1="50" x2="510" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="430" y="32" font-size="18" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rf</text>
+  <!-- 输出线 -->
+  <line x1="450" y1="180" x2="620" y2="180" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#arrowR)"/>
+  <text x="632" y="186" font-size="20" fill="#2b3a4a">Vout</text>
+  <!-- 节点圆点 -->
+  <circle cx="300" cy="160" r="4.5" fill="#2b3a4a"/>
+  <circle cx="510" cy="180" r="4.5" fill="#2b3a4a"/>
+  <text x="294" y="155" font-size="14" fill="#b5642e" font-weight="700" text-anchor="end">虚地 ≈0V</text>
+</svg>

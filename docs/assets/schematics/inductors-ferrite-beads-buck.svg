@@ -1,0 +1,50 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">Buck 开关电源主回路</text>
+
+  <!-- Vin -->
+  <text x="40" y="90" font-size="18" fill="#2b3a4a">Vin</text>
+  <line x1="40" y1="100" x2="120" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 开关（高侧管） -->
+  <circle cx="120" cy="100" r="3.5" fill="#fff" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="120" y1="100" x2="160" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="164" cy="100" r="3.5" fill="#fff" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="164" y1="100" x2="220" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="140" y="70" font-size="13" fill="#5c6772">高侧开关管</text>
+
+  <!-- SW 节点 -->
+  <circle cx="220" cy="100" r="4.5" fill="#2b3a4a"/>
+  <text x="212" y="88" font-size="14" fill="#1a4f8b" font-weight="700">SW</text>
+
+  <!-- 续流二极管（SW -> 地，阴极在上） -->
+  <line x1="220" y1="100" x2="220" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="202,150 238,150 220,178" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="202" y1="180" x2="238" y2="180" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="220" y1="180" x2="220" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="248" y="168" font-size="13" fill="#5c6772">续流二极管</text>
+
+  <!-- 电感 L -->
+  <line x1="220" y1="100" x2="290" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M290,100 q12,-24 24,0 q12,24 24,0 q12,-24 24,0 q12,24 24,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="386" y1="100" x2="480" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="338" y="78" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">L=22µH</text>
+
+  <!-- 输出 Vout 节点 -->
+  <circle cx="480" cy="100" r="4.5" fill="#2b3a4a"/>
+  <line x1="480" y1="100" x2="620" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="630" y="106" font-size="18" fill="#2b3a4a">Vout</text>
+
+  <!-- 输出电容 -->
+  <line x1="480" y1="100" x2="480" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="462" y1="150" x2="498" y2="150" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="462" y1="170" x2="498" y2="170" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="480" y1="170" x2="480" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="506" y="164" font-size="14" fill="#1a4f8b" font-weight="700">Cout</text>
+
+  <!-- 公共地 -->
+  <line x1="220" y1="230" x2="480" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="340" y1="230" x2="340" y2="252" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="326" y1="252" x2="354" y2="252" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="331" y1="259" x2="349" y2="259" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="335" y1="266" x2="345" y2="266" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

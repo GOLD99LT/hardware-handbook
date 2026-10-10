@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="620" height="300" fill="#ffffff"/>
+  <!-- 交流源 -->
+  <circle cx="110" cy="150" r="32" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M90,150 q10,-15 20,0 q10,15 20,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="110" y1="118" x2="110" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="110" y1="182" x2="110" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="110" y="225" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">v(t)</text>
+  <!-- 上边线 + R -->
+  <line x1="110" y1="100" x2="230" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="230" y="88" width="90" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="320" y1="100" x2="450" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="275" y="78" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">R</text>
+  <!-- 电容 C 竖直 -->
+  <line x1="450" y1="100" x2="450" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="432" y1="140" x2="468" y2="140" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="432" y1="156" x2="468" y2="156" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="450" y1="156" x2="450" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="480" y="152" font-size="16" fill="#1a4f8b" font-weight="700">C</text>
+  <!-- 下边线 -->
+  <line x1="110" y1="240" x2="450" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 节点 -->
+  <circle cx="450" cy="100" r="4.5" fill="#2b3a4a"/>
+  <text x="280" y="280" font-size="15" fill="#222a32" text-anchor="middle">交流下 R 与 C 串联：总阻抗 Z = R − j/(ωC)，电压电流出现相位差</text>
+</svg>

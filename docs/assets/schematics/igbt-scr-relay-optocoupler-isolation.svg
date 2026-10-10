@@ -1,0 +1,45 @@
+<svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="280" fill="#ffffff"/>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">光耦数字隔离电路</text>
+
+  <!-- 隔离边界虚线 -->
+  <line x1="360" y1="60" x2="360" y2="240" stroke="#9aa7b4" stroke-width="1.6" stroke-dasharray="6 5"/>
+  <text x="360" y="55" font-size="12" fill="#9aa7b4" text-anchor="middle">电气隔离边界</text>
+
+  <!-- 原边：MCU -> LED 限流 -->
+  <text x="40" y="120" font-size="14" fill="#2b3a4a">MCU 3.3V</text>
+  <line x1="40" y1="130" x2="120" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="120" y="118" width="70" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="155" y="110" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">R=390Ω</text>
+  <line x1="190" y1="130" x2="250" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- LED -->
+  <polygon points="250,112 250,148 282,130" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="282" y1="114" x2="282" y2="146" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="285" y1="109" x2="300" y2="94" stroke="#4f9e63" stroke-width="2"/>
+  <polygon points="300,94 291,95 297,103" fill="#4f9e63"/>
+  <line x1="274" y1="107" x2="289" y2="92" stroke="#4f9e63" stroke-width="2"/>
+  <polygon points="289,92 280,93 286,101" fill="#4f9e63"/>
+  <line x1="282" y1="130" x2="330" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="330" y1="130" x2="330" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="330" y1="200" x2="40" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="180" y="220" font-size="12" fill="#5c6772">原边地 AGND</text>
+
+  <!-- 副边：光敏管 + 上拉 -->
+  <line x1="430" y1="130" x2="430" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="430" y1="90" x2="600" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="610" y="96" font-size="14" fill="#2b3a4a">+24V</text>
+  <rect x="480" y="78" width="70" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="515" y="70" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">10kΩ</text>
+  <!-- 光敏三极管 -->
+  <line x1="430" y1="100" x2="430" y2="160" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="430" y1="160" x2="430" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="440" y="140" font-size="13" fill="#5c6772">光敏管</text>
+  <circle cx="430" cy="90" r="3" fill="#2b3a4a"/>
+  <line x1="430" y1="90" x2="480" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="430" y1="130" x2="560" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="568" y="136" font-size="14" fill="#2b3a4a">输出</text>
+  <line x1="430" y1="200" x2="430" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="412" y1="220" x2="448" y2="220" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="419" y1="228" x2="441" y2="228" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="470" y="245" font-size="12" fill="#5c6772">副边地 IGND</text>
+</svg>

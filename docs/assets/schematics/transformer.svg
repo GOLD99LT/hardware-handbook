@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 660 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="660" height="320" fill="#ffffff"/>
+  <!-- 原边回路：交流源 + 原边线圈（上） -->
+  <circle cx="90" cy="180" r="28" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M72,180 q9,-13 18,0 q9,13 18,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="152" x2="90" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="208" x2="90" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 原边上导线 + 线圈 -->
+  <line x1="90" y1="110" x2="180" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M180,110 q10,-20 20,0 q10,20 20,0 q10,-20 20,0 q10,20 20,0 q10,-20 20,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="280" y1="110" x2="320" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="225" y="80" font-size="15" fill="#1a4f8b" text-anchor="middle" font-weight="700">原边 Np 匝</text>
+  <!-- 铁芯（两条竖线） -->
+  <line x1="330" y1="80" x2="330" y2="280" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="348" y1="80" x2="348" y2="280" stroke="#2b3a4a" stroke-width="2.6"/>
+  <!-- 副边线圈 + 负载 -->
+  <line x1="360" y1="110" x2="400" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M400,110 q10,-20 20,0 q10,20 20,0 q10,-20 20,0 q10,20 20,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="500" y1="110" x2="560" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="450" y="80" font-size="15" fill="#1a4f8b" text-anchor="middle" font-weight="700">副边 Ns 匝</text>
+  <!-- 副边右竖线 + 负载 R -->
+  <line x1="560" y1="110" x2="560" y2="160" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="548" y="160" width="24" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="560" y1="210" x2="560" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="590" y="190" font-size="15" fill="#1a4f8b" font-weight="700">R 负载</text>
+  <!-- 下边线连通 -->
+  <line x1="90" y1="250" x2="320" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="360" y1="250" x2="560" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 标注 -->
+  <text x="330" y="305" font-size="15" fill="#222a32" text-anchor="middle">铁芯耦合：Vs/Vp = Np/Ns；理想变压器功率守恒 Vp·Ip = Vs·Is</text>
+</svg>

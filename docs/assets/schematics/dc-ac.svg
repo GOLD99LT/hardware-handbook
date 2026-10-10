@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="300" fill="#ffffff"/>
+  <!-- 交流源（圆里 ~） -->
+  <circle cx="120" cy="160" r="34" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M98,160 q11,-16 22,0 q11,16 22,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="120" y="215" font-size="15" fill="#1a4f8b" text-anchor="middle" font-weight="700">交流源 AC</text>
+  <!-- 上线下线 -->
+  <line x1="120" y1="126" x2="120" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="120" y1="194" x2="120" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="120" y1="100" x2="260" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 电阻 R -->
+  <rect x="260" y="88" width="110" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="370" y1="100" x2="520" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="315" y="78" font-size="17" fill="#1a4f8b" text-anchor="middle" font-weight="700">R</text>
+  <!-- 右竖线 / 下横线 -->
+  <line x1="520" y1="100" x2="520" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="120" y1="230" x2="520" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 节点 -->
+  <circle cx="120" cy="100" r="4.5" fill="#2b3a4a"/>
+  <circle cx="520" cy="100" r="4.5" fill="#2b3a4a"/>
+  <text x="320" y="275" font-size="15" fill="#222a32" text-anchor="middle">交流源：电压随时间按正弦正负交替；V(t)=Vp·sin(ωt)</text>
+</svg>

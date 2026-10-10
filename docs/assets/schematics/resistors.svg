@@ -1,0 +1,33 @@
+<svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="360" fill="#ffffff"/>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">电阻器：电路符号与外形结构</text>
+
+  <!-- IEC 符号 -->
+  <line x1="60" y1="120" x2="150" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="150" y="108" width="110" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="260" y1="120" x2="330" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="205" y="98" font-size="18" fill="#1a4f8b" text-anchor="middle" font-weight="700">R</text>
+  <text x="195" y="160" font-size="14" fill="#5c6772" text-anchor="middle">电路符号 (IEC)</text>
+
+  <!-- 轴向直插色环电阻 -->
+  <line x1="60" y1="250" x2="120" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="120" y="234" width="180" height="32" rx="6" fill="#f3efe4" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="150" y1="234" x2="150" y2="266" stroke="#c0392b" stroke-width="4"/>
+  <line x1="172" y1="234" x2="172" y2="266" stroke="#e67e22" stroke-width="4"/>
+  <line x1="194" y1="234" x2="194" y2="266" stroke="#2c3e50" stroke-width="4"/>
+  <line x1="216" y1="234" x2="216" y2="266" stroke="#27ae60" stroke-width="4"/>
+  <line x1="300" y1="250" x2="360" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="210" y="290" font-size="14" fill="#5c6772" text-anchor="middle">轴向直插（色环标称阻值）</text>
+
+  <!-- 贴片电阻 -->
+  <line x1="470" y1="120" x2="500" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="500" y="106" width="120" height="28" fill="#e9e2d0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="500" y="106" width="16" height="28" fill="#c8ccd0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="604" y="106" width="16" height="28" fill="#c8ccd0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="620" y1="120" x2="660" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="560" y="160" font-size="14" fill="#5c6772" text-anchor="middle">贴片矩形（丝印阻值）</text>
+
+  <!-- 内部结构标注 -->
+  <line x1="560" y1="134" x2="560" y2="200" stroke="#9aa7b4" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <text x="560" y="218" font-size="13" fill="#5c6772" text-anchor="middle">陶瓷基体 + 厚膜/薄膜电阻层 + 两端电极</text>
+</svg>

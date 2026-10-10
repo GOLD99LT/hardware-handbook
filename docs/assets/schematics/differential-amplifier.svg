@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="700" height="360" fill="#ffffff"/>
+  <defs>
+    <marker id="arrowR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/>
+    </marker>
+  </defs>
+  <!-- V1 经 R1 到反相端 N -->
+  <line x1="40" y1="150" x2="110" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="110" y="138" width="90" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="200" y1="150" x2="270" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="40" y="137" font-size="19" fill="#2b3a4a">V₁</text>
+  <text x="155" y="128" font-size="18" fill="#1a4f8b" text-anchor="middle" font-weight="700">R₁</text>
+  <!-- 运放三角形 -->
+  <polygon points="300,80 300,220 450,150" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="322" y="142" font-size="24" fill="#2b3a4a" font-weight="700">−</text>
+  <text x="322" y="196" font-size="24" fill="#2b3a4a" font-weight="700">+</text>
+  <!-- N 节点延伸 -->
+  <line x1="270" y1="150" x2="300" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="270" cy="150" r="4.5" fill="#2b3a4a"/>
+  <!-- Rf 反馈顶部横走 -->
+  <line x1="270" y1="150" x2="270" y2="55" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="270" y1="55" x2="330" y2="55" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="330" y="43" width="120" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="450" y1="55" x2="540" y2="55" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="540" y1="55" x2="540" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="390" y="33" font-size="19" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rf</text>
+  <!-- 输出 -->
+  <line x1="450" y1="150" x2="620" y2="150" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#arrowR)"/>
+  <text x="630" y="156" font-size="20" fill="#2b3a4a">Vout</text>
+  <circle cx="540" cy="150" r="4.5" fill="#2b3a4a"/>
+  <!-- V2 经 R2 到同相端 P -->
+  <line x1="40" y1="185" x2="120" y2="185" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="120" y="173" width="90" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="210" y1="185" x2="240" y2="185" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="40" y="172" font-size="19" fill="#2b3a4a">V₂</text>
+  <text x="165" y="212" font-size="18" fill="#1a4f8b" text-anchor="middle" font-weight="700">R₂</text>
+  <circle cx="240" cy="185" r="4.5" fill="#2b3a4a"/>
+  <line x1="240" y1="185" x2="300" y2="185" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- Rg 下地 -->
+  <line x1="240" y1="185" x2="240" y2="225" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="228" y="225" width="24" height="55" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="240" y1="280" x2="240" y2="305" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="262" y="258" font-size="18" fill="#1a4f8b" font-weight="700">Rg</text>
+  <line x1="226" y1="305" x2="254" y2="305" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="231" y1="312" x2="249" y2="312" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="235" y1="319" x2="245" y2="319" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

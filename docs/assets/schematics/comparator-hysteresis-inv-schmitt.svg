@@ -1,0 +1,30 @@
+<svg viewBox="0 0 880 520" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+<rect width="880" height="520" fill="#ffffff"/>
+<defs><marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/></marker></defs>
+<text x="40" y="210" font-size="18" fill="#1a4f8b" text-anchor="start" font-weight="700">Vin</text>
+<line x1="40" y1="222" x2="380" y2="222" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="380" y1="278" x2="380" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+<text x="40" y="150" font-size="18" fill="#1a4f8b" text-anchor="start" font-weight="700">Vref</text>
+<line x1="40" y1="150" x2="380" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="380" y1="278" x2="380" y2="360" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="380" y1="330" x2="380" y2="322.0" stroke="#2b3a4a" stroke-width="2.2"/>
+<rect x="369" y="322.0" width="22" height="46" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="380" y1="368.0" x2="380" y2="360" stroke="#2b3a4a" stroke-width="2.2"/>
+<text x="396" y="351.0" font-size="18" fill="#1a4f8b" text-anchor="start" font-weight="700">R1</text>
+<line x1="380" y1="340" x2="380" y2="360" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="366" y1="360" x2="394" y2="360" stroke="#2b3a4a" stroke-width="2.4"/>
+<line x1="371" y1="367" x2="389" y2="367" stroke="#2b3a4a" stroke-width="2.4"/>
+<line x1="375" y1="374" x2="385" y2="374" stroke="#2b3a4a" stroke-width="2.4"/>
+<line x1="510" y1="250" x2="510" y2="60" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="380" y1="150" x2="380" y2="60" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="380" y1="60" x2="380" y2="82.0" stroke="#2b3a4a" stroke-width="2.2"/>
+<rect x="369" y="82.0" width="22" height="46" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+<line x1="380" y1="128.0" x2="380" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+<text x="396" y="111.0" font-size="18" fill="#1a4f8b" text-anchor="start" font-weight="700">Rf</text>
+<circle cx="380" cy="150" r="4.5" fill="#2b3a4a"/>
+<line x1="510" y1="250" x2="740" y2="250" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="750" y="256" font-size="18" fill="#1a4f8b" text-anchor="start" font-weight="700">Vout</text>
+<circle cx="380" cy="222" r="4.5" fill="#2b3a4a"/>
+<circle cx="510" cy="250" r="4.5" fill="#2b3a4a"/>
+
+</svg>

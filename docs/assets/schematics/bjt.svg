@@ -1,0 +1,21 @@
+<svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="420" height="300" fill="#ffffff"/>
+  <text x="30" y="34" font-size="19" font-weight="700" fill="#222a32">NPN 三极管符号</text>
+
+  <!-- 基极输入线 -->
+  <line x1="40" y1="150" x2="108" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="170" cy="150" r="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 基极竖线 -->
+  <line x1="120" y1="122" x2="120" y2="178" stroke="#2b3a4a" stroke-width="2.6"/>
+  <!-- 集电极 -->
+  <line x1="120" y1="128" x2="188" y2="88" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="188" y1="88" x2="188" y2="50" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 发射极 -->
+  <line x1="120" y1="172" x2="188" y2="212" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="188" y1="212" x2="188" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="172,200 182,208 168,214" fill="#2b3a4a"/>
+
+  <text x="196" y="56" font-size="15" fill="#1a4f8b" font-weight="700">C 集电极</text>
+  <text x="30" y="146" font-size="15" fill="#1a4f8b" font-weight="700">B 基极</text>
+  <text x="196" y="256" font-size="15" fill="#1a4f8b" font-weight="700">E 发射极</text>
+</svg>

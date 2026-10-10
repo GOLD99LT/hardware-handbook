@@ -1,0 +1,105 @@
+<svg viewBox="0 0 900 680" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="900" height="680" fill="#ffffff"/>
+  <text x="30" y="30" font-size="21" font-weight="700" fill="#222a32">原理图元件库 Schematic Symbol Library</text>
+  <text x="30" y="54" font-size="12.5" fill="#5c6772">规范：线宽 2.2px · 线条 #2b3a4a · 白底 · 元件标号 #1a4f8b · 引脚水平或垂直 · 转角 90° · 节点用实心圆点 r=4.5</text>
+  <line x1="30" y1="66" x2="870" y2="66" stroke="#e3e0d7"/>
+
+  <!-- ===== 行1 ===== -->
+  <!-- 电阻 -->
+  <line x1="70" y1="110" x2="120" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="120" y="98" width="60" height="24" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="180" y1="110" x2="230" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="150" y="155" font-size="15" fill="#222a32" text-anchor="middle">电阻 Resistor</text>
+  <!-- 电容 -->
+  <line x1="390" y1="110" x2="442" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="442" y1="95" x2="442" y2="125" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="458" y1="95" x2="458" y2="125" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="458" y1="110" x2="510" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="450" y="155" font-size="15" fill="#222a32" text-anchor="middle">电容 Capacitor</text>
+  <!-- 电感 -->
+  <line x1="650" y1="110" x2="690" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M690,110 q10,-20 20,0 q10,20 20,0 q10,-20 20,0 q10,20 20,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="770" y1="110" x2="810" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="750" y="155" font-size="15" fill="#222a32" text-anchor="middle">电感 Inductor</text>
+
+  <!-- ===== 行2 ===== -->
+  <!-- 二极管 -->
+  <line x1="70" y1="240" x2="130" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="130,222 130,258 160,240" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="160" y1="224" x2="160" y2="256" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="160" y1="240" x2="230" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="150" y="285" font-size="15" fill="#222a32" text-anchor="middle">二极管 Diode</text>
+  <!-- LED -->
+  <line x1="390" y1="240" x2="430" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="430,222 430,258 460,240" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="460" y1="224" x2="460" y2="256" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="460" y1="240" x2="500" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="463" y1="221" x2="480" y2="204" stroke="#4f9e63" stroke-width="2"/>
+  <polygon points="480,204 471,205 477,213" fill="#4f9e63"/>
+  <line x1="451" y1="219" x2="468" y2="202" stroke="#4f9e63" stroke-width="2"/>
+  <polygon points="468,202 459,203 465,211" fill="#4f9e63"/>
+  <text x="450" y="285" font-size="15" fill="#222a32" text-anchor="middle">发光二极管 LED</text>
+  <!-- 稳压管 -->
+  <line x1="690" y1="240" x2="730" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="730,222 730,258 760,240" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="760" y1="224" x2="760" y2="256" stroke="#2b3a4a" stroke-width="2.6"/>
+  <path d="M760,224 q-9,3 -9,10 M760,256 q-9,-3 -9,-10" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="760" y1="240" x2="810" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="750" y="285" font-size="15" fill="#222a32" text-anchor="middle">稳压管 Zener</text>
+
+  <!-- ===== 行3 ===== -->
+  <!-- NPN -->
+  <line x1="90" y1="400" x2="118" y2="400" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="152" cy="400" r="34" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="118" y1="382" x2="118" y2="418" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="118" y1="386" x2="162" y2="356"/>
+  <line x1="162" y1="356" x2="162" y2="336" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="118" y1="414" x2="162" y2="444"/>
+  <line x1="162" y1="444" x2="162" y2="464" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="150,436 158,428 161,439" fill="#2b3a4a"/>
+  <text x="150" y="478" font-size="15" fill="#222a32" text-anchor="middle">NPN 三极管 BJT</text>
+  <!-- NMOS -->
+  <line x1="380" y1="400" x2="414" y2="400" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="414" y1="368" x2="414" y2="432" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="438" y1="368" x2="438" y2="432" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="438" y1="368" x2="438" y2="340" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="438" y1="432" x2="438" y2="460" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="438,432 427,438 438,444" fill="#2b3a4a"/>
+  <text x="410" y="360" font-size="12" fill="#5c6772" text-anchor="end">G</text>
+  <text x="448" y="346" font-size="12" fill="#5c6772">D</text>
+  <text x="448" y="456" font-size="12" fill="#5c6772">S</text>
+  <text x="425" y="478" font-size="15" fill="#222a32" text-anchor="middle">N-MOSFET</text>
+  <!-- 运放 -->
+  <line x1="660" y1="383" x2="710" y2="383" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="660" y1="417" x2="710" y2="417" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="710,358 710,442 800,400" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="726" y="389" font-size="20" fill="#2b3a4a" font-weight="700">−</text>
+  <text x="726" y="424" font-size="20" fill="#2b3a4a" font-weight="700">+</text>
+  <line x1="800" y1="400" x2="840" y2="400" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="750" y="478" font-size="15" fill="#222a32" text-anchor="middle">运放 Op-Amp</text>
+
+  <!-- ===== 行4 ===== -->
+  <!-- 接地 -->
+  <line x1="150" y1="540" x2="150" y2="560" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="136" y1="560" x2="164" y2="560" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="141" y1="567" x2="159" y2="567" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="145" y1="574" x2="155" y2="574" stroke="#2b3a4a" stroke-width="2.4"/>
+  <circle cx="196" cy="560" r="4.5" fill="#2b3a4a"/>
+  <line x1="180" y1="560" x2="230" y2="560" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="150" y="615" font-size="15" fill="#222a32" text-anchor="middle">接地 Ground / 节点</text>
+  <!-- 电池 -->
+  <line x1="390" y1="570" x2="438" y2="570" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="438" y1="548" x2="438" y2="592" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="450" y1="558" x2="450" y2="582" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="462" y1="548" x2="462" y2="592" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="474" y1="558" x2="474" y2="582" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="474" y1="570" x2="510" y2="570" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="450" y="615" font-size="15" fill="#222a32" text-anchor="middle">电池/电压源 Battery</text>
+  <!-- 开关 -->
+  <line x1="670" y1="570" x2="740" y2="570" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="740" cy="570" r="3.5" fill="#fff" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="740" y1="570" x2="786" y2="548" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="790" cy="570" r="3.5" fill="#fff" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="790" y1="570" x2="830" y2="570" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="750" y="615" font-size="15" fill="#222a32" text-anchor="middle">开关 Switch</text>
+</svg>

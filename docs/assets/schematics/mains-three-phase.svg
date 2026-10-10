@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="600" height="360" fill="#ffffff"/>
+  <!-- 中性点 N -->
+  <circle cx="300" cy="180" r="4.5" fill="#2b3a4a"/>
+  <!-- L1 向上 -->
+  <line x1="300" y1="180" x2="300" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M300,150 q12,-6 0,-12 q-12,-6 0,-12 q12,-6 0,-12" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="300" y1="114" x2="300" y2="60" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="316" y="80" font-size="16" fill="#1a4f8b" font-weight="700">L1</text>
+  <!-- L2 左下 -->
+  <line x1="300" y1="180" x2="255" y2="206" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M255,206 q12,4 8,15 q-4,11 -16,8 q-12,-3 -10,-15" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="237" y1="229" x2="180" y2="262" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="150" y="278" font-size="16" fill="#1a4f8b" font-weight="700">L2</text>
+  <!-- L3 右下 -->
+  <line x1="300" y1="180" x2="345" y2="206" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M345,206 q-12,4 -8,15 q4,11 16,8 q12,-3 10,-15" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="363" y1="229" x2="420" y2="262" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="428" y="278" font-size="16" fill="#1a4f8b" font-weight="700">L3</text>
+  <!-- 中性线 N 向下 -->
+  <line x1="300" y1="180" x2="300" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="316" y="245" font-size="16" fill="#1a4f8b" font-weight="700">N 中性线</text>
+  <!-- 标注 -->
+  <text x="300" y="320" font-size="15" fill="#222a32" text-anchor="middle">三相 Y 接：L1/L2/L3 互差 120°；相电压 220V，线电压 380V</text>
+</svg>
