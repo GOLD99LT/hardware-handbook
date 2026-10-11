@@ -1,0 +1,45 @@
+<svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="360" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">4 位二进制→格雷码转换器 Binary-to-Gray</text>
+
+  <!-- B3: straight through to G3 -->
+  <text x="30" y="80" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">B3</text>
+  <line x1="70" y1="76" x2="600" y2="76" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="610" y="81" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">G3=B3</text>
+
+  <!-- B2 -> XOR with B3 -->
+  <text x="30" y="150" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">B2</text>
+  <line x1="70" y1="146" x2="200" y2="146" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="200" y="134" width="40" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="220" y="151" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">⊕</text>
+  <line x1="240" y1="146" x2="600" y2="146" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="610" y="151" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">G2</text>
+  <!-- B3 taps down to XOR top -->
+  <line x1="150" y1="76" x2="150" y2="134" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="150" y1="134" x2="200" y2="134" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="150" cy="76" r="4.5" fill="#2b3a4a"/>
+
+  <!-- B1 -> XOR with B2 -->
+  <text x="30" y="220" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">B1</text>
+  <line x1="70" y1="216" x2="330" y2="216" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="330" y="204" width="40" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="350" y="221" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">⊕</text>
+  <line x1="370" y1="216" x2="600" y2="216" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="610" y="221" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">G1</text>
+  <!-- B2 taps down to XOR top -->
+  <line x1="280" y1="146" x2="280" y2="204" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="280" y1="204" x2="330" y2="204" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="280" cy="146" r="4.5" fill="#2b3a4a"/>
+
+  <!-- B0 -> XOR with B1 -->
+  <text x="30" y="290" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">B0</text>
+  <line x1="70" y1="286" x2="460" y2="286" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="460" y="274" width="40" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="480" y="291" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">⊕</text>
+  <line x1="500" y1="286" x2="600" y2="286" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="610" y="291" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">G0</text>
+  <!-- B1 taps down to XOR top -->
+  <line x1="410" y1="216" x2="410" y2="274" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="410" y1="274" x2="460" y2="274" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="410" cy="216" r="4.5" fill="#2b3a4a"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="30" y="32" font-size="17" font-weight="700" fill="#222a32">网络变压器与 Bob-Smith 端接</text>
+
+  <!-- PHY -->
+  <rect x="60" y="110" width="100" height="80" fill="#f7f9fb" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="110" y="155" font-size="11" fill="#222a32" text-anchor="middle">PHY</text>
+
+  <!-- 变压器 -->
+  <line x1="160" y1="135" x2="260" y2="135" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="160" y1="165" x2="260" y2="165" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="260" y="110" width="90" height="80" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="305" y="155" font-size="10" fill="#5c6772" text-anchor="middle">变压器</text>
+
+  <!-- 到 RJ45 -->
+  <line x1="350" y1="135" x2="480" y2="135" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="350" y1="165" x2="480" y2="165" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="410" y="128" font-size="10" fill="#1a4f8b">TX+</text>
+  <text x="410" y="180" font-size="10" fill="#1a4f8b">TX−</text>
+  <rect x="480" y="115" width="90" height="60" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="525" y="150" font-size="11" fill="#222a32" text-anchor="middle">RJ45</text>
+
+  <!-- Bob-Smith -->
+  <line x1="420" y1="135" x2="420" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="412" y="210" width="16" height="26" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="435" y="228" font-size="10" fill="#1a4f8b">75Ω</text>
+  <line x1="420" y1="236" x2="420" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="406" y1="250" x2="434" y2="250" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="406" y1="264" x2="434" y2="264" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="445" y="262" font-size="10" fill="#b5642e">1000pF 到机壳地</text>
+
+  <text x="120" y="290" font-size="12" fill="#7a5fc0">变压器隔离 PHY 与线缆；Bob-Smith 端接泄放共模噪声，提升 EMC</text>
+</svg>

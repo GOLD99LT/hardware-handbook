@@ -1,0 +1,33 @@
+<svg viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="380" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">4 位数值比较器 4-bit Magnitude Comparator</text>
+
+  <!-- A[3:0] -->
+  <text x="30" y="110" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">A[3:0]</text>
+  <line x1="90" y1="106" x2="280" y2="106" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="106" x2="90" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="140" x2="280" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="140" x2="90" y2="174" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="174" x2="280" y2="174" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- B[3:0] -->
+  <text x="30" y="230" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">B[3:0]</text>
+  <line x1="90" y1="226" x2="280" y2="226" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="226" x2="90" y2="260" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="260" x2="280" y2="260" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="260" x2="90" y2="294" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="294" x2="280" y2="294" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- comparator block -->
+  <rect x="280" y="90" width="180" height="220" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="370" y="195" font-size="16" fill="#2b3a4a" text-anchor="middle" font-weight="700">Comparator</text>
+  <text x="370" y="217" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">4-bit</text>
+
+  <!-- outputs -->
+  <line x1="460" y1="130" x2="600" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="608" y="135" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">A&gt;B</text>
+  <line x1="460" y1="190" x2="600" y2="190" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="608" y="195" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">A=B</text>
+  <line x1="460" y1="250" x2="600" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="608" y="255" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">A&lt;B</text>
+</svg>

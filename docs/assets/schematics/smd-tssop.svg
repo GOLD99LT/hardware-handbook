@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="480" height="300" fill="#ffffff"/>
+  <!-- 本体（窄长） -->
+  <rect x="180" y="50" width="120" height="200" rx="3" fill="#f2efe6" stroke="#2b3a4a" stroke-width="2.6"/>
+  <circle cx="193" cy="63" r="4.5" fill="#2b3a4a"/>
+  <!-- 左侧 8 引脚 -->
+  <rect x="155" y="65" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="155" y="87" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="155" y="109" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="155" y="131" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="155" y="169" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="155" y="191" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="155" y="213" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="155" y="235" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 右侧 8 引脚 -->
+  <rect x="300" y="65" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="300" y="87" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="300" y="109" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="300" y="131" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="300" y="169" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="300" y="191" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="300" y="213" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="300" y="235" width="25" height="9" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 引脚号 -->
+  <text x="145" y="73" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">1</text>
+  <text x="145" y="243" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">8</text>
+  <text x="335" y="73" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">16</text>
+  <text x="335" y="243" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">9</text>
+  <text x="240" y="280" font-size="15" fill="#2b3a4a" text-anchor="middle">TSSOP-16 顶视图（薄型细脚距，0.65mm pitch，常见于运放/接口）</text>
+</svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 380" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="380" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：源端串联端接 Series Termination</text>
+
+  <!-- 源 -->
+  <rect x="50" y="150" width="90" height="70" fill="#eef4fb" stroke="#1a4f8b" stroke-width="2.2"/>
+  <text x="95" y="185" font-size="12.5" fill="#1a4f8b" text-anchor="middle">驱动源</text>
+  <text x="95" y="205" font-size="11" fill="#3a5a80" text-anchor="middle">Rout≈小</text>
+
+  <!-- 串联电阻 -->
+  <line x1="140" y1="185" x2="180" y2="185" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="180" y="173" width="70" height="24" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="215" y="165" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">Rs≈Z₀</text>
+
+  <!-- 传输线 -->
+  <line x1="250" y1="185" x2="600" y2="185" stroke="#2b3a4a" stroke-width="3"/>
+  <text x="425" y="175" font-size="12" fill="#222a32" text-anchor="middle">Z₀≈50Ω 传输线</text>
+
+  <!-- 负载 -->
+  <rect x="600" y="150" width="120" height="70" fill="#fdf3e7" stroke="#b5642e" stroke-width="2.2"/>
+  <text x="660" y="185" font-size="12.5" fill="#b5642e" text-anchor="middle">负载（高阻）</text>
+
+  <rect x="50" y="260" width="720" height="100" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="70" y="288" font-size="13" fill="#1a4f8b" font-weight="700">机理：</text>
+  <text x="70" y="312" font-size="12.5" fill="#222a32">在源端串一只 Rs=Z₀ 的电阻，使"源内阻+Rs"=Z₀。入射波到高阻负载全反射（Γ=+1），</text>
+  <text x="70" y="334" font-size="12.5" fill="#222a32">反射波回到源端被 Rs 吸收，不再二次反射。负载端得到干净波形。最常用、不耗电。</text>
+</svg>

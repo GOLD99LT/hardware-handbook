@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 380" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="380" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：接地拓扑 — 单点 / 多点 / 混合</text>
+
+  <!-- 单点 -->
+  <rect x="40" y="70" width="240" height="240" fill="#eef7ee" stroke="#2f6e4f" stroke-width="2"/>
+  <text x="160" y="98" font-size="13" fill="#2f6e4f" font-weight="700" text-anchor="middle">单点接地</text>
+  <circle cx="160" cy="220" r="6" fill="#2b3a4a"/>
+  <line x1="100" y1="150" x2="160" y2="220" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="220" y1="150" x2="160" y2="220" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="160" y1="226" x2="160" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="146" y1="250" x2="174" y2="250" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="151" y1="257" x2="169" y2="257" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="155" y1="264" x2="165" y2="264" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="160" y="295" font-size="11" fill="#2f5a3f" text-anchor="middle">低频(&lt;1MHz)模拟</text>
+
+  <!-- 多点 -->
+  <rect x="300" y="70" width="240" height="240" fill="#eef4fb" stroke="#1a4f8b" stroke-width="2"/>
+  <text x="420" y="98" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">多点接地</text>
+  <rect x="340" y="230" width="160" height="20" fill="#2b3a4a"/>
+  <line x1="370" y1="150" x2="370" y2="230" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="420" y1="150" x2="420" y2="230" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="470" y1="150" x2="470" y2="230" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="420" y="295" font-size="11" fill="#3a5a80" text-anchor="middle">高频数字(完整平面)</text>
+
+  <!-- 混合 -->
+  <rect x="560" y="70" width="220" height="240" fill="#fdf3e7" stroke="#b5642e" stroke-width="2"/>
+  <text x="670" y="98" font-size="13" fill="#b5642e" font-weight="700" text-anchor="middle">混合接地</text>
+  <circle cx="670" cy="220" r="6" fill="#2b3a4a"/>
+  <line x1="610" y1="150" x2="670" y2="220" stroke="#2f6e4f" stroke-width="2"/>
+  <line x1="730" y1="150" x2="730" y2="230" stroke="#1a4f8b" stroke-width="2"/>
+  <rect x="690" y="222" width="80" height="16" fill="#2b3a4a"/>
+  <text x="670" y="295" font-size="11" fill="#7a5a30" text-anchor="middle">模数混合板常用</text>
+
+  <text x="40" y="345" font-size="12" fill="#222a32">低频单点避共地阻抗；高频多点借平面降电感；混合板：模拟单点、数字多点，在 ADC 处桥接。</text>
+</svg>

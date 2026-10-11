@@ -1,0 +1,34 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="360" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">T 触发器（D 触发器 + 异或反馈）T Flip-Flop</text>
+
+  <!-- D FF block -->
+  <rect x="260" y="90" width="160" height="180" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="340" y="185" font-size="15" fill="#2b3a4a" text-anchor="middle" font-weight="700">D-FF</text>
+
+  <!-- T input -> XOR -->
+  <text x="40" y="150" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">T</text>
+  <line x1="70" y1="146" x2="180" y2="146" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- XOR gate -->
+  <path d="M180,130 Q215,155 180,180 L230,155 Z" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M173,130 Q208,155 173,180" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="230" y1="155" x2="260" y2="155" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- Q feedback to XOR -->
+  <line x1="420" y1="155" x2="560" y2="155" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="568" y="160" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">Q</text>
+  <circle cx="420" cy="155" r="4.5" fill="#2b3a4a"/>
+  <line x1="480" y1="155" x2="480" y2="260" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="480" y1="260" x2="195" y2="260" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="195" y1="260" x2="195" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="480" cy="155" r="4.5" fill="#2b3a4a"/>
+
+  <!-- CLK -->
+  <text x="40" y="310" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">CLK</text>
+  <line x1="80" y1="306" x2="340" y2="306" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="340" y1="306" x2="340" y2="270" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="320,250 320,290 340,270" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <text x="24" y="345" font-size="13" fill="#5a6672" text-anchor="start">T=1 时每个时钟沿 Q 翻转一次；T=0 时保持。即 D = Q⊕T</text>
+</svg>

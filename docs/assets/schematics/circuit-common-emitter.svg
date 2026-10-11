@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="420" height="260" fill="#ffffff"/>
+  <!-- Vcc -->
+  <text x="330" y="45" font-size="16" fill="#2b3a4a">Vcc</text>
+  <line x1="360" y1="40" x2="250" y2="40" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- Rc -->
+  <rect x="238" y="50" width="24" height="40" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="270" y="75" font-size="14" fill="#1a4f8b" font-weight="700">Rc</text>
+  <line x1="250" y1="90" x2="250" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 集电极输出 -->
+  <circle cx="250" cy="110" r="4.5" fill="#2b3a4a"/>
+  <line x1="250" y1="110" x2="370" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="378" y="116" font-size="15" fill="#1a4f8b" font-weight="700">Vout</text>
+  <!-- BJT -->
+  <circle cx="250" cy="150" r="30" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="240" y1="135" x2="240" y2="165" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="240" y1="145" x2="265" y2="125" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="240" y1="155" x2="265" y2="175" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 基极输入 -->
+  <line x1="240" y1="150" x2="130" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="40" y="156" font-size="15" fill="#2b3a4a">Vin</text>
+  <!-- Re 下地 -->
+  <line x1="250" y1="180" x2="250" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="238" y="200" width="24" height="30" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="270" y="220" font-size="14" fill="#1a4f8b" font-weight="700">Re</text>
+  <line x1="250" y1="230" x2="250" y2="245" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="236" y1="245" x2="264" y2="245" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="241" y1="252" x2="259" y2="252" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

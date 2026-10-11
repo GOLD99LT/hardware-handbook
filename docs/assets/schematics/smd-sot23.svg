@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="400" height="280" fill="#ffffff"/>
+  <!-- 本体 -->
+  <rect x="140" y="70" width="120" height="140" rx="6" fill="#f2efe6" stroke="#2b3a4a" stroke-width="2.6"/>
+  <!-- Pin 1 标记点 -->
+  <circle cx="160" cy="90" r="4.5" fill="#2b3a4a"/>
+  <!-- 引脚：左 1（上） -->
+  <rect x="110" y="105" width="30" height="14" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 引脚：右 2、3 -->
+  <rect x="260" y="105" width="30" height="14" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="260" y="165" width="30" height="14" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 引脚标号 -->
+  <text x="95" y="116" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">1</text>
+  <text x="305" y="116" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">2</text>
+  <text x="305" y="176" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">3</text>
+  <!-- 本体宽度 -->
+  <line x1="140" y1="50" x2="260" y2="50" stroke="#1a4f8b" stroke-width="1.4"/>
+  <line x1="140" y1="44" x2="140" y2="56" stroke="#1a4f8b" stroke-width="1.4"/>
+  <line x1="260" y1="44" x2="260" y2="56" stroke="#1a4f8b" stroke-width="1.4"/>
+  <text x="200" y="40" font-size="15" fill="#1a4f8b" text-anchor="middle" font-weight="700">≈2.9mm</text>
+  <text x="200" y="245" font-size="15" fill="#2b3a4a" text-anchor="middle">SOT-23-3 顶视图（NPN/MOSFET/三极管常用封装）</text>
+</svg>

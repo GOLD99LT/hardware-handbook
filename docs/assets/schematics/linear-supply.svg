@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="760" height="360" fill="#ffffff"/>
+  <text x="30" y="30" font-size="18" font-weight="700" fill="#222a32">线性电源链路：变压 → 整流 → 滤波 → 稳压</text>
+
+  <!-- AC 源 -->
+  <circle cx="60" cy="150" r="26" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="60" y="156" font-size="16" fill="#2b3a4a" text-anchor="middle">~</text>
+  <text x="60" y="196" font-size="12.5" fill="#5c6772" text-anchor="middle">220V/50Hz</text>
+  <line x1="86" y1="150" x2="130" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- T1 变压器 -->
+  <rect x="130" y="120" width="90" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="175" y="146" font-size="13.5" fill="#2b3a4a" text-anchor="middle" font-weight="700">T1</text>
+  <text x="175" y="166" font-size="12" fill="#5c6772" text-anchor="middle">220V→9V~</text>
+  <line x1="220" y1="150" x2="260" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- BR1 整流桥 -->
+  <rect x="260" y="120" width="80" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="300" y="146" font-size="13.5" fill="#2b3a4a" text-anchor="middle" font-weight="700">BR1</text>
+  <text x="300" y="166" font-size="12" fill="#5c6772" text-anchor="middle">桥式整流</text>
+  <line x1="340" y1="150" x2="400" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 节点 + rail -->
+  <circle cx="400" cy="150" r="4.5" fill="#2b3a4a"/>
+
+  <!-- 滤波电容 Cbulk（电解） -->
+  <line x1="400" y1="150" x2="400" y2="195" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="382" y1="195" x2="418" y2="195" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="382" y1="215" x2="418" y2="215" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="400" y1="215" x2="400" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="426" y="210" font-size="14" fill="#1a4f8b" font-weight="700">Cbulk 2200µF</text>
+  <text x="386" y="190" font-size="12" fill="#b5642e">+</text>
+
+  <!-- 78xx 稳压器 -->
+  <line x1="400" y1="150" x2="470" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="470" y="120" width="90" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="515" y="146" font-size="13.5" fill="#2b3a4a" text-anchor="middle" font-weight="700">7805</text>
+  <text x="515" y="166" font-size="12" fill="#5c6772" text-anchor="middle">线性稳压</text>
+  <line x1="560" y1="150" x2="660" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="620" cy="150" r="4.5" fill="#2b3a4a"/>
+  <text x="630" y="138" font-size="15" fill="#1a4f8b" font-weight="700">Vout=+5V</text>
+
+  <!-- Rload -->
+  <line x1="620" y1="150" x2="620" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="608" y="180" width="24" height="55" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="620" y1="235" x2="620" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="640" y="212" font-size="13" fill="#1a4f8b" font-weight="700">Rload</text>
+
+  <!-- 地总线 -->
+  <line x1="60" y1="300" x2="620" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="60" y1="176" x2="60" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="300" y1="180" x2="300" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="515" y1="180" x2="515" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="350" y1="300" x2="350" y2="320" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="336" y1="320" x2="364" y2="320" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="341" y1="327" x2="359" y2="327" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="345" y1="334" x2="355" y2="334" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

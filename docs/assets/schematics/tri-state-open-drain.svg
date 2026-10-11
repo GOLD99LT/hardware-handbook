@@ -1,0 +1,33 @@
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="300" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">开漏输出线与 Open-Drain Wired-AND</text>
+
+  <!-- common bus -->
+  <line x1="150" y1="120" x2="560" y2="120" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="568" y="125" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">SDA</text>
+
+  <!-- OD1 -->
+  <text x="40" y="90" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">OD1</text>
+  <polygon points="100,75 100,105 140,90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="140" y1="90" x2="150" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="145" cy="90" r="3.5" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="150" y1="90" x2="150" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="150" cy="120" r="4.5" fill="#2b3a4a"/>
+
+  <!-- OD2 -->
+  <text x="40" y="180" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">OD2</text>
+  <polygon points="100,165 100,195 140,180" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="140" y1="180" x2="150" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="145" cy="180" r="3.5" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="150" y1="180" x2="150" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- pull-up to VCC -->
+  <line x1="400" y1="120" x2="400" y2="60" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="388" y="60" width="24" height="36" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="420" y="82" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">R上拉(4.7k)</text>
+  <line x1="400" y1="60" x2="400" y2="30" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="385" y="24" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">VCC</text>
+  <circle cx="400" cy="120" r="4.5" fill="#2b3a4a"/>
+
+  <text x="24" y="250" font-size="13" fill="#5a6672" text-anchor="start">任一 OD 拉低，SDA 即低；都释放时上拉电阻把 SDA 拉高（I²C 总线原理）</text>
+</svg>

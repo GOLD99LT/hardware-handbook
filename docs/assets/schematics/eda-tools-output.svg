@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="420" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：交付给板厂的制造文件清单</text>
+
+  <!-- 源工程 -->
+  <rect x="40" y="80" width="160" height="80" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="120" y="112" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">PCB 工程源文件</text>
+  <text x="120" y="136" font-size="11.5" fill="#5c6772" text-anchor="middle">.kicad_pro / .SchDoc</text>
+
+  <line x1="200" y1="120" x2="260" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 输出四类 -->
+  <rect x="260" y="60" width="200" height="56" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="360" y="84" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">Gerber (RS-274X)</text>
+  <text x="360" y="104" font-size="11.5" fill="#5c6772" text-anchor="middle">每层一个 .gbr：铜/阻焊/丝印（钻孔独立）</text>
+
+  <rect x="260" y="126" width="200" height="56" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="360" y="150" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">钻孔文件 Drill</text>
+  <text x="360" y="170" font-size="11.5" fill="#5c6772" text-anchor="middle">NPTH/PTH，孔位与孔径</text>
+
+  <rect x="260" y="192" width="200" height="56" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="360" y="216" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">BOM 物料清单</text>
+  <text x="360" y="236" font-size="11.5" fill="#5c6772" text-anchor="middle">位号/型号/数量/封装</text>
+
+  <rect x="260" y="258" width="200" height="56" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="360" y="282" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">坐标 Pick &amp; Place</text>
+  <text x="360" y="302" font-size="11.5" fill="#5c6772" text-anchor="middle">贴片坐标 .pos / .csv</text>
+
+  <!-- 流向板厂 -->
+  <line x1="460" y1="170" x2="540" y2="170" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="540" y="130" width="220" height="90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="650" y="166" font-size="15" fill="#1a4f8b" font-weight="700" text-anchor="middle">PCB 板厂 / SMT 贴片厂</text>
+  <text x="650" y="192" font-size="12" fill="#5c6772" text-anchor="middle">制板 + 钢网 + 贴装 + 焊接</text>
+
+  <rect x="40" y="340" width="720" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="60" y="366" font-size="12.5" fill="#222a32">现代替代：直接导出 ODB++ 单一压缩包，比散件 Gerber 更少出错；同时务必附上叠层说明与表面处理要求（喷锡/沉金）。</text>
+  <text x="60" y="388" font-size="12.5" fill="#222a32">工程文件（.kicad_pro 等）自己留档做版本管理，**不要**把它当制造文件发给板厂。</text>
+</svg>

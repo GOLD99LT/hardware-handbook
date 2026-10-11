@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 380" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="380" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：金属屏蔽罩（Shielding Can）</text>
+
+  <!-- PCB -->
+  <rect x="150" y="180" width="520" height="120" fill="#f3efe6" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="410" y="320" font-size="12" fill="#7a6a3a" text-anchor="middle">PCB（完整地平面）</text>
+
+  <!-- 被屏蔽的噪声源 -->
+  <rect x="330" y="200" width="160" height="70" fill="#fdf3e7" stroke="#b5642e" stroke-width="2"/>
+  <text x="410" y="240" font-size="12.5" fill="#b5642e" text-anchor="middle">噪声源(晶振/RF)</text>
+
+  <!-- 屏蔽罩 -->
+  <path d="M280,270 L280,150 L540,150 L540,270" fill="rgba(122,95,192,0.12)" stroke="#7a5fc0" stroke-width="3"/>
+  <text x="410" y="140" font-size="13" fill="#7a5fc0" text-anchor="middle">金属屏蔽罩（四周接地焊接）</text>
+
+  <!-- 接地脚 -->
+  <line x1="280" y1="270" x2="280" y2="290" stroke="#7a5fc0" stroke-width="3"/>
+  <line x1="540" y1="270" x2="540" y2="290" stroke="#7a5fc0" stroke-width="3"/>
+
+  <text x="60" y="350" font-size="12.5" fill="#222a32">机理：金属罩主要屏蔽电场与高频辐射，四周多点接地到 PCB 地平面形成法拉第笼；低频磁场需坡莫合金等高导磁材料。</text>
+  <text x="60" y="372" font-size="12.5" fill="#b5642e">要点：罩子接地必须低阻抗（多点焊接/簧片），单点接地的罩子反而成辐射天线。</text>
+</svg>

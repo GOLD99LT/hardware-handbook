@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="280" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">扩展：同步 Boost（低侧 MOS 替代二极管）</text>
+  <text x="36" y="96" font-size="15" fill="#2b3a4a">Vin</text>
+  <line x1="60" y1="100" x2="130" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M130,100 q12,-24 24,0 q12,24 24,0 q12,-24 24,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="202" y1="100" x2="280" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="280" cy="100" r="4.5" fill="#2b3a4a"/>
+  <text x="272" y="88" font-size="13" fill="#1a4f8b" font-weight="700">SW</text>
+  <!-- 低侧同步 MOS -->
+  <line x1="280" y1="100" x2="280" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="268" y="140" width="24" height="45" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="300" y="168" font-size="11.5" fill="#1a4f8b" font-weight="700">Q2 同步整流</text>
+  <line x1="280" y1="185" x2="280" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 高侧同步 MOS 替代二极管 -->
+  <line x1="280" y1="100" x2="360" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="360" y="80" width="30" height="40" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="375" y="74" font-size="11.5" fill="#1a4f8b" font-weight="700" text-anchor="middle">Q1</text>
+  <line x1="390" y1="100" x2="540" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="480" cy="100" r="4.5" fill="#2b3a4a"/>
+  <text x="548" y="105" font-size="14" fill="#1a4f8b" font-weight="700">Vout</text>
+  <line x1="480" y1="100" x2="480" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="462" y1="140" x2="498" y2="140" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="462" y1="160" x2="498" y2="160" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="480" y1="160" x2="480" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="506" y="155" font-size="12.5" fill="#1a4f8b" font-weight="700">Cout</text>
+  <line x1="280" y1="230" x2="480" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="380" y1="230" x2="380" y2="248" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="366" y1="248" x2="394" y2="248" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="371" y1="255" x2="389" y2="255" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="375" y1="262" x2="385" y2="262" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

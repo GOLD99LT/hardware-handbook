@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 860 460" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="460" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">热阻链路 — 从结到环境</text>
+
+  <!-- 热流：结→壳→PCB→环境 -->
+  <!-- IC 结 -->
+  <rect x="80" y="180" width="120" height="90" fill="#fde2e2" stroke="#b03a3a" stroke-width="2.4"/>
+  <text x="140" y="220" font-size="13" fill="#b03a3a" font-weight="700" text-anchor="middle">结 Tj</text>
+  <text x="140" y="245" font-size="11" fill="#b03a3a" text-anchor="middle">芯片内部发热</text>
+
+  <!-- θJC -->
+  <line x1="200" y1="225" x2="280" y2="225" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="240" y="215" font-size="12" fill="#1a4f8b" text-anchor="middle">θJC</text>
+
+  <!-- 壳/裸露焊盘 -->
+  <rect x="280" y="180" width="120" height="90" fill="#fdf3e7" stroke="#b5642e" stroke-width="2.2"/>
+  <text x="340" y="220" font-size="13" fill="#b5642e" font-weight="700" text-anchor="middle">封装/EP</text>
+  <text x="340" y="245" font-size="11" fill="#7a5a30" text-anchor="middle">裸露焊盘</text>
+
+  <!-- θJB -->
+  <line x1="400" y1="225" x2="480" y2="225" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="440" y="215" font-size="12" fill="#1a4f8b" text-anchor="middle">θJB</text>
+
+  <!-- PCB 铜箔 -->
+  <rect x="480" y="170" width="160" height="110" fill="#f3efe6" stroke="#7a6a3a" stroke-width="2.2"/>
+  <text x="560" y="215" font-size="13" fill="#7a6a3a" font-weight="700" text-anchor="middle">PCB 铜箔</text>
+  <text x="560" y="240" font-size="11" fill="#7a6a3a" text-anchor="middle">散热面积 A</text>
+
+  <!-- θBA -->
+  <line x1="640" y1="225" x2="720" y2="225" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="680" y="215" font-size="12" fill="#1a4f8b" text-anchor="middle">θBA</text>
+
+  <!-- 环境 -->
+  <rect x="720" y="180" width="100" height="90" fill="#eef4fb" stroke="#1a4f8b" stroke-width="2.2"/>
+  <text x="770" y="220" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">环境 Ta</text>
+  <text x="770" y="245" font-size="11" fill="#3a5a80" text-anchor="middle">空气</text>
+
+  <rect x="60" y="320" width="760" height="120" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="80" y="348" font-size="13" fill="#1a4f8b" font-weight="700">温升公式：</text>
+  <text x="80" y="374" font-size="14" fill="#222a32">Tj = Ta + P × θJA ，其中 θJA = θJC + θJB + θBA（各段热阻串联）</text>
+  <text x="80" y="400" font-size="12.5" fill="#222a32">P = 芯片功耗(W)。结温 Tj 必须 &lt; 数据手册上限（通常 125~150℃），并留降额余量。</text>
+  <text x="80" y="424" font-size="12.5" fill="#b5642e">PCB 铜箔面积是 θBA 的主力——增大铜箔、打散热过孔、加散热器，都是降 θ。</text>
+</svg>

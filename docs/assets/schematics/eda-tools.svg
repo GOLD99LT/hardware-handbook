@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 860 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="420" fill="#ffffff"/>
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L9,5 L0,10 Z" fill="#2b3a4a"/>
+    </marker>
+  </defs>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">PCB 设计 EDA 工作流（以 KiCad / Altium 为例）</text>
+
+  <!-- 流程框 6 步 -->
+  <!-- 1 原理图 -->
+  <rect x="40" y="90" width="120" height="70" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="100" y="120" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">① 原理图</text>
+  <text x="100" y="142" font-size="11.5" fill="#5c6772" text-anchor="middle">Schematic</text>
+
+  <!-- 2 网表 -->
+  <rect x="200" y="90" width="120" height="70" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="260" y="120" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">② 网表</text>
+  <text x="260" y="142" font-size="11.5" fill="#5c6772" text-anchor="middle">Netlist→PCB</text>
+
+  <!-- 3 布局 -->
+  <rect x="360" y="90" width="120" height="70" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="420" y="120" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">③ 布局</text>
+  <text x="420" y="142" font-size="11.5" fill="#5c6772" text-anchor="middle">Placement</text>
+
+  <!-- 4 布线 -->
+  <rect x="520" y="90" width="120" height="70" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="580" y="120" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">④ 布线</text>
+  <text x="580" y="142" font-size="11.5" fill="#5c6772" text-anchor="middle">Routing</text>
+
+  <!-- 5 DRC -->
+  <rect x="680" y="90" width="140" height="70" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="750" y="120" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">⑤ DRC/验证</text>
+  <text x="750" y="142" font-size="11.5" fill="#5c6772" text-anchor="middle">Rule Check</text>
+
+  <!-- 箭头 -->
+  <line x1="160" y1="125" x2="198" y2="125" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <line x1="320" y1="125" x2="358" y2="125" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <line x1="480" y1="125" x2="518" y2="125" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <line x1="640" y1="125" x2="678" y2="125" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#ar)"/>
+
+  <!-- 6 输出制造 -->
+  <rect x="360" y="230" width="140" height="70" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="430" y="260" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">⑥ 输出制造文件</text>
+  <text x="430" y="282" font-size="11.5" fill="#5c6772" text-anchor="middle">Gerber / ODB++ / BOM</text>
+
+  <line x1="750" y1="160" x2="750" y2="195" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="750" y1="195" x2="430" y2="195" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="430" y1="195" x2="430" y2="228" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#ar)"/>
+
+  <!-- 反馈环：改原理图回退 -->
+  <path d="M100,160 L100,340 L750,340 L750,300" fill="none" stroke="#b5642e" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="420" y="360" font-size="12.5" fill="#b5642e" text-anchor="middle">问题回溯：DRC/测试发现问题 → 回到原理图或布局修改（不要在 PCB 里硬改）</text>
+  <line x1="750" y1="340" x2="750" y2="302" stroke="#b5642e" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#ar)"/>
+
+  <!-- 工具标注 -->
+  <text x="40" y="400" font-size="12.5" fill="#5c6772">开源免费：KiCad（全流程） · 商业：Altium Designer / Allegro / 立创EDA · 仿真：LTspice / HyperLynx</text>
+</svg>

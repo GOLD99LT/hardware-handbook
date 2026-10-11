@@ -1,0 +1,31 @@
+<svg viewBox="0 0 820 240" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="240" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">RC 上电复位（POR）：电容充电延迟 + 施密特反相器</text>
+
+  <!-- VCC -->
+  <text x="40" y="100" font-size="14" fill="#1a4f8b" font-weight="700">VCC</text>
+  <line x1="90" y1="96" x2="150" y2="96" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="150" y="84" width="60" height="24" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="180" y="101" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">R</text>
+  <line x1="210" y1="96" x2="380" y2="96" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="300" cy="96" r="4.5" fill="#2b3a4a"/>
+
+  <!-- C 到地 -->
+  <line x1="300" y1="96" x2="300" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="284" y1="140" x2="316" y2="140" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="284" y1="158" x2="316" y2="158" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="300" y1="158" x2="300" y2="190" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="286" y1="190" x2="314" y2="190" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="291" y1="197" x2="309" y2="197" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="324" y="152" font-size="13" fill="#1a4f8b" font-weight="700">C</text>
+
+  <!-- 施密特反相器 -->
+  <line x1="380" y1="96" x2="430" y2="96" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="430,76 430,116 490,96" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <circle cx="495" cy="96" r="4" fill="#fff" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="499" y1="96" x2="600" y2="96" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="610" y="100" font-size="13" fill="#1a4f8b" font-weight="700">RESET#</text>
+  <text x="460" y="140" font-size="11" fill="#5c6772" text-anchor="middle">施密特反相器</text>
+
+  <text x="30" y="225" font-size="13" fill="#222a32">上电：C 经 R 充电，节点电压缓慢上升；越过施密特门槛时 RESET# 释放，延时 τ≈RC 保证电源稳定后再跑程序</text>
+</svg>

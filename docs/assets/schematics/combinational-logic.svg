@@ -1,0 +1,65 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="760" height="420" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">4 位行波进位加法器 Ripple-Carry Adder</text>
+
+  <!-- FA0 -->
+  <rect x="90" y="150" width="90" height="90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="135" y="195" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">FA0</text>
+  <line x1="110" y1="100" x2="110" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="98" y="95" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">A0</text>
+  <line x1="160" y1="100" x2="160" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="168" y="95" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">B0</text>
+  <line x1="135" y1="240" x2="135" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="135" y="318" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">S0</text>
+
+  <!-- Cin=0 -->
+  <line x1="40" y1="195" x2="90" y2="195" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="20" y="200" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">Cin=0</text>
+
+  <!-- FA1 -->
+  <rect x="250" y="150" width="90" height="90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="295" y="195" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">FA1</text>
+  <line x1="270" y1="100" x2="270" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="258" y="95" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">A1</text>
+  <line x1="320" y1="100" x2="320" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="328" y="95" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">B1</text>
+  <line x1="295" y1="240" x2="295" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="295" y="318" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">S1</text>
+
+  <!-- carry FA0->FA1 -->
+  <line x1="180" y1="195" x2="250" y2="195" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="180" cy="195" r="4.5" fill="#2b3a4a"/>
+
+  <!-- FA2 -->
+  <rect x="410" y="150" width="90" height="90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="455" y="195" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">FA2</text>
+  <line x1="430" y1="100" x2="430" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="418" y="95" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">A2</text>
+  <line x1="480" y1="100" x2="480" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="488" y="95" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">B2</text>
+  <line x1="455" y1="240" x2="455" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="455" y="318" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">S2</text>
+
+  <line x1="340" y1="195" x2="410" y2="195" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="340" cy="195" r="4.5" fill="#2b3a4a"/>
+
+  <!-- FA3 -->
+  <rect x="570" y="150" width="90" height="90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="615" y="195" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">FA3</text>
+  <line x1="590" y1="100" x2="590" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="578" y="95" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">A3</text>
+  <line x1="640" y1="100" x2="640" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="648" y="95" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">B3</text>
+  <line x1="615" y1="240" x2="615" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="615" y="318" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">S3</text>
+
+  <line x1="500" y1="195" x2="570" y2="195" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="500" cy="195" r="4.5" fill="#2b3a4a"/>
+
+  <!-- Cout -->
+  <line x1="660" y1="195" x2="720" y2="195" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="660" cy="195" r="4.5" fill="#2b3a4a"/>
+  <text x="668" y="188" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">Cout</text>
+
+  <text x="24" y="380" font-size="13" fill="#5a6672" text-anchor="start">进位逐位"行波"传递：高位必须等低位进位算完，总延迟 ≈ 4×FA 延迟</text>
+</svg>

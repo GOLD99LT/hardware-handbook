@@ -23,3 +23,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# 临时排查/诊断脚本（下划线前缀，不入库）
+tools/_*.py

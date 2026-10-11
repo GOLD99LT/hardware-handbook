@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 860 460" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="460" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">接口滤波：π 型滤波 + 共模电感</text>
+
+  <!-- 外部接口（左） -->
+  <rect x="50" y="170" width="100" height="70" fill="#f4eefb" stroke="#7a5fc0" stroke-width="2.2"/>
+  <text x="100" y="200" font-size="12.5" fill="#7a5fc0" text-anchor="middle">外部接口</text>
+  <text x="100" y="222" font-size="11" fill="#5a4a80" text-anchor="middle">连接器</text>
+
+  <!-- 信号线 -->
+  <line x1="150" y1="205" x2="220" y2="205" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- Y 电容 1（入） -->
+  <line x1="220" y1="205" x2="220" y2="235" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="208" y1="235" x2="232" y2="235" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="208" y1="247" x2="232" y2="247" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="240" y="245" font-size="12" fill="#1a4f8b">Cy1</text>
+  <line x1="220" y1="247" x2="220" y2="270" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="206" y1="270" x2="234" y2="270" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="211" y1="277" x2="229" y2="277" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="215" y1="284" x2="225" y2="284" stroke="#2b3a4a" stroke-width="2.4"/>
+
+  <!-- 共模电感 -->
+  <line x1="220" y1="205" x2="260" y2="205" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M260,205 q8,-16 16,0 q8,16 16,0 q8,-16 16,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="292" y="185" font-size="12" fill="#1a4f8b" text-anchor="middle">共模电感 Lcm</text>
+
+  <!-- 串联到 IC -->
+  <line x1="308" y1="205" x2="430" y2="205" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- Y 电容 2（出） -->
+  <line x1="430" y1="205" x2="430" y2="235" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="418" y1="235" x2="442" y2="235" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="418" y1="247" x2="442" y2="247" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="450" y="245" font-size="12" fill="#1a4f8b">Cy2</text>
+  <line x1="430" y1="247" x2="430" y2="270" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="416" y1="270" x2="444" y2="270" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="421" y1="277" x2="439" y2="277" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="425" y1="284" x2="435" y2="284" stroke="#2b3a4a" stroke-width="2.4"/>
+
+  <!-- IC -->
+  <line x1="430" y1="205" x2="540" y2="205" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="540" y="170" width="140" height="70" fill="#eef4fb" stroke="#1a4f8b" stroke-width="2.2"/>
+  <text x="610" y="210" font-size="12.5" fill="#1a4f8b" text-anchor="middle">内部 IC</text>
+
+  <rect x="50" y="330" width="760" height="110" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="70" y="358" font-size="13" fill="#1a4f8b" font-weight="700">机理：</text>
+  <text x="70" y="382" font-size="12.5" fill="#222a32">共模电感对差模信号（有用信号）低阻通过，对共模噪声高阻阻挡；Y 电容把共模噪声旁路到地。</text>
+  <text x="70" y="404" font-size="12.5" fill="#222a32">两个 Y 电容夹一个共模电感 → π 型滤波。所有保护/滤波元件必须紧贴连接器，在噪声进入板子的第一站。</text>
+</svg>

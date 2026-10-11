@@ -1,0 +1,34 @@
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="320" fill="#ffffff"/>
+  <text x="30" y="32" font-size="17" font-weight="700" fill="#222a32">I²C 双向电平转换（N-MOSFET）</text>
+
+  <!-- 3.3V 侧 -->
+  <text x="60" y="130" font-size="12" fill="#b5642e">3.3V 侧 SDA</text>
+  <line x1="180" y1="130" x2="360" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="200" y1="130" x2="200" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="192" y="60" width="16" height="30" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="212" y="80" font-size="10" fill="#1a4f8b">上拉</text>
+  <line x1="200" y1="60" x2="200" y2="48" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="212" y="52" font-size="10" fill="#b5642e">3.3V</text>
+
+  <!-- MOSFET -->
+  <line x1="360" y1="130" x2="360" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="360" y1="110" x2="360" y2="150" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="340" y1="118" x2="340" y2="142" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="375" y="135" font-size="11" fill="#1a4f8b">Q1</text>
+  <!-- 栅极接 3.3V -->
+  <line x1="340" y1="130" x2="300" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="300" y1="130" x2="300" y2="60" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="280" y="55" font-size="10" fill="#7a5fc0">栅极→3.3V</text>
+
+  <!-- 5V 侧 -->
+  <line x1="360" y1="130" x2="540" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="500" y1="130" x2="500" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="492" y="60" width="16" height="30" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="512" y="80" font-size="10" fill="#1a4f8b">上拉</text>
+  <line x1="500" y1="60" x2="500" y2="48" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="512" y="52" font-size="10" fill="#b5642e">5V</text>
+  <text x="550" y="135" font-size="12" fill="#2e7d4f">5V 侧 SDA</text>
+
+  <text x="120" y="250" font-size="12" fill="#7a5fc0">一侧拉低时 MOSFET 导通把另一侧也拉低，高电平由各自上拉拉到对应电压，双向透明</text>
+</svg>

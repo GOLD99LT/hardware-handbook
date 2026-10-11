@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 540" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="540" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">典型四层板叠层剖面 4-Layer Stack-up（自上而下）</text>
+  <text x="30" y="56" font-size="12.5" fill="#5c6772">深色块=铜箔层 · 浅色块=FR4 介质 · 右侧为层名与阻抗角色</text>
+
+  <!-- 叠层带：x 200..520 -->
+  <!-- 顶层阻焊/丝印 -->
+  <rect x="200" y="80" width="320" height="14" fill="#2f6e4f" stroke="#2b3a4a" stroke-width="1.4"/>
+  <text x="540" y="91" font-size="13" fill="#222a32">阻焊绿油 + 丝印</text>
+
+  <!-- L1 顶层信号 -->
+  <rect x="200" y="94" width="320" height="16" fill="#2b3a4a"/>
+  <text x="188" y="106" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="end">L1</text>
+  <text x="540" y="106" font-size="13" fill="#222a32">顶层信号（微带线 Microstrip）</text>
+
+  <!-- Prepreg 介质 -->
+  <rect x="200" y="110" width="320" height="60" fill="#f3efe6" stroke="#2b3a4a" stroke-width="1.2"/>
+  <text x="360" y="145" font-size="12.5" fill="#7a6a3a" text-anchor="middle">半固化片 Prepreg（介质 h₁ ≈ 0.2 mm）</text>
+
+  <!-- L2 GND 平面 -->
+  <rect x="200" y="170" width="320" height="16" fill="#2b3a4a"/>
+  <text x="188" y="182" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="end">L2</text>
+  <text x="540" y="182" font-size="13" fill="#222a32">地平面 GND（完整不分割）</text>
+
+  <!-- Core 介质 -->
+  <rect x="200" y="186" width="320" height="70" fill="#e9e2d2" stroke="#2b3a4a" stroke-width="1.2"/>
+  <text x="360" y="225" font-size="12.5" fill="#7a6a3a" text-anchor="middle">芯板 Core（介质 h₂ ≈ 0.7 mm）</text>
+
+  <!-- L3 PWR 平面 -->
+  <rect x="200" y="256" width="320" height="16" fill="#2b3a4a"/>
+  <text x="188" y="268" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="end">L3</text>
+  <text x="540" y="268" font-size="13" fill="#222a32">电源平面 PWR（与 L2 构成平面电容）</text>
+
+  <!-- Prepreg 介质 -->
+  <rect x="200" y="272" width="320" height="60" fill="#f3efe6" stroke="#2b3a4a" stroke-width="1.2"/>
+  <text x="360" y="307" font-size="12.5" fill="#7a6a3a" text-anchor="middle">半固化片 Prepreg（介质 h₃ ≈ 0.2 mm）</text>
+
+  <!-- L4 底层信号 -->
+  <rect x="200" y="332" width="320" height="16" fill="#2b3a4a"/>
+  <text x="188" y="344" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="end">L4</text>
+  <text x="540" y="344" font-size="13" fill="#222a32">底层信号（微带线）</text>
+
+  <!-- 底层阻焊 -->
+  <rect x="200" y="348" width="320" height="14" fill="#2f6e4f" stroke="#2b3a4a" stroke-width="1.4"/>
+  <text x="540" y="359" font-size="13" fill="#222a32">阻焊绿油</text>
+
+  <!-- 厚度括号 -->
+  <line x1="540" y1="80" x2="540" y2="80" stroke="#2b3a4a" stroke-width="0"/>
+  <line x1="150" y1="80" x2="150" y2="362" stroke="#2b3a4a" stroke-width="1.6"/>
+  <line x1="144" y1="80" x2="156" y2="80" stroke="#2b3a4a" stroke-width="1.6"/>
+  <line x1="144" y1="362" x2="156" y2="362" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="120" y="225" font-size="13" fill="#222a32" text-anchor="middle" transform="rotate(-90 120 225)">板厚 ≈ 1.6 mm（示意非比例）</text>
+
+  <!-- 回流示意：L1 信号下方即 L2 GND -->
+  <line x1="300" y1="102" x2="300" y2="178" stroke="#b5642e" stroke-width="2" stroke-dasharray="5,4"/>
+  <text x="312" y="140" font-size="12.5" fill="#b5642e">信号电流 →</text>
+  <text x="312" y="156" font-size="12.5" fill="#b5642e">回流紧贴下方 GND</text>
+
+  <!-- 要点框 -->
+  <rect x="60" y="400" width="700" height="110" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="80" y="428" font-size="14" fill="#1a4f8b" font-weight="700">为什么这样叠：</text>
+  <text x="80" y="452" font-size="13" fill="#222a32">① 信号层紧邻完整参考平面（L1↔L2、L4↔L3），回流路径最短、环路面积最小；</text>
+  <text x="80" y="474" font-size="13" fill="#222a32">② L2/L3 两张相邻平面天然构成平面电容，供高速去耦；</text>
+  <text x="80" y="496" font-size="13" fill="#222a32">③ 避免把两个信号层贴在一起做平行长走线（串扰大），电源/地平面优先于多布信号线。</text>
+</svg>

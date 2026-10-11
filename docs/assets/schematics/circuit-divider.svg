@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="400" height="260" fill="#ffffff"/>
+  <!-- Vin 顶部输入 -->
+  <text x="60" y="55" font-size="17" fill="#2b3a4a">Vin</text>
+  <line x1="90" y1="50" x2="200" y2="50" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- R1 垂直电阻 -->
+  <rect x="188" y="60" width="24" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="200" y1="50" x2="200" y2="60" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="230" y="90" font-size="16" fill="#1a4f8b" font-weight="700">R1</text>
+  <!-- Vout 节点 -->
+  <line x1="200" y1="110" x2="200" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="200" cy="120" r="4.5" fill="#2b3a4a"/>
+  <line x1="200" y1="120" x2="310" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="320" y="126" font-size="17" fill="#1a4f8b" font-weight="700">Vout</text>
+  <!-- R2 垂直电阻 -->
+  <rect x="188" y="130" width="24" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="230" y="160" font-size="16" fill="#1a4f8b" font-weight="700">R2</text>
+  <!-- 接地 -->
+  <line x1="200" y1="180" x2="200" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="186" y1="210" x2="214" y2="210" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="191" y1="217" x2="209" y2="217" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="195" y1="224" x2="205" y2="224" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

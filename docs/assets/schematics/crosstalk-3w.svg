@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="360" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：3W 规则与保护地走线（Guard Trace）</text>
+
+  <!-- 三条线，中心间距 3W -->
+  <line x1="100" y1="140" x2="720" y2="140" stroke="#2b3a4a" stroke-width="8"/>
+  <line x1="100" y1="220" x2="720" y2="220" stroke="#2f6e4f" stroke-width="4"/>
+  <line x1="100" y1="300" x2="720" y2="300" stroke="#2b3a4a" stroke-width="8"/>
+
+  <!-- W 标注 -->
+  <line x1="740" y1="136" x2="740" y2="144" stroke="#2b3a4a" stroke-width="1.2"/>
+  <text x="750" y="143" font-size="12" fill="#222a32">线宽 W</text>
+
+  <!-- 3W 间距标注（中心线到中心线） -->
+  <line x1="660" y1="140" x2="660" y2="220" stroke="#b5642e" stroke-width="1.4"/>
+  <text x="670" y="185" font-size="12" fill="#b5642e">中心距 3W</text>
+
+  <text x="100" y="125" font-size="12" fill="#2b3a4a">关键信号 A</text>
+  <text x="100" y="215" font-size="12" fill="#2f6e4f">保护地走线（接地过孔）</text>
+  <text x="100" y="290" font-size="12" fill="#2b3a4a">关键信号 B</text>
+
+  <text x="60" y="340" font-size="12.5" fill="#222a32">3W：线中心距 ≥ 3 倍线宽，串扰降到 ~5%；中间加一条接地 guard trace 并打过孔，进一步屏蔽。</text>
+</svg>

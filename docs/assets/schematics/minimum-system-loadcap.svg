@@ -1,0 +1,42 @@
+<svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="760" height="320" fill="#ffffff"/>
+  <text x="30" y="32" font-size="17" font-weight="700" fill="#222a32">晶振负载电容 CL 的反推</text>
+
+  <!-- 晶振 -->
+  <rect x="300" y="90" width="160" height="60" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="380" y="116" font-size="14" fill="#222a32" text-anchor="middle">8MHz 晶振</text>
+  <text x="380" y="138" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">规格 CL=12pF</text>
+
+  <!-- 左右负载节点 -->
+  <line x1="240" y1="120" x2="300" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="460" y1="120" x2="520" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="240" cy="120" r="4.5" fill="#2b3a4a"/>
+  <circle cx="520" cy="120" r="4.5" fill="#2b3a4a"/>
+
+  <!-- C1 -->
+  <line x1="240" y1="120" x2="240" y2="160" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="222" y1="160" x2="258" y2="160" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="222" y1="180" x2="258" y2="180" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="240" y1="180" x2="240" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="226" y1="210" x2="254" y2="210" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="231" y1="217" x2="249" y2="217" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="235" y1="224" x2="245" y2="224" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="200" y="176" font-size="12" fill="#1a4f8b" font-weight="700">C1</text>
+
+  <!-- C2 -->
+  <line x1="520" y1="120" x2="520" y2="160" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="502" y1="160" x2="538" y2="160" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="502" y1="180" x2="538" y2="180" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="520" y1="180" x2="520" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="506" y1="210" x2="534" y2="210" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="511" y1="217" x2="529" y2="217" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="515" y1="224" x2="525" y2="224" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="545" y="176" font-size="12" fill="#1a4f8b" font-weight="700">C2</text>
+
+  <!-- 寄生电容标注 -->
+  <text x="380" y="70" font-size="12" fill="#7a5fc0" text-anchor="middle">PCB 走线 + 引脚寄生 Cstray ≈ 3~5pF</text>
+
+  <!-- 公式 -->
+  <text x="380" y="275" font-size="14" fill="#222a32" text-anchor="middle">CL = (C1·C2)/(C1+C2) + Cstray</text>
+  <text x="380" y="298" font-size="12" fill="#b5642e" text-anchor="middle">等容取 C1=C2，则 C1=C2 ≈ 2(CL−Cstray)</text>
+</svg>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="360" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：裸露焊盘(EP)与散热过孔阵列</text>
+
+  <!-- IC + EP -->
+  <rect x="330" y="90" width="160" height="80" fill="#fde2e2" stroke="#b03a3a" stroke-width="2.2"/>
+  <text x="410" y="135" font-size="13" fill="#b03a3a" text-anchor="middle">功率 IC + 裸露焊盘 EP</text>
+
+  <!-- EP 铜箔 -->
+  <rect x="290" y="180" width="240" height="60" fill="#d9d4c7" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="410" y="215" font-size="12" fill="#7a6a3a" text-anchor="middle">顶层散热铜箔</text>
+
+  <!-- 散热过孔阵列 -->
+  <g fill="#b03a3a">
+    <circle cx="330" cy="210" r="5"/>
+    <circle cx="370" cy="210" r="5"/>
+    <circle cx="410" cy="210" r="5"/>
+    <circle cx="450" cy="210" r="5"/>
+    <circle cx="490" cy="210" r="5"/>
+    <circle cx="330" cy="230" r="5"/>
+    <circle cx="370" cy="230" r="5"/>
+    <circle cx="410" cy="230" r="5"/>
+    <circle cx="450" cy="230" r="5"/>
+    <circle cx="490" cy="230" r="5"/>
+  </g>
+
+  <!-- 内层/底层铜 -->
+  <rect x="290" y="260" width="240" height="30" fill="#d9d4c7" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="410" y="280" font-size="11.5" fill="#7a6a3a" text-anchor="middle">内层/底层铺铜扩散热</text>
+
+  <text x="60" y="330" font-size="12.5" fill="#222a32">EP 焊盘下方打一排散热过孔（thermal vias），把热导到内层/底层大面积铜箔散掉。</text>
+  <text x="60" y="352" font-size="12.5" fill="#b5642e">过孔内径 0.3mm 左右、阵列排列；注意过孔别正好在焊接区导致锡漏光（塞孔或阻焊定义）。</text>
+</svg>

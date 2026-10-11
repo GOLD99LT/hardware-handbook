@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="320" fill="#ffffff"/>
+  <text x="360" y="34" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">电子负载：恒流(CC)/恒压(CV)/恒阻(CR) 拉载被测电源</text>
+  <!-- 被测电源 -->
+  <rect x="80" y="120" width="130" height="70" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="145" y="148" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">被测电源</text>
+  <text x="145" y="168" font-size="12" fill="#b5642e" text-anchor="middle">如 LDO/DC-DC</text>
+  <!-- 输出到负载 -->
+  <line x1="210" y1="145" x2="330" y2="145" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="210" y1="165" x2="330" y2="165" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 电子负载 -->
+  <rect x="330" y="110" width="150" height="90" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="405" y="140" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">电子负载</text>
+  <text x="405" y="160" font-size="12" fill="#b5642e" text-anchor="middle">设 Iset/Vset/Rset</text>
+  <text x="405" y="180" font-size="12" fill="#2e7d32" text-anchor="middle">可编程拉载</text>
+  <!-- 监测 -->
+  <line x1="480" y1="155" x2="560" y2="155" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="600" y="150" font-size="13" fill="#7a5fc0">示波器测 Vout</text>
+  <text x="600" y="170" font-size="13" fill="#7a5fc0">万用表测 Iout</text>
+  <text x="360" y="250" font-size="13" fill="#7a5fc0" text-anchor="middle">CC 模式：拉恒定电流，测电源调整率；CR 模式：模拟电阻负载</text>
+</svg>

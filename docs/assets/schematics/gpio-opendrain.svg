@@ -1,0 +1,36 @@
+<svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="360" fill="#ffffff"/>
+  <text x="30" y="32" font-size="17" font-weight="700" fill="#222a32">开漏输出 + 外部上拉（兼电平转换）</text>
+
+  <!-- MCU 框 -->
+  <rect x="120" y="80" width="200" height="220" fill="#f7f9fb" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="220" y="104" font-size="12" fill="#5c6772" text-anchor="middle">MCU（仅 NMOS，无 PMOS）</text>
+
+  <!-- NMOS -->
+  <line x1="220" y1="130" x2="220" y2="240" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="200" y1="150" x2="200" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="150" y1="185" x2="200" y2="185" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="150" y="178" font-size="12" fill="#1a4f8b">NMOS</text>
+  <!-- source 到地 -->
+  <line x1="220" y1="240" x2="220" y2="270" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="206" y1="270" x2="234" y2="270" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="211" y1="277" x2="229" y2="277" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="215" y1="284" x2="225" y2="284" stroke="#2b3a4a" stroke-width="2.4"/>
+
+  <!-- 漏极 = 引脚 -->
+  <line x1="220" y1="130" x2="220" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="220" y1="130" x2="480" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="220" cy="130" r="4.5" fill="#2b3a4a"/>
+
+  <!-- 外部上拉电阻到 +5V -->
+  <line x1="480" y1="130" x2="480" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="472" y="50" width="16" height="40" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="500" y="76" font-size="12" fill="#1a4f8b" font-weight="700">4.7kΩ</text>
+  <line x1="480" y1="50" x2="480" y2="40" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="496" y="44" font-size="13" fill="#b5642e">+5V</text>
+
+  <!-- 输出 -->
+  <text x="500" y="134" font-size="13" fill="#222a32">→ 后级(5V)</text>
+
+  <text x="120" y="330" font-size="12" fill="#7a5fc0">NMOS 通→拉低≈0V；NMOS 断→被上拉拉到 +5V（3.3V MCU 也能输出 5V 电平）</text>
+</svg>

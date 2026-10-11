@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 400" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="400" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：差分对 Differential Pair</text>
+
+  <!-- 驱动 -->
+  <rect x="50" y="150" width="100" height="90" fill="#eef4fb" stroke="#1a4f8b" stroke-width="2.2"/>
+  <text x="100" y="185" font-size="12" fill="#1a4f8b" text-anchor="middle">差分驱动</text>
+  <text x="100" y="205" font-size="11" fill="#3a5a80" text-anchor="middle">+ / − 反相</text>
+
+  <!-- P 线 -->
+  <line x1="150" y1="175" x2="640" y2="175" stroke="#2b3a4a" stroke-width="3"/>
+  <text x="160" y="165" font-size="12" fill="#1a4f8b">P（+）</text>
+  <!-- N 线 -->
+  <line x1="150" y1="215" x2="640" y2="215" stroke="#2b3a4a" stroke-width="3"/>
+  <text x="160" y="235" font-size="12" fill="#1a4f8b">N（−）</text>
+
+  <!-- 间距 s -->
+  <line x1="660" y1="175" x2="660" y2="215" stroke="#b5642e" stroke-width="1.4"/>
+  <text x="670" y="200" font-size="12" fill="#b5642e">对内间距 s</text>
+
+  <!-- 接收 -->
+  <rect x="640" y="150" width="130" height="90" fill="#fdf3e7" stroke="#b5642e" stroke-width="2.2"/>
+  <text x="705" y="185" font-size="12" fill="#b5642e" text-anchor="middle">差分接收</text>
+  <text x="705" y="205" font-size="11" fill="#7a5a30" text-anchor="middle">读 VP−VN</text>
+
+  <!-- 反相波形标注 -->
+  <text x="300" y="145" font-size="11.5" fill="#2f6e4f">↑P 上升 ↓N 下降（等量反相）</text>
+
+  <rect x="60" y="280" width="720" height="100" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="80" y="308" font-size="13" fill="#1a4f8b" font-weight="700">机理与定量：</text>
+  <text x="80" y="332" font-size="12.5" fill="#222a32">两线走等量反相信号，外部共模噪声同时耦合到两线，接收端相减被抵消 → 抗共模干扰强、辐射小。</text>
+  <text x="80" y="354" font-size="12.5" fill="#222a32">差分阻抗 Zdiff = 2 Z0 (1−k)，k 为耦合系数；USB2.0 要求 Zdiff≈90Ω±10%，对内等长（skew&lt;5mil）。</text>
+</svg>

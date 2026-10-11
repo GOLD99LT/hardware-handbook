@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="420" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：PCB 厂工艺能力（设计规则下限）</text>
+
+  <!-- 表格行 -->
+  <g font-size="13">
+    <rect x="80" y="70" width="660" height="40" fill="#eef4fb" stroke="#2b3a4a" stroke-width="1.6"/>
+    <text x="100" y="95" fill="#1a4f8b" font-weight="700">项目</text>
+    <text x="380" y="95" fill="#1a4f8b" font-weight="700">常规工艺下限</text>
+    <text x="600" y="95" fill="#1a4f8b" font-weight="700">说明</text>
+
+    <rect x="80" y="110" width="660" height="36" fill="#fff" stroke="#2b3a4a" stroke-width="1"/>
+    <text x="100" y="133" fill="#222a32">最小线宽/间距</text>
+    <text x="380" y="133" fill="#b5642e">0.127mm (5mil)</text>
+    <text x="600" y="133" fill="#5c6772">新手用 0.2mm 更稳</text>
+
+    <rect x="80" y="146" width="660" height="36" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1"/>
+    <text x="100" y="169" fill="#222a32">最小过孔(钻/盘)</text>
+    <text x="380" y="169" fill="#b5642e">0.3/0.6mm</text>
+    <text x="600" y="169" fill="#5c6772">HDI 可更小</text>
+
+    <rect x="80" y="182" width="660" height="36" fill="#fff" stroke="#2b3a4a" stroke-width="1"/>
+    <text x="100" y="205" fill="#222a32">焊环 Annular Ring</text>
+    <text x="380" y="205" fill="#b5642e">≥ 0.15mm</text>
+    <text x="600" y="205" fill="#5c6772">防孔偏破盘</text>
+
+    <rect x="80" y="218" width="660" height="36" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1"/>
+    <text x="100" y="241" fill="#222a32">阻焊桥 Solder Mask</text>
+    <text x="380" y="241" fill="#b5642e">≥ 0.1mm</text>
+    <text x="600" y="241" fill="#5c6772">防桥连</text>
+
+    <rect x="80" y="254" width="660" height="36" fill="#fff" stroke="#2b3a4a" stroke-width="1"/>
+    <text x="100" y="277" fill="#222a32">丝印上焊盘</text>
+    <text x="380" y="277" fill="#b5642e">不允许</text>
+    <text x="600" y="277" fill="#5c6772">影响上锡</text>
+  </g>
+
+  <text x="80" y="330" font-size="12.5" fill="#222a32">DFM = Design for Manufacturing：设计前先看板厂工艺能力表，别画超出其能力的线宽/间距。</text>
+  <text x="80" y="355" font-size="12.5" fill="#b5642e">经验：打样用常规工艺（5mil），省钱又稳；高密度 HDI 才加钱做细线路/微孔。</text>
+</svg>

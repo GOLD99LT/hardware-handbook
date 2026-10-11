@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="360" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：钢网(Stencil)与锡膏印刷</text>
+
+  <!-- 钢网层 -->
+  <rect x="150" y="120" width="520" height="30" fill="#9aa5b0" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="690" y="140" font-size="12" fill="#5c6772">钢网(薄不锈钢片)</text>
+  <!-- 开口 -->
+  <rect x="250" y="120" width="40" height="30" fill="#fff"/>
+  <rect x="400" y="120" width="40" height="30" fill="#fff"/>
+  <text x="380" y="110" font-size="11.5" fill="#1a4f8b">开窗=焊盘形状</text>
+
+  <!-- 锡膏 -->
+  <rect x="250" y="150" width="40" height="18" fill="#d9d4c7"/>
+  <rect x="400" y="150" width="40" height="18" fill="#d9d4c7"/>
+  <text x="470" y="163" font-size="12" fill="#7a6a3a">锡膏漏到焊盘上</text>
+
+  <!-- PCB + 焊盘 -->
+  <rect x="150" y="180" width="520" height="40" fill="#f3efe6" stroke="#2b3a4a" stroke-width="1.6"/>
+  <rect x="250" y="185" width="40" height="30" fill="#d9d4c7"/>
+  <rect x="400" y="185" width="40" height="30" fill="#d9d4c7"/>
+  <text x="690" y="205" font-size="12" fill="#7a6a3a">PCB 焊盘</text>
+
+  <text x="60" y="270" font-size="12.5" fill="#222a32">钢网厚度通常 0.1~0.15mm。开口面积比(Area Ratio)&gt;0.66 才能顺利脱模（锡膏不堵孔）。</text>
+  <text x="60" y="298" font-size="12.5" fill="#222a32">细间距 QFP/BGA 开口要比焊盘略小（减少锡量防桥连）；大焊盘开阶梯钢网。</text>
+  <text x="60" y="326" font-size="12.5" fill="#b5642e">DFM 提示：封装选得不好（如 0201），钢网印刷良率骤降；设计阶段就考虑可印刷性。</text>
+</svg>

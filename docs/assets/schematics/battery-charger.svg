@@ -1,0 +1,45 @@
+<svg viewBox="0 0 860 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="320" fill="#ffffff"/>
+  <text x="30" y="30" font-size="18" font-weight="700" fill="#222a32">线性 CC/CV 充电 IC（如 TP4056）：USB 5V → 锂电 4.2V</text>
+
+  <!-- VIN -->
+  <text x="40" y="120" font-size="14" fill="#1a4f8b" font-weight="700">VIN (USB 5V)</text>
+  <line x1="150" y1="116" x2="240" y2="116" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 充电 IC -->
+  <rect x="240" y="80" width="160" height="120" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="320" y="130" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">充电 IC</text>
+  <text x="320" y="150" font-size="11" fill="#5c6772" text-anchor="middle">CC/CV 线性</text>
+  <text x="320" y="168" font-size="11" fill="#5c6772" text-anchor="middle">BAT 稳压 4.2V</text>
+
+  <!-- PROG 设定电阻 -->
+  <line x1="320" y1="200" x2="320" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="290" y="240" width="60" height="24" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="320" y="257" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rprog</text>
+  <line x1="320" y1="264" x2="320" y2="284" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="306" y1="284" x2="334" y2="284" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="311" y1="291" x2="329" y2="291" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="360" y="257" font-size="11" fill="#5c6772">设充电电流</text>
+
+  <!-- BAT 输出 -->
+  <line x1="400" y1="140" x2="560" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="400" cy="140" r="4.5" fill="#2b3a4a"/>
+  <text x="430" y="132" font-size="12" fill="#1a4f8b" font-weight="700">BAT</text>
+
+  <!-- 电池 -->
+  <line x1="560" y1="140" x2="600" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="600" y1="118" x2="600" y2="162" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="612" y1="128" x2="612" y2="152" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="624" y1="118" x2="624" y2="162" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="624" y1="140" x2="700" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="660" y="110" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">锂电 3.7V</text>
+  <line x1="700" y1="140" x2="700" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="700" y1="200" x2="400" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="400" y1="200" x2="400" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- CHRG 状态 -->
+  <line x1="240" y1="100" x2="180" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="120" y="104" font-size="12" fill="#5c6772">CHRG 状态 LED</text>
+
+  <text x="30" y="305" font-size="13" fill="#222a32">$I_{chg}\approx1200/R_{prog}(k\Omega)$：Rprog=1.2kΩ → 1A；CC 恒流充到 4.2V 后转 CV 恒压涓流</text>
+</svg>

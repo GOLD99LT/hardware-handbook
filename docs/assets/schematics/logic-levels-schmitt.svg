@@ -1,0 +1,19 @@
+<svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="280" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">施密特触发器输入 Schmitt Trigger（带迟滞）</text>
+
+  <!-- Schmitt buffer triangle -->
+  <text x="60" y="140" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">输入(带噪)</text>
+  <line x1="140" y1="136" x2="240" y2="136" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="240,100 240,172 320,136" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.4"/>
+  <!-- hysteresis curve inside -->
+  <path d="M258,155 L258,118 L288,118" fill="none" stroke="#1a4f8b" stroke-width="2.0"/>
+  <path d="M288,155 L288,118" fill="none" stroke="#1a4f8b" stroke-width="2.0"/>
+  <line x1="320" y1="136" x2="440" y2="136" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="448" y="141" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">输出(干净方波)</text>
+
+  <!-- thresholds annotation -->
+  <text x="240" y="210" font-size="13" fill="#b5642e" text-anchor="start" font-weight="700">VT+ = 上限阈值(上升沿触发)</text>
+  <text x="240" y="235" font-size="13" fill="#2a7a4a" text-anchor="start" font-weight="700">VT− = 下限阈值(下降沿触发)</text>
+  <text x="240" y="260" font-size="13" fill="#5a6672" text-anchor="start" font-weight="700">迟滞窗口 = VT+ − VT−，窗口内噪声不翻转</text>
+</svg>

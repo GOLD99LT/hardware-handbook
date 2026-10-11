@@ -1,0 +1,47 @@
+<svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="420" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">TTL 与 CMOS 输入/输出电平阈值（5V 供电）Logic Levels</text>
+
+  <!-- voltage axis -->
+  <line x1="80" y1="60" x2="80" y2="360" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="40" y="365" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">0V</text>
+  <text x="40" y="65" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">5V</text>
+
+  <!-- TTL column -->
+  <text x="220" y="55" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">TTL (74LS)</text>
+  <!-- VOH min 2.4 -->
+  <line x1="140" y1="120" x2="300" y2="120" stroke="#2a7a4a" stroke-width="2.2"/>
+  <text x="310" y="125" font-size="12" fill="#2a7a4a" text-anchor="start" font-weight="700">VOH(min)=2.4V</text>
+  <!-- VIH min 2.0 -->
+  <line x1="140" y1="150" x2="300" y2="150" stroke="#1a4f8b" stroke-width="2.2"/>
+  <text x="310" y="155" font-size="12" fill="#1a4f8b" text-anchor="start" font-weight="700">VIH(min)=2.0V</text>
+  <!-- forbidden band between 0.8 and 2.0 -->
+  <rect x="140" y="190" width="160" height="60" fill="#fdecec" stroke="#b02a2a" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="220" y="225" font-size="12" fill="#b02a2a" text-anchor="middle" font-weight="700">不确定区</text>
+  <!-- VIL max 0.8 -->
+  <line x1="140" y1="190" x2="300" y2="190" stroke="#b5642e" stroke-width="2.2"/>
+  <text x="310" y="195" font-size="12" fill="#b5642e" text-anchor="start" font-weight="700">VIL(max)=0.8V</text>
+  <!-- VOL max 0.4 -->
+  <line x1="140" y1="270" x2="300" y2="270" stroke="#5a6672" stroke-width="2.2"/>
+  <text x="310" y="275" font-size="12" fill="#5a6672" text-anchor="start" font-weight="700">VOL(max)=0.4V</text>
+
+  <!-- CMOS column -->
+  <text x="520" y="55" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">CMOS (74HC)</text>
+  <!-- VOH ~5 -->
+  <line x1="440" y1="70" x2="600" y2="70" stroke="#2a7a4a" stroke-width="2.2"/>
+  <text x="610" y="75" font-size="12" fill="#2a7a4a" text-anchor="start" font-weight="700">VOH≈5V</text>
+  <!-- VIH min 3.5 -->
+  <line x1="440" y1="130" x2="600" y2="130" stroke="#1a4f8b" stroke-width="2.2"/>
+  <text x="610" y="135" font-size="12" fill="#1a4f8b" text-anchor="start" font-weight="700">VIH(min)=3.5V</text>
+  <!-- forbidden 1.5~3.5 -->
+  <rect x="440" y="180" width="160" height="70" fill="#fdecec" stroke="#b02a2a" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="520" y="220" font-size="12" fill="#b02a2a" text-anchor="middle" font-weight="700">不确定区更宽</text>
+  <!-- VIL max 1.5 -->
+  <line x1="440" y1="180" x2="600" y2="180" stroke="#b5642e" stroke-width="2.2"/>
+  <text x="610" y="185" font-size="12" fill="#b5642e" text-anchor="start" font-weight="700">VIL(max)=1.5V</text>
+  <!-- VOL ~0 -->
+  <line x1="440" y1="330" x2="600" y2="330" stroke="#5a6672" stroke-width="2.2"/>
+  <text x="610" y="335" font-size="12" fill="#5a6672" text-anchor="start" font-weight="700">VOL≈0V</text>
+
+  <text x="24" y="395" font-size="13" fill="#5a6672" text-anchor="start">TTL 输出高电平 2.4V 却达不到 CMOS 的 VIH=3.5V → 直接互连会判错，需电平转换</text>
+</svg>

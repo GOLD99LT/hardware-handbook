@@ -1,0 +1,48 @@
+<svg viewBox="0 0 880 380" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="880" height="380" fill="#ffffff"/>
+  <text x="30" y="32" font-size="18" font-weight="700" fill="#222a32">RS-485 差分总线（两端 120Ω 终端匹配）</text>
+
+  <!-- A/B 双线 -->
+  <line x1="90" y1="110" x2="800" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="150" x2="800" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="810" y="114" font-size="12" fill="#1a4f8b">A</text>
+  <text x="810" y="154" font-size="12" fill="#1a4f8b">B</text>
+
+  <!-- 左终端 120Ω -->
+  <line x1="90" y1="110" x2="90" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="82" y="130" width="16" height="0" fill="none"/>
+  <line x1="90" y1="150" x2="90" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="82" y="128" width="16" height="4" fill="#2b3a4a"/>
+  <text x="40" y="135" font-size="11" fill="#b5642e">120Ω</text>
+
+  <!-- 右终端 120Ω -->
+  <line x1="800" y1="110" x2="800" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="792" y="128" width="16" height="4" fill="#2b3a4a"/>
+  <text x="810" y="135" font-size="11" fill="#b5642e">120Ω</text>
+
+  <!-- 节点1 -->
+  <line x1="220" y1="110" x2="220" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="220" y1="150" x2="220" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="220" cy="110" r="4.5" fill="#2b3a4a"/>
+  <circle cx="220" cy="150" r="4.5" fill="#2b3a4a"/>
+  <rect x="160" y="200" width="120" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="220" y="230" font-size="12" fill="#222a32" text-anchor="middle">收发器+MCU</text>
+
+  <!-- 节点2 -->
+  <line x1="440" y1="110" x2="440" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="440" y1="150" x2="440" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="440" cy="110" r="4.5" fill="#2b3a4a"/>
+  <circle cx="440" cy="150" r="4.5" fill="#2b3a4a"/>
+  <rect x="380" y="200" width="120" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="440" y="230" font-size="12" fill="#222a32" text-anchor="middle">收发器+MCU</text>
+
+  <!-- 节点3 -->
+  <line x1="660" y1="110" x2="660" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="660" y1="150" x2="660" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="660" cy="110" r="4.5" fill="#2b3a4a"/>
+  <circle cx="660" cy="150" r="4.5" fill="#2b3a4a"/>
+  <rect x="600" y="200" width="120" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="660" y="230" font-size="12" fill="#222a32" text-anchor="middle">收发器+MCU</text>
+
+  <text x="120" y="300" font-size="13" fill="#7a5fc0">双绞线 A/B；只在总线最远两端各并 120Ω（=线缆特性阻抗），中间节点不端接，菊花链手拉手</text>
+</svg>

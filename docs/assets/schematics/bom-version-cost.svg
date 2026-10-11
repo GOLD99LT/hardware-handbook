@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="320" fill="#ffffff"/>
+  <text x="360" y="34" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">BOM 成本瀑布：从器件价到整机成本，逐项累加受控</text>
+  <!-- 瀑布柱 -->
+  <rect x="80" y="120" width="80" height="140" fill="#1a4f8b"/>
+  <text x="120" y="275" font-size="12" fill="#2b3a4a" text-anchor="middle">主控</text>
+  <text x="120" y="112" font-size="12" fill="#1a4f8b" text-anchor="middle">¥12</text>
+  <rect x="180" y="150" width="80" height="110" fill="#3949ab"/>
+  <text x="220" y="275" font-size="12" fill="#2b3a4a" text-anchor="middle">电源</text>
+  <text x="220" y="142" font-size="12" fill="#3949ab" text-anchor="middle">¥8</text>
+  <rect x="280" y="180" width="80" height="80" fill="#5e60ce"/>
+  <text x="320" y="275" font-size="12" fill="#2b3a4a" text-anchor="middle">无源件</text>
+  <text x="320" y="172" font-size="12" fill="#5e60ce" text-anchor="middle">¥5</text>
+  <rect x="380" y="205" width="80" height="55" fill="#6930c3"/>
+  <text x="420" y="275" font-size="12" fill="#2b3a4a" text-anchor="middle">PCB</text>
+  <text x="420" y="197" font-size="12" fill="#6930c3" text-anchor="middle">¥3.5</text>
+  <rect x="480" y="225" width="80" height="35" fill="#7400b8"/>
+  <text x="520" y="275" font-size="12" fill="#2b3a4a" text-anchor="middle">结构件</text>
+  <text x="520" y="217" font-size="12" fill="#7400b8" text-anchor="middle">¥2</text>
+  <rect x="580" y="240" width="80" height="20" fill="#b5179e"/>
+  <text x="620" y="275" font-size="12" fill="#2b3a4a" text-anchor="middle">贴片</text>
+  <text x="620" y="232" font-size="12" fill="#b5179e" text-anchor="middle">¥1.5</text>
+  <text x="360" y="305" font-size="13" fill="#7a5fc0" text-anchor="middle">BOM 总成本 ≈ ¥32：主控+电源占大头，是降本重点</text>
+</svg>

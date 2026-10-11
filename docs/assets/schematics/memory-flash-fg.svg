@@ -1,0 +1,23 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="600" height="300" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">Flash 浮栅晶体管 Floating-Gate Transistor</text>
+
+  <!-- control gate -->
+  <rect x="240" y="70" width="120" height="24" fill="#dce6f2" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="300" y="87" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">控制栅 Control Gate</text>
+
+  <!-- floating gate -->
+  <rect x="255" y="120" width="90" height="24" fill="#fbfdff" stroke="#b5642e" stroke-width="2.2" stroke-dasharray="5,3"/>
+  <text x="300" y="137" font-size="13" fill="#b5642e" text-anchor="middle" font-weight="700">浮栅 Floating Gate</text>
+
+  <!-- channel / substrate -->
+  <line x1="150" y1="180" x2="450" y2="180" stroke="#2b3a4a" stroke-width="2.6"/>
+  <!-- source -->
+  <line x1="180" y1="180" x2="180" y2="230" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="180" y="250" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">Source</text>
+  <!-- drain -->
+  <line x1="420" y1="180" x2="420" y2="230" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="420" y="250" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">Drain</text>
+
+  <text x="24" y="280" font-size="13" fill="#5a6672" text-anchor="start">浮栅被氧化层包围、电荷进不去也出不来 → 断电后数据保持；靠隧道效应写入/擦除</text>
+</svg>

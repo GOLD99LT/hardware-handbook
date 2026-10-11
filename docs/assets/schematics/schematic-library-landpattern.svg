@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="420" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：贴片封装焊盘（Land Pattern）尺寸 — 以 0805 为例</text>
+  <text x="30" y="56" font-size="12.5" fill="#5c6772">焊盘画大了桥连/画小了立碑，必须按 IPC-7351 或元件数据手册</text>
+
+  <!-- 两个焊盘 -->
+  <rect x="230" y="150" width="70" height="80" fill="#d9d4c7" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="480" y="150" width="70" height="80" fill="#d9d4c7" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 元件本体虚线 -->
+  <rect x="300" y="160" width="180" height="60" fill="none" stroke="#b5642e" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="390" y="195" font-size="13" fill="#b5642e" text-anchor="middle">0805 元件本体</text>
+
+  <!-- 尺寸标注 -->
+  <!-- 焊盘间距 A -->
+  <line x1="300" y1="260" x2="480" y2="260" stroke="#2b3a4a" stroke-width="1.4"/>
+  <line x1="300" y1="254" x2="300" y2="266" stroke="#2b3a4a" stroke-width="1.4"/>
+  <line x1="480" y1="254" x2="480" y2="266" stroke="#2b3a4a" stroke-width="1.4"/>
+  <text x="390" y="278" font-size="13" fill="#1a4f8b" text-anchor="middle">焊盘间距 A ≈ 0.9~1.0 mm</text>
+
+  <!-- 焊盘宽 -->
+  <line x1="230" y1="120" x2="300" y2="120" stroke="#2b3a4a" stroke-width="1.4"/>
+  <line x1="230" y1="114" x2="230" y2="126" stroke="#2b3a4a" stroke-width="1.4"/>
+  <line x1="300" y1="114" x2="300" y2="126" stroke="#2b3a4a" stroke-width="1.4"/>
+  <text x="265" y="110" font-size="12.5" fill="#1a4f8b" text-anchor="middle">焊盘宽 W≈1.0mm</text>
+
+  <!-- 元件本体尺寸标注 -->
+  <line x1="300" y1="130" x2="480" y2="130" stroke="#b5642e" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <text x="390" y="148" font-size="12" fill="#b5642e" text-anchor="middle">本体长 2.0mm</text>
+
+  <rect x="60" y="310" width="700" height="90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="80" y="338" font-size="13" fill="#1a4f8b" font-weight="700">工程权衡：</text>
+  <text x="80" y="362" font-size="12.5" fill="#222a32">• 焊盘略大→焊接可靠但易桥连；略小→省空间但易"立碑（tombstone）"。</text>
+  <text x="80" y="384" font-size="12.5" fill="#222a32">• 0805 = 英制 0.08×0.05 inch ≈ 公制 2.0×1.25 mm；优先用库中 IPC 标准封装，别手画。</text>
+</svg>

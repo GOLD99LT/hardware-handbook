@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="600" height="240" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">扩展：浪涌电流与软启动（Boost 启动）</text>
+  <rect x="180" y="80" width="240" height="80" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="300" y="112" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">Boost 控制器（SS 软启动）</text>
+  <text x="300" y="136" font-size="12" fill="#5c6772" text-anchor="middle">输出电压缓慢爬升 · 限制 Cout 预充电浪涌</text>
+  <line x1="80" y1="120" x2="180" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="70" y="115" font-size="13" fill="#2b3a4a" text-anchor="end">Vin</text>
+  <line x1="420" y1="120" x2="520" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="528" y="125" font-size="13" fill="#1a4f8b" font-weight="700">Vout</text>
+  <text x="300" y="200" font-size="12.5" fill="#5c6772" text-anchor="middle">Boost 启动时 Cout 经二极管预充，无软启动会产生大冲击电流</text>
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 460" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="460" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：板材选型 — 介质常数 Dk / 损耗因子 Df</text>
+  <text x="30" y="56" font-size="12.5" fill="#5c6772">Dk 决定信号速度与阻抗；Df 决定高频衰减。不是越快越好，按频率与成本选。</text>
+
+  <!-- 三列卡片 -->
+  <!-- FR4 -->
+  <rect x="50" y="80" width="220" height="240" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="160" y="110" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">FR-4 标准</text>
+  <text x="160" y="138" font-size="13" fill="#222a32" text-anchor="middle">Dk ≈ 4.2 ~ 4.6</text>
+  <text x="160" y="162" font-size="13" fill="#222a32" text-anchor="middle">Df ≈ 0.015 ~ 0.02</text>
+  <text x="160" y="196" font-size="12.5" fill="#5c6772" text-anchor="middle">Tg ≈ 130~140℃</text>
+  <text x="160" y="226" font-size="12.5" fill="#222a32" text-anchor="middle">通用数字 / 电源板</text>
+  <text x="160" y="250" font-size="12.5" fill="#222a32" text-anchor="middle">&lt; 1 GHz 足够</text>
+  <text x="160" y="288" font-size="13" fill="#b5642e" text-anchor="middle">成本最低</text>
+
+  <!-- 高Tg FR4 / 无卤 -->
+  <rect x="300" y="80" width="220" height="240" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="410" y="110" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">高 Tg / 无卤 FR4</text>
+  <text x="410" y="138" font-size="13" fill="#222a32" text-anchor="middle">Dk ≈ 4.4 ~ 4.8</text>
+  <text x="410" y="162" font-size="13" fill="#222a32" text-anchor="middle">Df ≈ 0.015</text>
+  <text x="410" y="196" font-size="12.5" fill="#5c6772" text-anchor="middle">Tg ≈ 150~170℃</text>
+  <text x="410" y="226" font-size="12.5" fill="#222a32" text-anchor="middle">电源 / 无铅回流温</text>
+  <text x="410" y="250" font-size="12.5" fill="#222a32" text-anchor="middle">热稳定性更好</text>
+  <text x="410" y="288" font-size="13" fill="#b5642e" text-anchor="middle">成本 +10~30%</text>
+
+  <!-- Rogers -->
+  <rect x="550" y="80" width="220" height="240" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="660" y="110" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">高频 PTFE（Rogers）</text>
+  <text x="660" y="138" font-size="13" fill="#222a32" text-anchor="middle">Dk ≈ 3.0 ~ 10.2 稳定</text>
+  <text x="660" y="162" font-size="13" fill="#222a32" text-anchor="middle">Df ≈ 0.001 ~ 0.003</text>
+  <text x="660" y="196" font-size="12.5" fill="#5c6772" text-anchor="middle">Dk 随频率变化极小</text>
+  <text x="660" y="226" font-size="12.5" fill="#222a32" text-anchor="middle">RF / 微波 / 毫米波</text>
+  <text x="660" y="250" font-size="12.5" fill="#222a32" text-anchor="middle">&gt; 3~10 GHz</text>
+  <text x="660" y="288" font-size="13" fill="#b5642e" text-anchor="middle">成本数倍~十倍</text>
+
+  <rect x="50" y="350" width="720" height="80" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="70" y="378" font-size="13" fill="#1a4f8b" font-weight="700">选型原则：</text>
+  <text x="70" y="402" font-size="13" fill="#222a32">上升沿 &gt; 约 1 ns、工作频率 &lt; 1 GHz 时标准 FR-4 足够；盲目上 Rogers 只徒增成本、加工难度与翘曲。</text>
+  <text x="70" y="422" font-size="13" fill="#222a32">电源板/有铅改无铅工艺注意 Tg 余量；RF 匹配电路才需要 Dk 严格公差（±0.02）的高频板材。</text>
+</svg>

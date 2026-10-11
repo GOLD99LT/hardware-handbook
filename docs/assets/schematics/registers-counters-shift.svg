@@ -1,0 +1,49 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">4 位移位寄存器（串行进、串行/并行出）Shift Register</text>
+
+  <!-- FF0 -->
+  <rect x="100" y="90" width="80" height="90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="140" y="140" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">FF0</text>
+  <!-- D_in -->
+  <text x="30" y="115" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">D_in</text>
+  <line x1="65" y1="111" x2="100" y2="111" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- FF1 -->
+  <rect x="250" y="90" width="80" height="90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="290" y="140" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">FF1</text>
+  <!-- FF0.Q -> FF1.D -->
+  <line x1="180" y1="111" x2="250" y2="111" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- FF2 -->
+  <rect x="400" y="90" width="80" height="90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="440" y="140" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">FF2</text>
+  <line x1="330" y1="111" x2="400" y2="111" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- FF3 -->
+  <rect x="550" y="90" width="80" height="90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="590" y="140" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">FF3</text>
+  <line x1="480" y1="111" x2="550" y2="111" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- D_out -->
+  <line x1="630" y1="111" x2="680" y2="111" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="640" y="100" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">D_out</text>
+
+  <!-- parallel taps -->
+  <line x1="140" y1="180" x2="140" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="140" y="238" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q0</text>
+  <line x1="290" y1="180" x2="290" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="290" y="238" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q1</text>
+  <line x1="440" y1="180" x2="440" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="440" y="238" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q2</text>
+  <line x1="590" y1="180" x2="590" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="590" y="238" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q3</text>
+
+  <!-- CLK -->
+  <text x="30" y="270" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">CLK(共用)</text>
+  <line x1="100" y1="266" x2="590" y2="266" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="140" y1="266" x2="140" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="290" y1="266" x2="290" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="440" y1="266" x2="440" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="590" y1="266" x2="590" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+</svg>

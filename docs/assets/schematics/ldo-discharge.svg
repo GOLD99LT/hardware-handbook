@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="600" height="260" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">扩展：输出放电与防倒灌（Reverse Blocker）</text>
+  <!-- Vout rail -->
+  <line x1="120" y1="110" x2="480" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="100" y="115" font-size="15" fill="#1a4f8b" font-weight="700" text-anchor="end">Vout</text>
+  <circle cx="260" cy="110" r="4.5" fill="#2b3a4a"/>
+  <!-- 放电 NMOS：Vout -> 地 -->
+  <line x1="260" y1="110" x2="260" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="248" y="150" width="24" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="280" y="180" font-size="12.5" fill="#1a4f8b" font-weight="700">放电 MOS</text>
+  <line x1="260" y1="200" x2="260" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 负载 -->
+  <line x1="420" y1="110" x2="420" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="408" y="150" width="24" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="440" y="180" font-size="12.5" fill="#1a4f8b" font-weight="700">负载</text>
+  <line x1="420" y1="200" x2="420" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 地 -->
+  <line x1="260" y1="220" x2="420" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="340" y1="220" x2="340" y2="238" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="326" y1="238" x2="354" y2="238" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="331" y1="245" x2="349" y2="245" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="335" y1="252" x2="345" y2="252" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

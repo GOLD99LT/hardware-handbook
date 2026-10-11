@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 400" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="400" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：散热焊盘（Thermal Relief）与地过孔阵列</text>
+
+  <!-- 左：直连 vs 热隔离 -->
+  <rect x="40" y="70" width="360" height="280" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="220" y="96" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">直连（全连接）</text>
+  <!-- 大方铜箔 + 焊盘直连 -->
+  <rect x="100" y="120" width="240" height="120" fill="#d9d4c7" stroke="#2b3a4a" stroke-width="1.6"/>
+  <circle cx="220" cy="180" r="22" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="220" y="270" font-size="12" fill="#b03a3a" text-anchor="middle">焊盘全铜相连 → 散热太快</text>
+  <text x="220" y="292" font-size="12" fill="#b03a3a" text-anchor="middle">手焊/波峰焊虚焊（热量被铜箔吸走）</text>
+
+  <rect x="420" y="70" width="360" height="280" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="600" y="96" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">散热焊盘（Thermal Relief）</text>
+  <rect x="480" y="120" width="240" height="120" fill="#d9d4c7" stroke="#2b3a4a" stroke-width="1.6"/>
+  <circle cx="600" cy="180" r="22" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 四细颈 -->
+  <line x1="600" y1="158" x2="600" y2="130" stroke="#2b3a4a" stroke-width="4"/>
+  <line x1="600" y1="202" x2="600" y2="230" stroke="#2b3a4a" stroke-width="4"/>
+  <line x1="578" y1="180" x2="510" y2="180" stroke="#2b3a4a" stroke-width="4"/>
+  <line x1="622" y1="180" x2="690" y2="180" stroke="#2b3a4a" stroke-width="4"/>
+  <text x="600" y="270" font-size="12" fill="#2f6e4f" text-anchor="middle">细颈连接 → 焊接时热量不易散走</text>
+  <text x="600" y="292" font-size="12" fill="#2f6e4f" text-anchor="middle">易上锡；大电流焊盘才直连</text>
+
+  <text x="40" y="375" font-size="12" fill="#222a32">地过孔阵列（stitching vias）：在平面边缘/高速信号旁打一排地过孔，降低地电感、提供屏蔽回流。</text>
+</svg>

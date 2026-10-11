@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="360" y="34" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">信号追踪法：沿信号链逐级测量，在哪一级信号消失/畸变就停在哪</text>
+  <!-- 信号链 -->
+  <rect x="60" y="120" width="110" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="115" y="145" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">传感器</text>
+  <text x="115" y="165" font-size="12" fill="#2e7d32" text-anchor="middle">✓ 信号正常</text>
+  <line x1="170" y1="150" x2="220" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="220" y="120" width="110" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="275" y="145" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">放大级</text>
+  <text x="275" y="165" font-size="12" fill="#2e7d32" text-anchor="middle">✓ 信号正常</text>
+  <line x1="330" y1="150" x2="380" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="380" y="120" width="110" height="60" fill="#fdecea" stroke="#c0392b" stroke-width="2.6"/>
+  <text x="435" y="145" font-size="13" fill="#c0392b" font-weight="700" text-anchor="middle">ADC 驱动</text>
+  <text x="435" y="165" font-size="12" fill="#c0392b" text-anchor="middle">✗ 信号丢失</text>
+  <line x1="490" y1="150" x2="540" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="540" y="120" width="110" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="595" y="145" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">MCU ADC</text>
+  <text x="595" y="165" font-size="12" fill="#7a5fc0" text-anchor="middle">— 无输入</text>
+  <text x="360" y="230" font-size="13" fill="#7a5fc0" text-anchor="middle">从输入往输出逐级量：前级正常、本级丢失 → 故障就在本级（ADC 驱动级）</text>
+</svg>

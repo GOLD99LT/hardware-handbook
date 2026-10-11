@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="300" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">扩展：反相 Buck-Boost（输出为负）Inverting Buck-Boost</text>
+  <!-- Vin -->
+  <text x="36" y="96" font-size="15" fill="#2b3a4a">Vin</text>
+  <line x1="60" y1="100" x2="140" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 电感 -->
+  <path d="M140,100 q12,-24 24,0 q12,24 24,0 q12,-24 24,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="212" y1="100" x2="280" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="280" cy="100" r="4.5" fill="#2b3a4a"/>
+  <text x="272" y="88" font-size="13" fill="#1a4f8b" font-weight="700">SW</text>
+  <!-- 开关 SW -> 地 -->
+  <line x1="280" y1="100" x2="280" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="268" y="150" width="24" height="45" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="300" y="178" font-size="12" fill="#1a4f8b" font-weight="700">Q</text>
+  <line x1="280" y1="195" x2="280" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 二极管：SW -> 负输出（阴极在 SW，输出为负） -->
+  <line x1="280" y1="100" x2="420" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="420" y1="82" x2="420" y2="118" stroke="#2b3a4a" stroke-width="2.6"/>
+  <polygon points="420,100 450,82 450,118" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="450" y1="100" x2="560" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="435" y="74" font-size="12" fill="#5c6772" text-anchor="middle">D</text>
+  <!-- Cout 到地（输出负） -->
+  <circle cx="520" cy="100" r="4.5" fill="#2b3a4a"/>
+  <line x1="520" y1="100" x2="520" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="502" y1="150" x2="538" y2="150" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="502" y1="170" x2="538" y2="170" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="520" y1="170" x2="520" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="546" y="165" font-size="12.5" fill="#b5642e" font-weight="700">Cout</text>
+  <text x="560" y="96" font-size="14" fill="#b5642e" font-weight="700">Vout(负)</text>
+  <!-- 地 -->
+  <line x1="280" y1="250" x2="520" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="380" y1="250" x2="380" y2="268" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="366" y1="268" x2="394" y2="268" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="371" y1="275" x2="389" y2="275" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="375" y1="282" x2="385" y2="282" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="760" height="300" fill="#ffffff"/>
+  <text x="30" y="30" font-size="18" font-weight="700" fill="#222a32">Type II 补偿网络（一个积分极点 + 一个零点 + 一个极点）</text>
+
+  <!-- 误差放大器 -->
+  <polygon points="300,120 300,220 420,170" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="316" y="152" font-size="15" fill="#2b3a4a" font-weight="700">−</text>
+  <text x="316" y="200" font-size="15" fill="#2b3a4a" font-weight="700">+</text>
+  <text x="360" y="245" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">误差放大器</text>
+
+  <!-- 同相端 Vref -->
+  <line x1="300" y1="190" x2="230" y2="190" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="170" y="195" font-size="13" fill="#1a4f8b" font-weight="700">Vref</text>
+
+  <!-- 输入 R1 -->
+  <text x="60" y="145" font-size="13" fill="#1a4f8b" font-weight="700">FB（分压）</text>
+  <line x1="120" y1="150" x2="180" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="180" y="138" width="50" height="24" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="205" y="155" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">R1</text>
+  <line x1="230" y1="150" x2="300" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="300" cy="150" r="4.5" fill="#2b3a4a"/>
+
+  <!-- 输出 COMP -->
+  <line x1="420" y1="170" x2="520" y2="170" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="530" y="175" font-size="13" fill="#1a4f8b" font-weight="700">COMP→PWM</text>
+
+  <!-- 串联反馈 Rc + Cc -->
+  <line x1="300" y1="150" x2="300" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="300" y1="80" x2="340" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="340" y="68" width="50" height="24" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="365" y="85" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rc</text>
+  <line x1="390" y1="80" x2="440" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="440" y1="80" x2="440" y2="118" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="424" y1="118" x2="456" y2="118" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="424" y1="136" x2="456" y2="136" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="440" y1="136" x2="440" y2="170" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="440" cy="170" r="4.5" fill="#2b3a4a"/>
+  <text x="466" y="132" font-size="13" fill="#1a4f8b" font-weight="700">Cc</text>
+
+  <!-- 并联高频 Cp -->
+  <line x1="300" y1="150" x2="300" y2="40" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="300" y1="40" x2="440" y2="40" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="440" y1="40" x2="440" y2="56" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="424" y1="56" x2="456" y2="56" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="424" y1="72" x2="456" y2="72" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="440" y1="72" x2="440" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="466" y="66" font-size="13" fill="#1a4f8b" font-weight="700">Cp</text>
+
+  <text x="30" y="278" font-size="13" fill="#222a32">零点 fz = 1/(2π·Rc·Cc)；高频极点 fp = 1/(2π·Rc·Cp)；用于电流模式或电压模式带前馈</text>
+</svg>

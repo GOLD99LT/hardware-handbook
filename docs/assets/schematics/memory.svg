@@ -1,0 +1,45 @@
+<svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="400" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">SRAM 结构：地址译码 + 存储阵列 + 灵敏放大 SRAM Architecture</text>
+
+  <!-- Address in -->
+  <text x="30" y="120" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">地址 A[7:0]</text>
+  <line x1="110" y1="116" x2="180" y2="116" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- Row decoder -->
+  <rect x="180" y="80" width="120" height="80" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="240" y="120" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">行译码器</text>
+  <text x="240" y="140" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">Row Decoder</text>
+
+  <!-- word lines to array -->
+  <line x1="300" y1="100" x2="380" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="300" y1="120" x2="380" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="300" y1="140" x2="380" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="330" y="92" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">字线 Word Line</text>
+
+  <!-- memory array -->
+  <rect x="380" y="70" width="160" height="120" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="460" y="125" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">存储阵列</text>
+  <text x="460" y="145" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">(6T SRAM Cell)</text>
+
+  <!-- bit lines to sense amp -->
+  <line x1="540" y1="100" x2="600" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="540" y1="130" x2="600" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="560" y="92" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">位线 Bit Line</text>
+
+  <!-- sense amp -->
+  <rect x="600" y="90" width="90" height="80" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="645" y="125" font-size="13" fill="#2b3a4a" text-anchor="middle" font-weight="700">灵敏</text>
+  <text x="645" y="145" font-size="13" fill="#2b3a4a" text-anchor="middle" font-weight="700">放大器</text>
+
+  <!-- data out -->
+  <line x1="690" y1="130" x2="715" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="640" y="60" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">数据 I/O</text>
+
+  <!-- control -->
+  <text x="30" y="250" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">控制: /OE /WE /CE</text>
+  <line x1="150" y1="246" x2="380" y2="246" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="380" y1="246" x2="380" y2="190" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <text x="24" y="330" font-size="13" fill="#5a6672" text-anchor="start">地址选通一行（字线），该行所有单元的位线输出经灵敏放大器读回；写入时 WE 有效直接驱动位线</text>
+</svg>

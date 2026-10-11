@@ -1,0 +1,32 @@
+<svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="280" fill="#ffffff"/>
+  <text x="30" y="32" font-size="17" font-weight="700" fill="#222a32">RTC 32.768kHz LSE 晶振</text>
+
+  <!-- RTC 域 -->
+  <rect x="80" y="90" width="130" height="120" fill="#f7f9fb" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="145" y="130" font-size="12" fill="#222a32" text-anchor="middle">RTC 域</text>
+  <text x="215" y="120" font-size="11" fill="#5c6772">OSC32_IN</text>
+  <text x="215" y="180" font-size="11" fill="#5c6772">OSC32_OUT</text>
+
+  <!-- 晶振 -->
+  <line x1="210" y1="120" x2="330" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="210" y1="180" x2="330" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="330" y="135" width="90" height="30" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="355" y1="135" x2="355" y2="165" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="395" y1="135" x2="395" y2="165" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="330" y1="120" x2="330" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="330" y1="150" x2="330" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="375" y="125" font-size="11" fill="#1a4f8b" text-anchor="middle" font-weight="700">32.768kHz</text>
+
+  <!-- 负载电容 -->
+  <line x1="280" y1="120" x2="280" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="262" y1="200" x2="298" y2="200" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="262" y1="218" x2="298" y2="218" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="280" y1="218" x2="280" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="266" y1="240" x2="294" y2="240" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="271" y1="247" x2="289" y2="247" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="275" y1="254" x2="285" y2="254" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="305" y="214" font-size="11" fill="#1a4f8b">C 12.5pF</text>
+
+  <text x="440" y="150" font-size="12" fill="#7a5fc0">32768=2^15，便于二进制分频出 1Hz；负载电容按 CL 反推</text>
+</svg>

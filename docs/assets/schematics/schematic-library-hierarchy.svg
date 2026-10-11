@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 440" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="440" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：层次化原理图（Hierarchical Sheets）</text>
+  <text x="30" y="56" font-size="12.5" fill="#5c6772">大系统按功能拆成子图，根图用"方块图"调用，避免一张图画几百个元件</text>
+
+  <!-- 根图 -->
+  <rect x="60" y="100" width="700" height="120" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="410" y="128" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">根图 Root Sheet（顶层）</text>
+
+  <!-- 三个方块 -->
+  <rect x="100" y="150" width="160" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="180" y="180" font-size="13" fill="#222a32" text-anchor="middle">电源块 power</text>
+
+  <rect x="330" y="150" width="160" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="410" y="180" font-size="13" fill="#222a32" text-anchor="middle">MCU 块 mcu</text>
+
+  <rect x="560" y="150" width="160" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="640" y="180" font-size="13" fill="#222a32" text-anchor="middle">接口块 io</text>
+
+  <!-- 端口线 -->
+  <line x1="260" y1="165" x2="330" y2="165" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="490" y1="165" x2="560" y2="165" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="295" y="158" font-size="11" fill="#1a4f8b" text-anchor="middle">3V3</text>
+  <text x="525" y="158" font-size="11" fill="#1a4f8b" text-anchor="middle">SPI</text>
+
+  <!-- 子图展开 -->
+  <line x1="180" y1="200" x2="180" y2="260" stroke="#b5642e" stroke-width="2" stroke-dasharray="5,4"/>
+  <rect x="80" y="260" width="200" height="90" fill="#ffffff" stroke="#b5642e" stroke-width="1.8"/>
+  <text x="180" y="288" font-size="12.5" fill="#b5642e" text-anchor="middle">子图：buck + LDO</text>
+  <text x="180" y="312" font-size="11.5" fill="#5c6772" text-anchor="middle">输入→buck→LDO→3V3</text>
+  <text x="180" y="334" font-size="11.5" fill="#5c6772" text-anchor="middle">端口 PWR_IN / PWR_3V3</text>
+
+  <line x1="410" y1="200" x2="410" y2="260" stroke="#b5642e" stroke-width="2" stroke-dasharray="5,4"/>
+  <rect x="310" y="260" width="200" height="90" fill="#ffffff" stroke="#b5642e" stroke-width="1.8"/>
+  <text x="410" y="288" font-size="12.5" fill="#b5642e" text-anchor="middle">子图：MCU 最小系统</text>
+  <text x="410" y="312" font-size="11.5" fill="#5c6772" text-anchor="middle">晶振/复位/调试/去耦</text>
+  <text x="410" y="334" font-size="11.5" fill="#5c6772" text-anchor="middle">端口 SPI / UART</text>
+
+  <line x1="640" y1="200" x2="640" y2="260" stroke="#b5642e" stroke-width="2" stroke-dasharray="5,4"/>
+  <rect x="540" y="260" width="200" height="90" fill="#ffffff" stroke="#b5642e" stroke-width="1.8"/>
+  <text x="640" y="288" font-size="12.5" fill="#b5642e" text-anchor="middle">子图：USB/RS485</text>
+  <text x="640" y="312" font-size="11.5" fill="#5c6772" text-anchor="middle">保护 + 收发器</text>
+  <text x="640" y="334" font-size="11.5" fill="#5c6772" text-anchor="middle">端口 TX/RX</text>
+
+  <text x="60" y="400" font-size="12.5" fill="#222a32">块上的"端口（port）"与子图内引脚同名即相连；改子图自动反映到根图，多人协作可分块并行。</text>
+</svg>

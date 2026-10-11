@@ -1,0 +1,31 @@
+<svg viewBox="0 0 820 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="260" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">开关降压充电（Switching Charger）：效率高、可大电流</text>
+
+  <!-- VIN -->
+  <text x="40" y="100" font-size="13" fill="#1a4f8b" font-weight="700">VIN 5~12V</text>
+  <line x1="120" y1="96" x2="180" y2="96" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- Buck 开关 + 电感 -->
+  <rect x="180" y="70" width="90" height="52" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="225" y="100" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">Buck 控制器</text>
+  <line x1="270" y1="96" x2="310" y2="96" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M310,96 q10,-18 20,0 q10,18 20,0 q10,-18 20,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="340" y="72" font-size="12" fill="#5c6772">L</text>
+  <line x1="370" y1="96" x2="500" y2="96" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="500" cy="96" r="4.5" fill="#2b3a4a"/>
+
+  <!-- 电流检测 Rsense -->
+  <rect x="500" y="84" width="50" height="24" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="525" y="101" font-size="11" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rsns</text>
+  <line x1="550" y1="96" x2="620" y2="96" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 电池 -->
+  <line x1="620" y1="96" x2="650" y2="96" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="650" y1="74" x2="650" y2="118" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="662" y1="84" x2="662" y2="108" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="674" y1="74" x2="674" y2="118" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="662" y="60" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">BAT</text>
+
+  <text x="30" y="220" font-size="13" fill="#222a32">优势：效率 90%+、大电流发热小；线性充电简单但压差大时全部发热。适合快速充电、多串电池</text>
+</svg>

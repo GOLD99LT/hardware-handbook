@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 860 480" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="480" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">布线：线宽-载流、过孔、间距</text>
+
+  <!-- 左上：线宽剖面 -->
+  <rect x="40" y="70" width="360" height="180" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="220" y="96" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">走线剖面：宽 W × 厚 t</text>
+  <rect x="120" y="130" width="200" height="22" fill="#2b3a4a"/>
+  <text x="220" y="145" font-size="12" fill="#fff" text-anchor="middle">铜箔</text>
+  <!-- W 标注 -->
+  <line x1="120" y1="175" x2="320" y2="175" stroke="#2b3a4a" stroke-width="1.4"/>
+  <text x="220" y="192" font-size="13" fill="#1a4f8b" text-anchor="middle">线宽 W</text>
+  <!-- t 标注 -->
+  <line x1="335" y1="130" x2="335" y2="152" stroke="#2b3a4a" stroke-width="1.4"/>
+  <text x="345" y="145" font-size="12" fill="#1a4f8b">t</text>
+  <text x="220" y="225" font-size="12" fill="#5c6772" text-anchor="middle">截面积 A = W × t（决定载流）</text>
+
+  <!-- 右上：过孔 -->
+  <rect x="440" y="70" width="380" height="180" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="630" y="96" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">过孔 Via（层间连接）</text>
+  <!-- 剖面：两层铜+介质+孔 -->
+  <rect x="500" y="125" width="260" height="10" fill="#2b3a4a"/>
+  <rect x="500" y="135" width="260" height="50" fill="#f3efe6" stroke="#2b3a4a" stroke-width="1"/>
+  <rect x="500" y="185" width="260" height="10" fill="#2b3a4a"/>
+  <!-- 孔 -->
+  <circle cx="630" cy="160" r="14" fill="#ffffff" stroke="#b03a3a" stroke-width="2.2"/>
+  <circle cx="630" cy="160" r="6" fill="#b03a3a"/>
+  <text x="630" y="215" font-size="12" fill="#b03a3a" text-anchor="middle">钻孔 + 孔壁镀铜（PTH）</text>
+  <text x="700" y="155" font-size="11" fill="#1a4f8b">外径 0.6mm</text>
+  <text x="700" y="172" font-size="11" fill="#1a4f8b">孔径 0.3mm</text>
+
+  <!-- 下：间距 -->
+  <rect x="40" y="280" width="780" height="170" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="60" y="308" font-size="14" fill="#1a4f8b" font-weight="700">线间距 Clearance（高压/高频需加大）</text>
+  <line x1="120" y1="350" x2="700" y2="350" stroke="#2b3a4a" stroke-width="6"/>
+  <line x1="120" y1="400" x2="700" y2="400" stroke="#2b3a4a" stroke-width="6"/>
+  <line x1="400" y1="356" x2="400" y2="394" stroke="#b5642e" stroke-width="1.6"/>
+  <line x1="394" y1="356" x2="406" y2="356" stroke="#b5642e" stroke-width="1.6"/>
+  <line x1="394" y1="394" x2="406" y2="394" stroke="#b5642e" stroke-width="1.6"/>
+  <text x="415" y="380" font-size="13" fill="#b5642e">间距 S</text>
+  <text x="120" y="435" font-size="12" fill="#5c6772">普通信号 0.2mm（8mil）起；高压按安规爬电距离加大；高速差分对内按阻抗要求定。</text>
+</svg>

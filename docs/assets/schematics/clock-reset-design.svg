@@ -1,0 +1,48 @@
+<svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="400" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">时钟树与复位树 Clock Tree &amp; Reset Tree</text>
+
+  <!-- Oscillator -->
+  <rect x="60" y="80" width="110" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="115" y="105" font-size="13" fill="#2b3a4a" text-anchor="middle" font-weight="700">晶振/时钟源</text>
+  <text x="115" y="125" font-size="11" fill="#1a4f8b" text-anchor="middle" font-weight="700">CLKIN</text>
+
+  <!-- PLL -->
+  <line x1="170" y1="110" x2="230" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="230" y="80" width="90" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="275" y="105" font-size="13" fill="#2b3a4a" text-anchor="middle" font-weight="700">PLL</text>
+  <text x="275" y="125" font-size="11" fill="#1a4f8b" text-anchor="middle" font-weight="700">倍频/移相</text>
+
+  <!-- global buffer -->
+  <line x1="320" y1="110" x2="380" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="380" y="80" width="90" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="425" y="105" font-size="13" fill="#2b3a4a" text-anchor="middle" font-weight="700">全局缓冲</text>
+  <text x="425" y="125" font-size="11" fill="#1a4f8b" text-anchor="middle" font-weight="700">BUFG</text>
+
+  <!-- clock tree branches -->
+  <line x1="470" y1="110" x2="560" y2="110" stroke="#2b3a4a" stroke-width="2.4"/>
+  <circle cx="560" cy="110" r="4.5" fill="#2b3a4a"/>
+  <line x1="560" y1="110" x2="560" y2="170" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="560" y1="110" x2="620" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="620" cy="110" r="4.5" fill="#2b3a4a"/>
+  <line x1="620" y1="110" x2="620" y2="170" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- FFs -->
+  <rect x="530" y="170" width="60" height="50" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="560" y="200" font-size="12" fill="#2b3a4a" text-anchor="middle" font-weight="700">FF0</text>
+  <rect x="590" y="170" width="60" height="50" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="620" y="200" font-size="12" fill="#2b3a4a" text-anchor="middle" font-weight="700">FF1</text>
+
+  <!-- Reset tree -->
+  <text x="30" y="290" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">POR/按键</text>
+  <line x1="100" y1="286" x2="180" y2="286" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="180" y="260" width="120" height="50" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="240" y="290" font-size="12" fill="#2b3a4a" text-anchor="middle" font-weight="700">复位同步器</text>
+  <line x1="300" y1="286" x2="560" y2="286" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="560" y1="286" x2="560" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="620" y1="286" x2="620" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="560" cy="286" r="4.5" fill="#2b3a4a"/>
+  <circle cx="620" cy="286" r="4.5" fill="#2b3a4a"/>
+
+  <text x="24" y="360" font-size="13" fill="#5a6672" text-anchor="start">时钟走全局缓冲树（减 skew）；复位异步生效、同步释放后分发到各 FF</text>
+</svg>

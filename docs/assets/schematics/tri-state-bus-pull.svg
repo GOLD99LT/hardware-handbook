@@ -1,0 +1,48 @@
+<svg viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="680" height="380" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">三态门驱动共享总线（任一时刻只一个使能）Tri-State Bus</text>
+
+  <!-- bus horizontal -->
+  <line x1="120" y1="200" x2="600" y2="200" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="608" y="205" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">总线 Bus</text>
+
+  <!-- Buffer 1 -->
+  <text x="30" y="90" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">D1</text>
+  <line x1="55" y1="86" x2="140" y2="86" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="140,70 140,102 190,86" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="190" y1="86" x2="240" y2="86" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="240" y1="86" x2="240" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="240" cy="200" r="4.5" fill="#2b3a4a"/>
+  <!-- enable 1 -->
+  <text x="150" y="125" font-size="12" fill="#1a4f8b" text-anchor="start" font-weight="700">EN1</text>
+  <line x1="165" y1="121" x2="165" y2="102" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- Buffer 2 -->
+  <text x="30" y="180" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">D2</text>
+  <line x1="55" y1="176" x2="140" y2="176" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="140,160 140,192 190,176" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="190" y1="176" x2="360" y2="176" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="360" y1="176" x2="360" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="360" cy="200" r="4.5" fill="#2b3a4a"/>
+  <text x="150" y="215" font-size="12" fill="#1a4f8b" text-anchor="start" font-weight="700">EN2</text>
+  <line x1="165" y1="211" x2="165" y2="192" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- Buffer 3 -->
+  <text x="30" y="280" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">D3</text>
+  <line x1="55" y1="276" x2="140" y2="276" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="140,260 140,292 190,276" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="190" y1="276" x2="480" y2="276" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="480" y1="276" x2="480" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="480" cy="200" r="4.5" fill="#2b3a4a"/>
+  <text x="150" y="315" font-size="12" fill="#1a4f8b" text-anchor="start" font-weight="700">EN3</text>
+  <line x1="165" y1="311" x2="165" y2="292" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- pull-up resistor to VCC -->
+  <line x1="600" y1="200" x2="600" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="588" y="120" width="24" height="40" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="620" y="145" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">R上拉</text>
+  <line x1="600" y1="120" x2="600" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="585" y="82" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">VCC</text>
+
+  <text x="24" y="350" font-size="13" fill="#5a6672" text-anchor="start">三个 EN 任一时刻只能一个有效；都无效时总线靠上拉电阻保持高电平</text>
+</svg>

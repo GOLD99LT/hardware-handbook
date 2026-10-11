@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 860 480" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="480" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">模数分区地平面 — 在 ADC 下方单点桥接</text>
+  <text x="30" y="56" font-size="12.5" fill="#5c6772">数字回流噪声不流进模拟地；分界线恰好经过 ADC 下方</text>
+
+  <!-- 板框 -->
+  <rect x="60" y="80" width="740" height="300" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+
+  <!-- 模拟地区（左） -->
+  <rect x="60" y="80" width="370" height="300" fill="#eef7ee" stroke="#2f6e4f" stroke-width="1.6"/>
+  <text x="245" y="110" font-size="14" fill="#2f6e4f" font-weight="700" text-anchor="middle">模拟地 AGND 区</text>
+  <text x="245" y="135" font-size="12" fill="#2f5a3f" text-anchor="middle">运放 / ADC 模拟前端 / 基准源</text>
+  <!-- 运放小框 -->
+  <rect x="120" y="180" width="100" height="60" fill="#fff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="170" y="215" font-size="12" fill="#222a32" text-anchor="middle">运放</text>
+
+  <!-- 数字地区（右） -->
+  <rect x="430" y="80" width="370" height="300" fill="#eef4fb" stroke="#1a4f8b" stroke-width="1.6"/>
+  <text x="615" y="110" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">数字地 DGND 区</text>
+  <text x="615" y="135" font-size="12" fill="#3a5a80" text-anchor="middle">MCU / 数字逻辑 / 开关电源</text>
+  <rect x="560" y="180" width="100" height="60" fill="#fff" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="610" y="215" font-size="12" fill="#222a32" text-anchor="middle">MCU</text>
+
+  <!-- ADC 在分界线上 -->
+  <rect x="380" y="240" width="100" height="60" fill="#fff" stroke="#b5642e" stroke-width="2.6"/>
+  <text x="430" y="268" font-size="12.5" fill="#b5642e" font-weight="700" text-anchor="middle">ADC</text>
+  <text x="430" y="288" font-size="10.5" fill="#b5642e" text-anchor="middle">模拟脚朝左/数字脚朝右</text>
+
+  <!-- 分界线 + 桥 -->
+  <line x1="430" y1="80" x2="430" y2="240" stroke="#b03a3a" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="430" y1="300" x2="430" y2="380" stroke="#b03a3a" stroke-width="2" stroke-dasharray="6,4"/>
+  <!-- 桥 -->
+  <rect x="418" y="240" width="24" height="60" fill="#b5642e"/>
+  <text x="430" y="330" font-size="12" fill="#b5642e" text-anchor="middle">单点桥接（0Ω/磁珠）</text>
+
+  <rect x="60" y="405" width="740" height="55" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="80" y="430" font-size="12.5" fill="#222a32">关键：数字回流噪声在自己区域内循环，不经过模拟地；两地在 ADC 正下方唯一一点相连，</text>
+  <text x="80" y="450" font-size="12.5" fill="#222a32">避免跨分割走线。现代建议：多数情况用完整地平面 + 良好布局，比硬分割更安全。</text>
+</svg>

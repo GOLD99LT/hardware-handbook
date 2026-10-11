@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 400 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="400" height="360" fill="#ffffff"/>
+  <!-- 本体 -->
+  <rect x="120" y="60" width="160" height="160" fill="#f2efe6" stroke="#2b3a4a" stroke-width="2.6"/>
+  <!-- Pin 1 标记 -->
+  <circle cx="135" cy="75" r="4.5" fill="#2b3a4a"/>
+  <!-- 中央裸露焊盘 Exposed Pad -->
+  <rect x="165" y="105" width="70" height="70" fill="#d8d2c0" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="200" y="145" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">裸露焊盘</text>
+  <text x="200" y="162" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">EP</text>
+  <!-- 上边引脚焊盘 -->
+  <rect x="135" y="60" width="12" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="157" y="60" width="12" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="179" y="60" width="12" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="201" y="60" width="12" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="223" y="60" width="12" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="245" y="60" width="12" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="267" y="60" width="12" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 下边引脚焊盘 -->
+  <rect x="135" y="210" width="12" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="157" y="210" width="12" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="179" y="210" width="12" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="201" y="210" width="12" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="223" y="210" width="12" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="245" y="210" width="12" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="267" y="210" width="12" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 左边引脚焊盘 -->
+  <rect x="120" y="80" width="10" height="12" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="120" y="102" width="10" height="12" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="120" y="124" width="10" height="12" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="120" y="146" width="10" height="12" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="120" y="168" width="10" height="12" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="120" y="190" width="10" height="12" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 右边引脚焊盘 -->
+  <rect x="270" y="80" width="10" height="12" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="270" y="102" width="10" height="12" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="270" y="124" width="10" height="12" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="270" y="146" width="10" height="12" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="270" y="168" width="10" height="12" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="270" y="190" width="10" height="12" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 引脚号 -->
+  <text x="141" y="55" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">1</text>
+  <text x="200" y="290" font-size="15" fill="#2b3a4a" text-anchor="middle">QFN-16/DFN 顶视图（无引脚、底部焊盘+中央裸露散热焊盘）</text>
+</svg>

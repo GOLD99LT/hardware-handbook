@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 340" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="340" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：ESD 测试 — 空气放电 vs 接触放电</text>
+
+  <!-- ESD 枪 -->
+  <rect x="100" y="130" width="140" height="70" fill="#fdf3e7" stroke="#b5642e" stroke-width="2"/>
+  <text x="170" y="160" font-size="12.5" fill="#b5642e" text-anchor="middle">ESD 模拟器</text>
+  <text x="170" y="182" font-size="11" fill="#7a5a30" text-anchor="middle">±4/±8 kV</text>
+
+  <!-- 空气放电：距离火花 -->
+  <line x1="240" y1="165" x2="330" y2="165" stroke="#b03a3a" stroke-width="2.4"/>
+  <path d="M335,165 l8,-8 l-4,12 l10,-6" fill="none" stroke="#b03a3a" stroke-width="2"/>
+  <text x="285" y="150" font-size="11.5" fill="#b03a3a">空气放电(打火花)</text>
+
+  <!-- 被测设备 -->
+  <rect x="380" y="130" width="160" height="70" fill="#eef4fb" stroke="#1a4f8b" stroke-width="2"/>
+  <text x="460" y="170" font-size="12.5" fill="#1a4f8b" text-anchor="middle">被测设备</text>
+
+  <!-- 接触放电：直接戳 -->
+  <line x1="540" y1="165" x2="620" y2="165" stroke="#2f6e4f" stroke-width="2.6"/>
+  <text x="560" y="150" font-size="11.5" fill="#2f6e4f">接触放电(直接接触)</text>
+
+  <text x="60" y="250" font-size="12.5" fill="#222a32">IEC 61000-4-2：接触放电 ±8kV（严酷）、空气放电 ±15kV。接触放电更严酷（直接注入）。</text>
+  <text x="60" y="278" font-size="12.5" fill="#222a32">测试点：每个可被人手摸到的金属部分、接口引脚、按键缝隙。板子在干扰下不应损坏、不应复位死机。</text>
+  <text x="60" y="306" font-size="12.5" fill="#b5642e">设计要点同主图：TVS 贴连接器、泄放回路面短，让 kV 能量就近入地而非进 IC。</text>
+</svg>

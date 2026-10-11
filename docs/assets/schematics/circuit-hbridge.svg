@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="420" height="260" fill="#ffffff"/>
+  <!-- 电机居中 -->
+  <circle cx="210" cy="130" r="30" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="210" y="137" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">M</text>
+  <!-- 左上 Q1 -->
+  <line x1="180" y1="130" x2="130" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="130" y1="130" x2="130" y2="70" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="115" y="60" width="30" height="20" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="130" y="55" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q1</text>
+  <line x1="130" y1="40" x2="130" y2="30" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="130" y="25" font-size="14" fill="#2b3a4a" text-anchor="middle">Vbat</text>
+  <!-- 右上 Q2 -->
+  <line x1="240" y1="130" x2="290" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="290" y1="130" x2="290" y2="70" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="275" y="60" width="30" height="20" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="290" y="55" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q2</text>
+  <line x1="290" y1="40" x2="290" y2="30" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="290" y="25" font-size="14" fill="#2b3a4a" text-anchor="middle">Vbat</text>
+  <!-- 左下 Q3 -->
+  <line x1="180" y1="130" x2="130" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="130" y1="130" x2="130" y2="190" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="115" y="190" width="30" height="20" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="130" y="225" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q3</text>
+  <line x1="130" y1="210" x2="130" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 右下 Q4 -->
+  <line x1="290" y1="130" x2="290" y2="190" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="275" y="190" width="30" height="20" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="290" y="225" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q4</text>
+  <line x1="290" y1="210" x2="290" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- GND 线 -->
+  <line x1="130" y1="235" x2="290" y2="235" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="210" y1="235" x2="210" y2="245" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="196" y1="245" x2="224" y2="245" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="201" y1="252" x2="219" y2="252" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg viewBox="0 0 780 380" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="780" height="380" fill="#ffffff"/>
+  <text x="30" y="32" font-size="18" font-weight="700" fill="#222a32">看门狗 / RTC / 低功耗 硬件结构</text>
+
+  <!-- IWDG -->
+  <rect x="80" y="80" width="200" height="110" fill="#f7f9fb" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="180" y="108" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">独立看门狗 IWDG</text>
+  <text x="180" y="132" font-size="11" fill="#5c6772" text-anchor="middle">LSI 约 32kHz 独立时钟</text>
+  <text x="180" y="152" font-size="11" fill="#5c6772" text-anchor="middle">递减计数器，不喂狗→复位</text>
+  <text x="180" y="172" font-size="11" fill="#b5642e" text-anchor="middle">→ 芯片复位</text>
+
+  <!-- RTC -->
+  <rect x="80" y="220" width="200" height="110" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="180" y="248" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">RTC</text>
+  <text x="180" y="272" font-size="11" fill="#5c6772" text-anchor="middle">LSE 32.768kHz 晶振</text>
+  <text x="180" y="292" font-size="11" fill="#5c6772" text-anchor="middle">日历/闹钟/备份寄存器</text>
+  <text x="180" y="312" font-size="11" fill="#2e7d4f" text-anchor="middle">→ 唤醒 MCU</text>
+
+  <!-- 32.768k 晶振 -->
+  <line x1="180" y1="330" x2="180" y2="350" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="150" y="345" width="60" height="20" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="220" y="360" font-size="11" fill="#1a4f8b">32.768kHz</text>
+
+  <!-- 低功耗模式 -->
+  <rect x="380" y="120" width="260" height="160" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="510" y="150" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">低功耗模式</text>
+  <text x="510" y="178" font-size="11" fill="#5c6772" text-anchor="middle">Sleep / Stop / Standby</text>
+  <text x="510" y="200" font-size="11" fill="#5c6772" text-anchor="middle">停内核时钟，保 RAM/寄存器</text>
+  <text x="510" y="222" font-size="11" fill="#5c6772" text-anchor="middle">唤醒源：RTC 闹钟 / 外部中断</text>
+  <text x="510" y="248" font-size="11" fill="#b5642e" text-anchor="middle">功耗 µA 级</text>
+
+  <line x1="280" y1="275" x2="380" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+</svg>

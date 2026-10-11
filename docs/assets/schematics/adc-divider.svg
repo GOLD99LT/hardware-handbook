@@ -1,0 +1,43 @@
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="320" fill="#ffffff"/>
+  <text x="30" y="32" font-size="17" font-weight="700" fill="#222a32">大信号分压前端（0~10V → 0~3.3V）</text>
+
+  <!-- Vin -->
+  <text x="80" y="70" font-size="13" fill="#b5642e">Vin 0~10V</text>
+  <line x1="130" y1="80" x2="130" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- R1 -->
+  <rect x="122" y="110" width="16" height="46" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="150" y="138" font-size="12" fill="#1a4f8b" font-weight="700">R1=20k</text>
+  <line x1="130" y1="156" x2="130" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="130" cy="180" r="4.5" fill="#2b3a4a"/>
+
+  <!-- R2 -->
+  <line x1="130" y1="180" x2="130" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="122" y="200" width="16" height="46" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="150" y="228" font-size="12" fill="#1a4f8b" font-weight="700">R2=10k</text>
+  <line x1="130" y1="246" x2="130" y2="270" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="116" y1="270" x2="144" y2="270" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="121" y1="277" x2="139" y2="277" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="125" y1="284" x2="135" y2="284" stroke="#2b3a4a" stroke-width="2.4"/>
+
+  <!-- 滤波小电阻 + ADC -->
+  <line x1="130" y1="180" x2="260" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="260" y="168" width="60" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="290" y="160" font-size="11" fill="#1a4f8b" text-anchor="middle">1k 滤波</text>
+  <line x1="320" y1="180" x2="430" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="380" cy="180" r="4.5" fill="#2b3a4a"/>
+  <!-- 滤波电容 -->
+  <line x1="380" y1="180" x2="380" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="362" y1="210" x2="398" y2="210" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="362" y1="230" x2="398" y2="230" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="380" y1="230" x2="380" y2="260" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="366" y1="260" x2="394" y2="260" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="371" y1="267" x2="389" y2="267" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="375" y1="274" x2="385" y2="274" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="404" y="226" font-size="11" fill="#1a4f8b">100nF</text>
+
+  <rect x="430" y="155" width="110" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="485" y="185" font-size="12" fill="#222a32" text-anchor="middle">MCU ADC</text>
+
+  <text x="120" y="308" font-size="12" fill="#7a5fc0">Vadc = 10V × 10/(20+10) ≈ 3.33V，1k+100nF 抗混叠滤波</text>
+</svg>

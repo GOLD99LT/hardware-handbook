@@ -1,0 +1,29 @@
+<svg viewBox="0 0 820 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="320" fill="#ffffff"/>
+  <text x="30" y="32" font-size="18" font-weight="700" fill="#222a32">电压模式控制（VMC）：占空比由 vc 与锯齿波比较决定</text>
+
+  <!-- 比较器 -->
+  <polygon points="180,110 180,200 300,155" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="196" y="145" font-size="15" fill="#2b3a4a" font-weight="700">+</text>
+  <text x="196" y="180" font-size="15" fill="#2b3a4a" font-weight="700">−</text>
+  <text x="235" y="100" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">PWM 比较器</text>
+
+  <!-- vc 输入到 + -->
+  <text x="60" y="140" font-size="14" fill="#1a4f8b" font-weight="700">vc（误差放大输出）</text>
+  <line x1="60" y1="146" x2="180" y2="146" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 锯齿波到 - -->
+  <text x="60" y="188" font-size="14" fill="#1a4f8b" font-weight="700">锯齿波 Ramp（峰峰 Vpp）</text>
+  <line x1="60" y1="182" x2="180" y2="182" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 输出 -->
+  <line x1="300" y1="155" x2="430" y2="155" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="340" y="146" font-size="13" fill="#5c6772">占空比 d(t) 驱动主开关</text>
+
+  <!-- 锯齿波形示意 -->
+  <path d="M460,250 L490,210 L520,250 L550,210 L580,250 L610,210 L640,250" fill="none" stroke="#b5642e" stroke-width="2.2"/>
+  <text x="550" y="280" font-size="13" fill="#b5642e" text-anchor="middle">每个周期：锯齿上升到 vc 的时刻决定关断点 → d</text>
+  <text x="460" y="200" font-size="12" fill="#5c6772">vc 越高 → d 越大</text>
+
+  <text x="30" y="305" font-size="13" fill="#222a32">特点：单环、需 Type III 补偿；电感电流不直接参与，逐周期限流靠检测开关电流</text>
+</svg>

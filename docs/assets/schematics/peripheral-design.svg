@@ -1,0 +1,40 @@
+<svg viewBox="0 0 860 440" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="440" fill="#ffffff"/>
+  <text x="30" y="32" font-size="18" font-weight="700" fill="#222a32">常用外设接口设计总图</text>
+
+  <!-- MCU -->
+  <rect x="330" y="150" width="200" height="150" fill="#f7f9fb" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="430" y="225" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">MCU</text>
+
+  <!-- 按键输入 -->
+  <rect x="80" y="100" width="160" height="60" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="160" y="125" font-size="12" fill="#222a32" text-anchor="middle">按键输入</text>
+  <text x="160" y="145" font-size="10" fill="#5c6772" text-anchor="middle">RC 消抖 + 上拉</text>
+  <line x1="240" y1="130" x2="330" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- LED -->
+  <rect x="80" y="220" width="160" height="60" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="160" y="245" font-size="12" fill="#222a32" text-anchor="middle">LED 指示</text>
+  <text x="160" y="265" font-size="10" fill="#5c6772" text-anchor="middle">限流电阻</text>
+  <line x1="240" y1="250" x2="330" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 继电器 -->
+  <rect x="620" y="100" width="160" height="60" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="700" y="125" font-size="12" fill="#222a32" text-anchor="middle">继电器/电磁阀</text>
+  <text x="700" y="145" font-size="10" fill="#5c6772" text-anchor="middle">三极管+续流二极管</text>
+  <line x1="620" y1="130" x2="530" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 数码管 -->
+  <rect x="620" y="220" width="160" height="60" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="700" y="245" font-size="12" fill="#222a32" text-anchor="middle">数码管/步进电机</text>
+  <text x="700" y="265" font-size="10" fill="#5c6772" text-anchor="middle">达林顿阵列驱动</text>
+  <line x1="620" y1="250" x2="530" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 传感器 -->
+  <rect x="330" y="340" width="200" height="60" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="430" y="365" font-size="12" fill="#222a32" text-anchor="middle">模拟/数字传感器</text>
+  <text x="430" y="385" font-size="10" fill="#5c6772" text-anchor="middle">ADC / I²C / SPI</text>
+  <line x1="430" y1="300" x2="430" y2="340" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <text x="120" y="425" font-size="12" fill="#7a5fc0">原则：GPIO 只做小信号/控制，大电流、高压、感性负载一律经驱动级隔离</text>
+</svg>

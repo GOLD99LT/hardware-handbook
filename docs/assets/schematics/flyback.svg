@@ -1,0 +1,91 @@
+<svg viewBox="0 0 940 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="940" height="360" fill="#ffffff"/>
+  <text x="30" y="28" font-size="18" font-weight="700" fill="#222a32">反激 Flyback（RCD 钳位）：原边开关管 + 变压器气隙 + 副边整流</text>
+
+  <!-- Vbulk+ 轨 -->
+  <text x="40" y="95" font-size="13" fill="#1a4f8b" font-weight="700">Vbulk+</text>
+  <line x1="90" y1="90" x2="200" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 原边绕组 Np -->
+  <path d="M200,90 q10,-22 20,0 q10,22 20,0 q10,-22 20,0 q10,22 20,0 q10,-22 20,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="300" y1="90" x2="380" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="250" y="62" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">原边 Np</text>
+
+  <!-- 漏极节点 D -->
+  <circle cx="380" cy="90" r="4.5" fill="#2b3a4a"/>
+  <text x="388" y="84" font-size="12" fill="#5c6772">D(漏极)</text>
+
+  <!-- 变压器铁芯 -->
+  <line x1="400" y1="55" x2="400" y2="290" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="418" y1="55" x2="418" y2="290" stroke="#2b3a4a" stroke-width="2.6"/>
+
+  <!-- MOSFET Q -->
+  <line x1="380" y1="90" x2="380" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="355" y="150" width="50" height="80" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="380" y="185" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q</text>
+  <text x="380" y="204" font-size="11" fill="#5c6772" text-anchor="middle">MOSFET</text>
+  <line x1="355" y1="190" x2="300" y2="190" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="250" y="186" font-size="12" fill="#5c6772">PWM 驱动</text>
+  <line x1="380" y1="230" x2="380" y2="290" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 原边返回轨 -->
+  <line x1="90" y1="290" x2="380" y2="290" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="40" y="295" font-size="13" fill="#1a4f8b" font-weight="700">Vbulk-</text>
+
+  <!-- RCD 钳位：Dclamp 二极管（竖） -->
+  <line x1="380" y1="90" x2="380" y2="72" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="368,72 392,72 380,50" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="368" y1="50" x2="392" y2="50" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="398" y="66" font-size="12" fill="#b5642e" font-weight="700">D_clamp</text>
+  <circle cx="380" cy="50" r="3.5" fill="#2b3a4a"/>
+
+  <!-- Rclamp 支路：Cn 左到 Vbulk+ -->
+  <line x1="380" y1="50" x2="300" y2="50" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="240" y="38" width="60" height="24" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="270" y="55" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rclamp</text>
+  <line x1="240" y1="50" x2="120" y2="50" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="120" y1="50" x2="120" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- Cclamp 并联支路 -->
+  <line x1="380" y1="50" x2="380" y2="22" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="380" y1="22" x2="120" y2="22" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="120" y1="22" x2="120" y2="30" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="104" y1="30" x2="136" y2="30" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="104" y1="42" x2="136" y2="42" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="120" y1="42" x2="120" y2="50" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="146" y="40" font-size="12" fill="#1a4f8b" font-weight="700">Cclamp</text>
+
+  <!-- 副边绕组 Ns -->
+  <line x1="440" y1="90" x2="460" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M460,90 q10,-22 20,0 q10,22 20,0 q10,-22 20,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="540" y1="90" x2="560" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="500" y="62" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">副边 Ns</text>
+
+  <!-- 副边返回 -->
+  <line x1="440" y1="90" x2="440" y2="290" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="440" y1="290" x2="760" y2="290" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 副边整流二极管 -->
+  <line x1="560" y1="90" x2="600" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="600,74 600,106 632,90" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="632" y1="74" x2="632" y2="106" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="606" y="68" font-size="12" fill="#1a4f8b" font-weight="700">D_rec</text>
+  <line x1="632" y1="90" x2="760" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="660" cy="90" r="4.5" fill="#2b3a4a"/>
+  <text x="770" y="95" font-size="14" fill="#1a4f8b" font-weight="700">Vout</text>
+
+  <!-- 输出电容 -->
+  <line x1="660" y1="90" x2="660" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="644" y1="150" x2="676" y2="150" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="644" y1="170" x2="676" y2="170" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="660" y1="170" x2="660" y2="290" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="684" y="165" font-size="13" fill="#1a4f8b" font-weight="700">Cout</text>
+
+  <!-- 副边地 -->
+  <line x1="660" y1="290" x2="660" y2="310" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="646" y1="310" x2="674" y2="310" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="651" y1="317" x2="669" y2="317" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="655" y1="324" x2="665" y2="324" stroke="#2b3a4a" stroke-width="2.4"/>
+
+  <text x="440" y="345" font-size="13" fill="#5c6772">原边（高压侧）与副边（低压侧）经变压器隔离，无电气连接</text>
+</svg>

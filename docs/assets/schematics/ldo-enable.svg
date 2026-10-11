@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="600" height="260" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">扩展：使能引脚 EN 与关断静态电流 IQ</text>
+  <rect x="220" y="90" width="160" height="100" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="300" y="135" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">LDO</text>
+  <text x="300" y="158" font-size="11.5" fill="#5c6772" text-anchor="middle">EN 高电平开启</text>
+  <line x1="140" y1="120" x2="220" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="130" y="116" font-size="14" fill="#2b3a4a" text-anchor="end">Vin</text>
+  <line x1="380" y1="120" x2="480" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="490" y="125" font-size="14" fill="#1a4f8b" font-weight="700">Vout</text>
+  <!-- EN 分压 -->
+  <line x1="260" y1="190" x2="260" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="252" y="184" font-size="12" fill="#1a4f8b" text-anchor="end">EN</text>
+  <line x1="260" y1="210" x2="330" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="330" y="198" width="24" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="362" y="226" font-size="12.5" fill="#1a4f8b" font-weight="700">Rdiv</text>
+  <line x1="342" y1="248" x2="342" y2="258" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="328" y1="258" x2="356" y2="258" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="333" y1="265" x2="351" y2="265" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="337" y1="272" x2="347" y2="272" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

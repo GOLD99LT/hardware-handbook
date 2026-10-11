@@ -1,0 +1,32 @@
+<svg viewBox="0 0 820 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="260" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">辅助供电绕组：启动电阻 + 辅助绕组给控制器供 Vcc</text>
+
+  <!-- 启动电阻 -->
+  <text x="40" y="80" font-size="13" fill="#1a4f8b" font-weight="700">Vbulk+</text>
+  <line x1="90" y1="76" x2="140" y2="76" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="140" y="64" width="60" height="24" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="170" y="81" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rstart</text>
+  <line x1="200" y1="76" x2="300" y2="76" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="250" y="66" font-size="11" fill="#5c6772">启动电流</text>
+
+  <!-- 辅助绕组 -->
+  <line x1="320" y1="76" x2="360" y2="76" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M360,76 q10,-18 20,0 q10,18 20,0 q10,-18 20,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="400" y="52" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">辅助绕组 Na</text>
+
+  <!-- 整流 + Vcc 电容 -->
+  <line x1="420" y1="76" x2="460" y2="76" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="460,62 460,90 488,76" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="488" y1="62" x2="488" y2="90" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="488" y1="76" x2="560" y2="76" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="570" y="80" font-size="13" fill="#1a4f8b" font-weight="700">Vcc→控制器</text>
+  <line x1="520" y1="76" x2="520" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="504" y1="120" x2="536" y2="120" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="504" y1="138" x2="536" y2="138" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="520" y1="138" x2="520" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="506" y1="180" x2="534" y2="180" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="511" y1="187" x2="529" y2="187" stroke="#2b3a4a" stroke-width="2.4"/>
+
+  <text x="30" y="230" font-size="13" fill="#222a32">上电：Rstart 从 Vbulk 取电建立 Vcc；起振后辅助绕组接管，Rstart 仅启动时耗小功率</text>
+</svg>

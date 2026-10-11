@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="360" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：时钟频谱 — 基频与谐波</text>
+
+  <!-- 坐标轴 -->
+  <line x1="80" y1="280" x2="760" y2="280" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="80" y1="280" x2="80" y2="80" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="760" y="300" font-size="12" fill="#222a32" text-anchor="end">频率</text>
+
+  <!-- 谐波峰 -->
+  <g stroke="#b03a3a" stroke-width="3">
+    <line x1="140" y1="280" x2="140" y2="130"/>
+    <line x1="220" y1="280" x2="220" y2="160"/>
+    <line x1="300" y1="280" x2="300" y2="185"/>
+    <line x1="380" y1="280" x2="380" y2="205"/>
+    <line x1="460" y1="280" x2="460" y2="222"/>
+    <line x1="540" y1="280" x2="540" y2="236"/>
+    <line x1="620" y1="280" x2="620" y2="248"/>
+    <line x1="700" y1="280" x2="700" y2="258"/>
+  </g>
+  <text x="140" y="120" font-size="11" fill="#b03a3a" text-anchor="middle">f₀</text>
+  <text x="220" y="150" font-size="11" fill="#b03a3a" text-anchor="middle">2f₀</text>
+  <text x="300" y="175" font-size="11" fill="#b03a3a" text-anchor="middle">3f₀</text>
+
+  <text x="80" y="325" font-size="12.5" fill="#222a32">周期方波在频谱上是 f₀, 2f₀, 3f₀… 一串谐波峰。EMI 超标常是某次谐波顶到了限值。</text>
+  <text x="80" y="348" font-size="12.5" fill="#222a32">上升沿越陡 → 高频谐波越高越宽；放缓边沿、展频时钟可压低峰值。</text>
+</svg>

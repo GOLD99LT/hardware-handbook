@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="260" fill="#ffffff"/>
+  <text x="360" y="34" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">二供/替代料：关键器件准备 Pin-to-Pin 兼容替代，断供不停线</text>
+  <!-- 主供 -->
+  <rect x="120" y="110" width="160" height="60" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2.4"/>
+  <text x="200" y="135" font-size="13" fill="#2e7d32" font-weight="700" text-anchor="middle">主供器件 A</text>
+  <text x="200" y="155" font-size="11" fill="#7a5fc0" text-anchor="middle">首选、批量价低</text>
+  <!-- 替代 -->
+  <rect x="440" y="110" width="160" height="60" rx="6" fill="#fff8e1" stroke="#b5642e" stroke-width="2.4"/>
+  <text x="520" y="135" font-size="13" fill="#b5642e" font-weight="700" text-anchor="middle">替代器件 B</text>
+  <text x="520" y="155" font-size="11" fill="#7a5fc0" text-anchor="middle">Pin 兼容、已验证</text>
+  <!-- 等价 -->
+  <line x1="280" y1="140" x2="440" y2="140" stroke="#3949ab" stroke-width="2.2" stroke-dasharray="6,4"/>
+  <text x="360" y="130" font-size="12" fill="#3949ab" text-anchor="middle">Pin-to-Pin 兼容</text>
+  <text x="360" y="210" font-size="13" fill="#7a5fc0" text-anchor="middle">替代料必须经过与主供同等的验证，不能只看封装相同就上</text>
+</svg>

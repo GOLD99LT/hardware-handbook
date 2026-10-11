@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="360" y="36" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">50Ω 系统：信号源内阻 50Ω，远端再接 50Ω 端接匹配</text>
+  <!-- 信号源 -->
+  <rect x="50" y="110" width="130" height="70" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="115" y="138" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">信号发生器</text>
+  <text x="115" y="158" font-size="12" fill="#b5642e" text-anchor="middle">Zs = 50Ω</text>
+  <!-- 电缆 -->
+  <line x1="180" y1="145" x2="430" y2="145" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="305" y="135" font-size="13" fill="#7a5fc0" text-anchor="middle">50Ω 同轴电缆</text>
+  <!-- DUT 输入高阻 -->
+  <rect x="430" y="115" width="110" height="60" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="485" y="140" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">DUT 输入</text>
+  <text x="485" y="160" font-size="12" fill="#b5642e" text-anchor="middle">高阻 Hi-Z</text>
+  <!-- 端接电阻到地 -->
+  <line x1="540" y1="145" x2="600" y2="145" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="590" y="133" width="70" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="625" y="125" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">50Ω 端接</text>
+  <line x1="625" y1="157" x2="625" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="611" y1="200" x2="639" y2="200" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="616" y1="207" x2="634" y2="207" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="620" y1="214" x2="630" y2="214" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="360" y="250" font-size="13" fill="#7a5fc0" text-anchor="middle">源端 50Ω + 远端 50Ω 匹配，高频不反射；示波器探头测高阻端电压会翻倍</text>
+</svg>

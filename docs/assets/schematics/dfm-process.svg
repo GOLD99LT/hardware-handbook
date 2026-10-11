@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 860 460" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="460" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">回流焊温度曲线（无铅 SAC305）</text>
+
+  <!-- 坐标轴 -->
+  <line x1="80" y1="380" x2="800" y2="380" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="80" y1="380" x2="80" y2="80" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="800" y="400" font-size="12" fill="#222a32" text-anchor="end">时间(秒)</text>
+  <text x="60" y="90" font-size="12" fill="#222a32" text-anchor="end">温度℃</text>
+
+  <!-- 曲线：预热→恒温→回流→冷却 -->
+  <path d="M100,360 L200,300 L320,270 L420,265 L500,150 L560,140 L620,200 L760,350" fill="none" stroke="#b5642e" stroke-width="3"/>
+  <!-- 液相线 217℃ -->
+  <line x1="80" y1="180" x2="800" y2="180" stroke="#b03a3a" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <text x="700" y="175" font-size="11.5" fill="#b03a3a">液相线 217℃</text>
+
+  <!-- 区标注 -->
+  <text x="200" y="290" font-size="12" fill="#1a4f8b">预热</text>
+  <text x="360" y="255" font-size="12" fill="#1a4f8b">恒温(活化)</text>
+  <text x="540" y="125" font-size="12" fill="#b5642e">回流(峰值~245℃)</text>
+  <text x="680" y="330" font-size="12" fill="#2f6e4f">冷却</text>
+
+  <rect x="60" y="410" width="760" height="40" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.4"/>
+  <text x="80" y="435" font-size="12" fill="#222a32">峰值温度 ~240~250℃，液相线以上时间(TAL) 30~90 秒；升温斜率≤3℃/s。DFM 要让板子/元件扛得住这个热历程。</text>
+</svg>

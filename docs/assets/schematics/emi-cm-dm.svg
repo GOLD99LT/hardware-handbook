@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="420" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：差模(DM) vs 共模(CM) 噪声</text>
+
+  <!-- 差模 -->
+  <rect x="40" y="70" width="360" height="200" fill="#eef4fb" stroke="#1a4f8b" stroke-width="2"/>
+  <text x="220" y="98" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">差模 DM（线与线之间）</text>
+  <line x1="90" y1="150" x2="350" y2="150" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="90" y1="200" x2="350" y2="200" stroke="#2b3a4a" stroke-width="2.4"/>
+  <path d="M180,150 q10,-14 20,0 q10,14 20,0" fill="none" stroke="#b03a3a" stroke-width="2"/>
+  <path d="M180,200 q10,14 20,0 q10,-14 20,0" fill="none" stroke="#b03a3a" stroke-width="2"/>
+  <text x="220" y="245" font-size="12" fill="#3a5a80" text-anchor="middle">噪声在相线/零线间环流</text>
+
+  <!-- 共模 -->
+  <rect x="420" y="70" width="360" height="200" fill="#fdf3e7" stroke="#b5642e" stroke-width="2"/>
+  <text x="600" y="98" font-size="14" fill="#b5642e" font-weight="700" text-anchor="middle">共模 CM（线对地）</text>
+  <line x1="470" y1="150" x2="730" y2="150" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="470" y1="200" x2="730" y2="200" stroke="#2b3a4a" stroke-width="2.4"/>
+  <path d="M560,150 q10,-14 20,0 q10,14 20,0" fill="none" stroke="#b03a3a" stroke-width="2"/>
+  <path d="M560,200 q10,-14 20,0 q10,14 20,0" fill="none" stroke="#b03a3a" stroke-width="2"/>
+  <!-- 对地辐射虚线 -->
+  <path d="M600,210 Q620,240 600,260" fill="none" stroke="#b5642e" stroke-width="1.6" stroke-dasharray="4,3"/>
+  <text x="600" y="245" font-size="12" fill="#7a5a30" text-anchor="middle">两线同相，经对地寄生电容形成天线</text>
+
+  <text x="40" y="320" font-size="12.5" fill="#222a32">DM 噪声：X 电容（跨线）抑制。CM 噪声：Y 电容（线对地）+ 共模电感抑制。</text>
+  <text x="40" y="345" font-size="12.5" fill="#222a32">CM 辐射通常比 DM 强（环路大、像真正天线），是辐射发射超标主因。</text>
+  <text x="40" y="370" font-size="12.5" fill="#b5642e">AND8301-D：同一板子布局好坏可使 DCE/DPI 结果差十几到二十几个 dBm。</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="420" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">FPGA 内部架构简化图 FPGA Architecture</text>
+
+  <!-- outer IOB ring -->
+  <rect x="60" y="60" width="600" height="320" fill="none" stroke="#b5642e" stroke-width="2.4" stroke-dasharray="6,3"/>
+  <text x="360" y="55" font-size="13" fill="#b5642e" text-anchor="middle" font-weight="700">IOB（可编程 IO 环）</text>
+
+  <!-- CLB array -->
+  <rect x="110" y="100" width="300" height="220" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="260" y="130" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">CLB 阵列（逻辑块）</text>
+  <text x="260" y="152" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">每块 = LUT + 触发器 + MUX</text>
+  <!-- grid dots -->
+  <circle cx="160" cy="200" r="4" fill="#2b3a4a"/>
+  <circle cx="220" cy="200" r="4" fill="#2b3a4a"/>
+  <circle cx="280" cy="200" r="4" fill="#2b3a4a"/>
+  <circle cx="340" cy="200" r="4" fill="#2b3a4a"/>
+  <circle cx="160" cy="260" r="4" fill="#2b3a4a"/>
+  <circle cx="220" cy="260" r="4" fill="#2b3a4a"/>
+  <circle cx="280" cy="260" r="4" fill="#2b3a4a"/>
+  <circle cx="340" cy="260" r="4" fill="#2b3a4a"/>
+
+  <!-- BRAM -->
+  <rect x="450" y="100" width="160" height="80" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="530" y="135" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">BRAM</text>
+  <text x="530" y="157" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">块存储器</text>
+
+  <!-- DSP -->
+  <rect x="450" y="210" width="160" height="80" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="530" y="245" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">DSP 块</text>
+  <text x="530" y="267" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">硬件乘加</text>
+
+  <!-- routing channels annotation -->
+  <text x="110" y="350" font-size="13" fill="#5a6672" text-anchor="start">连线资源：CLB 之间由可编程开关矩阵连接，配置文件决定哪些开关通断</text>
+</svg>

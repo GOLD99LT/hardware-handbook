@@ -1,0 +1,25 @@
+<svg viewBox="0 0 720 240" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="240" fill="#ffffff"/>
+  <text x="30" y="32" font-size="17" font-weight="700" fill="#222a32">UART 三线交叉接线（TX→RX）</text>
+
+  <!-- A -->
+  <rect x="60" y="80" width="120" height="110" fill="#f7f9fb" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="120" y="110" font-size="13" fill="#222a32" text-anchor="middle">板 A</text>
+  <text x="185" y="130" font-size="12" fill="#1a4f8b">TX</text>
+  <text x="185" y="160" font-size="12" fill="#1a4f8b">RX</text>
+  <text x="185" y="190" font-size="12" fill="#5c6772">GND</text>
+
+  <!-- B -->
+  <rect x="540" y="80" width="120" height="110" fill="#f7f9fb" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="600" y="110" font-size="13" fill="#222a32" text-anchor="middle">板 B</text>
+  <text x="500" y="130" font-size="12" fill="#1a4f8b">RX</text>
+  <text x="500" y="160" font-size="12" fill="#1a4f8b">TX</text>
+  <text x="500" y="190" font-size="12" fill="#5c6772">GND</text>
+
+  <!-- 交叉 -->
+  <line x1="180" y1="126" x2="540" y2="126" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="180" y1="156" x2="540" y2="156" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="180" y1="186" x2="540" y2="186" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <text x="250" y="225" font-size="12" fill="#7a5fc0">A.TX 接 B.RX、A.RX 接 B.TX、共地；同名脚直接对接不通，必须交叉</text>
+</svg>

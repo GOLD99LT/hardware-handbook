@@ -1,0 +1,72 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="760" height="440" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">4 位补码加减法器（SUB=1 时做 A−B）Add/Subtract Unit</text>
+
+  <!-- A[3:0] buses entering left -->
+  <text x="30" y="118" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">A[3]</text>
+  <line x1="78" y1="114" x2="400" y2="114" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="30" y="148" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">A[2]</text>
+  <line x1="78" y1="144" x2="400" y2="144" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="30" y="178" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">A[1]</text>
+  <line x1="78" y1="174" x2="400" y2="174" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="30" y="208" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">A[0]</text>
+  <line x1="78" y1="204" x2="400" y2="204" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- B[3:0] through XOR, controlled by SUB -->
+  <text x="30" y="268" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">B[3]</text>
+  <line x1="78" y1="264" x2="150" y2="264" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="150" y="252" width="34" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="167" y="269" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">⊕</text>
+  <line x1="184" y1="264" x2="400" y2="264" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <text x="30" y="298" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">B[2]</text>
+  <line x1="78" y1="294" x2="150" y2="294" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="150" y="282" width="34" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="167" y="299" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">⊕</text>
+  <line x1="184" y1="294" x2="400" y2="294" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <text x="30" y="328" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">B[1]</text>
+  <line x1="78" y1="324" x2="150" y2="324" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="150" y="312" width="34" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="167" y="329" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">⊕</text>
+  <line x1="184" y1="324" x2="400" y2="324" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <text x="30" y="358" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">B[0]</text>
+  <line x1="78" y1="354" x2="150" y2="354" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="150" y="342" width="34" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="167" y="359" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">⊕</text>
+  <line x1="184" y1="354" x2="400" y2="354" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- SUB control bus to XOR bottom inputs -->
+  <line x1="167" y1="276" x2="167" y2="400" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="120" y="404" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">SUB</text>
+  <circle cx="167" cy="264" r="4.5" fill="#2b3a4a"/>
+  <circle cx="167" cy="294" r="4.5" fill="#2b3a4a"/>
+  <circle cx="167" cy="324" r="4.5" fill="#2b3a4a"/>
+  <circle cx="167" cy="354" r="4.5" fill="#2b3a4a"/>
+
+  <!-- Adder block -->
+  <rect x="400" y="100" width="160" height="280" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="480" y="240" font-size="17" fill="#2b3a4a" text-anchor="middle" font-weight="700">4-bit</text>
+  <text x="480" y="262" font-size="17" fill="#2b3a4a" text-anchor="middle" font-weight="700">Adder</text>
+
+  <!-- Cin from SUB -->
+  <line x1="167" y1="400" x2="480" y2="400" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="480" y1="400" x2="480" y2="380" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="488" y="396" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">Cin=SUB</text>
+
+  <!-- S[3:0] output -->
+  <line x1="560" y1="140" x2="700" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="706" y="145" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">S[3]</text>
+  <line x1="560" y1="180" x2="700" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="706" y="185" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">S[2]</text>
+  <line x1="560" y1="220" x2="700" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="706" y="225" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">S[1]</text>
+  <line x1="560" y1="260" x2="700" y2="260" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="706" y="265" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">S[0]</text>
+
+  <!-- Overflow out -->
+  <line x1="560" y1="320" x2="640" y2="320" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="560" cy="320" r="4.5" fill="#2b3a4a"/>
+  <text x="648" y="325" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">Overflow=C3⊕C4</text>
+</svg>

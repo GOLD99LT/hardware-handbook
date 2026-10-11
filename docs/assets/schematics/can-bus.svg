@@ -1,0 +1,30 @@
+<svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="760" height="320" fill="#ffffff"/>
+  <text x="30" y="32" font-size="17" font-weight="700" fill="#222a32">CAN 总线差分电平（显性/隐性）</text>
+
+  <!-- CAN_H / CAN_L -->
+  <line x1="100" y1="110" x2="660" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="100" y1="150" x2="660" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="670" y="114" font-size="12" fill="#1a4f8b">CAN_H</text>
+  <text x="670" y="154" font-size="12" fill="#1a4f8b">CAN_L</text>
+
+  <!-- 终端 120 -->
+  <line x1="100" y1="110" x2="100" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="92" y="128" width="16" height="4" fill="#2b3a4a"/>
+  <text x="50" y="135" font-size="11" fill="#b5642e">120Ω</text>
+  <line x1="660" y1="110" x2="660" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="652" y="128" width="16" height="4" fill="#2b3a4a"/>
+  <text x="672" y="135" font-size="11" fill="#b5642e">120Ω</text>
+
+  <!-- 节点 -->
+  <line x1="380" y1="110" x2="380" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="380" y1="150" x2="380" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="380" cy="110" r="4.5" fill="#2b3a4a"/>
+  <circle cx="380" cy="150" r="4.5" fill="#2b3a4a"/>
+  <rect x="320" y="180" width="120" height="44" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="380" y="207" font-size="12" fill="#222a32" text-anchor="middle">CAN 收发器</text>
+
+  <!-- 电平标注 -->
+  <text x="120" y="260" font-size="12" fill="#2e7d4f">显性 Dominant：CAN_H≈3.5V，CAN_L≈1.5V，差分≈2V（逻辑0）</text>
+  <text x="120" y="285" font-size="12" fill="#b5642e">隐性 Recessive：两线都≈2.5V，差分≈0V（逻辑1，靠终端电阻拉回）</text>
+</svg>

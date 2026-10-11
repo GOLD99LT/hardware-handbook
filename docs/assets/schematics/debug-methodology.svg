@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 460" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="460" fill="#ffffff"/>
+  <text x="360" y="34" font-size="17" fill="#1a4f8b" font-weight="700" text-anchor="middle">上电检查流程：逐级验证，任一步不通过就停下，不进入下一步</text>
+  <!-- 步骤框 -->
+  <rect x="230" y="60" width="260" height="46" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="360" y="88" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">1. 不通电：目视 + 通断档查短路</text>
+  <line x1="360" y1="106" x2="360" y2="126" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <rect x="230" y="126" width="260" height="46" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="360" y="154" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">2. 电源限流上电，看总电流</text>
+  <line x1="360" y1="172" x2="360" y2="192" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <rect x="230" y="192" width="260" height="46" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="360" y="220" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">3. 量各路电源电压是否正确</text>
+  <line x1="360" y1="238" x2="360" y2="258" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <rect x="230" y="258" width="260" height="46" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="360" y="286" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">4. 时钟/复位/使能信号</text>
+  <line x1="360" y1="304" x2="360" y2="324" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <rect x="230" y="324" width="260" height="46" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="360" y="352" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">5. 逐级加载功能，外设逐个验证</text>
+  <line x1="360" y1="370" x2="360" y2="390" stroke="#2b3a4a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <rect x="230" y="390" width="260" height="46" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2.6"/>
+  <text x="360" y="418" font-size="14" fill="#2e7d32" font-weight="700" text-anchor="middle">通过：功能正常，进入深度调试</text>
+  <defs>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 Z" fill="#2b3a4a"/>
+    </marker>
+  </defs>
+</svg>

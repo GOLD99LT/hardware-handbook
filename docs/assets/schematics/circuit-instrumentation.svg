@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 440 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="440" height="260" fill="#ffffff"/>
+  <!-- 输入 Vin+ / Vin- -->
+  <text x="30" y="75" font-size="15" fill="#2b3a4a">Vin+</text>
+  <text x="30" y="180" font-size="15" fill="#2b3a4a">Vin−</text>
+  <!-- 第一级两个运放简化 -->
+  <rect x="100" y="50" width="80" height="50" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="140" y="80" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">U1</text>
+  <rect x="100" y="160" width="80" height="50" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="140" y="190" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">U2</text>
+  <!-- 输入连线 -->
+  <line x1="70" y1="75" x2="100" y2="75" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="70" y1="185" x2="100" y2="185" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 增益电阻 Rg -->
+  <line x1="180" y1="75" x2="260" y2="75" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="180" y1="185" x2="260" y2="185" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="200" y="63" width="40" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="220" y="55" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rg</text>
+  <!-- 第二级差分 -->
+  <rect x="290" y="110" width="90" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="335" y="145" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">U3 差分</text>
+  <line x1="260" y1="75" x2="290" y2="125" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="260" y1="185" x2="290" y2="155" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 输出 -->
+  <line x1="380" y1="140" x2="420" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="425" y="146" font-size="14" fill="#1a4f8b" font-weight="700">Vout</text>
+</svg>

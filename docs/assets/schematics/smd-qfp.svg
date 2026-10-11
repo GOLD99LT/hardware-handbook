@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="400" height="400" fill="#ffffff"/>
+  <!-- 本体 -->
+  <rect x="130" y="130" width="140" height="140" fill="#f2efe6" stroke="#2b3a4a" stroke-width="2.6"/>
+  <!-- Pin 1 标记缺口/点 -->
+  <circle cx="145" cy="145" r="4.5" fill="#2b3a4a"/>
+  <!-- 上边 8 引脚 -->
+  <rect x="145" y="115" width="10" height="15" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="165" y="115" width="10" height="15" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="185" y="115" width="10" height="15" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="205" y="115" width="10" height="15" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="225" y="115" width="10" height="15" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="245" y="115" width="10" height="15" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="265" y="115" width="10" height="15" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 下边 8 引脚 -->
+  <rect x="145" y="270" width="10" height="15" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="165" y="270" width="10" height="15" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="185" y="270" width="10" height="15" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="205" y="270" width="10" height="15" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="225" y="270" width="10" height="15" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="245" y="270" width="10" height="15" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="265" y="270" width="10" height="15" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 左边 8 引脚 -->
+  <rect x="115" y="145" width="15" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="115" y="165" width="15" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="115" y="185" width="15" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="115" y="205" width="15" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="115" y="225" width="15" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="115" y="245" width="15" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 右边 8 引脚 -->
+  <rect x="270" y="145" width="15" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="270" y="165" width="15" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="270" y="185" width="15" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="270" y="205" width="15" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="270" y="225" width="15" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="270" y="245" width="15" height="10" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 引脚号 -->
+  <text x="149" y="108" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">1</text>
+  <text x="285" y="152" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">16</text>
+  <text x="200" y="310" font-size="15" fill="#2b3a4a" text-anchor="middle">QFP-32 顶视图（四面鸥翼引脚，0.8mm pitch，STM32F103 常用）</text>
+</svg>

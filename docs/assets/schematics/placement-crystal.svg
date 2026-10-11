@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="420" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：晶振（Crystal）摆放与回流</text>
+
+  <!-- MCU -->
+  <rect x="480" y="120" width="220" height="160" fill="#eef4fb" stroke="#1a4f8b" stroke-width="2.2"/>
+  <text x="590" y="200" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">MCU</text>
+  <text x="500" y="160" font-size="11" fill="#1a4f8b">OSC_IN</text>
+  <text x="500" y="240" font-size="11" fill="#1a4f8b">OSC_OUT</text>
+
+  <!-- 晶振 -->
+  <rect x="120" y="150" width="120" height="80" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="180" y="185" font-size="13" fill="#222a32" text-anchor="middle">Y1 晶振</text>
+  <text x="180" y="208" font-size="11" fill="#5c6772" text-anchor="middle">8 MHz</text>
+  <!-- 负载电容 -->
+  <line x1="150" y1="230" x2="150" y2="270" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="138" y1="270" x2="162" y2="270" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="138" y1="282" x2="162" y2="282" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="150" y1="282" x2="150" y2="310" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="136" y1="310" x2="164" y2="310" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="141" y1="317" x2="159" y2="317" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="145" y1="324" x2="155" y2="324" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="120" y="278" font-size="11" fill="#1a4f8b">C1</text>
+
+  <line x1="210" y1="230" x2="210" y2="270" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="198" y1="270" x2="222" y2="270" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="198" y1="282" x2="222" y2="282" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="210" y1="282" x2="210" y2="310" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="196" y1="310" x2="224" y2="310" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="201" y1="317" x2="219" y2="317" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="205" y1="324" x2="215" y2="324" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="228" y="278" font-size="11" fill="#1a4f8b">C2</text>
+
+  <!-- 走线到 MCU -->
+  <line x1="240" y1="165" x2="480" y2="165" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="240" y1="215" x2="480" y2="235" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 回流虚线 -->
+  <path d="M240,165 L480,165 L480,235 L240,215" fill="none" stroke="#b5642e" stroke-width="1.8" stroke-dasharray="5,4"/>
+
+  <text x="300" y="155" font-size="12" fill="#b5642e">短线、包地、下方不跨分割</text>
+
+  <rect x="60" y="350" width="700" height="50" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="80" y="378" font-size="12.5" fill="#222a32">规则：晶振紧贴 MCU 晶振引脚，走线最短；下方地平面完整不分割；负载电容靠近晶振；不要让晶振走线穿越其它高速信号。</text>
+</svg>

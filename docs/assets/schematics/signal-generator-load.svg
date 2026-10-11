@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="760" height="360" fill="#ffffff"/>
+  <!-- 稳压电源 -->
+  <rect x="50" y="60" width="130" height="70" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="115" y="88" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">稳压电源</text>
+  <text x="115" y="108" font-size="13" fill="#b5642e" text-anchor="middle">Vset / Iset</text>
+  <!-- DUT -->
+  <rect x="320" y="120" width="120" height="90" rx="6" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="380" y="170" font-size="15" fill="#1a4f8b" font-weight="700" text-anchor="middle">DUT</text>
+  <!-- 电源 -> DUT -->
+  <line x1="180" y1="95" x2="320" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="240" y="108" font-size="13" fill="#2e7d32">Vcc 供电</text>
+  <!-- 信号发生器 -> DUT 输入 -->
+  <rect x="50" y="220" width="130" height="70" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="115" y="248" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">信号发生器</text>
+  <text x="115" y="268" font-size="13" fill="#b5642e" text-anchor="middle">波形/频率/幅度</text>
+  <line x1="180" y1="255" x2="320" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="220" y="232" font-size="13" fill="#1a4f8b">Vin 信号</text>
+  <!-- DUT 输出 -> 电子负载 -->
+  <rect x="560" y="120" width="140" height="90" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="630" y="158" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">电子负载</text>
+  <text x="630" y="178" font-size="13" fill="#b5642e" text-anchor="middle">CC/CV/CR 拉载</text>
+  <line x1="440" y1="165" x2="560" y2="165" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="480" y="155" font-size="13" fill="#2e7d32">Vout 带载</text>
+  <text x="380" y="250" font-size="14" fill="#7a5fc0" text-anchor="middle">示波器/万用表同时监测 Vout 与电流</text>
+</svg>

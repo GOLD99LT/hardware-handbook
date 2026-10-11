@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="340" fill="#ffffff"/>
+  <text x="360" y="34" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">直插焊点：元件引脚穿过焊盘，烙铁同时加热引脚与焊盘，送锡</text>
+  <!-- PCB -->
+  <rect x="120" y="200" width="480" height="26" fill="#dfe9d6" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="610" y="218" font-size="13" fill="#2b3a4a">PCB</text>
+  <!-- 焊盘 + 引脚 -->
+  <rect x="330" y="196" width="60" height="10" fill="#c9a227" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="360" y1="120" x2="360" y2="240" stroke="#8a8a8a" stroke-width="3"/>
+  <text x="380" y="130" font-size="13" fill="#1a4f8b">元件引脚</text>
+  <!-- 良好焊点轮廓 -->
+  <path d="M330,200 Q360,168 390,200 Z" fill="none" stroke="#2e7d32" stroke-width="2.4"/>
+  <text x="360" y="160" font-size="13" fill="#2e7d32" text-anchor="middle">良好：光亮、圆锥、润湿</text>
+  <!-- 烙铁 -->
+  <line x1="180" y1="120" x2="330" y2="196" stroke="#b5642e" stroke-width="3.2"/>
+  <text x="170" y="115" font-size="13" fill="#b5642e">烙铁头</text>
+  <!-- 锡丝 -->
+  <line x1="540" y1="110" x2="380" y2="198" stroke="#9aa5b1" stroke-width="2.6"/>
+  <text x="545" y="105" font-size="13" fill="#9aa5b1">锡丝</text>
+  <text x="360" y="290" font-size="13" fill="#7a5fc0" text-anchor="middle">先加热引脚+焊盘，再送锡到焊盘（不是烙铁头上），锡量刚好形成光亮圆锥</text>
+</svg>

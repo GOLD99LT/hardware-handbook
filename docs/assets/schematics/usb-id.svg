@@ -1,0 +1,34 @@
+<svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="280" fill="#ffffff"/>
+  <text x="30" y="32" font-size="17" font-weight="700" fill="#222a32">USB 设备识别（D+ 上拉）</text>
+
+  <!-- 主机 -->
+  <rect x="80" y="100" width="110" height="90" fill="#f7f9fb" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="135" y="150" font-size="12" fill="#222a32" text-anchor="middle">USB 主机</text>
+
+  <!-- D+/D- -->
+  <line x1="190" y1="125" x2="500" y2="125" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="190" y1="165" x2="500" y2="165" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="510" y="129" font-size="11" fill="#1a4f8b">D+</text>
+  <text x="510" y="169" font-size="11" fill="#1a4f8b">D−</text>
+  <!-- 主机侧 15k 下拉 -->
+  <line x1="250" y1="125" x2="250" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="236" y1="140" x2="264" y2="140" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="241" y1="147" x2="259" y2="147" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="245" y1="154" x2="255" y2="154" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="270" y="148" font-size="10" fill="#5c6772">15k 下拉</text>
+
+  <!-- 设备侧 -->
+  <rect x="500" y="100" width="120" height="90" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="560" y="135" font-size="11" fill="#222a32" text-anchor="middle">USB 设备</text>
+  <text x="560" y="155" font-size="10" fill="#5c6772" text-anchor="middle">(全速)</text>
+  <!-- D+ 1.5k 上拉 -->
+  <line x1="560" y1="125" x2="560" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="552" y="58" width="16" height="32" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="572" y="80" font-size="10" fill="#1a4f8b">1.5k</text>
+  <line x1="560" y1="58" x2="560" y2="46" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="572" y="50" font-size="10" fill="#b5642e">3.3V</text>
+  <circle cx="560" cy="125" r="4.5" fill="#2b3a4a"/>
+
+  <text x="120" y="240" font-size="12" fill="#7a5fc0">设备在 D+ 上拉 1.5k（全速）→ 主机检测到 D+ 高电平即识别为全速设备；低速则上拉在 D−</text>
+</svg>

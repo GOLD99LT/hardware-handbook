@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="360" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：差分对内等长（Skew）</text>
+
+  <!-- P 线直 -->
+  <line x1="80" y1="140" x2="700" y2="140" stroke="#2b3a4a" stroke-width="3"/>
+  <text x="80" y="128" font-size="12" fill="#1a4f8b">P</text>
+  <!-- N 线蛇形等长 -->
+  <path d="M80,220 L200,220 L200,200 L260,200 L260,220 L700,220" fill="none" stroke="#2b3a4a" stroke-width="3"/>
+  <text x="80" y="245" font-size="12" fill="#1a4f8b">N（绕线补偿）</text>
+
+  <!-- skew 标注 -->
+  <line x1="200" y1="260" x2="260" y2="260" stroke="#b5642e" stroke-width="1.6"/>
+  <text x="230" y="278" font-size="12" fill="#b5642e" text-anchor="middle">蛇形补偿 ΔL</text>
+
+  <text x="60" y="320" font-size="12.5" fill="#222a32">两线长度差 ΔL → 时间差 skew=ΔL/v。skew 把差分信号变成共模噪声，降低抗扰。</text>
+  <text x="60" y="343" font-size="12.5" fill="#222a32">规则：对内等长，USB/DDR 要求 skew &lt; 5 mil（~0.13mm）；短的那根走蛇形等长，别打过孔换层引入 stub。</text>
+</svg>

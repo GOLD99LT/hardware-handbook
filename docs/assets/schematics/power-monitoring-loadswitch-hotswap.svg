@@ -1,0 +1,26 @@
+<svg viewBox="0 0 820 230" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="230" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">热插拔/理想二极管（Hot-swap）：受控 MOSFET 防浪涌与反灌</text>
+
+  <!-- Vbus -->
+  <text x="40" y="90" font-size="13" fill="#1a4f8b" font-weight="700">Vbus(背板)</text>
+  <line x1="120" y1="86" x2="180" y2="86" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="180" y="74" width="50" height="24" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="205" y="91" font-size="11" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rsns</text>
+  <line x1="230" y1="86" x2="300" y2="86" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 热插拔 MOS -->
+  <rect x="300" y="60" width="110" height="52" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="355" y="86" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">热插拔 N-MOS</text>
+  <text x="355" y="103" font-size="10" fill="#5c6772" text-anchor="middle">栅极缓开限流</text>
+  <line x1="410" y1="86" x2="560" y2="86" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="570" y="90" font-size="13" fill="#1a4f8b" font-weight="700">→板载负载</text>
+
+  <!-- 控制器 -->
+  <rect x="200" y="140" width="180" height="60" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="290" y="166" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">热插拔控制器</text>
+  <text x="290" y="184" font-size="10" fill="#5c6772" text-anchor="middle">检测 Rsns 压降·限流·断电保护</text>
+  <line x1="355" y1="112" x2="355" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <text x="30" y="215" font-size="13" fill="#222a32">板卡带电插入时，栅极缓慢开启给输出电容预充电，限制浪涌电流；过流时快速切断保护背板</text>
+</svg>

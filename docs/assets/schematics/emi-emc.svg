@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 860 480" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="480" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">EMI 发射机理：辐射 + 传导</text>
+
+  <!-- 左：辐射 -->
+  <rect x="40" y="70" width="380" height="200" fill="#fdf3e7" stroke="#b5642e" stroke-width="2"/>
+  <text x="230" y="98" font-size="14" fill="#b5642e" font-weight="700" text-anchor="middle">辐射发射 Radiated EMI</text>
+  <!-- 环路天线 -->
+  <rect x="120" y="130" width="120" height="70" fill="none" stroke="#b03a3a" stroke-width="2.6"/>
+  <text x="180" y="170" font-size="11" fill="#b03a3a" text-anchor="middle">电流环路</text>
+  <!-- 波纹扩散 -->
+  <path d="M240,165 Q280,140 320,165" fill="none" stroke="#b5642e" stroke-width="1.6"/>
+  <path d="M250,165 Q300,125 350,165" fill="none" stroke="#b5642e" stroke-width="1.6"/>
+  <path d="M260,165 Q320,110 380,165" fill="none" stroke="#b5642e" stroke-width="1.6"/>
+  <text x="230" y="225" font-size="12" fill="#7a5a30" text-anchor="middle">环路面积 × 电流 × 频率² → 辐射</text>
+  <text x="230" y="248" font-size="11.5" fill="#7a5a30" text-anchor="middle">减小环路面积是首要手段</text>
+
+  <!-- 右：传导 -->
+  <rect x="440" y="70" width="380" height="200" fill="#eef4fb" stroke="#1a4f8b" stroke-width="2"/>
+  <text x="630" y="98" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">传导发射 Conducted EMI</text>
+  <!-- 电源线上噪声 -->
+  <line x1="490" y1="165" x2="770" y2="165" stroke="#2b3a4a" stroke-width="3"/>
+  <text x="490" y="155" font-size="11" fill="#222a32">电源线进设备</text>
+  <path d="M560,165 q8,-12 16,0 q8,12 16,0 q8,-12 16,0" fill="none" stroke="#b03a3a" stroke-width="2"/>
+  <text x="630" y="225" font-size="12" fill="#3a5a80" text-anchor="middle">噪声沿电源线/地线传导到电网</text>
+  <text x="630" y="248" font-size="11.5" fill="#3a5a80" text-anchor="middle">用 EMI 滤波器（X/Y 电容+共模电感）抑制</text>
+
+  <!-- 噪声源 -->
+  <rect x="120" y="310" width="620" height="130" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="140" y="338" font-size="14" fill="#1a4f8b" font-weight="700">谁是噪声源：</text>
+  <text x="140" y="364" font-size="12.5" fill="#222a32">• 高速开关（SMPS 的 di/dt、dv/dt）— 最大元凶；</text>
+  <text x="140" y="388" font-size="12.5" fill="#222a32">• 时钟及其谐波 — 周期脉冲在频谱上是一根根尖峰；</text>
+  <text x="140" y="412" font-size="12.5" fill="#222a32">• 上升沿越陡，高频谐波越丰富（0.35/tr ≈ 最高显著频率）。</text>
+</svg>

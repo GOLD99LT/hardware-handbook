@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="360" y="34" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">SMD 返修：热风头预热整焊盘，镊子定位，吸锡带清理多余锡</text>
+  <!-- PCB -->
+  <rect x="180" y="180" width="360" height="24" fill="#dfe9d6" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- SMD 元件 -->
+  <rect x="320" y="158" width="80" height="22" fill="#3a3a3a" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="360" y="150" font-size="13" fill="#1a4f8b" text-anchor="middle">SMD IC/电阻</text>
+  <!-- 热风 -->
+  <path d="M360,60 L330,158 M360,60 L390,158" stroke="#c0392b" stroke-width="2.2" fill="none" stroke-dasharray="5,4"/>
+  <text x="360" y="52" font-size="13" fill="#c0392b" text-anchor="middle">热风枪均匀加热</text>
+  <!-- 镊子 -->
+  <line x1="200" y1="120" x2="320" y2="165" stroke="#7a5fc0" stroke-width="2.2"/>
+  <line x1="200" y1="135" x2="320" y2="172" stroke="#7a5fc0" stroke-width="2.2"/>
+  <text x="180" y="115" font-size="13" fill="#7a5fc0" text-anchor="end">镊子定位</text>
+  <!-- 吸锡带 -->
+  <rect x="480" y="186" width="90" height="10" fill="#c9a227" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="525" y="178" font-size="13" fill="#b5642e" text-anchor="middle">吸锡带</text>
+  <text x="360" y="250" font-size="13" fill="#7a5fc0" text-anchor="middle">先在焊盘上拖一层新锡帮助受热，热风到锡熔化即取走元件，别吹太久损板</text>
+</svg>

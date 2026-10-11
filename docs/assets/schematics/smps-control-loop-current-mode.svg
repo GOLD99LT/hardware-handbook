@@ -1,0 +1,35 @@
+<svg viewBox="0 0 860 340" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="340" fill="#ffffff"/>
+  <text x="30" y="32" font-size="18" font-weight="700" fill="#222a32">峰值电流模式控制（CMC）：电压外环 + 电流内环</text>
+
+  <!-- 电压外环误差放大 -->
+  <text x="40" y="90" font-size="13" fill="#1a4f8b" font-weight="700">电压外环误差输出 vc</text>
+  <line x1="230" y1="86" x2="360" y2="86" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="360,70 360,120 430,95" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="372" y="88" font-size="13" fill="#2b3a4a" font-weight="700">+</text>
+  <text x="372" y="112" font-size="13" fill="#2b3a4a" font-weight="700">−</text>
+  <line x1="430" y1="95" x2="480" y2="95" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="450" y="86" font-size="12" fill="#5c6772">vc</text>
+
+  <!-- 电流检测 -->
+  <text x="40" y="220" font-size="13" fill="#1a4f8b" font-weight="700">开关电流检测 Rsns → Isense</text>
+  <line x1="230" y1="216" x2="360" y2="216" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="360,196 360,256 430,226" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="372" y="216" font-size="13" fill="#2b3a4a" font-weight="700">+</text>
+  <text x="372" y="246" font-size="13" fill="#2b3a4a" font-weight="700">−</text>
+
+  <!-- 比较输出接锁存器 -->
+  <rect x="500" y="120" width="90" height="70" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="545" y="150" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">RS 锁存</text>
+  <text x="545" y="170" font-size="11" fill="#5c6772" text-anchor="middle">时钟置位/电流复位</text>
+  <line x1="430" y1="95" x2="545" y2="95" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="545" y1="95" x2="545" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="430" y1="226" x2="500" y2="190" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <line x1="590" y1="155" x2="720" y2="155" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="640" y="146" font-size="13" fill="#1a4f8b" font-weight="700">驱动主开关 Gate</text>
+
+  <!-- 斜率补偿 -->
+  <text x="40" y="300" font-size="13" fill="#b5642e">斜率补偿：Isense 上叠加一负斜率，D&gt;50% 时防次谐波振荡（亚谐波振荡）</text>
+  <text x="30" y="325" font-size="13" fill="#222a32">特点：电流内环自动逐周期限流、补偿简单（多为 Type II）；纹波抑制快，但占空比&gt;50% 需斜率补偿</text>
+</svg>

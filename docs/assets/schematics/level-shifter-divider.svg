@@ -1,0 +1,29 @@
+<svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="600" height="320" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">电阻分压式电平转换（单向）Resistive Divider</text>
+
+  <!-- Vin -->
+  <text x="60" y="80" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">Vin(5V)</text>
+  <line x1="130" y1="76" x2="200" y2="76" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- R1 -->
+  <rect x="188" y="76" width="24" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="220" y="106" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">R1=30k</text>
+  <line x1="200" y1="126" x2="200" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- node Vout -->
+  <circle cx="200" cy="180" r="4.5" fill="#2b3a4a"/>
+  <line x1="200" y1="180" x2="320" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="330" y="185" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">Vout(3.3V)→MCU</text>
+
+  <!-- R2 -->
+  <line x1="200" y1="180" x2="200" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="188" y="210" width="24" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="220" y="240" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">R2=20k</text>
+  <line x1="200" y1="260" x2="200" y2="290" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="186" y1="290" x2="214" y2="290" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="191" y1="297" x2="209" y2="297" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="195" y1="304" x2="205" y2="304" stroke="#2b3a4a" stroke-width="2.4"/>
+
+  <text x="24" y="310" font-size="12" fill="#5a6672" text-anchor="start">Vout = Vin×R2/(R1+R2) = 5×20/(30+20) = 2.0V；只适合低速、单向、高阻负载</text>
+</svg>

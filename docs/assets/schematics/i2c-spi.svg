@@ -1,0 +1,57 @@
+<svg viewBox="0 0 860 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="420" fill="#ffffff"/>
+  <text x="30" y="32" font-size="18" font-weight="700" fill="#222a32">I²C 与 SPI 总线结构对比</text>
+
+  <!-- ===== I2C ===== -->
+  <text x="60" y="64" font-size="15" font-weight="700" fill="#1a4f8b">I²C（两线 + 地址）</text>
+  <!-- SDA/SCL -->
+  <line x1="100" y1="100" x2="380" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="100" y1="140" x2="380" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="388" y="104" font-size="11" fill="#1a4f8b">SDA</text>
+  <text x="388" y="144" font-size="11" fill="#1a4f8b">SCL</text>
+  <!-- 上拉 -->
+  <line x1="120" y1="100" x2="120" y2="78" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="112" y="50" width="16" height="28" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="132" y="68" font-size="10" fill="#1a4f8b">4.7k</text>
+  <line x1="120" y1="50" x2="120" y2="40" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="132" y="44" font-size="10" fill="#b5642e">+3V3</text>
+  <line x1="160" y1="140" x2="160" y2="118" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="152" y="90" width="16" height="28" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="172" y="108" font-size="10" fill="#1a4f8b">4.7k</text>
+
+  <!-- 主机/从机 -->
+  <rect x="180" y="180" width="90" height="44" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="225" y="207" font-size="11" fill="#222a32" text-anchor="middle">主机</text>
+  <line x1="225" y1="180" x2="225" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="225" cy="140" r="4.5" fill="#2b3a4a"/>
+
+  <rect x="300" y="180" width="90" height="44" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="345" y="200" font-size="11" fill="#222a32" text-anchor="middle">从机 A</text>
+  <text x="345" y="216" font-size="9" fill="#5c6772" text-anchor="middle">地址 0x50</text>
+  <line x1="345" y1="180" x2="345" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- ===== SPI ===== -->
+  <text x="480" y="64" font-size="15" font-weight="700" fill="#b5642e">SPI（四线 + 片选）</text>
+  <line x1="500" y1="90" x2="820" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="500" y1="120" x2="820" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="500" y1="150" x2="820" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="826" y="94" font-size="10" fill="#1a4f8b">SCK</text>
+  <text x="826" y="124" font-size="10" fill="#1a4f8b">MOSI</text>
+  <text x="826" y="154" font-size="10" fill="#1a4f8b">MISO</text>
+
+  <rect x="500" y="190" width="90" height="44" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="545" y="217" font-size="11" fill="#222a32" text-anchor="middle">主机</text>
+  <line x1="545" y1="190" x2="545" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <rect x="640" y="190" width="90" height="44" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="685" y="217" font-size="11" fill="#222a32" text-anchor="middle">从机1(CS1)</text>
+  <line x1="685" y1="190" x2="685" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="685" y1="190" x2="620" y2="190" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="610" y="194" font-size="10" fill="#b5642e">CS1</text>
+
+  <rect x="740" y="190" width="90" height="44" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="785" y="217" font-size="11" fill="#222a32" text-anchor="middle">从机2(CS2)</text>
+  <line x1="785" y1="190" x2="785" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <text x="120" y="300" font-size="12" fill="#7a5fc0">I²C：省线（SDA/SCL）、靠地址寻址、开漏上拉、速率低；SPI：速度快、每从机一根 CS、全双工</text>
+</svg>

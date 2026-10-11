@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="760" height="420" fill="#ffffff"/>
+  <!-- DUT -->
+  <rect x="60" y="150" width="120" height="110" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="120" y="140" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">被测 DUT</text>
+  <!-- 测试节点 TP -->
+  <circle cx="230" cy="205" r="4.5" fill="#2b3a4a"/>
+  <text x="230" y="195" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">TP</text>
+  <line x1="180" y1="205" x2="230" y2="205" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 探头尖端到探头体 -->
+  <line x1="230" y1="205" x2="270" y2="205" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="270" y="190" width="100" height="30" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="320" y="210" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">10X 探头</text>
+  <!-- 同轴电缆 -->
+  <path d="M370,205 L430,205 L430,150 L540,150" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 示波器 -->
+  <rect x="540" y="120" width="160" height="70" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="620" y="150" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">示波器</text>
+  <text x="620" y="172" font-size="14" fill="#b5642e" text-anchor="middle">CH1 输入</text>
+  <!-- 接地弹簧：探头地到 DUT GND，短而近 -->
+  <line x1="300" y1="220" x2="300" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="120" y1="260" x2="120" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="120" y1="280" x2="300" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="120" cy="260" r="4.5" fill="#2b3a4a"/>
+  <text x="210" y="300" font-size="14" fill="#7a5fc0" text-anchor="middle">接地弹簧（短环路）→ DUT GND</text>
+  <!-- DUT GND 符号 -->
+  <line x1="120" y1="260" x2="120" y2="330" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="106" y1="330" x2="134" y2="330" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="111" y1="337" x2="129" y2="337" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="115" y1="344" x2="125" y2="344" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="430" y="110" font-size="14" fill="#b5642e">10X：输入阻抗×10、电容÷10，负载更轻</text>
+</svg>

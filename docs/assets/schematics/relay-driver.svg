@@ -1,0 +1,40 @@
+<svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="340" fill="#ffffff"/>
+  <text x="30" y="32" font-size="17" font-weight="700" fill="#222a32">三极管驱动继电器 + 续流二极管</text>
+
+  <!-- GPIO -->
+  <text x="50" y="180" font-size="12" fill="#b5642e">GPIO</text>
+  <line x1="90" y1="180" x2="150" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="150" y="168" width="60" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="180" y="160" font-size="11" fill="#1a4f8b" text-anchor="middle">1k</text>
+  <line x1="210" y1="180" x2="290" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- NPN -->
+  <line x1="320" y1="150" x2="320" y2="230" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="290" y1="180" x2="315" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="335" y="190" font-size="12" fill="#1a4f8b">Q1 NPN</text>
+  <!-- 集电极 = 继电器节点 -->
+  <line x1="320" y1="150" x2="320" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="320" cy="110" r="4.5" fill="#2b3a4a"/>
+  <!-- 继电器线圈到 V+ -->
+  <line x1="320" y1="110" x2="320" y2="70" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="290" y="40" width="60" height="30" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="320" y="60" font-size="11" fill="#222a32" text-anchor="middle">继电器线圈</text>
+  <line x1="320" y1="40" x2="320" y2="25" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="335" y="30" font-size="12" fill="#b5642e">+V</text>
+  <!-- 续流二极管 -->
+  <line x1="320" y1="110" x2="430" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="430" y1="110" x2="430" y2="70" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="415,110 445,110 430,82" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="418" y1="70" x2="442" y2="70" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="430" y1="70" x2="320" y2="70" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="448" y="100" font-size="11" fill="#1a4f8b">续流二极管</text>
+
+  <!-- 发射极下地 -->
+  <line x1="320" y1="230" x2="320" y2="260" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="306" y1="260" x2="334" y2="260" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="311" y1="267" x2="329" y2="267" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="315" y1="274" x2="325" y2="274" stroke="#2b3a4a" stroke-width="2.4"/>
+
+  <text x="120" y="315" font-size="12" fill="#7a5fc0">GPIO 经基极电阻驱动三极管；线圈断电瞬间反电动势由续流二极管泄放，保护三极管</text>
+</svg>

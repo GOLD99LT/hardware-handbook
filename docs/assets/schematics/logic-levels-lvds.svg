@@ -1,0 +1,27 @@
+<svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="280" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">LVDS 差分信号 Differential Signaling</text>
+
+  <!-- driver -->
+  <rect x="60" y="100" width="120" height="90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="120" y="145" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">LVDS</text>
+  <text x="120" y="165" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">Driver</text>
+
+  <!-- D+ line -->
+  <line x1="180" y1="125" x2="460" y2="125" stroke="#1a4f8b" stroke-width="2.4"/>
+  <text x="190" y="118" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">D+</text>
+  <!-- D- line -->
+  <line x1="180" y1="165" x2="460" y2="165" stroke="#b5642e" stroke-width="2.4"/>
+  <text x="190" y="180" font-size="13" fill="#b5642e" text-anchor="start" font-weight="700">D−</text>
+
+  <!-- receiver -->
+  <rect x="460" y="100" width="120" height="90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="520" y="145" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">Receiver</text>
+  <text x="520" y="165" font-size="12" fill="#2b3a4a" text-anchor="middle" font-weight="700">比较 V+−V−</text>
+
+  <!-- output -->
+  <line x1="580" y1="145" x2="620" y2="145" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="588" y="138" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">单端逻辑</text>
+
+  <text x="24" y="230" font-size="13" fill="#5a6672" text-anchor="start">D+ 与 D− 摆幅相反（~±350mV），接收端比较差值；共模噪声同时耦合到两线、相消</text>
+</svg>

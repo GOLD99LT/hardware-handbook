@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="600" height="260" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">扩展：MOSFET 导通与开关损耗</text>
+  <!-- MOS -->
+  <line x1="120" y1="100" x2="120" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="100" y="130" width="40" height="60" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="120" y="166" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q</text>
+  <line x1="120" y1="190" x2="120" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="80" y="125" font-size="12" fill="#5c6772" text-anchor="end">D</text>
+  <text x="80" y="210" font-size="12" fill="#5c6772" text-anchor="end">S</text>
+  <!-- 损耗标注 -->
+  <text x="220" y="110" font-size="13" fill="#b5642e" font-weight="700">导通损：I²·RDSon·D</text>
+  <text x="220" y="140" font-size="13" fill="#b5642e" font-weight="700">开关损：0.5·V·I·(tr+tf)·fs</text>
+  <text x="220" y="170" font-size="13" fill="#b5642e" font-weight="700">栅损：Qg·Vgs·fs</text>
+  <text x="220" y="200" font-size="13" fill="#b5642e" font-weight="700">开关损 ∝ fs（频率越高越大）</text>
+  <!-- 地 -->
+  <line x1="120" y1="230" x2="120" y2="244" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="106" y1="244" x2="134" y2="244" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="111" y1="251" x2="129" y2="251" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="115" y1="258" x2="125" y2="258" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

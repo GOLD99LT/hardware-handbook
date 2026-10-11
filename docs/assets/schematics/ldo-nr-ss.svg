@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="600" height="280" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">扩展：NR/SS 降噪与软启动电容</text>
+  <rect x="200" y="90" width="160" height="100" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="280" y="130" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">LDO</text>
+  <text x="280" y="152" font-size="11.5" fill="#5c6772" text-anchor="middle">含内部基准</text>
+  <line x1="120" y1="120" x2="200" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="110" y="116" font-size="14" fill="#2b3a4a" text-anchor="end">Vin</text>
+  <line x1="360" y1="120" x2="480" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="490" y="125" font-size="14" fill="#1a4f8b" font-weight="700">Vout</text>
+  <!-- NR 引脚 -->
+  <line x1="240" y1="190" x2="240" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="228" y="184" font-size="12" fill="#1a4f8b" text-anchor="end">NR/SS</text>
+  <line x1="222" y1="220" x2="258" y2="220" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="222" y1="238" x2="258" y2="238" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="240" y1="238" x2="240" y2="258" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="266" y="234" font-size="12.5" fill="#1a4f8b" font-weight="700">Cn 0.01µF</text>
+  <line x1="240" y1="258" x2="320" y2="258" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="306" y1="258" x2="334" y2="258" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="311" y1="265" x2="329" y2="265" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="315" y1="272" x2="325" y2="272" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

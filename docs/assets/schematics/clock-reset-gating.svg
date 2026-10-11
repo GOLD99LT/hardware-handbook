@@ -1,0 +1,23 @@
+<svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="600" height="280" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">时钟门控单元 Clock Gating Cell</text>
+
+  <!-- gating cell -->
+  <rect x="180" y="90" width="180" height="110" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="270" y="135" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">Gating Cell</text>
+  <text x="270" y="157" font-size="11" fill="#1a4f8b" text-anchor="middle" font-weight="700">(含锁存防毛刺)</text>
+
+  <!-- CLK in -->
+  <text x="60" y="110" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">CLK</text>
+  <line x1="100" y1="106" x2="180" y2="106" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- EN in -->
+  <text x="60" y="170" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">EN(使能)</text>
+  <line x1="120" y1="166" x2="180" y2="166" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- gated CLK out -->
+  <line x1="360" y1="130" x2="480" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="380" y="120" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">Gated CLK</text>
+
+  <text x="24" y="240" font-size="13" fill="#5a6672" text-anchor="start">EN=1 时 CLK 直通；EN=0 时关闭时钟，后级触发器不翻转、省动态功耗</text>
+</svg>

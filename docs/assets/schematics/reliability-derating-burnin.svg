@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="320" fill="#ffffff"/>
+  <text x="360" y="34" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">浴盆曲线：早期失效 → 偶然失效 → 耗损失效；老化筛掉早期失效</text>
+  <!-- 坐标轴 -->
+  <line x1="90" y1="260" x2="660" y2="260" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="60" x2="90" y2="260" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="660" y="280" font-size="13" fill="#2b3a4a" text-anchor="middle">时间 →</text>
+  <text x="70" y="55" font-size="13" fill="#2b3a4a" text-anchor="end">失效率</text>
+  <!-- 浴盆曲线 -->
+  <path d="M110,90 C160,110 200,180 260,200 C360,215 480,210 560,180 C600,150 630,110 640,80" fill="none" stroke="#c0392b" stroke-width="2.6"/>
+  <text x="160" y="120" font-size="12" fill="#c0392b">早期失效</text>
+  <text x="380" y="235" font-size="12" fill="#2e7d32">偶然失效(低且平)</text>
+  <text x="580" y="110" font-size="12" fill="#b5642e">耗损失效</text>
+  <!-- 老化筛选段 -->
+  <rect x="110" y="80" width="150" height="140" fill="none" stroke="#3949ab" stroke-width="2.2" stroke-dasharray="5,4"/>
+  <text x="185" y="245" font-size="12" fill="#3949ab" text-anchor="middle">老化筛选段(Burn-in)</text>
+</svg>

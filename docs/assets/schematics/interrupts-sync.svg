@@ -1,0 +1,31 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="30" y="32" font-size="17" font-weight="700" fill="#222a32">异步输入两级同步器（防亚稳态）</text>
+
+  <text x="40" y="145" font-size="12" fill="#b5642e">异步输入</text>
+  <text x="40" y="162" font-size="11" fill="#5c6772">(按键/外部)</text>
+  <line x1="120" y1="150" x2="200" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- FF1 -->
+  <rect x="200" y="115" width="100" height="70" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="250" y="145" font-size="13" fill="#222a32" text-anchor="middle">FF1</text>
+  <text x="210" y="140" font-size="11" fill="#5c6772">D</text>
+  <text x="282" y="140" font-size="11" fill="#5c6772">Q</text>
+  <line x1="300" y1="150" x2="380" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- FF2 -->
+  <rect x="380" y="115" width="100" height="70" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="430" y="145" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">FF2</text>
+  <text x="390" y="140" font-size="11" fill="#5c6772">D</text>
+  <text x="462" y="140" font-size="11" fill="#5c6772">Q</text>
+  <line x1="480" y1="150" x2="600" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="610" y="155" font-size="12" fill="#2e7d4f">同步后→IRQ</text>
+
+  <!-- 时钟 -->
+  <line x1="220" y1="240" x2="460" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="180" y="244" font-size="12" fill="#7a5fc0">系统时钟</text>
+  <line x1="250" y1="240" x2="250" y2="185" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="430" y1="240" x2="430" y2="185" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <text x="120" y="285" font-size="12" fill="#7a5fc0">FF1 可能亚稳，但等它稳定后 FF2 再采，输出几乎一定合法</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="320" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">N 分频器（计数器 + 比较复位）Divide-by-N</text>
+
+  <!-- Counter block -->
+  <rect x="120" y="90" width="180" height="130" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="210" y="150" font-size="15" fill="#2b3a4a" text-anchor="middle" font-weight="700">Counter</text>
+  <text x="210" y="172" font-size="13" fill="#2b3a4a" text-anchor="middle" font-weight="700">0~N-1</text>
+
+  <!-- CLK in -->
+  <text x="40" y="130" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">CLK</text>
+  <line x1="75" y1="126" x2="120" y2="126" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- Q[3:0] out to comparator -->
+  <line x1="300" y1="130" x2="420" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="340" y="122" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q[3:0]</text>
+
+  <!-- Comparator -->
+  <rect x="420" y="100" width="120" height="80" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="480" y="145" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">Q==N?</text>
+  <line x1="480" y1="180" x2="480" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="488" y="205" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">TC</text>
+
+  <!-- TC feedback to reset -->
+  <line x1="480" y1="220" x2="210" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="210" y1="220" x2="210" y2="190" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="480" cy="180" r="4.5" fill="#2b3a4a"/>
+  <circle cx="480" cy="220" r="4.5" fill="#2b3a4a"/>
+
+  <!-- TC output -->
+  <line x1="540" y1="140" x2="600" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="548" y="133" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">fout=fclk/N</text>
+  <circle cx="540" cy="140" r="4.5" fill="#2b3a4a"/>
+
+  <text x="24" y="280" font-size="13" fill="#5a6672" text-anchor="start">计到 N 时 TC=1，复位计数器回 0；输出 TC 的频率 = CLK/N，占空比 ≈ 1/N</text>
+</svg>

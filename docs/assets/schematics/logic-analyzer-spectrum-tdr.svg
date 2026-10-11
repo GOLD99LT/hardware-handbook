@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="360" y="34" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">网络分析仪(VNA)：扫频测 S 参数，看电缆/网络的反射与匹配</text>
+  <!-- VNA -->
+  <rect x="60" y="110" width="150" height="80" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="135" y="142" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">网络分析仪</text>
+  <text x="135" y="162" font-size="12" fill="#b5642e" text-anchor="middle">扫频/测 S11·S21</text>
+  <!-- 电缆/DUT -->
+  <line x1="210" y1="150" x2="330" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="330" y="125" width="120" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="390" y="155" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">被测电缆/网络</text>
+  <line x1="450" y1="150" x2="560" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 端接 50Ω -->
+  <rect x="555" y="138" width="60" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="585" y="130" font-size="12" fill="#1a4f8b" font-weight="700" text-anchor="middle">50Ω</text>
+  <line x1="585" y1="162" x2="585" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="571" y1="200" x2="599" y2="200" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="576" y1="207" x2="594" y2="207" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="580" y1="214" x2="590" y2="214" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="360" y="260" font-size="13" fill="#7a5fc0" text-anchor="middle">S11 回波损耗看匹配，S21 插损看传输；史密斯圆图看阻抗变换</text>
+</svg>

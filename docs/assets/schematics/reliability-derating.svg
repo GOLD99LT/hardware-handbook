@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="380" fill="#ffffff"/>
+  <text x="360" y="34" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">降额：器件实际应力远低于额定值，寿命随应力下降指数上升</text>
+  <!-- 坐标轴 -->
+  <line x1="90" y1="320" x2="660" y2="320" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="60" x2="90" y2="320" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="660" y="340" font-size="13" fill="#2b3a4a">应力/额定 (%) →</text>
+  <text x="70" y="55" font-size="13" fill="#2b3a4a" text-anchor="end">寿命</text>
+  <!-- 寿命曲线（指数随应力上升下降） -->
+  <path d="M110,90 C250,110 380,180 620,300" fill="none" stroke="#c0392b" stroke-width="2.6"/>
+  <!-- 安全区 -->
+  <line x1="330" y1="60" x2="330" y2="320" stroke="#2e7d32" stroke-width="2.2" stroke-dasharray="6,4"/>
+  <text x="335" y="75" font-size="13" fill="#2e7d32">降额上限(如 60~70%)</text>
+  <text x="180" y="130" font-size="13" fill="#2e7d32">安全区</text>
+  <text x="500" y="250" font-size="13" fill="#c0392b">高应力区(寿命骤降)</text>
+  <text x="360" y="365" font-size="13" fill="#7a5fc0" text-anchor="middle">例：电容电压用到额定 50%、功率降额 50%、温度每降 10°C 寿命约翻倍</text>
+</svg>

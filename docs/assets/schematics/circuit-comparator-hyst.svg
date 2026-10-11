@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="420" height="260" fill="#ffffff"/>
+  <!-- 比较器 -->
+  <polygon points="180,80 180,200 280,140" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="195" y="125" font-size="18" fill="#2b3a4a" font-weight="700">+</text>
+  <text x="195" y="170" font-size="18" fill="#2b3a4a" font-weight="700">−</text>
+  <!-- Vin 到同相端 -->
+  <text x="40" y="115" font-size="16" fill="#2b3a4a">Vin</text>
+  <line x1="70" y1="110" x2="180" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 反相端参考电压 -->
+  <text x="40" y="170" font-size="15" fill="#2b3a4a">Vref</text>
+  <line x1="80" y1="165" x2="180" y2="165" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 输出 -->
+  <line x1="280" y1="140" x2="370" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="378" y="146" font-size="16" fill="#1a4f8b" font-weight="700">Vout</text>
+  <!-- 正反馈 Rf -->
+  <line x1="350" y1="140" x2="350" y2="50" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="350" y1="50" x2="120" y2="50" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="150" y="38" width="60" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="180" y="30" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">Rf(正反馈)</text>
+  <line x1="120" y1="50" x2="120" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="120" cy="110" r="4.5" fill="#2b3a4a"/>
+  <circle cx="350" cy="140" r="4.5" fill="#2b3a4a"/>
+</svg>

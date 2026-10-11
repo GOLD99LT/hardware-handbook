@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 860 460" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="460" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">传输线与反射 — 源、线、负载</text>
+
+  <!-- 源端驱动 -->
+  <rect x="60" y="150" width="120" height="80" fill="#eef4fb" stroke="#1a4f8b" stroke-width="2.2"/>
+  <text x="120" y="185" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">驱动源</text>
+  <text x="120" y="208" font-size="11.5" fill="#3a5a80" text-anchor="middle">输出阻抗 Rs</text>
+
+  <!-- 传输线 -->
+  <line x1="180" y1="190" x2="640" y2="190" stroke="#2b3a4a" stroke-width="3"/>
+  <text x="410" y="178" font-size="13" fill="#222a32" text-anchor="middle">传输线（特性阻抗 Z₀，延迟 Td）</text>
+  <!-- 下方参考平面线 -->
+  <line x1="180" y1="230" x2="640" y2="230" stroke="#9aa5b0" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="410" y="248" font-size="11.5" fill="#9aa5b0" text-anchor="middle">参考平面（回流路径）</text>
+
+  <!-- 负载 -->
+  <rect x="640" y="150" width="140" height="80" fill="#fdf3e7" stroke="#b5642e" stroke-width="2.2"/>
+  <text x="710" y="185" font-size="13" fill="#b5642e" font-weight="700" text-anchor="middle">负载 IC</text>
+  <text x="710" y="208" font-size="11.5" fill="#7a5a30" text-anchor="middle">输入阻抗 ZL ≈ 高</text>
+
+  <!-- 反射标注 -->
+  <path d="M710,160 Q600,120 400,150" fill="none" stroke="#b03a3a" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="560" y="125" font-size="12.5" fill="#b03a3a">负载反射 Γ=(ZL−Z₀)/(ZL+Z₀)</text>
+
+  <!-- 公式框 -->
+  <rect x="60" y="290" width="740" height="150" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="80" y="318" font-size="14" fill="#1a4f8b" font-weight="700">什么时候必须按传输线处理：</text>
+  <text x="80" y="345" font-size="13" fill="#222a32">信号在 FR4 上速度 ≈ 15 cm/ns。若线长 L 对应的延迟 Td 与上升沿 tr 可比</text>
+  <text x="80" y="368" font-size="13" fill="#222a32">（经验：L &gt; tr/6 对应的长度，或 Td &gt; tr/6），就要当传输线，否则反射造成振铃。</text>
+  <text x="80" y="395" font-size="13" fill="#222a32">例：tr=1ns → Td&gt;0.17ns → 线长 &gt; 约 2.5 cm 就要端接。短于这个长度，反射来不及回到源，可忽略。</text>
+  <text x="80" y="422" font-size="13" fill="#b5642e">Γ 越接近 0（ZL=Z₀）反射越小；ZL 悬空≈∞ → Γ≈+1（全反射过冲）。</text>
+</svg>

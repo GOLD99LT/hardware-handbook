@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 860 520" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="520" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">布局：按功能分区摆放（Board Partitioning）</text>
+  <text x="30" y="56" font-size="12.5" fill="#5c6772">接口靠边、电源靠近入口、高速模块居中、模拟与数字分开</text>
+
+  <!-- 板框 -->
+  <rect x="60" y="80" width="740" height="380" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+
+  <!-- 电源区（左上入口） -->
+  <rect x="90" y="110" width="200" height="130" fill="#fdf3e7" stroke="#b5642e" stroke-width="2"/>
+  <text x="190" y="138" font-size="14" fill="#b5642e" font-weight="700" text-anchor="middle">电源区 Power</text>
+  <text x="190" y="162" font-size="11.5" fill="#7a5a30" text-anchor="middle">DC 输入→buck→LDO</text>
+  <text x="190" y="184" font-size="11.5" fill="#7a5a30" text-anchor="middle">大电容/功率电感</text>
+  <text x="190" y="206" font-size="11.5" fill="#7a5a30" text-anchor="middle">开关节点铺铜</text>
+
+  <!-- 数字区（中心） -->
+  <rect x="330" y="110" width="220" height="200" fill="#eef4fb" stroke="#1a4f8b" stroke-width="2"/>
+  <text x="440" y="138" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">数字区 Digital</text>
+  <text x="440" y="162" font-size="11.5" fill="#3a5a80" text-anchor="middle">MCU / FPGA / 内存</text>
+  <text x="440" y="184" font-size="11.5" fill="#3a5a80" text-anchor="middle">时钟、高速总线</text>
+  <text x="440" y="206" font-size="11.5" fill="#3a5a80" text-anchor="middle">去耦电容贴近引脚</text>
+
+  <!-- 模拟区（左下） -->
+  <rect x="90" y="270" width="200" height="160" fill="#eef7ee" stroke="#2f6e4f" stroke-width="2"/>
+  <text x="190" y="298" font-size="14" fill="#2f6e4f" font-weight="700" text-anchor="middle">模拟区 Analog</text>
+  <text x="190" y="322" font-size="11.5" fill="#2f5a3f" text-anchor="middle">运放/ADC/基准源</text>
+  <text x="190" y="344" font-size="11.5" fill="#2f5a3f" text-anchor="middle">精密模拟地</text>
+  <text x="190" y="366" font-size="11.5" fill="#2f5a3f" text-anchor="middle">敏感小信号走线</text>
+
+  <!-- 接口区（右侧靠边） -->
+  <rect x="600" y="110" width="170" height="320" fill="#f4eefb" stroke="#7a5fc0" stroke-width="2"/>
+  <text x="685" y="138" font-size="14" fill="#7a5fc0" font-weight="700" text-anchor="middle">接口区 I/O</text>
+  <text x="685" y="162" font-size="11.5" fill="#5a4a80" text-anchor="middle">USB/RS485/接线端子</text>
+  <text x="685" y="184" font-size="11.5" fill="#5a4a80" text-anchor="middle">ESD 保护靠连接器</text>
+  <text x="685" y="206" font-size="11.5" fill="#5a4a80" text-anchor="middle">进出板的信号都走这</text>
+
+  <!-- 流向箭头 -->
+  <line x1="290" y1="175" x2="328" y2="175" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="309" y="168" font-size="11" fill="#2b3a4a" text-anchor="middle">3V3</text>
+  <line x1="550" y1="200" x2="598" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="574" y="192" font-size="11" fill="#2b3a4a" text-anchor="middle">数据</text>
+
+  <text x="60" y="490" font-size="12.5" fill="#222a32">分区原则：噪声源（电源开关）与敏感电路（模拟）物理分开；接口一律靠边，便于过 ESD/滤波；回流路径短。</text>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="600" height="260" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">扩展：MLCC 直流偏置降额（实际容量远小于标称）</text>
+  <!-- Vin rail -->
+  <line x1="120" y1="90" x2="480" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="100" y="95" font-size="14" fill="#2b3a4a" text-anchor="end">Vin=12V</text>
+  <circle cx="260" cy="90" r="4.5" fill="#2b3a4a"/>
+  <!-- MLCC -->
+  <line x1="260" y1="90" x2="260" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="238" y="130" width="44" height="26" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="260" y="148" font-size="11.5" fill="#1a4f8b" text-anchor="middle" font-weight="700">22µF/25V</text>
+  <line x1="260" y1="156" x2="260" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="300" y="130" font-size="12.5" fill="#b5642e" font-weight="700">12V 偏置下实际 ≈ 10µF</text>
+  <text x="300" y="150" font-size="12" fill="#5c6772">X5R/X7R，介质越硬降额越少</text>
+  <!-- 地 -->
+  <line x1="260" y1="210" x2="260" y2="228" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="246" y1="228" x2="274" y2="228" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="251" y1="235" x2="269" y2="235" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="255" y1="242" x2="265" y2="242" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

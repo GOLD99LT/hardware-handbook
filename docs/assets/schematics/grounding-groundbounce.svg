@@ -1,0 +1,27 @@
+<svg viewBox="0 0 820 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="260" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">地弹（Ground Bounce）：引脚/引线电感 × di/dt</text>
+
+  <!-- 芯片 -->
+  <rect x="180" y="80" width="200" height="120" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="280" y="130" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">IC 内部</text>
+  <text x="280" y="150" font-size="11" fill="#5c6772" text-anchor="middle">输出驱动器</text>
+
+  <!-- 输出 -->
+  <line x1="380" y1="120" x2="520" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="530" y="125" font-size="13" fill="#1a4f8b" font-weight="700">输出(开关)</text>
+  <text x="430" y="108" font-size="12" fill="#b5642e">di/dt 大</text>
+
+  <!-- 地引脚 + 引线电感 -->
+  <line x1="280" y1="200" x2="280" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 电感符号（引线/键合线） -->
+  <path d="M280,220 q8,-14 16,0 q8,14 16,0 q8,-14 16,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="330" y="222" font-size="12" fill="#b5642e" font-weight="700">L_gnd(引线电感)</text>
+  <line x1="328" y1="220" x2="400" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="400" y1="220" x2="400" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="386" y1="240" x2="414" y2="240" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="391" y1="247" x2="409" y2="247" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="410" y="235" font-size="11" fill="#5c6772">板级地</text>
+
+  <text x="30" y="250" font-size="13" fill="#222a32">$V_{bounce}=L_{gnd}\cdot di/dt$：L=5nH、di/dt=1A/ns 时地弹达 5V，内部地参考被顶起，误触发逻辑</text>
+</svg>

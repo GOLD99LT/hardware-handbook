@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 340" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="340" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：散热器（Heatsink）与热界面材料</text>
+
+  <!-- IC -->
+  <rect x="350" y="180" width="120" height="60" fill="#fde2e2" stroke="#b03a3a" stroke-width="2.2"/>
+  <text x="410" y="215" font-size="12.5" fill="#b03a3a" text-anchor="middle">功率 IC</text>
+
+  <!-- 导热硅脂 -->
+  <rect x="350" y="165" width="120" height="15" fill="#9aa5b0"/>
+  <text x="490" y="177" font-size="11.5" fill="#5c6772">导热硅脂/垫片</text>
+
+  <!-- 散热器 -->
+  <rect x="330" y="100" width="160" height="65" fill="#d9d4c7" stroke="#2b3a4a" stroke-width="2"/>
+  <g stroke="#2b3a4a" stroke-width="2">
+    <line x1="345" y1="100" x2="345" y2="60"/>
+    <line x1="370" y1="100" x2="370" y2="60"/>
+    <line x1="395" y1="100" x2="395" y2="60"/>
+    <line x1="420" y1="100" x2="420" y2="60"/>
+    <line x1="445" y1="100" x2="445" y2="60"/>
+    <line x1="470" y1="100" x2="470" y2="60"/>
+  </g>
+  <text x="410" y="45" font-size="12.5" fill="#7a6a3a" text-anchor="middle">散热齿（增大对流面积）</text>
+
+  <text x="60" y="290" font-size="12.5" fill="#222a32">θJA = θJC + θ(硅脂) + θ(散热器)。散热器把 θBA 从几十℃/W 降到几℃/W。</text>
+  <text x="60" y="315" font-size="12.5" fill="#b5642e">要点：硅脂要薄而均匀（填空气隙，空气是隔热的）；散热器要压紧、必要时加风扇强迫对流。</text>
+</svg>

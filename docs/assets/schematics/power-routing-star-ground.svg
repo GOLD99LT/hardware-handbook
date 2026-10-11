@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="420" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：单点（星形）接地 Star Ground</text>
+
+  <!-- 中心星点 -->
+  <circle cx="410" cy="210" r="8" fill="#2b3a4a"/>
+  <text x="410" y="240" font-size="13" fill="#b5642e" font-weight="700" text-anchor="middle">星形接地点</text>
+
+  <!-- 四个模块各自回到星点 -->
+  <line x1="410" y1="210" x2="180" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="100" y="80" width="160" height="60" fill="#eef7ee" stroke="#2f6e4f" stroke-width="2"/>
+  <text x="180" y="115" font-size="12.5" fill="#2f6e4f" text-anchor="middle">模拟电路</text>
+
+  <line x1="410" y1="210" x2="640" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="560" y="80" width="160" height="60" fill="#eef4fb" stroke="#1a4f8b" stroke-width="2"/>
+  <text x="640" y="115" font-size="12.5" fill="#1a4f8b" text-anchor="middle">数字电路</text>
+
+  <line x1="410" y1="210" x2="180" y2="320" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="100" y="290" width="160" height="60" fill="#fdf3e7" stroke="#b5642e" stroke-width="2"/>
+  <text x="180" y="325" font-size="12.5" fill="#b5642e" text-anchor="middle">功率/电源</text>
+
+  <line x1="410" y1="210" x2="640" y2="320" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="560" y="290" width="160" height="60" fill="#f4eefb" stroke="#7a5fc0" stroke-width="2"/>
+  <text x="640" y="325" font-size="12.5" fill="#7a5fc0" text-anchor="middle">I/O 接口</text>
+
+  <text x="60" y="395" font-size="12.5" fill="#222a32">各模块地各自独立走线回到同一点，避免"共地阻抗"耦合：一个模块的地电流不在另一模块的地上产生压降。</text>
+</svg>

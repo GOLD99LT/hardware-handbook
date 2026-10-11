@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="340" fill="#ffffff"/>
+  <!-- 待测电阻 Rx 断电测量：DMM Ohm 档两表笔直接接两端 -->
+  <text x="360" y="40" font-size="17" fill="#1a4f8b" font-weight="700" text-anchor="middle">断电测电阻：Rx 必须脱离电路、两端都不接电源</text>
+  <rect x="290" y="130" width="140" height="30" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="360" y="152" font-size="18" fill="#1a4f8b" font-weight="700" text-anchor="middle">Rx</text>
+  <!-- 左表笔 -->
+  <line x1="290" y1="145" x2="180" y2="145" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="110" y="125" width="70" height="40" rx="5" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="145" y="150" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">DMM Ω</text>
+  <!-- 右表笔 -->
+  <line x1="430" y1="145" x2="540" y2="145" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="560" cy="145" r="20" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="560" y="151" font-size="14" fill="#b5642e" text-anchor="middle">Ω 档</text>
+  <text x="360" y="230" font-size="15" fill="#7a5fc0">DMM 内部给 Rx 通已知小电流，测压降换算电阻：R=V/I</text>
+  <text x="360" y="260" font-size="15" fill="#b5642e" text-anchor="middle">⚠ 带电测量会烧表/读数错乱；并联支路会让读数偏小</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="600" height="280" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">开漏 + 上拉电平转换 Open-Drain Level Shift</text>
+
+  <!-- LV MCU OD output -->
+  <rect x="60" y="110" width="120" height="80" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="120" y="145" font-size="13" fill="#2b3a4a" text-anchor="middle" font-weight="700">LV MCU</text>
+  <text x="120" y="165" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">开漏输出(1.8V)</text>
+  <line x1="180" y1="150" x2="380" y2="150" stroke="#2b3a4a" stroke-width="2.4"/>
+  <circle cx="300" cy="150" r="4.5" fill="#2b3a4a"/>
+
+  <!-- pull-up to HV VCC -->
+  <line x1="300" y1="150" x2="300" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="288" y="80" width="24" height="36" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="320" y="102" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">R上拉</text>
+  <line x1="300" y1="80" x2="300" y2="50" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="285" y="44" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">VCC_HV(3.3V)</text>
+
+  <!-- HV input -->
+  <line x1="380" y1="150" x2="460" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="460" y="110" width="110" height="80" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="515" y="145" font-size="13" fill="#2b3a4a" text-anchor="middle" font-weight="700">HV 输入</text>
+  <text x="515" y="165" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">(3.3V 耐压)</text>
+
+  <text x="24" y="230" font-size="13" fill="#5a6672" text-anchor="start">OD 只能拉低；高电平由上拉拉到 3.3V → 高电平自动匹配 HV 侧；单向、低成本</text>
+</svg>

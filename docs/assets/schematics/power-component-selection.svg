@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="760" height="360" fill="#ffffff"/>
+  <text x="30" y="30" font-size="18" font-weight="700" fill="#222a32">功率元件在 Buck 功率级中的位置与选型要点</text>
+
+  <!-- Vin -->
+  <text x="36" y="106" font-size="15" fill="#2b3a4a">Vin</text>
+  <line x1="60" y1="110" x2="140" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 输入电容 -->
+  <line x1="140" y1="110" x2="140" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="122" y1="150" x2="158" y2="150" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="122" y1="170" x2="158" y2="170" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="140" y1="170" x2="140" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="166" y="165" font-size="12" fill="#b5642e" font-weight="700">Cin：低ESR·纹波电流</text>
+
+  <!-- Q1 高侧 -->
+  <rect x="140" y="90" width="30" height="40" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="155" y="84" font-size="11" fill="#1a4f8b" font-weight="700" text-anchor="middle">Q1</text>
+  <line x1="170" y1="110" x2="280" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="280" cy="110" r="4.5" fill="#2b3a4a"/>
+  <text x="272" y="98" font-size="13" fill="#1a4f8b" font-weight="700">SW</text>
+  <text x="155" y="146" font-size="11" fill="#b5642e" font-weight="700" text-anchor="middle">Q1：RDSon·Qg·Qrr</text>
+
+  <!-- 二极管 -->
+  <line x1="280" y1="110" x2="280" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="262,150 298,150 280,178" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="262" y1="180" x2="298" y2="180" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="280" y1="180" x2="280" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="306" y="168" font-size="11" fill="#b5642e" font-weight="700">D：VF·反向耐压</text>
+
+  <!-- 电感 -->
+  <line x1="280" y1="110" x2="350" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M350,110 q12,-24 24,0 q12,24 24,0 q12,-24 24,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="422" y1="110" x2="560" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="386" y="86" font-size="12" fill="#b5642e" font-weight="700" text-anchor="middle">L：Isat·DCR·温升</text>
+
+  <!-- Cout -->
+  <circle cx="520" cy="110" r="4.5" fill="#2b3a4a"/>
+  <line x1="520" y1="110" x2="520" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="502" y1="150" x2="538" y2="150" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="502" y1="170" x2="538" y2="170" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="520" y1="170" x2="520" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="546" y="165" font-size="12" fill="#b5642e" font-weight="700">Cout：ESR·DC bias·纹波电流</text>
+  <text x="568" y="115" font-size="15" fill="#1a4f8b" font-weight="700">Vout</text>
+
+  <!-- 地 -->
+  <line x1="140" y1="280" x2="520" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="330" y1="280" x2="330" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="316" y1="300" x2="344" y2="300" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="321" y1="307" x2="339" y2="307" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="325" y1="314" x2="335" y2="314" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 560" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="560" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：六层板叠层（内嵌带状线 Stripline）</text>
+  <text x="30" y="56" font-size="12.5" fill="#5c6772">高速信号埋在两平面之间 → 电磁辐射被介质与平面屏蔽，阻抗更可控</text>
+
+  <!-- 6 层铜箔 + 介质 -->
+  <!-- 顶层阻焊 -->
+  <rect x="200" y="78" width="300" height="12" fill="#2f6e4f" stroke="#2b3a4a" stroke-width="1.2"/>
+  <!-- L1 信号(微带) -->
+  <rect x="200" y="90" width="300" height="14" fill="#2b3a4a"/>
+  <text x="188" y="101" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="end">L1</text>
+  <text x="518" y="101" font-size="12.5" fill="#222a32">信号（微带）</text>
+
+  <rect x="200" y="104" width="300" height="34" fill="#f3efe6" stroke="#2b3a4a" stroke-width="1.1"/>
+  <!-- L2 GND -->
+  <rect x="200" y="138" width="300" height="14" fill="#2b3a4a"/>
+  <text x="188" y="149" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="end">L2</text>
+  <text x="518" y="149" font-size="12.5" fill="#222a32">GND 平面</text>
+
+  <rect x="200" y="152" width="300" height="40" fill="#e9e2d2" stroke="#2b3a4a" stroke-width="1.1"/>
+  <text x="350" y="176" font-size="11.5" fill="#7a6a3a" text-anchor="middle">介质 h</text>
+  <!-- L3 信号(带状线) -->
+  <rect x="200" y="192" width="300" height="14" fill="#b5642e"/>
+  <text x="188" y="203" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="end">L3</text>
+  <text x="518" y="203" font-size="12.5" fill="#b5642e">高速信号（带状线，夹在两平面间）</text>
+
+  <rect x="200" y="206" width="300" height="40" fill="#e9e2d2" stroke="#2b3a4a" stroke-width="1.1"/>
+  <text x="350" y="230" font-size="11.5" fill="#7a6a3a" text-anchor="middle">介质 h</text>
+  <!-- L4 PWR -->
+  <rect x="200" y="246" width="300" height="14" fill="#2b3a4a"/>
+  <text x="188" y="257" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="end">L4</text>
+  <text x="518" y="257" font-size="12.5" fill="#222a32">PWR 平面</text>
+
+  <rect x="200" y="260" width="300" height="34" fill="#f3efe6" stroke="#2b3a4a" stroke-width="1.1"/>
+  <!-- L5 信号 -->
+  <rect x="200" y="294" width="300" height="14" fill="#2b3a4a"/>
+  <text x="188" y="305" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="end">L5</text>
+  <text x="518" y="305" font-size="12.5" fill="#222a32">信号</text>
+
+  <rect x="200" y="308" width="300" height="34" fill="#f3efe6" stroke="#2b3a4a" stroke-width="1.1"/>
+  <!-- L6 信号(微带) -->
+  <rect x="200" y="342" width="300" height="14" fill="#2b3a4a"/>
+  <text x="188" y="353" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="end">L6</text>
+  <text x="518" y="353" font-size="12.5" fill="#222a32">信号（微带）</text>
+
+  <rect x="200" y="356" width="300" height="12" fill="#2f6e4f" stroke="#2b3a4a" stroke-width="1.2"/>
+
+  <!-- 屏蔽示意箭头 -->
+  <line x1="150" y1="145" x2="150" y2="253" stroke="#b5642e" stroke-width="2" stroke-dasharray="5,4"/>
+  <text x="138" y="200" font-size="12" fill="#b5642e" text-anchor="end">被 L2/L4</text>
+  <text x="138" y="216" font-size="12" fill="#b5642e" text-anchor="end">双向屏蔽</text>
+
+  <rect x="60" y="400" width="700" height="130" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="80" y="428" font-size="14" fill="#1a4f8b" font-weight="700">何时用六层：</text>
+  <text x="80" y="452" font-size="13" fill="#222a32">• 关键高速走线（时钟、SerDes、DDR）埋在 L3，上下都有平面，辐射最低、串扰最小；</text>
+  <text x="80" y="474" font-size="13" fill="#222a32">• 代价：成本约为四层的 1.5~2 倍，介质更薄、公差更严；</text>
+  <text x="80" y="496" font-size="13" fill="#222a32">• 常见错叠：把 L3/L5 两个信号层相邻 → 它们互相是对方的"参考平面"缺失，回流乱飞。</text>
+  <text x="80" y="518" font-size="13" fill="#222a32">• 经验：低速控制板四层足够；>100 MHz 高速数字或有严格 EMC 要求再上六层以上。</text>
+</svg>

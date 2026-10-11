@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="260" fill="#ffffff"/>
+  <text x="360" y="34" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">AC 扫描(.ac)：RC 低通的伯德图，截止频率 fc=1/(2πRC)</text>
+  <!-- 坐标轴 -->
+  <line x1="80" y1="200" x2="660" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="80" y1="60" x2="80" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="660" y="220" font-size="12" fill="#2b3a4a">f →</text>
+  <text x="70" y="55" font-size="12" fill="#2b3a4a" text-anchor="end">|Vout| dB</text>
+  <!-- 伯德曲线 -->
+  <path d="M90,90 L300,90 C360,95 420,140 480,180 C540,200 600,205 640,205" fill="none" stroke="#1a4f8b" stroke-width="2.6"/>
+  <!-- fc -->
+  <line x1="380" y1="60" x2="380" y2="200" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="4,3"/>
+  <text x="380" y="55" font-size="12" fill="#c0392b" text-anchor="middle">fc≈160Hz(-3dB)</text>
+  <text x="360" y="245" font-size="13" fill="#7a5fc0" text-anchor="middle">.ac dec 100 1Hz 100kHz ：十倍频程扫描；fc=1/(2π·1k·1µF)≈159Hz</text>
+</svg>

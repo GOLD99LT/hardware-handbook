@@ -1,0 +1,44 @@
+<svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="420" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">4 位同步计数器（每个触发器共用同一时钟）Synchronous Counter</text>
+
+  <!-- FF0 -->
+  <rect x="80" y="120" width="90" height="100" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="125" y="175" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">FF0</text>
+  <line x1="125" y1="120" x2="125" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="125" y="72" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q0</text>
+
+  <!-- FF1 -->
+  <rect x="240" y="120" width="90" height="100" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="285" y="175" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">FF1</text>
+  <line x1="285" y1="120" x2="285" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="285" y="72" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q1</text>
+
+  <!-- FF2 -->
+  <rect x="400" y="120" width="90" height="100" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="445" y="175" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">FF2</text>
+  <line x1="445" y1="120" x2="445" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="445" y="72" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q2</text>
+
+  <!-- FF3 -->
+  <rect x="560" y="120" width="90" height="100" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="605" y="175" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">FF3</text>
+  <line x1="605" y1="120" x2="605" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="605" y="72" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">Q3</text>
+
+  <!-- common CLK bus -->
+  <line x1="60" y1="320" x2="680" y2="320" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="24" y="325" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">CLK</text>
+  <line x1="125" y1="320" x2="125" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="285" y1="320" x2="285" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="445" y1="320" x2="445" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="605" y1="320" x2="605" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- EN -->
+  <text x="24" y="360" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">EN(计数使能)</text>
+  <line x1="130" y1="356" x2="125" y2="356" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="125" y1="356" x2="125" y2="320" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="125" cy="320" r="4.5" fill="#2b3a4a"/>
+
+  <text x="24" y="395" font-size="13" fill="#5a6672" text-anchor="start">所有 FF 同一时钟沿同时更新，Q3Q2Q1Q0 从 0000→0001→…→1111→0000 循环</text>
+</svg>

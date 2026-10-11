@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 760 340" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="760" height="340" fill="#ffffff"/>
+  <text x="30" y="30" font-size="18" font-weight="700" fill="#222a32">多路电源上电时序（先 3.3V，后 1.8V，RESET# 最后释放）</text>
+
+  <!-- 时间轴 -->
+  <line x1="60" y1="290" x2="700" y2="290" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="708" y="295" font-size="14" fill="#2b3a4a">t</text>
+
+  <!-- VDD_3V3：0 -> x=120 开始爬升 -> x=180 到 3.3V -->
+  <line x1="60" y1="290" x2="120" y2="290" stroke="#1a4f8b" stroke-width="2.6"/>
+  <line x1="120" y1="290" x2="180" y2="150" stroke="#1a4f8b" stroke-width="2.6"/>
+  <line x1="180" y1="150" x2="700" y2="150" stroke="#1a4f8b" stroke-width="2.6"/>
+  <text x="40" y="155" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="end">VDD_3V3</text>
+
+  <!-- VDD_1V8：延迟到 x=260 爬升 -> x=320 到 1.8V -->
+  <line x1="60" y1="290" x2="260" y2="290" stroke="#b5642e" stroke-width="2.6"/>
+  <line x1="260" y1="290" x2="320" y2="210" stroke="#b5642e" stroke-width="2.6"/>
+  <line x1="320" y1="210" x2="700" y2="210" stroke="#b5642e" stroke-width="2.6"/>
+  <text x="40" y="215" font-size="14" fill="#b5642e" font-weight="700" text-anchor="end">VDD_1V8</text>
+
+  <!-- RESET#：先低，两轨都好后释放高 -->
+  <line x1="60" y1="105" x2="380" y2="105" stroke="#4f9e63" stroke-width="2.6"/>
+  <line x1="380" y1="105" x2="380" y2="70" stroke="#4f9e63" stroke-width="2.6"/>
+  <line x1="380" y1="70" x2="700" y2="70" stroke="#4f9e63" stroke-width="2.6"/>
+  <text x="40" y="75" font-size="14" fill="#4f9e63" font-weight="700" text-anchor="end">RESET#</text>
+
+  <!-- 时序延迟标注 -->
+  <line x1="120" y1="305" x2="260" y2="305" stroke="#5c6772" stroke-width="1.4" stroke-dasharray="4,3"/>
+  <text x="190" y="322" font-size="12.5" fill="#5c6772" text-anchor="middle">时序延迟 t_delay</text>
+</svg>

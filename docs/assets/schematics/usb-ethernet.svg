@@ -1,0 +1,39 @@
+<svg viewBox="0 0 860 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="420" fill="#ffffff"/>
+  <text x="30" y="32" font-size="18" font-weight="700" fill="#222a32">USB 与以太网物理层概览</text>
+
+  <!-- ===== USB ===== -->
+  <text x="60" y="64" font-size="15" font-weight="700" fill="#1a4f8b">USB（D+/D− 差分）</text>
+  <rect x="80" y="100" width="120" height="100" fill="#f7f9fb" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="140" y="145" font-size="12" fill="#222a32" text-anchor="middle">MCU USB PHY</text>
+  <text x="205" y="130" font-size="11" fill="#5c6772">D+</text>
+  <text x="205" y="160" font-size="11" fill="#5c6772">D−</text>
+  <line x1="200" y1="126" x2="320" y2="126" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="200" y1="156" x2="320" y2="156" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 上拉识别 -->
+  <line x1="250" y1="126" x2="250" y2="100" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="242" y="72" width="16" height="28" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="262" y="90" font-size="10" fill="#1a4f8b">1.5k</text>
+  <text x="262" y="66" font-size="10" fill="#b5642e">3.3V</text>
+  <circle cx="250" cy="126" r="4.5" fill="#2b3a4a"/>
+  <!-- USB 座 -->
+  <rect x="320" y="108" width="90" height="66" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="365" y="145" font-size="11" fill="#222a32" text-anchor="middle">USB 座</text>
+
+  <!-- ===== Ethernet ===== -->
+  <text x="60" y="250" font-size="15" font-weight="700" fill="#b5642e">以太网（PHY + 变压器 + RJ45）</text>
+  <rect x="80" y="280" width="110" height="70" fill="#f7f9fb" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="135" y="320" font-size="11" fill="#222a32" text-anchor="middle">MCU MAC</text>
+  <line x1="190" y1="315" x2="240" y2="315" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="240" y="280" width="100" height="70" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="290" y="320" font-size="11" fill="#222a32" text-anchor="middle">PHY</text>
+  <line x1="340" y1="315" x2="390" y2="315" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 变压器 -->
+  <rect x="390" y="285" width="90" height="60" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="435" y="320" font-size="10" fill="#5c6772" text-anchor="middle">网络变压器</text>
+  <line x1="480" y1="315" x2="540" y2="315" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="540" y="285" width="90" height="60" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="585" y="320" font-size="11" fill="#222a32" text-anchor="middle">RJ45</text>
+
+  <text x="120" y="400" font-size="12" fill="#7a5fc0">两者都是差分对；USB 靠 D+ 上拉识别设备，以太网经变压器隔离后上 RJ45</text>
+</svg>

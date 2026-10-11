@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="360" fill="#ffffff"/>
+  <!-- 回路在 Rload 处断开，串入 DMM -->
+  <line x1="90" y1="150" x2="90" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="80" x2="300" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="300" y="68" width="110" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="355" y="58" font-size="17" fill="#1a4f8b" font-weight="700" text-anchor="middle">Rload</text>
+  <line x1="410" y1="80" x2="470" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- DMM 串入 -->
+  <rect x="470" y="55" width="90" height="50" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="515" y="76" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">DMM</text>
+  <text x="515" y="94" font-size="13" fill="#b5642e" text-anchor="middle">A 档（串联）</text>
+  <line x1="560" y1="80" x2="600" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="600" y1="80" x2="600" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="600" y1="280" x2="90" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="90" y1="280" x2="90" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="90" cy="165" r="30" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="90" y="161" font-size="16" fill="#2b3a4a" text-anchor="middle" font-weight="700">+</text>
+  <text x="90" y="179" font-size="18" fill="#2b3a4a" text-anchor="middle">−</text>
+  <text x="55" y="171" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="end">Vbat</text>
+  <text x="360" y="130" font-size="15" fill="#7a5fc0">测电流：断开回路，把 DMM 串进去</text>
+  <!-- 接地 -->
+  <line x1="200" y1="280" x2="200" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="186" y1="280" x2="214" y2="280" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="191" y1="287" x2="209" y2="287" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="195" y1="294" x2="205" y2="294" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

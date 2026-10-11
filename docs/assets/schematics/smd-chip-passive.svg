@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 480 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="480" height="280" fill="#ffffff"/>
+  <!-- 焊盘（两端） -->
+  <rect x="110" y="100" width="50" height="80" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="320" y="100" width="50" height="80" fill="#e8eef5" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 元件本体 -->
+  <rect x="160" y="100" width="160" height="80" fill="#f2efe6" stroke="#2b3a4a" stroke-width="2.6"/>
+  <!-- 极性/标识线（电容一端色带） -->
+  <line x1="175" y1="100" x2="175" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 长度尺寸 L（上方） -->
+  <line x1="110" y1="70" x2="370" y2="70" stroke="#1a4f8b" stroke-width="1.4"/>
+  <line x1="110" y1="64" x2="110" y2="76" stroke="#1a4f8b" stroke-width="1.4"/>
+  <line x1="370" y1="64" x2="370" y2="76" stroke="#1a4f8b" stroke-width="1.4"/>
+  <text x="240" y="60" font-size="16" fill="#1a4f8b" text-anchor="middle" font-weight="700">本体长度 L</text>
+  <!-- 宽度尺寸 W（右侧） -->
+  <line x1="400" y1="100" x2="400" y2="180" stroke="#1a4f8b" stroke-width="1.4"/>
+  <line x1="394" y1="100" x2="406" y2="100" stroke="#1a4f8b" stroke-width="1.4"/>
+  <line x1="394" y1="180" x2="406" y2="180" stroke="#1a4f8b" stroke-width="1.4"/>
+  <text x="415" y="144" font-size="16" fill="#1a4f8b" font-weight="700">W</text>
+  <!-- 焊盘间距 -->
+  <text x="135" y="205" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">焊盘</text>
+  <text x="345" y="205" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">焊盘</text>
+  <text x="240" y="235" font-size="15" fill="#2b3a4a" text-anchor="middle">片式电阻/电容顶视图（0402/0603/0805/1206 同构，仅尺寸不同）</text>
+</svg>

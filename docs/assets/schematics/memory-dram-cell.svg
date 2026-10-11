@@ -1,0 +1,27 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="600" height="300" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">DRAM 1T1C 单元：1 个晶体管 + 1 个电容 DRAM Cell</text>
+
+  <!-- bit line vertical -->
+  <line x1="150" y1="60" x2="150" y2="200" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="130" y="55" font-size="14" fill="#1a4f8b" text-anchor="middle" font-weight="700">Bit Line</text>
+
+  <!-- access transistor (gate = word line) -->
+  <line x1="150" y1="130" x2="220" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="220" y1="115" x2="220" y2="145" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="210" y="105" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">字线(栅极)</text>
+  <line x1="220" y1="145" x2="220" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="220" y1="130" x2="280" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- capacitor -->
+  <line x1="280" y1="130" x2="340" y2="130" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="340" y1="115" x2="340" y2="145" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="355" y1="115" x2="355" y2="145" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="370" y="135" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">Cs(存储电荷)</text>
+  <line x1="355" y1="130" x2="355" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="341" y1="220" x2="369" y2="220" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="346" y1="227" x2="364" y2="227" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="350" y1="234" x2="360" y2="234" stroke="#2b3a4a" stroke-width="2.4"/>
+
+  <text x="24" y="270" font-size="13" fill="#5a6672" text-anchor="start">字线选通 → 晶体管导通 → 电容 Cs 与位线连通读/写；电容电荷会漏电，必须定期刷新</text>
+</svg>

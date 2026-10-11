@@ -1,0 +1,28 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="360" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">JK 触发器 JK Flip-Flop</text>
+
+  <rect x="220" y="80" width="180" height="200" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="310" y="185" font-size="16" fill="#2b3a4a" text-anchor="middle" font-weight="700">JK Flip-Flop</text>
+
+  <!-- J input -->
+  <text x="60" y="130" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">J</text>
+  <line x1="90" y1="126" x2="220" y2="126" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- K input -->
+  <text x="60" y="200" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">K</text>
+  <line x1="90" y1="196" x2="220" y2="196" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- CLK -->
+  <text x="60" y="290" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">CLK</text>
+  <line x1="100" y1="286" x2="220" y2="286" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="220,266 220,306 250,286" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- Q, Qbar -->
+  <line x1="400" y1="140" x2="540" y2="140" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="548" y="145" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">Q</text>
+  <line x1="400" y1="210" x2="540" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="548" y="215" font-size="15" fill="#1a4f8b" text-anchor="start" font-weight="700">Q̅</text>
+
+  <text x="24" y="340" font-size="13" fill="#5a6672" text-anchor="start">J=K=1 时翻转（Toggle）；J=1,K=0 置1；J=0,K=1 置0；J=K=0 保持</text>
+</svg>

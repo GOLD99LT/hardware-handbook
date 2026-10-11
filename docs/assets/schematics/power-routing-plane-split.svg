@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 420" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="420" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：电源平面分割（3.3V / 1.8V）</text>
+
+  <!-- 平面分割 -->
+  <rect x="80" y="90" width="300" height="220" fill="#d9e6f5" stroke="#1a4f8b" stroke-width="2"/>
+  <text x="230" y="120" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">3.3V 电源平面</text>
+  <rect x="440" y="90" width="300" height="220" fill="#f5e6d9" stroke="#b5642e" stroke-width="2"/>
+  <text x="590" y="120" font-size="14" fill="#b5642e" font-weight="700" text-anchor="middle">1.8V 电源平面</text>
+
+  <!-- 分割缝 -->
+  <line x1="400" y1="90" x2="400" y2="310" stroke="#b03a3a" stroke-width="3" stroke-dasharray="8,5"/>
+  <text x="400" y="335" font-size="12" fill="#b03a3a" text-anchor="middle">分割缝（槽）</text>
+
+  <!-- 错误：信号跨缝 -->
+  <line x1="150" y1="200" x2="650" y2="200" stroke="#b03a3a" stroke-width="2.6" stroke-dasharray="4,3"/>
+  <text x="400" y="192" font-size="12" fill="#b03a3a" text-anchor="middle">✗ 信号跨越分割缝 → 回流断流</text>
+
+  <!-- 正确：在缝旁跨接/换层 -->
+  <text x="60" y="375" font-size="12.5" fill="#222a32">规则：信号走线不要跨电源分割缝（否则下方参考平面不连续，回流被迫绕远、环路变大）。</text>
+  <text x="60" y="397" font-size="12.5" fill="#222a32">必须跨过时，在跨线处放一颗缝合电容/地过孔提供回流路径；或把该信号走在完整地平面那一层。</text>
+</svg>

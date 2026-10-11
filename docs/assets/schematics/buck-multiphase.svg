@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="300" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">扩展：两相并联 Buck（多相扩流、纹波抵消）</text>
+  <!-- Vin 公共 -->
+  <line x1="80" y1="80" x2="560" y2="80" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="60" y="85" font-size="14" fill="#2b3a4a">Vin</text>
+  <!-- 相1 -->
+  <rect x="180" y="90" width="80" height="45" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="220" y="118" font-size="12.5" fill="#2b3a4a" text-anchor="middle" font-weight="700">相位1</text>
+  <line x1="220" y1="80" x2="220" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M220,135 q10,-18 20,0 q10,18 20,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="260" y1="135" x2="420" y2="135" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 相2 -->
+  <rect x="340" y="90" width="80" height="45" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="380" y="118" font-size="12.5" fill="#2b3a4a" text-anchor="middle" font-weight="700">相位2</text>
+  <line x1="380" y1="80" x2="380" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M380,135 q10,-18 20,0 q10,18 20,0" fill="none" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="420" y1="135" x2="420" y2="135" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 汇合到输出 -->
+  <circle cx="420" cy="135" r="4.5" fill="#2b3a4a"/>
+  <line x1="420" y1="135" x2="520" y2="135" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="528" y="140" font-size="14" fill="#1a4f8b" font-weight="700">Vout</text>
+  <line x1="420" y1="135" x2="420" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="402" y1="180" x2="438" y2="180" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="402" y1="200" x2="438" y2="200" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="420" y1="200" x2="420" y2="250" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="446" y="195" font-size="12.5" fill="#1a4f8b" font-weight="700">Cout</text>
+  <line x1="420" y1="250" x2="420" y2="268" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="406" y1="268" x2="434" y2="268" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="411" y1="275" x2="429" y2="275" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="415" y1="282" x2="425" y2="282" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

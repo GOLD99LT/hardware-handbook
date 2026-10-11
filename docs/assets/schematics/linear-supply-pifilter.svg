@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="280" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">扩展：π 型 RC / CLC 滤波</text>
+
+  <!-- 输入 rail y=110 -->
+  <text x="36" y="115" font-size="15" fill="#2b3a4a">Vin</text>
+  <line x1="60" y1="110" x2="140" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="140" cy="110" r="4.5" fill="#2b3a4a"/>
+  <!-- C1 -->
+  <line x1="140" y1="110" x2="140" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="122" y1="150" x2="158" y2="150" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="122" y1="170" x2="158" y2="170" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="140" y1="170" x2="140" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="164" y="164" font-size="13" fill="#1a4f8b" font-weight="700">C1</text>
+
+  <!-- 串联 R -->
+  <line x1="140" y1="110" x2="220" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="220" y="98" width="90" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="310" y1="110" x2="400" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="265" y="88" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">R（或 L）</text>
+
+  <!-- C2 与输出 -->
+  <circle cx="400" cy="110" r="4.5" fill="#2b3a4a"/>
+  <line x1="400" y1="110" x2="400" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="382" y1="150" x2="418" y2="150" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="382" y1="170" x2="418" y2="170" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="400" y1="170" x2="400" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="424" y="164" font-size="13" fill="#1a4f8b" font-weight="700">C2</text>
+  <line x1="400" y1="110" x2="560" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="570" y="115" font-size="15" fill="#1a4f8b" font-weight="700">Vout</text>
+
+  <!-- 地 -->
+  <line x1="140" y1="220" x2="400" y2="220" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="270" y1="220" x2="270" y2="240" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="256" y1="240" x2="284" y2="240" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="261" y1="247" x2="279" y2="247" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="265" y1="254" x2="275" y2="254" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

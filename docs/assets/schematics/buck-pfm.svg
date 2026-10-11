@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="260" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">扩展：PFM 节能模式（轻载降频）</text>
+  <!-- 控制块 -->
+  <rect x="180" y="80" width="280" height="90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="320" y="115" font-size="14" fill="#2b3a4a" text-anchor="middle" font-weight="700">PFM / Auto 控制</text>
+  <text x="320" y="140" font-size="12" fill="#5c6772" text-anchor="middle">轻载：跳脉冲降频 · 重载：固定 fs 的 PWM</text>
+  <!-- 输入输出 -->
+  <line x1="80" y1="125" x2="180" y2="125" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="70" y="120" font-size="13" fill="#2b3a4a" text-anchor="end">FB</text>
+  <line x1="460" y1="125" x2="560" y2="125" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="568" y="130" font-size="13" fill="#1a4f8b" font-weight="700">驱动 Q1/Q2</text>
+  <text x="320" y="210" font-size="12.5" fill="#5c6772" text-anchor="middle">轻载效率 ↑，但输出纹波频率不固定（更分散）</text>
+</svg>

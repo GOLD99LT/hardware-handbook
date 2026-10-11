@@ -1,0 +1,51 @@
+<svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="360" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">4 个与非门实现异或 XOR from NANDs</text>
+
+  <!-- A, B inputs -->
+  <text x="30" y="120" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">A</text>
+  <line x1="55" y1="116" x2="150" y2="116" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="30" y="200" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">B</text>
+  <line x1="55" y1="196" x2="150" y2="196" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- N1 = NAND(A,B) -->
+  <path d="M150,100 L182,100 A15,15 0 0 1 182,130 L150,130 Z" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="187" cy="115" r="4" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M150,180 L182,180 A15,15 0 0 1 182,210 L150,210 Z" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="187" cy="195" r="4" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="191" y1="115" x2="240" y2="115" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="191" y1="195" x2="240" y2="195" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="195" y="105" font-size="12" fill="#1a4f8b" text-anchor="start" font-weight="700">n1</text>
+
+  <!-- N2 = NAND(A, n1) -->
+  <path d="M330,130 L362,130 A15,15 0 0 1 362,160 L330,160 Z" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="367" cy="145" r="4" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="240" y1="115" x2="240" y2="145" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="240" y1="145" x2="330" y2="145" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="240" cy="115" r="4.5" fill="#2b3a4a"/>
+  <!-- A taps to N2 -->
+  <line x1="100" y1="116" x2="100" y2="137" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="100" y1="137" x2="330" y2="137" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="100" cy="116" r="4.5" fill="#2b3a4a"/>
+  <text x="372" y="140" font-size="12" fill="#1a4f8b" text-anchor="start" font-weight="700">n2</text>
+
+  <!-- N3 = NAND(B, n1) -->
+  <path d="M330,210 L362,210 A15,15 0 0 1 362,240 L330,240 Z" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="367" cy="225" r="4" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="240" y1="195" x2="240" y2="225" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="240" y1="225" x2="330" y2="225" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="240" cy="195" r="4.5" fill="#2b3a4a"/>
+  <!-- B taps to N3 -->
+  <line x1="100" y1="196" x2="100" y2="217" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="100" y1="217" x2="330" y2="217" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="100" cy="196" r="4.5" fill="#2b3a4a"/>
+  <text x="372" y="220" font-size="12" fill="#1a4f8b" text-anchor="start" font-weight="700">n3</text>
+
+  <!-- N4 = NAND(n2,n3) -->
+  <line x1="371" y1="145" x2="480" y2="145" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="371" y1="225" x2="480" y2="225" stroke="#2b3a4a" stroke-width="2.2"/>
+  <path d="M480,150 L512,150 A15,15 0 0 1 512,220 L480,220 Z" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="517" cy="185" r="4" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="521" y1="185" x2="580" y2="185" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="586" y="190" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">Y=A⊕B</text>
+</svg>

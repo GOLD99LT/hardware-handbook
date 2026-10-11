@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 380" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="380" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">扩展：负载端并联（戴维南）端接 Thevenin Termination</text>
+
+  <!-- 源 -->
+  <rect x="50" y="150" width="90" height="70" fill="#eef4fb" stroke="#1a4f8b" stroke-width="2.2"/>
+  <text x="95" y="185" font-size="12.5" fill="#1a4f8b" text-anchor="middle">驱动源</text>
+  <!-- 传输线到负载节点 -->
+  <line x1="140" y1="185" x2="560" y2="185" stroke="#2b3a4a" stroke-width="3"/>
+  <circle cx="560" cy="185" r="4.5" fill="#2b3a4a"/>
+
+  <!-- 负载 -->
+  <rect x="560" y="120" width="120" height="50" fill="#fdf3e7" stroke="#b5642e" stroke-width="2.2"/>
+  <text x="620" y="150" font-size="12.5" fill="#b5642e" text-anchor="middle">负载</text>
+  <line x1="560" y1="185" x2="620" y2="170" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- R1 上拉到 Vcc -->
+  <line x1="560" y1="185" x2="560" y2="215" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="548" y="215" width="24" height="40" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="590" y="240" font-size="12" fill="#1a4f8b">R1 上拉</text>
+  <line x1="560" y1="255" x2="560" y2="285" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="560" y="300" font-size="12" fill="#222a32" text-anchor="middle">Vcc</text>
+
+  <!-- R2 下拉到 GND -->
+  <line x1="560" y1="185" x2="640" y2="185" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="640" y1="185" x2="640" y2="215" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="628" y="215" width="24" height="40" fill="#fff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="665" y="240" font-size="12" fill="#1a4f8b">R2 下拉</text>
+  <line x1="640" y1="255" x2="640" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="626" y1="280" x2="654" y2="280" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="631" y1="287" x2="649" y2="287" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="635" y1="294" x2="645" y2="294" stroke="#2b3a4a" stroke-width="2.4"/>
+
+  <rect x="50" y="315" width="720" height="50" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="70" y="345" font-size="12" fill="#222a32">机理：R1∥R2=Z₀ 端接到负载，匹配吸收反射。代价：一直有分压电流耗电，功耗大；适合多负载点（如 DDR 地址）。</text>
+</svg>

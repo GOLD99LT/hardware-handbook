@@ -1,0 +1,58 @@
+<svg viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="760" height="380" fill="#ffffff"/>
+  <text x="30" y="32" font-size="18" font-weight="700" fill="#222a32">R-2R 倒 T 型 DAC 与输出缓冲</text>
+
+  <!-- VREF -->
+  <text x="40" y="120" font-size="13" fill="#b5642e">VREF</text>
+  <line x1="90" y1="120" x2="150" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- R 横向链 -->
+  <line x1="150" y1="120" x2="180" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="180" y="108" width="50" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="205" y="100" font-size="11" fill="#1a4f8b" text-anchor="middle">R</text>
+  <line x1="230" y1="120" x2="260" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="260" y="108" width="50" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="285" y="100" font-size="11" fill="#1a4f8b" text-anchor="middle">R</text>
+  <line x1="310" y1="120" x2="340" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="340" y="108" width="50" height="24" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="365" y="100" font-size="11" fill="#1a4f8b" text-anchor="middle">R</text>
+  <line x1="390" y1="120" x2="440" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- 2R 腿 -->
+  <g>
+    <line x1="180" y1="120" x2="180" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+    <rect x="172" y="150" width="16" height="40" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+    <text x="150" y="175" font-size="11" fill="#1a4f8b">2R</text>
+    <line x1="180" y1="190" x2="180" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+    <rect x="160" y="210" width="40" height="26" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+    <text x="180" y="227" font-size="10" fill="#222a32" text-anchor="middle">开关 b0</text>
+  </g>
+  <g>
+    <line x1="260" y1="120" x2="260" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+    <rect x="252" y="150" width="16" height="40" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+    <line x1="260" y1="190" x2="260" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+    <rect x="240" y="210" width="40" height="26" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+    <text x="260" y="227" font-size="10" fill="#222a32" text-anchor="middle">b1</text>
+  </g>
+  <g>
+    <line x1="340" y1="120" x2="340" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+    <rect x="332" y="150" width="16" height="40" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+    <line x1="340" y1="190" x2="340" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+    <rect x="320" y="210" width="40" height="26" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+    <text x="340" y="227" font-size="10" fill="#222a32" text-anchor="middle">…</text>
+  </g>
+
+  <!-- 输出到运放缓冲 -->
+  <line x1="440" y1="120" x2="500" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="440" cy="120" r="4.5" fill="#2b3a4a"/>
+  <polygon points="500,80 500,160 610,120" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="515" y="112" font-size="16" fill="#2b3a4a">+</text>
+  <text x="515" y="148" font-size="16" fill="#2b3a4a">−</text>
+  <line x1="610" y1="120" x2="680" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="690" y="125" font-size="13" fill="#2e7d4f">Vout</text>
+  <!-- 跟随反馈 -->
+  <line x1="640" y1="120" x2="640" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="640" y1="150" x2="500" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <text x="120" y="300" font-size="13" fill="#7a5fc0">Vout = VREF × D/2^n（D 为数字码）；开关把各 2R 接 VREF 或 GND，按权重叠加电流</text>
+</svg>

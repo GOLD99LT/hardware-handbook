@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="280" fill="#ffffff"/>
+  <text x="360" y="34" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">飞线：用细漆包线在两个测试点之间补一条临时连接</text>
+  <!-- PCB -->
+  <rect x="120" y="150" width="480" height="24" fill="#dfe9d6" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- 两个焊盘 -->
+  <circle cx="240" cy="150" r="6" fill="#c9a227" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="500" cy="150" r="6" fill="#c9a227" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="240" y="185" font-size="13" fill="#1a4f8b" text-anchor="middle">TP1</text>
+  <text x="500" y="185" font-size="13" fill="#1a4f8b" text-anchor="middle">TP2</text>
+  <!-- 飞线拱起 -->
+  <path d="M240,150 Q370,60 500,150" fill="none" stroke="#c0392b" stroke-width="2.4"/>
+  <text x="370" y="80" font-size="13" fill="#c0392b" text-anchor="middle">细漆包飞线（短、直、不跨高速线）</text>
+  <text x="360" y="240" font-size="13" fill="#7a5fc0" text-anchor="middle">飞线用于修断走线、改接临时信号；两端焊盘先上锡，飞线端头去漆搪锡再焊</text>
+</svg>

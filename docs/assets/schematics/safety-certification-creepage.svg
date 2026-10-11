@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="260" fill="#ffffff"/>
+  <text x="360" y="34" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">爬电距离(沿表面)与电气间隙(空气击穿)：初次级之间必须留足</text>
+  <!-- 初次级 -->
+  <rect x="120" y="100" width="180" height="80" fill="#fdecea" stroke="#c0392b" stroke-width="2.2"/>
+  <text x="210" y="145" font-size="14" fill="#c0392b" font-weight="700" text-anchor="middle">初级(市电侧)</text>
+  <rect x="420" y="100" width="180" height="80" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2.2"/>
+  <text x="510" y="145" font-size="14" fill="#2e7d32" font-weight="700" text-anchor="middle">次级(安全低压)</text>
+  <!-- 隔离带 -->
+  <line x1="300" y1="140" x2="420" y2="140" stroke="#3949ab" stroke-width="2.4" stroke-dasharray="6,4"/>
+  <text x="360" y="130" font-size="13" fill="#3949ab" text-anchor="middle">隔离带</text>
+  <line x1="300" y1="155" x2="420" y2="155" stroke="#b5642e" stroke-width="2"/>
+  <text x="360" y="180" font-size="12" fill="#b5642e" text-anchor="middle">爬电距离：沿 PCB 表面距离</text>
+  <text x="360" y="220" font-size="13" fill="#7a5fc0" text-anchor="middle">250V 污染等级 2：电气间隙 ≥3mm、爬电距离 ≥4mm（按 IEC 62368-1 查表）</text>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="600" height="260" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">扩展：跟踪型 LDO（双轨同斜率上电）Tracking LDO</text>
+  <!-- 主 LDO -->
+  <rect x="120" y="80" width="120" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="180" y="108" font-size="13" fill="#2b3a4a" text-anchor="middle" font-weight="700">主 LDO</text>
+  <text x="180" y="128" font-size="11" fill="#5c6772" text-anchor="middle">Vout1=3.3V</text>
+  <line x1="60" y1="110" x2="120" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="50" y="115" font-size="13" fill="#2b3a4a" text-anchor="end">Vin</text>
+  <line x1="240" y1="110" x2="330" y2="110" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="338" y="115" font-size="13" fill="#1a4f8b" font-weight="700">Vout1</text>
+  <!-- 跟踪 LDO -->
+  <rect x="120" y="170" width="120" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="180" y="198" font-size="13" fill="#2b3a4a" text-anchor="middle" font-weight="700">跟踪 LDO</text>
+  <text x="180" y="218" font-size="11" fill="#5c6772" text-anchor="middle">Vout2 ∝ Vout1</text>
+  <line x1="60" y1="200" x2="120" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="50" y="205" font-size="13" fill="#2b3a4a" text-anchor="end">Vin</text>
+  <line x1="240" y1="200" x2="330" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="338" y="205" font-size="13" fill="#b5642e" font-weight="700">Vout2</text>
+  <!-- 跟踪连接 -->
+  <line x1="300" y1="110" x2="300" y2="150" stroke="#4f9e63" stroke-width="2.2" stroke-dasharray="5,3"/>
+  <line x1="300" y1="150" x2="200" y2="150" stroke="#4f9e63" stroke-width="2.2" stroke-dasharray="5,3"/>
+  <line x1="200" y1="150" x2="200" y2="170" stroke="#4f9e63" stroke-width="2.2" stroke-dasharray="5,3"/>
+  <text x="310" y="154" font-size="12" fill="#4f9e63" font-weight="700">跟踪比例</text>
+</svg>

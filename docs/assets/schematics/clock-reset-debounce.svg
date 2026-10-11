@@ -1,0 +1,33 @@
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="300" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">按键去抖电路（同步 + 计数确认）Debounce</text>
+
+  <!-- button -->
+  <text x="30" y="120" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">按键(带抖)</text>
+  <line x1="110" y1="116" x2="160" y2="116" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <!-- sync FFs -->
+  <rect x="160" y="90" width="70" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="195" y="125" font-size="12" fill="#2b3a4a" text-anchor="middle" font-weight="700">FF1</text>
+  <line x1="230" y1="120" x2="280" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="280" y="90" width="70" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.4"/>
+  <text x="315" y="125" font-size="12" fill="#2b3a4a" text-anchor="middle" font-weight="700">FF2</text>
+
+  <!-- counter confirm -->
+  <line x1="350" y1="120" x2="400" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="400" y="90" width="110" height="60" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="455" y="115" font-size="12" fill="#2b3a4a" text-anchor="middle" font-weight="700">稳定计数器</text>
+  <text x="455" y="135" font-size="11" fill="#1a4f8b" text-anchor="middle" font-weight="700">>20ms 才输出</text>
+
+  <!-- clean out -->
+  <line x1="510" y1="120" x2="580" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="518" y="110" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">干净按键</text>
+
+  <!-- CLK -->
+  <text x="30" y="220" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">CLK(100kHz)</text>
+  <line x1="120" y1="216" x2="455" y2="216" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="195" y1="216" x2="195" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="315" y1="216" x2="315" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+
+  <text x="24" y="270" font-size="13" fill="#5a6672" text-anchor="start">先过两级同步器消亚稳，再要求电平稳定保持 >20ms 才确认有效，滤掉机械抖动</text>
+</svg>

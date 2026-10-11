@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="280" fill="#ffffff"/>
+  <text x="360" y="34" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">电容降额：电压用到额定 50~70%，纹波电流/温度同时受限</text>
+  <!-- 电容 -->
+  <line x1="200" y1="120" x2="300" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="330" y1="100" x2="330" y2="150" stroke="#2b3a4a" stroke-width="3"/>
+  <line x1="345" y1="100" x2="345" y2="150" stroke="#2b3a4a" stroke-width="3"/>
+  <line x1="345" y1="125" x2="440" y2="125" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="337" y="90" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">电解/陶瓷电容</text>
+  <!-- 标注 -->
+  <text x="360" y="190" font-size="13" fill="#c0392b" text-anchor="middle">额定 16V → 实际用到 ≤ 10V（60%）</text>
+  <text x="360" y="220" font-size="13" fill="#b5642e" text-anchor="middle">纹波电流 ≤ 额定 80%；环境温度 ≤ 额定上限 −10°C</text>
+  <text x="360" y="255" font-size="13" fill="#2e7d32" text-anchor="middle">经验：温度每降 10°C，铝电解寿命约翻倍（10°C 法则）</text>
+</svg>

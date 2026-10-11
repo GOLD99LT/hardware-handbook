@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="300" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">扩展：自举 Bootstrap（高侧 N-MOS 驱动）</text>
+  <!-- Vin rail -->
+  <line x1="80" y1="90" x2="560" y2="90" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="60" y="95" font-size="14" fill="#2b3a4a">Vin</text>
+  <!-- 高侧 N-MOS：Vin -> SW -->
+  <line x1="300" y1="90" x2="300" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="288" y="120" width="24" height="50" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="320" y="150" font-size="12.5" fill="#1a4f8b" font-weight="700">Q1 高侧NMOS</text>
+  <line x1="300" y1="170" x2="300" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="300" cy="200" r="4.5" fill="#2b3a4a"/>
+  <text x="310" y="196" font-size="13" fill="#1a4f8b" font-weight="700">SW</text>
+  <!-- 自举二极管：Vin -> BST -->
+  <line x1="150" y1="90" x2="150" y2="120" stroke="#2b3a4a" stroke-width="2.2"/>
+  <polygon points="132,120 168,120 150,148" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="132" y1="150" x2="168" y2="150" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="150" y1="150" x2="150" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="100" y="140" font-size="12.5" fill="#1a4f8b" font-weight="700">Dboot</text>
+  <circle cx="150" cy="180" r="4.5" fill="#2b3a4a"/>
+  <text x="130" y="176" font-size="13" fill="#b5642e" font-weight="700" text-anchor="end">BST</text>
+  <!-- 自举电容 BST -> SW -->
+  <line x1="150" y1="180" x2="220" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="220" y1="165" x2="220" y2="195" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="236" y1="165" x2="236" y2="195" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="236" y1="180" x2="300" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="228" y="158" font-size="12.5" fill="#1a4f8b" font-weight="700" text-anchor="middle">Cboot</text>
+  <!-- 栅驱动 -->
+  <text x="360" y="150" font-size="12" fill="#5c6772">栅驱动以 BST-SW 为电源</text>
+</svg>

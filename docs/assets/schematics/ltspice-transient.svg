@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 240" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="240" fill="#ffffff"/>
+  <text x="360" y="34" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">瞬态仿真(.tran)：看 Vout 按时间常数 τ=RC 指数充电</text>
+  <!-- 坐标轴 -->
+  <line x1="80" y1="180" x2="660" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="80" y1="60" x2="80" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="660" y="200" font-size="12" fill="#2b3a4a">t →</text>
+  <text x="70" y="55" font-size="12" fill="#2b3a4a" text-anchor="end">Vout</text>
+  <!-- 充电曲线 -->
+  <path d="M80,175 C200,170 280,100 400,80 C500,68 580,66 640,66" fill="none" stroke="#1a4f8b" stroke-width="2.6"/>
+  <!-- τ 标注 -->
+  <line x1="200" y1="60" x2="200" y2="180" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="4,3"/>
+  <text x="200" y="55" font-size="12" fill="#c0392b" text-anchor="middle">τ=RC=1ms(63%)</text>
+  <text x="360" y="225" font-size="13" fill="#7a5fc0" text-anchor="middle">.tran 5m ：仿真 5ms；1τ 充到 63%、5τ 近似充满</text>
+</svg>

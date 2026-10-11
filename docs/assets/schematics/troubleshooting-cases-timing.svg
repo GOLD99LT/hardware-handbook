@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="260" fill="#ffffff"/>
+  <text x="360" y="32" font-size="16" fill="#1a4f8b" font-weight="700" text-anchor="middle">案例：串口偶发丢字节 → 建立/保持时间不满足或亚稳态</text>
+  <!-- 时钟+数据 -->
+  <line x1="80" y1="90" x2="640" y2="90" stroke="#1a4f8b" stroke-width="2.2"/>
+  <text x="60" y="95" font-size="13" fill="#1a4f8b">CLK</text>
+  <line x1="80" y1="150" x2="640" y2="150" stroke="#b5642e" stroke-width="2.2"/>
+  <text x="60" y="155" font-size="13" fill="#b5642e">DATA</text>
+  <!-- 建立保持窗口 -->
+  <rect x="300" y="70" width="120" height="100" fill="none" stroke="#c0392b" stroke-width="2.2" stroke-dasharray="5,4"/>
+  <text x="360" y="62" font-size="12" fill="#c0392b" text-anchor="middle">建立/保持窗口</text>
+  <text x="360" y="210" font-size="13" fill="#7a5fc0" text-anchor="middle">数据在时钟采样点附近变化，落在建立/保持窗口内 → 触发器亚稳、采样错</text>
+  <text x="360" y="235" font-size="13" fill="#2e7d32" text-anchor="middle">解决：数据提前稳定、加同步器两级、降速或调相位</text>
+</svg>

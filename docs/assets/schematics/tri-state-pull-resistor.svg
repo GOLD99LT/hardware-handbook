@@ -1,0 +1,28 @@
+<svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="640" height="320" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#222a32" text-anchor="start" font-weight="700">上拉电阻与下拉电阻 Pull-up / Pull-down</text>
+
+  <!-- Pull-up case -->
+  <text x="40" y="90" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">上拉：输入悬空时读高</text>
+  <line x1="120" y1="120" x2="120" y2="60" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="105" y="52" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">VCC</text>
+  <rect x="108" y="60" width="24" height="36" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="140" y="82" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">R(10k)</text>
+  <line x1="120" y1="96" x2="120" y2="160" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="120" cy="160" r="4.5" fill="#2b3a4a"/>
+  <line x1="120" y1="160" x2="220" y2="160" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="228" y="165" font-size="13" fill="#2b3a4a" text-anchor="start" font-weight="700">MCU 输入引脚</text>
+
+  <!-- Pull-down case -->
+  <text x="360" y="90" font-size="14" fill="#1a4f8b" text-anchor="start" font-weight="700">下拉：输入悬空时读低</text>
+  <line x1="440" y1="160" x2="440" y2="200" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="428" y="200" width="24" height="36" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="460" y="222" font-size="13" fill="#1a4f8b" text-anchor="start" font-weight="700">R(10k)</text>
+  <line x1="440" y1="236" x2="440" y2="280" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="426" y1="280" x2="454" y2="280" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="431" y1="287" x2="449" y2="287" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="435" y1="294" x2="445" y2="294" stroke="#2b3a4a" stroke-width="2.4"/>
+  <circle cx="440" cy="160" r="4.5" fill="#2b3a4a"/>
+  <line x1="440" y1="160" x2="540" y2="160" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="548" y="165" font-size="13" fill="#2b3a4a" text-anchor="start" font-weight="700">MCU 输入引脚</text>
+</svg>

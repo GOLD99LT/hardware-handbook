@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="760" height="360" fill="#ffffff"/>
+  <text x="30" y="32" font-size="19" font-weight="700" fill="#222a32">电源指标测量框架（UUT = 被测电源）</text>
+
+  <!-- Vin 输入源 -->
+  <text x="36" y="150" font-size="17" fill="#2b3a4a">Vin</text>
+  <line x1="70" y1="180" x2="120" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="120" y1="158" x2="120" y2="202" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="132" y1="168" x2="132" y2="192" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="144" y1="158" x2="144" y2="202" stroke="#2b3a4a" stroke-width="2.6"/>
+  <line x1="144" y1="180" x2="200" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="126" y="226" font-size="12.5" fill="#5c6772" text-anchor="middle">输入源</text>
+
+  <!-- DUT 电源块 -->
+  <rect x="200" y="120" width="200" height="120" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="300" y="168" font-size="17" fill="#2b3a4a" text-anchor="middle" font-weight="700">电源 UUT</text>
+  <text x="300" y="192" font-size="12.5" fill="#5c6772" text-anchor="middle">线性 / LDO / 开关</text>
+  <text x="300" y="214" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">η = Pout / Pin</text>
+
+  <!-- 输出 -->
+  <line x1="400" y1="180" x2="600" y2="180" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="470" cy="180" r="4.5" fill="#2b3a4a"/>
+  <text x="408" y="166" font-size="15" fill="#1a4f8b" font-weight="700">Vout</text>
+  <text x="486" y="160" font-size="12.5" fill="#b5642e" font-weight="700">纹波 ΔVpp（示波器 AC 耦合测）</text>
+
+  <!-- 电子负载 Rload -->
+  <circle cx="600" cy="180" r="4.5" fill="#2b3a4a"/>
+  <line x1="600" y1="180" x2="600" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="588" y="210" width="24" height="60" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="600" y1="270" x2="600" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="624" y="244" font-size="13.5" fill="#1a4f8b" font-weight="700">Rload / 电子负载</text>
+
+  <!-- 底部地总线 -->
+  <line x1="126" y1="300" x2="600" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="126" y1="180" x2="126" y2="300" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="330" y1="300" x2="330" y2="320" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="316" y1="320" x2="344" y2="320" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="321" y1="327" x2="339" y2="327" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="325" y1="334" x2="335" y2="334" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>

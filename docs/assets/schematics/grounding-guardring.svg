@@ -1,0 +1,21 @@
+<svg viewBox="0 0 820 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="820" height="260" fill="#ffffff"/>
+  <text x="30" y="30" font-size="17" font-weight="700" fill="#222a32">保护环/模拟地隔离：敏感模拟区单点接数字地</text>
+
+  <!-- 数字区 -->
+  <rect x="480" y="80" width="260" height="140" fill="#eef3f8" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="610" y="155" font-size="13" fill="#1a4f8b" text-anchor="middle" font-weight="700">数字地(噪)</text>
+
+  <!-- 模拟保护环 -->
+  <rect x="120" y="80" width="280" height="140" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <rect x="150" y="105" width="220" height="90" fill="#fbfdff" stroke="#1a4f8b" stroke-width="2.2" stroke-dasharray="6,4"/>
+  <text x="260" y="150" font-size="12" fill="#1a4f8b" text-anchor="middle" font-weight="700">敏感模拟电路</text>
+  <text x="260" y="170" font-size="10" fill="#5c6772" text-anchor="middle">保护环 Guard Ring</text>
+
+  <!-- 单点连接 -->
+  <line x1="400" y1="150" x2="480" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <circle cx="440" cy="150" r="4.5" fill="#2b3a4a"/>
+  <text x="440" y="140" font-size="11" fill="#b5642e" text-anchor="middle">单点连接</text>
+
+  <text x="30" y="245" font-size="13" fill="#222a32">保护环包围敏感模拟区并单点接数字地，切断数字噪声经地耦合到模拟输入的路径</text>
+</svg>

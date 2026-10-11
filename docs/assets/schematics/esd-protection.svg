@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 860 460" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="860" height="460" fill="#ffffff"/>
+  <text x="30" y="34" font-size="20" font-weight="700" fill="#222a32">ESD 保护布局 — TVS 紧贴连接器</text>
+
+  <!-- 连接器 -->
+  <rect x="50" y="180" width="110" height="80" fill="#f4eefb" stroke="#7a5fc0" stroke-width="2.2"/>
+  <text x="105" y="215" font-size="13" fill="#7a5fc0" text-anchor="middle">连接器</text>
+  <text x="105" y="238" font-size="11" fill="#5a4a80" text-anchor="middle">ESD 入口</text>
+
+  <!-- 信号线 -->
+  <line x1="160" y1="220" x2="680" y2="220" stroke="#2b3a4a" stroke-width="2.4"/>
+  <circle cx="230" cy="220" r="4.5" fill="#2b3a4a"/>
+
+  <!-- TVS 紧贴连接器 -->
+  <line x1="230" y1="220" x2="230" y2="260" stroke="#2b3a4a" stroke-width="2.2"/>
+  <!-- TVS 二极管符号 -->
+  <polygon points="218,260 242,260 230,280" fill="#fff" stroke="#b03a3a" stroke-width="2.2"/>
+  <line x1="218" y1="280" x2="242" y2="280" stroke="#b03a3a" stroke-width="2.6"/>
+  <text x="250" y="275" font-size="13" fill="#b03a3a" font-weight="700">TVS</text>
+  <!-- TVS 接地 -->
+  <line x1="230" y1="280" x2="230" y2="310" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="216" y1="310" x2="244" y2="310" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="221" y1="317" x2="239" y2="317" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="225" y1="324" x2="235" y2="324" stroke="#2b3a4a" stroke-width="2.4"/>
+
+  <!-- IC 远离 TVS -->
+  <rect x="600" y="180" width="110" height="80" fill="#eef4fb" stroke="#1a4f8b" stroke-width="2.2"/>
+  <text x="655" y="215" font-size="12.5" fill="#1a4f8b" text-anchor="middle">内部 IC</text>
+  <text x="655" y="238" font-size="11" fill="#3a5a80" text-anchor="middle">被保护</text>
+
+  <!-- ESD 泄放路径标注 -->
+  <path d="M105,200 Q180,150 230,216" fill="none" stroke="#b03a3a" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="150" y="145" font-size="12" fill="#b03a3a">ESD 就近经 TVS 入地</text>
+
+  <rect x="50" y="350" width="760" height="90" fill="#fbfdff" stroke="#2b3a4a" stroke-width="1.6"/>
+  <text x="70" y="378" font-size="13" fill="#1a4f8b" font-weight="700">核心规则（TI SLVA680A）：</text>
+  <text x="70" y="402" font-size="12.5" fill="#222a32">① TVS 紧贴连接器；② ESD 泄放回路面要短、直接到地平面；③ 被保护 IC 在 TVS 下游远处；④ 不要留分支(stub)。</text>
+  <text x="70" y="424" font-size="12.5" fill="#b03a3a">ESD 是 kV 级、ns 级快脉冲——引线几 mm 的电感就足以让 TVS 来不及钳位。</text>
+</svg>

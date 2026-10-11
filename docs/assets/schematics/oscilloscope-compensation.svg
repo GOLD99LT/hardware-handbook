@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Noto Sans SC',monospace">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="360" y="36" font-size="17" fill="#1a4f8b" font-weight="700" text-anchor="middle">探头补偿：接示波器 CAL 方波（约 1kHz / 1V），调探头电容使方波平顶</text>
+  <!-- CAL 输出 -->
+  <rect x="60" y="120" width="120" height="60" rx="6" fill="#fbfdff" stroke="#2b3a4a" stroke-width="2.6"/>
+  <text x="120" y="146" font-size="14" fill="#1a4f8b" font-weight="700" text-anchor="middle">示波器 CAL</text>
+  <text x="120" y="166" font-size="13" fill="#b5642e" text-anchor="middle">1kHz 方波</text>
+  <!-- 探头 -->
+  <line x1="180" y1="150" x2="260" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <rect x="260" y="135" width="110" height="30" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="315" y="155" font-size="13" fill="#1a4f8b" font-weight="700" text-anchor="middle">10X 探头</text>
+  <line x1="370" y1="150" x2="430" y2="150" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="450" y="155" font-size="14" fill="#7a5fc0">→ 接 CH1，看方波形状</text>
+  <!-- 补偿电容调节点 -->
+  <line x1="315" y1="165" x2="315" y2="210" stroke="#2b3a4a" stroke-width="2.2"/>
+  <text x="315" y="232" font-size="13" fill="#b5642e" text-anchor="middle">用无感改锥调探头补偿电容</text>
+  <!-- 接地 -->
+  <line x1="120" y1="180" x2="120" y2="230" stroke="#2b3a4a" stroke-width="2.2"/>
+  <line x1="106" y1="230" x2="134" y2="230" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="111" y1="237" x2="129" y2="237" stroke="#2b3a4a" stroke-width="2.4"/>
+  <line x1="115" y1="244" x2="125" y2="244" stroke="#2b3a4a" stroke-width="2.4"/>
+</svg>
