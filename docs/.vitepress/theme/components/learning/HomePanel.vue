@@ -1,0 +1,93 @@
+<script setup lang="ts">
+// 首页学习面板：整体进度、我的收藏、JSON 导出/导入。
+import { computed, ref } from 'vue'
+import { useLearning } from './store'
+
+const learning = useLearning()
+const s = computed(() => learning.stats())
+
+const favList = computed(() => {
+  return Object.keys(learning.state.favorites)
+    .filter((p) => learning.state.favorites[p])
+    .map((p) => ({
+      path: p,
+      title: learning.catalogTitle[p] || p,
+      link: learning.catalogLink[p] || '/' + p.replace(/\.md$/, '')
+    }))
+})
+
+const toast = ref('')
+function showToast(msg: string) {
+  toast.value = msg
+  setTimeout(() => (toast.value = ''), 2600)
+}
+
+function onExport() {
+  const json = learning.exportJSON()
+  const blob = new Blob([json], { type: 'application/json' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  const d = new Date()
+  const stamp =
+    `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')}`
+  a.href = url
+  a.download = `hardware-handbook-learning-${stamp}.json`
+  document.body.appendChild(a)
+  a.click()
+  a.remove()
+  URL.revokeObjectURL(url)
+  showToast('已导出 JSON 备份')
+}
+
+const fileInput = ref<HTMLInputElement | null>(null)
+function onImportClick() {
+  fileInput.value?.click()
+}
+function onFileChange(e: Event) {
+  const f = (e.target as HTMLInputElement).files?.[0]
+  if (!f) return
+  const reader = new FileReader()
+  reader.onload = () => {
+    const r = learning.importJSON(String(reader.result || ''))
+    showToast(r.message)
+  }
+  reader.readAsText(f)
+  ;(e.target as HTMLInputElement).value = ''
+}
+</script>
+
+<template>
+  <div class="hh-home-panel">
+    <div class="hh-hp-row">
+      <div class="hh-hp-progress">
+        <div class="hh-hp-pct">{{ s.pct }}%</div>
+        <div class="hh-hp-bar"><div class="hh-hp-fill" :style="{ width: s.pct + '%' }"></div></div>
+        <div class="hh-hp-count">已学 {{ s.done }} / {{ s.total }} 章 · 在学 {{ s.learning }} · 收藏 {{ s.favCount }}</div>
+      </div>
+      <div class="hh-hp-actions">
+        <button type="button" @click="onExport">导出数据</button>
+        <button type="button" @click="onImportClick">导入数据</button>
+        <input
+          ref="fileInput"
+          type="file"
+          accept="application/json,.json"
+          style="display: none"
+          @change="onFileChange"
+        />
+      </div>
+    </div>
+
+    <div class="hh-hp-favs" v-if="favList.length">
+      <div class="hh-hp-favs-title">我的收藏（{{ favList.length }}）</div>
+      <ul>
+        <li v-for="f in favList" :key="f.path"><a :href="f.link">{{ f.title }}</a></li>
+      </ul>
+    </div>
+    <div class="hh-hp-empty" v-else>
+      暂无收藏 —— 打开任意章节，点「收藏本章」即可在此快速进入。
+    </div>
+
+    <div class="hh-hp-tip">数据仅保存在你当前浏览器（localStorage），换设备请先「导出数据」再到新设备「导入数据」。</div>
+    <div class="hh-hp-toast" v-if="toast">{{ toast }}</div>
+  </div>
+</template>

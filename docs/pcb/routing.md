@@ -1,6 +1,7 @@
 ---
+
 id: routing
-title: 布线：线宽、载流、过孔、间距 PCB Routing: Width, Current, Via, Clearance
+title: "布线：线宽、载流、过孔、间距 PCB Routing: Width, Current, Via, Clearance"
 part: 7
 chapter: 布局布线
 order: 25

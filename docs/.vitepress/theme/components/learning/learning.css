@@ -1,0 +1,233 @@
+/* ===========================================================================
+   学习模块样式：章末工具条、侧边栏进度、首页学习面板。
+   复用工程蓝 / 墨色变量，深浅色自适应。
+   =========================================================================== */
+
+/* ---- 章末：状态按钮 + 收藏 + 笔记 ---- */
+.hh-learning-chapter {
+  margin: 32px 0 8px;
+  padding: 16px 18px;
+  border: 1px solid var(--hh-line);
+  border-left: 4px solid var(--hh-blue);
+  border-radius: 10px;
+  background: var(--vp-c-bg-soft);
+}
+.hh-learning-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.hh-ls-btn {
+  font: inherit;
+  font-size: 13px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--hh-line);
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-2);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.hh-ls-btn:hover {
+  border-color: var(--hh-blue);
+  color: var(--hh-blue);
+}
+.hh-ls-btn.active {
+  background: var(--hh-blue);
+  border-color: var(--hh-blue);
+  color: #fff;
+}
+.hh-ls-fav.active {
+  background: #b8860b;
+  border-color: #b8860b;
+  color: #fff;
+}
+.dark .hh-ls-fav.active {
+  background: #d9a441;
+  border-color: #d9a441;
+  color: #1d2128;
+}
+
+.hh-ln-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.hh-ln-title {
+  font-weight: 700;
+  font-size: 14px;
+}
+.hh-ln-hint {
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+}
+.hh-learning-notes textarea {
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 1.7;
+  /* 16px 防止 iOS Safari 聚焦时自动缩放；用足够特异性覆盖 VitePress 重置 */
+  font-family: var(--vp-font-family-base);
+  font-size: 16px;
+  padding: 10px 12px;
+  border: 1px solid var(--hh-line);
+  border-radius: 8px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  resize: vertical;
+}
+.hh-learning-notes textarea:focus {
+  outline: none;
+  border-color: var(--hh-blue);
+}
+
+/* ---- 侧边栏顶部进度 ---- */
+.hh-learning-progress {
+  padding: 10px 18px 14px;
+  border-bottom: 1px solid var(--hh-line);
+  margin-bottom: 6px;
+}
+.hh-lp-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+.hh-lp-title {
+  font-size: 12.5px;
+  color: var(--vp-c-text-2);
+}
+.hh-lp-pct {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--hh-blue);
+  font-family: var(--vp-font-family-mono);
+}
+.hh-lp-bar {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--vp-c-divider);
+  overflow: hidden;
+}
+.hh-lp-fill {
+  height: 100%;
+  background: var(--hh-blue);
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+.hh-lp-count {
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+  margin-top: 6px;
+}
+
+/* ---- 首页学习面板 ---- */
+.hh-home-panel {
+  margin: 24px 0;
+  padding: 20px 22px;
+  border: 1px solid var(--hh-line);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+}
+.hh-hp-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  justify-content: space-between;
+}
+.hh-hp-progress {
+  flex: 1;
+  min-width: 220px;
+}
+.hh-hp-pct {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--hh-blue);
+  font-family: var(--vp-font-family-mono);
+  line-height: 1.1;
+}
+.hh-hp-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--vp-c-divider);
+  overflow: hidden;
+  margin: 8px 0 6px;
+}
+.hh-hp-fill {
+  height: 100%;
+  background: var(--hh-blue);
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+.hh-hp-count {
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+}
+.hh-hp-actions {
+  display: flex;
+  gap: 8px;
+}
+.hh-hp-actions button {
+  font: inherit;
+  font-size: 13px;
+  padding: 7px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--hh-blue);
+  background: var(--vp-c-bg);
+  color: var(--hh-blue);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.hh-hp-actions button:hover {
+  background: var(--hh-blue);
+  color: #fff;
+}
+
+.hh-hp-favs {
+  margin-top: 16px;
+  border-top: 1px dashed var(--hh-line);
+  padding-top: 12px;
+}
+.hh-hp-favs-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--vp-c-text-2);
+  margin-bottom: 6px;
+}
+.hh-hp-favs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hh-hp-favs li {
+  padding: 5px 0;
+  line-height: 1.6;
+}
+.hh-hp-favs a {
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+}
+.hh-hp-favs a:hover {
+  color: var(--hh-blue);
+  text-decoration: underline;
+}
+.hh-hp-empty {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--hh-line);
+  font-size: 13px;
+  color: var(--vp-c-text-3);
+}
+.hh-hp-tip {
+  margin-top: 14px;
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+}
+.hh-hp-toast {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--hh-blue);
+  font-weight: 600;
+}

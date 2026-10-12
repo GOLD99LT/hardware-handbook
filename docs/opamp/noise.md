@@ -1,6 +1,7 @@
 ---
+
 id: noise
-title: 噪声：电压噪声、电流噪声与计算 Noise: Voltage & Current Noise
+title: "噪声：电压噪声、电流噪声与计算 Noise: Voltage & Current Noise"
 part: 3
 chapter: 运放基础
 order: 80

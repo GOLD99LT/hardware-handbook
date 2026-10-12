@@ -9,6 +9,7 @@ dist/**
 # 截图/自检临时目录
 _shots/
 **/_shots/
+.shots/
 
 # 自动修复前的本地备份（不入库）
 _backup/
@@ -26,3 +27,15 @@ desktop.ini
 
 # 临时排查/诊断脚本（下划线前缀，不入库）
 tools/_*.py
+
+# Node / VitePress
+node_modules/
+
+# VitePress 缓存与构建产物（仅忽略产物，config/theme/components 等源码需入库）
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+
+# 由 tools/build_vp_sidebar.py 自动生成（侧边栏、品牌 public 同步）；
+# predocs:dev / predocs:build 会重新生成，源在 docs/.vitepress/theme/public 与 docs/SUMMARY.md
+docs/.vitepress/sidebar.generated.mjs
+docs/public/

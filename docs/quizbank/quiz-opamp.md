@@ -122,7 +122,7 @@ $G=1+R_f/R_1=1+9=10$，$V_{out}=10\times 0.5=5\text{V}$（需供电轨 ≥5V 留
 
 </details>
 
-<details><summary>某运放 SR=1\text{V}/\mu\text{s}，要求输出 1V 峰值、100kHz 正弦波。是否会压摆率失真？（正弦最大斜率 $2\pi f V_p$）</summary>
+<details><summary>某运放 $SR=1\text{V}/\mu\text{s}$，要求输出 1V 峰值、100kHz 正弦波。是否会压摆率失真？（正弦最大斜率 $2\pi f V_p$）</summary>
 
 要求最大斜率 $2\pi f V_p=2\pi\times 10^5\times 1\approx 6.28\times 10^5\text{V/s}=0.628\text{V}/\mu\text{s}$。
 SR=1V/μs > 0.628V/μs，满足，无明显压摆失真。

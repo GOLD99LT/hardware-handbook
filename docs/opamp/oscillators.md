@@ -1,6 +1,7 @@
 ---
+
 id: oscillators
-title: 振荡器：文氏桥与晶体振荡 Oscillators: Wien Bridge & Crystal
+title: "振荡器：文氏桥与晶体振荡 Oscillators: Wien Bridge & Crystal"
 part: 3
 chapter: 应用与信号处理
 order: 140

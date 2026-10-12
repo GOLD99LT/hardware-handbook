@@ -1,0 +1,62 @@
+name: Deploy to Cloudflare Pages (mirror)
+
+# 国内访问镜像（可选）。主部署仍是 GitHub Pages（见 deploy-docs.yml）。
+#
+# 启用前用户需在仓库 Settings → Secrets and variables → Actions 配置两个 Secret：
+#   CLOUDFLARE_API_TOKEN     Cloudflare Dashboard → My Profile → API Tokens → Create Token，
+#                            模板 "Cloudflare Pages: Edit" 权限（Account → Cloudflare Pages → Edit）
+#   CLOUDFLARE_ACCOUNT_ID    Dashboard 右侧栏 / 任意域名概览页右下角可见的 32 位账户 ID
+#
+# 首次运行前还需在 Cloudflare Pages 创建同名项目：hardware-handbook
+# （Pages → Create a project → Connect to Git 或先空项目，由 wrangler 首次部署自动创建生产环境）。
+#
+# ℹ️ base 路径：config.mts 读环境变量 VP_BASE，默认 '/hardware-handbook/'（GitHub Pages 项目站路径）。
+#    Cloudflare Pages 部署在项目根域名（hardware-handbook.pages.dev 或自定义域根路径），
+#    故下方 Build 步骤设 VP_BASE='/' 以根路径构建；GitHub Pages 流水线不设该变量，保持默认子路径。
+
+on:
+  workflow_dispatch:
+  # 配置好 Secrets、创建好 Pages 项目、并解决 base 路径后，取消下方注释即可随 main 自动镜像：
+  # push:
+  #   branches:
+  #     - main
+
+# 同一镜像只跑最新一次，进行中的部署不打断
+concurrency:
+  group: cloudflare-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build VitePress site
+        env:
+          # Cloudflare Pages 部署在根路径，以根 base 构建（config.mts: process.env.VP_BASE || '/hardware-handbook/'）
+          VP_BASE: '/'
+        run: npm run docs:build
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy docs/.vitepress/dist --project-name=hardware-handbook

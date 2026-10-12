@@ -1,6 +1,7 @@
 ---
+
 id: math-basics
-title: 数学基础：复数、dB 与拉氏变换直觉 Math Basics: Complex Numbers, dB, Laplace
+title: "数学基础：复数、dB 与拉氏变换直觉 Math Basics: Complex Numbers, dB, Laplace"
 part: 1
 chapter: 数学基础
 order: 70

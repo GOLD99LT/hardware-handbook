@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228 64" role="img" aria-label="硬件工程师手册">
+  <style>
+    .mark { stroke: #1a4f8b; }
+    .title { fill: #1f2328; }
+    .sub { fill: #57606a; }
+    @media (prefers-color-scheme: dark) {
+      .mark { stroke: #7aa8ff; }
+      .title { fill: #e6edf3; }
+      .sub { fill: #9aa4b2; }
+    }
+  </style>
+  <g class="mark" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 12 L16 52 L52 32 Z"/>
+    <path d="M6 21 H16"/>
+    <path d="M6 43 H16"/>
+    <path d="M52 32 H57"/>
+    <path d="M57 32 q1.5 -4.4 3 0 t3 0"/>
+    <path d="M20.8 24 H24.6"/>
+    <path d="M22.7 22.1 V25.9"/>
+    <path d="M20.8 40 H24.6"/>
+  </g>
+  <text class="title" x="74" y="30" font-family="'PingFang SC','Microsoft YaHei','Source Han Sans SC',system-ui,sans-serif" font-size="21" font-weight="600">硬件工程师手册</text>
+  <text class="sub" x="74.5" y="50" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="10.5" letter-spacing="1.5">hardware-handbook</text>
+</svg>

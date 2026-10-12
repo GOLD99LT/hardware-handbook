@@ -1,6 +1,7 @@
 ---
+
 id: reliability-derating
-title: 可靠性：降额、老化与环境试验 Reliability: Derating, Burn-in & Environmental Test
+title: "可靠性：降额、老化与环境试验 Reliability: Derating, Burn-in & Environmental Test"
 part: 8
 chapter: 可靠性与认证
 order: 40

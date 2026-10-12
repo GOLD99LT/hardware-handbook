@@ -111,7 +111,7 @@ $R_{DS(on)}$：导通电阻（决定导通损耗）；$V_{GS(th)}$：栅极开�
 
 </details>
 
-<details><summary>MOSFET 低边驱动 $V_{IN}=12\text{V}$，负载电流 5A，$R_{DS(on)}=20\text{m}\Omega$。求导通损耗；若开关频率 200kHz、每次开关损耗能量 5$\mu$J，求开关损耗总功率。</summary>
+<details><summary>MOSFET 低边驱动 $V_{IN}=12\text{V}$，负载电流 5A，$R_{DS(on)}=20\text{m}\Omega$。求导通损耗；若开关频率 200kHz、每次开关损耗能量 $5\mu\text{J}$，求开关损耗总功率。</summary>
 
 导通损耗 $P_{cond}=I^2 R_{DS(on)}=5^2\times 0.02=0.5\text{W}$。
 单次开关损耗 $E=5\,\mu\text{J}$，频率 200kHz，开关损耗 $P_{sw}=E\cdot f=5\times10^{-6}\times 2\times10^5=1\text{W}$。

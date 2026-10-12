@@ -1,0 +1,373 @@
+/* ===========================================================================
+   硬件工程师手册 · 主题定制
+   工程蓝 + 墨色/纸张，严谨克制；避免 indigo/purple 偏重。
+   =========================================================================== */
+
+:root {
+  --hh-blue: #1a4f8b;
+  --hh-blue-soft: #e8f0f8;
+  --hh-ink: #222a32;
+  --hh-paper: #f7f6f1;
+  --hh-paper-2: #ffffff;
+  --hh-line: #e4e1d6;
+  --hh-pitfall: #c0492f;
+  --hh-pitfall-bg: #fbeee9;
+  --hh-advanced: #3f5d80;
+  --hh-advanced-bg: #eef2f7;
+
+  /* 覆盖 VitePress 主色为工程蓝 */
+  --vp-c-brand-1: #1a4f8b;
+  --vp-c-brand-2: #2a6bb0;
+  --vp-c-brand-3: #e8f0f8;
+  --vp-c-brand-soft: #e8f0f8;
+}
+
+.dark {
+  --hh-blue: #7aa8ff;
+  --hh-blue-soft: #16243a;
+  --hh-ink: #d7dee6;
+  --hh-paper: #16181d;
+  --hh-paper-2: #1d2128;
+  --hh-line: #2a2f38;
+  --hh-pitfall: #e07a63;
+  --hh-pitfall-bg: #33201c;
+  --hh-advanced: #8aa6c8;
+  --hh-advanced-bg: #1c2531;
+
+  --vp-c-brand-1: #7aa8ff;
+  --vp-c-brand-2: #9dbdff;
+  --vp-c-brand-3: #1c2c44;
+  --vp-c-brand-soft: #1c2c44;
+}
+
+/* 正文行距与字体 */
+.vp-doc {
+  line-height: 1.8;
+}
+.vp-doc h2 {
+  margin-top: 40px;
+  padding-top: 8px;
+  border-top: 1px solid var(--hh-line);
+}
+
+/* ---------------------------------------------------------------------------
+   面包屑 + 徽章
+   --------------------------------------------------------------------------- */
+.hh-crumb {
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+  margin: 4px 0 10px;
+  font-family: var(--vp-font-family-mono);
+}
+.hh-crumb-sep {
+  margin: 0 6px;
+  opacity: 0.5;
+}
+.hh-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 18px;
+}
+.hh-badge {
+  font-size: 12px;
+  line-height: 1;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-family: var(--vp-font-family-mono);
+  border: 1px solid transparent;
+}
+.hh-diff-1 {
+  background: #e6f2ea;
+  color: #2f7a44;
+}
+.hh-diff-2 {
+  background: #fdf0df;
+  color: #a35f22;
+}
+.hh-diff-3 {
+  background: #e7ecf5;
+  color: #2a5a9c;
+}
+.hh-tag {
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
+  border-color: var(--hh-line);
+}
+.dark .hh-diff-1 { background: #1d3326; color: #6fbf8a; }
+.dark .hh-diff-2 { background: #3a2c1a; color: #d9a45e; }
+.dark .hh-diff-3 { background: #22314a; color: #8fb4e8; }
+
+/* ---------------------------------------------------------------------------
+   五类容器
+   --------------------------------------------------------------------------- */
+.hh-container {
+  margin: 22px 0;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-left-width: 4px;
+  font-size: 15px;
+}
+.hh-container > *:first-child { margin-top: 0; }
+.hh-container > *:last-child { margin-bottom: 0; }
+.hh-c-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 14.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hh-motivation {
+  background: #fdf6ec;
+  border-color: #eed9b4;
+  border-left-color: #c08a3e;
+}
+.hh-motivation .hh-c-title { color: #a8742a; }
+
+.hh-analogy {
+  background: #ecf2f9;
+  border-color: #cbdcf0;
+  border-left-color: #4a7fb5;
+}
+.hh-analogy .hh-c-title { color: #2f6396; }
+
+.hh-example {
+  background: #ecf5ee;
+  border-color: #c9e2d0;
+  border-left-color: #4f9e63;
+}
+.hh-example .hh-c-title { color: #2f7a44; }
+
+.hh-pitfall {
+  background: #fbeee9;
+  border-color: #f0cdc4;
+  border-left-color: var(--hh-pitfall);
+}
+.hh-pitfall .hh-c-title { color: var(--hh-pitfall); }
+.hh-pitfall li { margin: 6px 0; }
+
+.dark .hh-motivation { background: #2a2418; border-color: #4a3d22; border-left-color: #c08a3e; }
+.dark .hh-motivation .hh-c-title { color: #d9a45e; }
+.dark .hh-analogy { background: #182233; border-color: #24364f; border-left-color: #4a7fb5; }
+.dark .hh-analogy .hh-c-title { color: #7aa8dd; }
+.dark .hh-example { background: #182a1e; border-color: #24402c; border-left-color: #4f9e63; }
+.dark .hh-example .hh-c-title { color: #6fbf8a; }
+.dark .hh-pitfall { background: #33201c; border-color: #4a2c24; border-left-color: #e07a63; }
+.dark .hh-pitfall .hh-c-title { color: #e07a63; }
+
+/* advanced：灰蓝折叠 */
+.hh-advanced {
+  background: var(--hh-advanced-bg);
+  border-color: #cdd8e4;
+  border-left-color: var(--hh-advanced);
+  padding: 0;
+}
+.hh-advanced-title {
+  cursor: pointer;
+  list-style: none;
+  padding: 12px 18px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--hh-advanced);
+}
+.hh-advanced-title::-webkit-details-marker { display: none; }
+.hh-advanced-title::before {
+  content: '▸';
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.2s;
+}
+.hh-advanced[open] .hh-advanced-title::before { transform: rotate(90deg); }
+.hh-advanced > *:not(.hh-advanced-title) {
+  padding: 0 18px 14px;
+}
+.dark .hh-advanced { border-color: #2c3a4d; }
+
+/* ---------------------------------------------------------------------------
+   折叠自测题 <details>（题库）统一样式
+   --------------------------------------------------------------------------- */
+.vp-doc details {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--hh-line);
+  border-radius: 10px;
+  margin: 14px 0;
+  padding: 0;
+}
+.vp-doc details > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 12px 16px;
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  line-height: 1.6;
+}
+.vp-doc details > summary::-webkit-details-marker { display: none; }
+.vp-doc details > summary::before {
+  content: 'Q';
+  flex: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--hh-blue);
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-top: 1px;
+}
+.vp-doc details[open] > summary {
+  border-bottom: 1px dashed var(--hh-line);
+}
+.vp-doc details > *:not(summary) {
+  padding: 4px 16px 14px;
+}
+
+/* ---------------------------------------------------------------------------
+   Figure 化图片 + 图注 + 放大遮罩
+   --------------------------------------------------------------------------- */
+.md-figure {
+  margin: 22px 0;
+  text-align: center;
+}
+.md-figure img {
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid var(--hh-line);
+  border-radius: 8px;
+  padding: 14px;
+  cursor: zoom-in;
+  transition: box-shadow 0.2s;
+}
+.md-figure img:hover {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+.md-figure figcaption {
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+  margin-top: 8px;
+  line-height: 1.6;
+  border-top: 1px dashed var(--hh-line);
+  padding-top: 8px;
+  text-align: center;
+}
+.hh-zoom-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(10, 14, 20, 0.88);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4vh 4vw;
+  cursor: zoom-out;
+}
+.hh-zoom-overlay img {
+  max-width: 100%;
+  max-height: 90vh;
+  background: #fff;
+  border-radius: 8px;
+}
+.hh-zoom-cap {
+  color: #ddd;
+  font-size: 13px;
+  margin-top: 12px;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* 表格移动端横向滚动 */
+.vp-doc table {
+  display: table;
+  width: 100%;
+}
+
+/* ECharts 容器 */
+.hh-chart {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--hh-line);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+/* 首页篇导航网格 */
+.home-part-grid ul {
+  list-style: none;
+  padding-left: 0;
+}
+.home-part-grid li {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--hh-line);
+  line-height: 1.6;
+}
+
+/* P3：移动端横向溢出裁剪（离屏抽屉不计入 scrollWidth）。
+   用 clip 而非 hidden，避免破坏 sticky 侧栏与抽屉开合。 */
+html,
+body {
+  overflow-x: clip;
+}
+
+/* A：宽块公式在窄屏内部横向滚动，不撑开页面。
+   桌面端公式不超时不出现滚动条；仅窄屏加内边距防滚动条压字。 */
+.vp-doc .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.25em 0;
+}
+.vp-doc .katex-display > .katex {
+  white-space: nowrap;
+}
+/* 窄屏：折叠题题干/答案内超长行内公式随容器横向滚动 */
+@media (max-width: 768px) {
+  .vp-doc .katex-display {
+    margin: 0.25em 0;
+  }
+  /* 行内 katex 自带 nowrap，窄屏不折行会撑破；让段落/列表/表格在容器内横滚 */
+  .vp-doc p,
+  .vp-doc li,
+  .vp-doc details summary,
+  .vp-doc td,
+  .vp-doc th {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* P4：笔记/导入等输入控件字号 ≥16px，避免 iOS 聚焦自动放大 */
+.vp-doc textarea,
+.vp-doc input[type="text"],
+.vp-doc input[type="search"],
+.vp-doc input[type="url"],
+.vp-doc input:not([type]),
+.VPNavBarSearch button,
+.vp-local-search .tips input {
+  font-size: 16px;
+}
+
+/* P7：首页六卡线性图标（currentColor，深浅底自适应） */
+.hh-feat-icon {
+  width: 22px;
+  height: 22px;
+  vertical-align: -0.2em;
+  margin-right: 2px;
+  color: var(--hh-blue);
+}
+/* 收藏星形按钮内联图标 */
+.hh-ls-star {
+  width: 15px;
+  height: 15px;
+  vertical-align: -0.15em;
+}

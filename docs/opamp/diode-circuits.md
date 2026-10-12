@@ -90,7 +90,7 @@ $$V_{ripple}\approx \frac{I_{load}}{2f\cdot C}$$
 ::: example 设计一个 12V/0.5A 直流前级
 1. **需求**：市电 220V/50Hz 经变压器降到交流 12V（有效值），整流滤波后给后级稳压供电。
 2. **算峰值**：交流峰值 $=12\times\sqrt2\approx 17\text{V}$，扣除 $2V_F\approx1.4\text{V}$，充电峰值约 15.6V。
-3. **选电容**：负载 0.5A，按 $1000\muF/100mA$ 取 $C=4700\muF$，耐压选 25V。纹波 $V_r\approx I/(2fC)=0.5/(100\times4700\mu)\approx 1.06\text{V}$。
+3. **选电容**：负载 0.5A，按 $1000\mu\text{F}/100mA$ 取 $C=4700\mu\text{F}$，耐压选 25V。纹波 $V_r\approx I/(2fC)=0.5/(100\times4700\mu)\approx 1.06\text{V}$。
 4. **算输出直流**：约 $15.6-0.5\approx 15\text{V}$（带载），正好满足后级 12V LDO 的压差要求。
 5. **选二极管**：PIV $\approx\sqrt2\times12\approx17\text{V}$，留余量选 1N4007（1000V/1A）。
 6. **验算**：上电后测 C1 两端应为 14~16V 直流，纹波峰峰值约 1V，符合。
@@ -227,7 +227,7 @@ $\sqrt2\times15\approx 21.2V$，扣除两只导通管约 1.4V，空载约 **19~2
 
 <details><summary>负载电流 1A，全波整流 100Hz，要把纹波压到 0.2V 以下，滤波电容至少多大？</summary>
 
-由 $V_r\approx I/(2fC)$，$C\ge I/(2fV_r)=1/(2\times100\times0.2)=25000\muF$。实际选 22000~33000µF，并注意 ESR。
+由 $V_r\approx I/(2fC)$，$C\ge I/(2fV_r)=1/(2\times100\times0.2)=25000\mu\text{F}$。实际选 22000~33000µF，并注意 ESR。
 </details>
 
 <details><summary>四只二极管里有一只虚焊开路，输出会变成什么样？</summary>
