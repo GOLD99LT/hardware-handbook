@@ -1,0 +1,11 @@
+{
+  "name": "@hw/learning",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "LearningRepository、迁移、导入导出（按 appId 隔离，UI 不碰 localStorage）",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts"
+}

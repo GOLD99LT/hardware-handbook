@@ -1,0 +1,11 @@
+{
+  "name": "@hw/theme",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "布局、品牌、学习 UI、EChart、图片查看器（P1 占位骨架，只依赖接口）",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts"
+}

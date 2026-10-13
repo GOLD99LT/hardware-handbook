@@ -1,0 +1,18 @@
+{
+  "name": "@hw/content-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "manifest/路由快照/校验（Node/TS，单一内容清单；P1 接管 P0 tools/freeze_manifest.py）",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts",
+  "bin": {
+    "hw-manifest": "./src/cli.ts"
+  },
+  "scripts": {
+    "manifest": "node src/cli.ts --src ../../docs --out ../../.generated/content-manifest.json",
+    "parity": "node src/parity.ts --src ../../docs --p0 ../../.generated/p0-reference.json --out ../../.generated/content-manifest.ts.json"
+  }
+}

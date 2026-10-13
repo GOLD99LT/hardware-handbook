@@ -1,0 +1,8 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+  - 'templates/*'
+
+# pnpm 12 设置统一在此：允许 esbuild 运行构建脚本（安装平台二进制）
+allowBuilds:
+  esbuild: true

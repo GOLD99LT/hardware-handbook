@@ -1,0 +1,11 @@
+{
+  "name": "@hw/shared-config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "defineHwConfig：VitePress 通用 markdown/搜索/插件工厂（P1 占位骨架，API 在 P2 落地）",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts"
+}

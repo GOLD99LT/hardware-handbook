@@ -1,22 +1,19 @@
 {
-  "name": "hardware-handbook",
-  "version": "1.0.0",
-  "description": "硬件工程师手册 · VitePress 静态文档站",
+  "name": "hardware-handbook-monorepo",
+  "version": "0.1.0",
+  "private": true,
   "type": "module",
+  "description": "硬件学习生态 · pnpm Monorepo（P1 骨架）",
+  "packageManager": "pnpm@12.11.2",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
-    "predocs:dev": "python tools/build_vp_sidebar.py",
-    "docs:dev": "vitepress dev docs",
-    "predocs:build": "python tools/build_vp_sidebar.py",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
-  },
-  "devDependencies": {
-    "vitepress": "^1.6.3"
-  },
-  "dependencies": {
-    "@vscode/markdown-it-katex": "^1.0.8",
-    "echarts": "^5.5.1",
-    "katex": "^0.16.11",
-    "markdown-it-container": "^4.0.0"
+    "manifest": "pnpm -F @hw/content-core manifest",
+    "manifest:parity": "pnpm -F @hw/content-core parity",
+    "dev:template": "pnpm -F site-template dev",
+    "build:template": "pnpm -F site-template build",
+    "preview:template": "pnpm -F site-template preview",
+    "verify": "echo \"(P1 占位) verify 统一编排将在 P2 接入 Python 质检与快照门禁\" && exit 0"
   }
 }

@@ -34,6 +34,9 @@ node_modules/
 # VitePress 缓存与构建产物（仅忽略产物，config/theme/components 等源码需入库）
 docs/.vitepress/cache/
 docs/.vitepress/dist/
+# 任意深度（templates/site-template、apps/handbook 等）
+**/.vitepress/cache/
+**/.vitepress/dist/
 
 # 由 tools/build_vp_sidebar.py 自动生成（侧边栏、品牌 public 同步）；
 # predocs:dev / predocs:build 会重新生成，源在 docs/.vitepress/theme/public 与 docs/SUMMARY.md

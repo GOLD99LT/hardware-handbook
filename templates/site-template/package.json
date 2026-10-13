@@ -1,0 +1,15 @@
+{
+  "name": "site-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "最小可构建 VitePress app（P1 验证 SSR/HMR/dev/build/preview；新专项脚手架）",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}

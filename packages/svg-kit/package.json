@@ -1,0 +1,11 @@
+{
+  "name": "@hw/svg-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "占位：原理图元件/接地标准（后期从 tooling 拆）",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@hw/components",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "占位：P5 交互组件（仿真/题库/计算器）",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts"
+}
