@@ -1,0 +1,30 @@
+# 跨平台换行符规范
+# 默认由 Git 自动识别文本文件，统一以 LF 存入仓库（保证 Windows / macOS / Linux 一致）
+* text=auto
+
+# Windows 专用脚本：检出到工作区时保留 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# 常见文本源（显式声明为文本，避免被误判为二进制）
+*.svg   text
+*.html  text
+*.css   text
+*.txt   text
+*.sh    text eol=lf
+
+# 二进制资源：禁止任何行尾 / 编码转换（否则会损坏字体与图片）
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.webp  binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+*.eot   binary
+*.zip   binary
+*.gz    binary
