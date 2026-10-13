@@ -3,9 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "defineHwConfig：VitePress 通用 markdown/搜索/插件工厂（P1 占位骨架，API 在 P2 落地）",
+  "description": "defineHwConfig：VitePress 通用 markdown/搜索/插件工厂（五类容器、KaTeX、CJK 加粗、details 折叠、ECharts 围栏、figure 化、frontmatter 修复、本地搜索中文）",
   "exports": {
     ".": "./src/index.ts"
   },
-  "types": "./src/index.ts"
+  "types": "./src/index.ts",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@vscode/markdown-it-katex": "1.1.2",
+    "markdown-it-container": "4.0.0"
+  },
+  "peerDependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4"
+  }
 }
