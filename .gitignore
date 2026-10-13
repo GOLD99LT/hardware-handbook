@@ -39,3 +39,6 @@ docs/.vitepress/dist/
 # predocs:dev / predocs:build 会重新生成，源在 docs/.vitepress/theme/public 与 docs/SUMMARY.md
 docs/.vitepress/sidebar.generated.mjs
 docs/public/
+
+# Monorepo 重构 P0 起的生成物（由 tools/freeze_manifest.py 生成，不入库；快照在 tests/ 入库）
+.generated/
