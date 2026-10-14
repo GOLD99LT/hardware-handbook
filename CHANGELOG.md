@@ -2,7 +2,7 @@
 
 遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/) 格式；本项目遵循语义化版本。
 
-## [Unreleased] — Monorepo 重构 v2（分支 `refactor/monorepo`，未合并、未发布）
+## [Unreleased] — Monorepo 重构 v2（已合并 `main` 并部署上线，2026-10-14，main `9cbeb4a`；开发分支 `refactor/monorepo`，基线 tag `pre-monorepo`）
 
 > 内容（140 章 md / 411 SVG）**零改动**，仅 `git mv`；已发布 URL 全部保持不变。
 
@@ -28,9 +28,13 @@
 - 部署工作流（Pages / Cloudflare）改为 pnpm + `pnpm --filter @hw/handbook docs:build`，dist 路径改为 `apps/handbook/docs/.vitepress/dist`。
 - 学习数据键从全局 `hh.v1.learning` 迁移为按 app 的 `hb.v1.handbook.learning`（旧键保留）。
 
+### 修复（Fixed）
+
+- 修复内容指纹跨平台不一致导致的 Linux 质量门禁失败：`.gitattributes` 为 `* text=auto`，Windows 工作区检出为 CRLF、GitHub Actions（Linux）检出为 LF，而 content-core(TS) 与 freeze_manifest(Python) 此前对文件**原始字节**做 sha256，使同一份逻辑内容在两平台算出不同 revision。修复为在哈希前统一把 CRLF/CR 归一为 LF（与仓库 blob 一致）；修复后 Windows TS、Windows Python、Linux CI 三端指纹一致为 `sha256-361225735a3a67f4`，`tests/manifest.snapshot.json` 已据此重新冻结（routes 不变）。
+
 ### 不变（Preserved）
 
-- 全部已发布 URL（路由快照 141=141，零差异）、内容指纹逐字一致（revision `sha256-4c8521761e575941`）。
+- 全部已发布 URL（路由快照 141=141，零差异）；140 章正文与 411 张 SVG 逐字节零改动（100% rename）。跨平台稳定指纹 revision `sha256-361225735a3a67f4`（重构过程中的 `sha256-4c8521761e575941` 仅为 Windows CRLF 工作区值，已由换行归一化取代，逻辑内容相同）。
 - 在线 VitePress 与离线单文件双形态；离线构建零第三方 Python 依赖。
 - 在线构建 0 错误；离线 140 章、0 图片缺失、manifest 对账一致。
 

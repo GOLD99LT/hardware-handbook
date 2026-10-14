@@ -162,3 +162,4 @@ pnpm --filter @hw/<app> docs:build
 6. **gen:sidebar 收集到 0 章**：SUMMARY 缺 `## 篇名` 分组标题。
 7. **`pnpm/action-setup` 与 setup-node 顺序**：CI 里先 `pnpm/action-setup@v4`，再 `actions/setup-node` 配 `cache: pnpm`。
 8. **依赖安全告警**：echarts<6 XSS（仅渲染作者自写 JSON，无外部输入）、esbuild（仅 dev server）、katex 原型污染（默认 trust:false 不可利用）当前发布形态均不可达；详见 `THIRD_PARTY_LICENSES.md`。
+9. **CI 质量门禁 `manifest/fingerprint 比对` 在 Linux 失败、本地 Windows 却全绿（跨平台换行）**：`.gitattributes` 为 `* text=auto`，Windows 检出 CRLF、Linux 检出 LF；若内容指纹对文件**原始字节** sha256，同一份逻辑内容会在两平台算出不同 revision。修复统一在哈希前把 CRLF/CR 归一为 LF（与仓库 blob 一致）：TS `content-core` 的 `normalizeTextForHash`、Python `freeze_manifest.py` 的 `normalize_text_for_hash`。**切勿删除这两个归一化函数**，否则 Linux CI 必挂。自检要点：修复后本地（CRLF）生成的 revision 必须等于 CI（Linux）的 revision；改动指纹算法后须重新冻结快照（见第 6 节）。
