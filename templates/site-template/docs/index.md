@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: Site Template
-  text: 最小 VitePress 脚手架
-  tagline: P1 Monorepo 骨架验证（SSR / HMR / build / preview）
+  name: 新专项手册
+  text: 从 site-template 开始
+  tagline: 复制脚手架，改 appId/标题/篇名，写内容即可（shared-config + theme + content-core + learning）
   actions:
     - theme: brand
       text: 开始阅读
@@ -12,9 +12,11 @@ hero:
 
 features:
   - title: 空内容可构建
-    details: index + SUMMARY + 一个示例章，build 0 错误
-  - title: 默认主题
-    details: P1 先用 VitePress 默认主题，通用主题在 P2 由 @hw/theme 提供
-  - title: workspace 成员
-    details: pnpm -F site-template dev / build / preview
+    details: index + SUMMARY + 一个示例章，docs:build 0 错误
+  - title: 与正式 app 同形态
+    details: 五类容器 / KaTeX / ECharts / 折叠题 / 学习面板开箱即用
+  - title: 数据按 appId 隔离
+    details: 学习进度/笔记/收藏存 hb.v1.<appId>.learning，互不串扰
+  - title: 离线单文件
+    details: packages/tooling 的 build_single_html.py 可按 manifest 生成自包含 HTML
 ---

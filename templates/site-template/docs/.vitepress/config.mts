@@ -1,18 +1,26 @@
-import { defineConfig } from 'vitepress'
+// 薄 config：通用规则全部来自 @hw/shared-config，站点数据来自 content.config。
+// sidebar 为预构建生成物（gen:sidebar）；默认根 base，可用 VP_BASE 环境变量覆盖
+// （如部署到子路径：VP_BASE='/<app>/' pnpm docs:build）。
+import { defineHwConfig } from '@hw/shared-config'
+import sidebar from './sidebar.generated.mjs'
+import {
+  APP_ID,
+  TITLE,
+  DESCRIPTION,
+  FAVICON,
+  PART_REGISTRY,
+  NAV,
+  SOCIAL_LINKS
+} from '../../content.config'
 
-// 最小 VitePress 配置（P1：默认主题即可）。
-// 未来真正的通用规则（五类容器/KaTeX/ECharts 等）由 @hw/shared-config 的
-// defineHwConfig 提供，本模板仅验证「空内容也能 dev/build/preview」。
-export default defineConfig({
-  title: 'Site Template',
-  description: '硬件学习生态 · 最小 VitePress 脚手架（P1）',
-  themeConfig: {
-    nav: [{ text: '示例', link: '/example/hello' }],
-    sidebar: [
-      {
-        text: '示例章',
-        items: [{ text: 'Hello · 示例章', link: '/example/hello' }],
-      },
-    ],
-  },
+export default defineHwConfig({
+  appId: APP_ID,
+  title: TITLE,
+  description: DESCRIPTION,
+  base: '/',
+  nav: NAV,
+  sidebar,
+  partRegistry: PART_REGISTRY,
+  socialLinks: SOCIAL_LINKS,
+  favicon: FAVICON
 })

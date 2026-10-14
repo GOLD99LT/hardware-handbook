@@ -3,17 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "硬件学习生态 · pnpm Monorepo（P1 骨架）",
+  "description": "硬件学习生态 · pnpm Monorepo（在线 VitePress 多 app + 离线单文件，共享内容内核）",
   "packageManager": "pnpm@12.11.2",
   "engines": {
     "node": ">=22"
   },
   "scripts": {
+    "gen:handbook": "pnpm -F @hw/handbook gen",
+    "dev:handbook": "pnpm -F @hw/handbook docs:dev",
+    "build:handbook": "pnpm -F @hw/handbook docs:build",
+    "preview:handbook": "pnpm -F @hw/handbook docs:preview",
+    "build:template": "pnpm -F @hw/site-template docs:build",
     "manifest": "pnpm -F @hw/content-core manifest",
     "manifest:parity": "pnpm -F @hw/content-core parity",
-    "dev:template": "pnpm -F site-template dev",
-    "build:template": "pnpm -F site-template build",
-    "preview:template": "pnpm -F site-template preview",
-    "verify": "echo \"(P1 占位) verify 统一编排将在 P2 接入 Python 质检与快照门禁\" && exit 0"
+    "test:learning": "node packages/learning/test/learning.test.ts",
+    "quality": "python run_quality.py",
+    "offline": "python packages/tooling/src/freeze_manifest.py && python packages/tooling/src/build_single_html.py --manifest .generated/content-manifest.json",
+    "verify": "pnpm build:handbook && pnpm build:template && pnpm test:learning && pnpm quality && pnpm offline"
   }
 }

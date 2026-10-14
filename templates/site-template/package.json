@@ -1,15 +1,27 @@
 {
-  "name": "site-template",
+  "name": "@hw/site-template",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "最小可构建 VitePress app（P1 验证 SSR/HMR/dev/build/preview；新专项脚手架）",
+  "description": "新专项脚手架：复制到 apps/<app> 后改 appId/title/base 即可；与正式 app 同形态（@hw/shared-config + @hw/theme + @hw/content-core + @hw/learning）。",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "gen:sidebar": "python ../../packages/tooling/src/build_vp_sidebar.py --src docs",
+    "gen:catalog": "node ../../packages/content-core/src/cli.ts --appId site-template --src docs --out ../../.generated/site-template-manifest.json --catalogOut docs/.vitepress/catalog.generated.mjs",
+    "gen": "pnpm run gen:sidebar && pnpm run gen:catalog",
+    "predocs:dev": "pnpm run gen",
+    "predocs:build": "pnpm run gen",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "@hw/content-core": "workspace:*",
+    "@hw/learning": "workspace:*",
+    "@hw/shared-config": "workspace:*",
+    "@hw/theme": "workspace:*",
+    "vue": "^3.5.43"
   },
   "devDependencies": {
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.4"
   }
 }

@@ -1,6 +1,7 @@
-# Site Template
+# 新专项手册
 
-> 脚手架装配清单（与正式 app 同形态）。
+> 脚手架内容清单（复制为 `apps/<app>` 后替换为本专项内容）。
 
-## 示例
+## 示例篇
+
 * [Hello · 示例章](example/hello.md)

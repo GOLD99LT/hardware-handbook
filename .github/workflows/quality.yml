@@ -43,6 +43,9 @@ jobs:
       - name: Online build (VitePress)
         run: pnpm --filter @hw/handbook docs:build
 
+      - name: Scaffold build (empty app must pass)
+        run: pnpm --filter @hw/site-template docs:build
+
       - name: learning unit tests
         run: node packages/learning/test/learning.test.ts
 
