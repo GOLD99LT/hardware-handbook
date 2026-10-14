@@ -6,15 +6,9 @@ import { useLearning } from './store'
 const learning = useLearning()
 const s = computed(() => learning.stats())
 
-const favList = computed(() => {
-  return Object.keys(learning.state.favorites)
-    .filter((p) => learning.state.favorites[p])
-    .map((p) => ({
-      path: p,
-      title: learning.catalogTitle[p] || p,
-      link: learning.catalogLink[p] || '/' + p.replace(/\.md$/, '')
-    }))
-})
+const favList = computed(() =>
+  learning.favorites().map((f) => ({ path: f.id, title: f.title, link: f.link }))
+)
 
 const toast = ref('')
 function showToast(msg: string) {

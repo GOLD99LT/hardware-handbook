@@ -1,8 +1,9 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
-import Logo from './Logo.vue'
 import SidebarProgress from '../learning/SidebarProgress.vue'
 import ChapterLearning from '../learning/ChapterLearning.vue'
+// 注意：Logo 不在此局部 import，而是由 createHwTheme 通过 app.component('Logo', ...)
+// 全局注册（默认包内 Logo，app 可经 createHwTheme({ logo }) 覆盖）。
 </script>
 
 <template>
