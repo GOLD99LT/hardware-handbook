@@ -30,7 +30,8 @@ def find_repo_root(start=None):
 
 
 REPO_ROOT = find_repo_root()
-DEFAULT_SRC = os.path.join(REPO_ROOT, 'docs')
+# P2 起 handbook 内容在 apps/handbook/docs（P0/P1 为 <repo>/docs）
+DEFAULT_SRC = os.path.join(REPO_ROOT, 'apps', 'handbook', 'docs')
 DEFAULT_VENDOR = os.path.join(TOOLING_DIR, 'vendor')
 DEFAULT_OUT_DIST = os.path.join(REPO_ROOT, 'dist')
 

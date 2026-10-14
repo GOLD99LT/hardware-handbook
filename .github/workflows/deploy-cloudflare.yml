@@ -10,7 +10,7 @@ name: Deploy to Cloudflare Pages (mirror)
 # 首次运行前还需在 Cloudflare Pages 创建同名项目：hardware-handbook
 # （Pages → Create a project → Connect to Git 或先空项目，由 wrangler 首次部署自动创建生产环境）。
 #
-# ℹ️ base 路径：config.mts 读环境变量 VP_BASE，默认 '/hardware-handbook/'（GitHub Pages 项目站路径）。
+# ℹ️ base 路径：app config 读环境变量 VP_BASE，默认 '/hardware-handbook/'（GitHub Pages 项目站路径）。
 #    Cloudflare Pages 部署在项目根域名（hardware-handbook.pages.dev 或自定义域根路径），
 #    故下方 Build 步骤设 VP_BASE='/' 以根路径构建；GitHub Pages 流水线不设该变量，保持默认子路径。
 
@@ -38,25 +38,30 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: pnpm Setup
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-          cache-dependency-path: package-lock.json
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build VitePress site
         env:
-          # Cloudflare Pages 部署在根路径，以根 base 构建（config.mts: process.env.VP_BASE || '/hardware-handbook/'）
+          # Cloudflare Pages 部署在根路径，以根 base 构建（config: process.env.VP_BASE || '/hardware-handbook/'）
           VP_BASE: '/'
-        run: npm run docs:build
+        run: pnpm --filter @hw/handbook docs:build
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy docs/.vitepress/dist --project-name=hardware-handbook
+          command: pages deploy apps/handbook/docs/.vitepress/dist --project-name=hardware-handbook

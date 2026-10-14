@@ -27,6 +27,7 @@ desktop.ini
 
 # 临时排查/诊断脚本（下划线前缀，不入库）
 tools/_*.py
+packages/tooling/src/_*.py
 
 # Node / VitePress
 node_modules/
@@ -45,3 +46,9 @@ docs/public/
 
 # Monorepo 重构 P0 起的生成物（由 tools/freeze_manifest.py 生成，不入库；快照在 tests/ 入库）
 .generated/
+
+# P2 起：apps/templates 内 VitePress 生成的侧边栏/目录模块与同步的 public（不入库）
+**/.vitepress/sidebar.generated.mjs
+**/.vitepress/catalog.generated.mjs
+**/docs/public/
+**/docs/.vitepress/theme/public/

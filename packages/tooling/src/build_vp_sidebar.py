@@ -16,7 +16,7 @@ build_vp_sidebar.py — 由 docs/SUMMARY.md + 各章 frontmatter 自动生成 Vi
 import os, re, sys, json
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from paths_util import add_common_args
+from paths_util import add_common_args, REPO_ROOT
 _args, _ = add_common_args().parse_known_args()
 DOCS = os.path.abspath(_args.src)
 OUT = os.path.abspath(_args.out) if _args.out else os.path.join(
@@ -171,13 +171,17 @@ def build():
 
 
 def sync_brand_public():
-    """把品牌 Agent 提供的 .vitepress/theme/public 同步到 docs/public。
-    VitePress 构建只拷贝 <srcDir>/public 到产物根；品牌文件放在 theme/public 不会被自动服务。
+    """把品牌资产同步到 <src>/public（VitePress 只拷贝 <srcDir>/public）。
+    新布局：品牌资产单一来源在 packages/theme/public；兼容旧 <src>/.vitepress/theme/public。
     """
     import shutil
-    src = os.path.join(DOCS, '.vitepress', 'theme', 'public')
     dst = os.path.join(DOCS, 'public')
-    if not os.path.isdir(src):
+    candidates = [
+        os.path.join(REPO_ROOT, 'packages', 'theme', 'public'),
+        os.path.join(DOCS, '.vitepress', 'theme', 'public'),
+    ]
+    src = next((c for c in candidates if os.path.isdir(c)), None)
+    if not src:
         return
     os.makedirs(dst, exist_ok=True)
     for fn in os.listdir(src):
@@ -185,7 +189,7 @@ def sync_brand_public():
         d = os.path.join(dst, fn)
         if os.path.isfile(s):
             shutil.copy2(s, d)
-    print('品牌 public 已同步到: %s' % dst)
+    print('品牌 public 已同步到: %s <- %s' % (dst, src))
 
 
 if __name__ == '__main__':
