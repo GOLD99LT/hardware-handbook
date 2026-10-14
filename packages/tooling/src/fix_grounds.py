@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 """把所有原理图的接地符号三线统一为标准比例：
 长度 28/18/10（半长 14/9/5）、间距 7、stroke-width 2.4，竖线接入点不变。
-备份到 _backup/grounds-fix/。"""
-import os, re, shutil
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-SDIR = os.path.join(ROOT, 'docs', 'assets', 'schematics')
-BACKUP = os.path.join(ROOT, '_backup', 'grounds-fix')
+备份到 _backup/grounds-fix/。参数化：--src 指定内容源（默认 <repo>/docs）。"""
+import os, re, shutil, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths_util import REPO_ROOT, add_common_args
+_args, _ = add_common_args().parse_known_args()
+SDIR = os.path.join(os.path.abspath(_args.src), 'assets', 'schematics')
+BACKUP = os.path.join(REPO_ROOT, '_backup', 'grounds-fix')
 
 LINE_RE = re.compile(r'<line\b[^>]*?/>')
 ATTR = re.compile(r'(x1|y1|x2|y2)="([\d.]+)"')

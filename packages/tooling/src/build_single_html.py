@@ -3,17 +3,26 @@
 """
 build_single_html.py — 把 docs/ 下的 Markdown 手册构建为单个自包含 HTML。
 
-用法：
-    python tools/build_single_html.py              # 构建 SUMMARY 中所有存在的章节
-    python tools/build_single_html.py --published  # 只构建 status: published 的章节
+用法（packages/tooling 已参数化，默认对 handbook 等价）：
+    python packages/tooling/src/build_single_html.py
+    python packages/tooling/src/build_single_html.py --published
+    python packages/tooling/src/build_single_html.py --src docs --vendor packages/tooling/vendor
+    python packages/tooling/src/build_single_html.py --manifest .generated/content-manifest.json
 
 零第三方依赖（Python 3.8+）。输出 dist/hardware-handbook.html。
+若传入 --manifest 且文件存在，则在构建后按其对账（章节数/标题/图片引用数）；
+manifest 缺失时维持现状自解析，不重写 Markdown（ARCHITECTURE §6）。
 """
 import os, re, sys, json, base64, html as H
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DOCS = os.path.join(ROOT, 'docs')
-DIST = os.path.join(ROOT, 'dist')
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths_util import (REPO_ROOT, DEFAULT_SRC, DEFAULT_VENDOR,
+                        DEFAULT_OUT_DIST, add_common_args)
+
+ROOT = REPO_ROOT
+DOCS = DEFAULT_SRC
+DIST = DEFAULT_OUT_DIST
+VENDOR = DEFAULT_VENDOR
 
 WARNINGS = []
 def warn(msg):
@@ -801,11 +810,10 @@ renderTex(); initCharts(); bindNotes(); refreshMarks(); route();
 # ============================================================
 # 本地 vendor 内联（KaTeX + ECharts，离线自包含）
 # ============================================================
-VENDOR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'vendor')
 
 def load_vendor():
     if not os.path.isdir(VENDOR):
-        print('未找到 tools/vendor，请先运行: python tools/fetch_vendor.py')
+        print('未找到 vendor 目录(%s)，请先运行: python packages/tooling/src/fetch_vendor.py' % VENDOR)
         sys.exit(1)
     parts = []
     # --- KaTeX CSS：woff2 转 data URI，移除 woff/ttf fallback ---
@@ -829,8 +837,64 @@ def load_vendor():
 # ============================================================
 # 主入口
 # ============================================================
+def _count_images(body):
+    """统计正文中的本地图片引用数（与 freeze_manifest.extract_images 同口径）。"""
+    n = 0
+    for m in re.finditer(r'!\[[^\]]*\]\(([^)]+)\)', body):
+        t = m.group(1).strip()
+        if t.startswith(('http', 'data:')):
+            continue
+        n += 1
+    return n
+
+
+def reconcile_with_manifest(cards, manifest_path):
+    """按 content-manifest.json 对账：章节数 / id 序列 / 标题序列 / 图片引用数。
+    文件缺失时仅告警并跳过（维持自解析口径）；对账失败以非零退出。"""
+    if not manifest_path:
+        return
+    if not os.path.exists(manifest_path):
+        print('[manifest] 未找到 %s，跳过对账（维持自解析）' % manifest_path)
+        return
+    with open(manifest_path, encoding='utf-8') as f:
+        man = json.load(f)
+    docs = man.get('docs', [])
+    problems = []
+    if len(cards) != len(docs):
+        problems.append('章节数 离线=%d manifest=%d' % (len(cards), len(docs)))
+    if [c.get('rel') for c in cards] != [d['id'] for d in docs]:
+        problems.append('章节 id 序列与 manifest 不一致（manifest id=相对路径）')
+    if [c['title'] for c in cards] != [d['title'] for d in docs]:
+        problems.append('标题序列与 manifest 不一致')
+    built_imgs = sum(_count_images(c['body']) for c in cards)
+    man_imgs = sum(len(d.get('images', [])) for d in docs)
+    if built_imgs != man_imgs:
+        problems.append('图片引用数 离线=%d manifest=%d' % (built_imgs, man_imgs))
+    if problems:
+        print('[manifest] 对账失败:')
+        for p in problems:
+            print('  [MISMATCH] ' + p)
+        sys.exit(1)
+    print('[manifest] 对账一致：%d 章 / %d 处图片 / revision=%s'
+          % (len(cards), built_imgs, man.get('revision')))
+
+
 def main():
-    only_pub = '--published' in sys.argv
+    ap = add_common_args()
+    ap.add_argument('--published', action='store_true',
+                    help='只构建 status: published 的章节')
+    ap.add_argument('--manifest', default='',
+                    help='可选 content-manifest.json 路径；存在则构建后对账，缺失则跳过')
+    args = ap.parse_args()
+
+    global DOCS, DIST, VENDOR
+    DOCS = os.path.abspath(args.src)
+    VENDOR = os.path.abspath(args.vendor)
+    if args.out:
+        DIST = os.path.abspath(args.out)
+    _INLINE_BASE[0] = DOCS
+
+    only_pub = args.published
     cards = collect_cards(only_pub)
     if not cards:
         print('没有可构建的章节（检查 SUMMARY.md 与文件是否存在，或去掉 --published）')
@@ -856,6 +920,7 @@ def main():
     print('构建完成: %s（%d 章）' % (out, len(cards)))
     if WARNINGS:
         print('共 %d 条警告' % len(WARNINGS))
+    reconcile_with_manifest(cards, args.manifest)
 
 if __name__ == '__main__':
     main()

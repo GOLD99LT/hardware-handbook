@@ -14,19 +14,24 @@ freeze_manifest.py — Monorepo 重构 P0：冻结内容基线（纯 Python 标�
   ContentDoc { id(=相对路径, 如 opamp/inverting-amplifier.md), path, url(clean URL),
                title, part(篇名), order, tags[], difficulty?, images[], checksum }
   id / url 不可重复；SUMMARY↔磁盘必须双向对齐，否则立即非零退出。
-解析逻辑复用 tools/build_vp_sidebar.py（与 sidebar / 离线构建同口径）。
+解析逻辑复用 packages/tooling/src/build_vp_sidebar.py（与 sidebar / 离线构建同口径）。
+参数化：--app/--src（默认对 handbook 等价；run_quality.py import 本模块时取默认值）。
 """
 import os, re, sys, json, hashlib, subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-DOCS = os.path.join(ROOT, 'docs')
+sys.path.insert(0, HERE)
+from paths_util import REPO_ROOT, add_common_args
+_args, _ = add_common_args().parse_known_args()
+
+ROOT = REPO_ROOT
+DOCS = os.path.abspath(_args.src)
 GEN_DIR = os.path.join(ROOT, '.generated')
 TESTS_DIR = os.path.join(ROOT, 'tests')
-APP_ID = 'handbook'
+APP_ID = _args.app
 
-sys.path.insert(0, HERE)
 import build_vp_sidebar as S
+S.DOCS = DOCS  # 与本脚本口径一致，避免 import 时的默认 src 漂移
 
 
 def sha256_bytes(b):

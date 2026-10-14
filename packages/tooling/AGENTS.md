@@ -11,7 +11,7 @@
 ## 2. 文件与命名约定
 
 - 每章一个 Markdown 文件，文件名 = 语义 id（小写英文、连字符），如 `inverting-amplifier.md`。
-- 原理图放 `docs/assets/schematics/<id>.svg`；风格遵循 `tools/templates/schematic-library.svg`。
+- 原理图放 `docs/assets/schematics/<id>.svg`；风格遵循 `packages/tooling/templates/schematic-library.svg`。
 - 稳定 id 一旦发布不可更改；显示编号由构建时按 SUMMARY 顺序生成，正文中禁止手写"第 N 章"。
 - 交叉引用链接相对路径文件，如 `[反相放大器](../opamp/inverting-amplifier.md)`。
 
@@ -59,7 +59,7 @@ sources: [url 或 文档编号]     # 必填，至少1条
 
 ### 写作 Agents（每篇一个，可并行）
 
-- 输入：`docs/SUMMARY.md` 中该篇条目、`tools/templates/chapter.md`、`sources/` 中相关资料、本规范。
+- 输入：`docs/SUMMARY.md` 中该篇条目、`packages/tooling/templates/chapter.md`、`sources/` 中相关资料、本规范。
 - 输出：该篇所有 Markdown 文件 + 原理图 SVG，写入对应 `docs/<篇>/`。
 - 单个 Agent 负责不超过 15 章；超过则拆分为多个 Agent（如 part3 可拆为 core/circuits 两个）。
 - 每章必须完成模板的 11 个模块；基础层与 `::: advanced` 分层。
@@ -67,8 +67,8 @@ sources: [url 或 文档编号]     # 必填，至少1条
 
 ### 质检构建 Agent
 
-1. 运行 `python tools/validate.py`：frontmatter 完整性、SUMMARY 与文件一致性、图片存在、死链、id 唯一性；
-2. 运行 `python tools/build_single_html.py` 构建；
+1. 运行 `python packages/tooling/src/validate.py`：frontmatter 完整性、SUMMARY 与文件一致性、图片存在、死链、id 唯一性；
+2. 运行 `python packages/tooling/src/build_single_html.py` 构建；
 3. 截图核对（桌面 1440 宽）：目录、块样式、图表渲染、无控制台错误；
 4. 产出问题清单（定位到文件与章节），打回对应写作 Agent。
 

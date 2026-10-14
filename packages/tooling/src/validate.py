@@ -4,14 +4,17 @@
 validate.py — 手册客观质检：frontmatter 完整性、id 一致/唯一、part 与目录一致、
 图片与交叉引用死链、echarts JSON、公式/容器/details 配对、孤儿章节。
 
-用法：python tools/validate.py
+用法：python packages/tooling/src/validate.py [--src docs]
 复用 build_single_html 的 frontmatter/SUMMARY 解析，保证口径一致。
 """
-import os, re, sys, json
+import os, re, sys, json, argparse
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
+from paths_util import add_common_args
 import build_single_html as B
 
+_args, _rest = add_common_args().parse_known_args()
+B.DOCS = os.path.abspath(_args.src)
 DOCS = B.DOCS
 errors, warnings = [], []
 def err(f, m): errors.append('%s: %s' % (f, m))

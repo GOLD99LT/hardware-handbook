@@ -11,13 +11,16 @@ build_vp_sidebar.py — 由 docs/SUMMARY.md + 各章 frontmatter 自动生成 Vi
 
 输出：docs/.vitepress/sidebar.generated.mjs
 被 docs/.vitepress/config.mts import。零第三方依赖。
+参数化：--src/--out（默认对 handbook 等价）。
 """
 import os, re, sys, json
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-DOCS = os.path.join(ROOT, 'docs')
-OUT = os.path.join(DOCS, '.vitepress', 'sidebar.generated.mjs')
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths_util import add_common_args
+_args, _ = add_common_args().parse_known_args()
+DOCS = os.path.abspath(_args.src)
+OUT = os.path.abspath(_args.out) if _args.out else os.path.join(
+    DOCS, '.vitepress', 'sidebar.generated.mjs')
 
 
 def parse_yaml(text):

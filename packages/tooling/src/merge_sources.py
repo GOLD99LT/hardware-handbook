@@ -6,10 +6,15 @@ merge_sources.py — 合并 sources/index-a.yaml / index-b.yaml / index-c.yaml�
 
 只做索引合并，不写正文、不 git commit。
 """
-import os
+import os, sys
 import yaml
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+_HERE = os.path.dirname(os.path.abspath(__file__))
+if _HERE not in sys.path:
+    sys.path.insert(0, _HERE)
+from paths_util import REPO_ROOT
+
+ROOT = REPO_ROOT
 SRC = os.path.join(ROOT, "sources")
 
 

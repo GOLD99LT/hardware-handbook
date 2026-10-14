@@ -8,17 +8,17 @@ run_quality.py — Monorepo 重构 P0 统一质量门禁（纯 Python 标准库�
      SUMMARY↔磁盘双向对齐、id/url 唯一、计数对齐，
      并与入库的 tests/routes.snapshot.json、tests/manifest.snapshot.json 逐字比对
      （删除/变更即失败——URL 破坏性变更须人工批准并更新快照）。
-  2. tools/validate.py           frontmatter/死链/echarts/配对/结构（退出码门禁）
-  3. tools/scan_grounds.py       接地符号：总数对齐基线且无「过短/递减不匀」告警
-  4. tools/scan_svg_order.py     SVG 根 <svg> 位置：broken 必须为 0
-  5. tools/scan_math.py          公式字符：需修正处数必须为 0
+  2. packages/tooling/src/validate.py     frontmatter/死链/echarts/配对/结构（退出码门禁）
+  3. packages/tooling/src/scan_grounds.py 接地符号：总数对齐基线且无「过短/递减不匀」告警
+  4. packages/tooling/src/scan_svg_order.py SVG 根 <svg> 位置：broken 必须为 0
+  5. packages/tooling/src/scan_math.py    公式字符：需修正处数必须为 0
 
 任一失败 → 非零退出码。用法：python run_quality.py
 """
 import os, re, sys, json, subprocess
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-TOOLS = os.path.join(ROOT, 'tools')
+TOOLS = os.path.join(ROOT, 'packages', 'tooling', 'src')
 sys.path.insert(0, TOOLS)
 
 FAILURES = []

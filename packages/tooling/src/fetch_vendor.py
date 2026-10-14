@@ -1,12 +1,16 @@
 # -*- coding: utf-8 -*-
-"""下载前端依赖（KaTeX / ECharts）到 tools/vendor，构建时内联，保证离线自包含。
+"""下载前端依赖（KaTeX / ECharts）到 packages/tooling/vendor，构建时内联，保证离线自包含。
 当前网络环境 unpkg 可达；每个文件带重试。vendor 目录提交进 git，clone 后无需联网即可构建。
+参数化：--vendor 可覆盖 vendor 目录（默认 packages/tooling/vendor）。
 """
 import urllib.request, os, time, sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths_util import add_common_args
+_args, _ = add_common_args().parse_known_args()
+
 BASE = 'https://unpkg.com/'
-HERE = os.path.dirname(os.path.abspath(__file__))
-VENDOR = os.path.join(HERE, 'vendor')
+VENDOR = os.path.abspath(_args.vendor)
 FONT_DIR = os.path.join(VENDOR, 'fonts')
 os.makedirs(FONT_DIR, exist_ok=True)
 

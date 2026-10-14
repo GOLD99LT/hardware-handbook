@@ -2,13 +2,14 @@
 """修复公式中的 Unicode 符号（只在 $...$ / $$...$$ 内部，不动正文）：
 - Ω(U+03A9/U+2126) -> \\Omega；µ(U+00B5/U+03BC) -> \\mu；° -> ^{\\circ}
 - \\text{...} 内的这些符号：先闭合 text、插入数学命令、再重开 text。
-修改前备份到 _backup/math-fix/。
+修改前备份到 _backup/math-fix/。参数化：--src 指定内容源（默认 <repo>/docs）。
 """
 import os, re, sys, shutil
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-DOCS = os.path.join(ROOT, 'docs')
-BACKUP = os.path.join(ROOT, '_backup', 'math-fix')
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths_util import REPO_ROOT, add_common_args
+_args, _ = add_common_args().parse_known_args()
+DOCS = os.path.abspath(_args.src)
+BACKUP = os.path.join(REPO_ROOT, '_backup', 'math-fix')
 
 # text 内遇到这些字符的替换（数学命令）
 TEXT_BAD = {'Ω': '\\Omega', '\u2126': '\\Omega', '\u00b5': '\\mu',

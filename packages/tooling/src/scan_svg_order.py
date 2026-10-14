@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 """扫描原理图 SVG，检查是否有绘图元素被错误地写在根 <svg> 标签之前。
 根标签外的图元浏览器不渲染，会出现"只有文字、没有电路"的空白图。
-合法的 <?xml ...?> 声明不计为异常。"""
-import os, re
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-SD = os.path.join(ROOT, 'docs', 'assets', 'schematics')
+合法的 <?xml ...?> 声明不计为异常。参数化：--src 指定内容源（默认 <repo>/docs）。"""
+import os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths_util import add_common_args
+_args, _ = add_common_args().parse_known_args()
+SD = os.path.join(os.path.abspath(_args.src), 'assets', 'schematics')
 
 broken, ok = [], []
 for fn in sorted(os.listdir(SD)):

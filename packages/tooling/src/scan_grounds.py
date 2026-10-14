@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 """扫描所有原理图 SVG 中的接地符号（三条居中、长度递减的水平横线），
-报告位置与尺寸，用于统一规范化。"""
-import os, re
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-SDIR = os.path.join(ROOT, 'docs', 'assets', 'schematics')
+报告位置与尺寸，用于统一规范化。参数化：--src 指定内容源（默认 <repo>/docs）。"""
+import os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths_util import add_common_args
+_args, _ = add_common_args().parse_known_args()
+SDIR = os.path.join(os.path.abspath(_args.src), 'assets', 'schematics')
 
 LINE = re.compile(r'<line\b[^>]*x1="([\d.]+)"[^>]*y1="([\d.]+)"[^>]*x2="([\d.]+)"[^>]*y2="([\d.]+)"[^>]*/?>')
 

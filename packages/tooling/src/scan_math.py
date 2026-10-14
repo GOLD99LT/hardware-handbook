@@ -2,12 +2,13 @@
 """扫描所有章节公式（$...$ / $$...$$）中的不规范字符：
 - 公式内中文（应包 \\text{}）
 - Unicode 符号 µ Ω ° × ± ≤ ≥ ≈ 及上下标等（应改用 KaTeX 命令）
-只报告，不修改。
+只报告，不修改。参数化：--src 指定内容源（默认 <repo>/docs）。
 """
 import os, re, sys
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-DOCS = os.path.join(ROOT, 'docs')
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths_util import add_common_args
+_args, _ = add_common_args().parse_known_args()
+DOCS = os.path.abspath(_args.src)
 
 CJK = re.compile(r'[\u4e00-\u9fff]')
 # KaTeX 不直接支持或应使用命令的 Unicode
