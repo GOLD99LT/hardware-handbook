@@ -38,6 +38,12 @@ def sha256_bytes(b):
     return hashlib.sha256(b).hexdigest()
 
 
+def normalize_text_for_hash(b):
+    """跨平台换行归一：CRLF/CR -> LF（与仓库 blob 一致），保证 Windows(CRLF) 与
+    Linux(LF) 检出时同一份逻辑内容算出相同 checksum。入参为文件原始字节。"""
+    return b.decode('utf-8').replace('\r\n', '\n').replace('\r', '\n')
+
+
 def clean_url(rel):
     """opamp/inverting-amplifier.md -> /opamp/inverting-amplifier（VitePress clean URL）。"""
     p = rel.replace('\\', '/')
@@ -106,7 +112,7 @@ def build_manifest():
                 'order': order,
                 'tags': [str(t) for t in (fm.get('tags') or [])],
                 'images': extract_images(body, fp),
-                'checksum': sha256_bytes(raw),
+                'checksum': sha256_bytes(normalize_text_for_hash(raw).encode('utf-8')),
             }
             if fm.get('difficulty') in (1, 2, 3):
                 doc['difficulty'] = fm['difficulty']

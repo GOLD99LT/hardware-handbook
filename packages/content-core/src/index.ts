@@ -52,6 +52,15 @@ function sha256Hex(buf: Buffer | string): string {
   return createHash('sha256').update(buf).digest('hex')
 }
 
+/**
+ * 文本内容指纹的跨平台规范化：统一换行为 LF（与仓库 blob 一致）。
+ * 必须在哈希前归一，否则 Windows（`* text=auto` 检出为 CRLF）与 Linux（LF）
+ * 会让同一份逻辑内容算出不同 checksum，导致跨平台快照门禁失败。
+ */
+function normalizeTextForHash(buf: Buffer): string {
+  return buf.toString('utf8').replace(/\r\n|\r/g, '\n')
+}
+
 /** opamp/inverting-amplifier.md -> /opamp/inverting-amplifier（VitePress clean URL）。 */
 export function cleanUrl(rel: string): string {
   let p = rel.replace(/\\/g, '/')
@@ -238,7 +247,7 @@ export function buildManifest(srcDir: string, appId = 'handbook'): ContentManife
         order,
         tags: Array.isArray(fm['tags']) ? (fm['tags'] as unknown[]).map(String) : [],
         images: extractImages(body, fp, srcDir),
-        checksum: sha256Hex(raw),
+        checksum: sha256Hex(normalizeTextForHash(raw)),
       }
       // difficulty 仅在明确为 1/2/3 时输出（与 Python `in (1,2,3)` 同口径）
       const d = fm['difficulty']

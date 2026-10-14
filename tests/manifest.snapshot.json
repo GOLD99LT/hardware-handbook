@@ -1,6 +1,6 @@
 {
   "appId": "handbook",
-  "revision": "sha256-4c8521761e575941",
+  "revision": "sha256-361225735a3a67f4",
   "docCount": 140,
   "titles": [
     "电压、电流、电阻与功率 Voltage / Current / Resistance / Power",
@@ -147,5 +147,5 @@
   "imageTotal": 418,
   "svgCount": 411,
   "groundsCount": 247,
-  "overallChecksum": "4c8521761e5759411443f80f08fa21bbd760b11685b4f43c3cb65cdf0cab9306"
+  "overallChecksum": "361225735a3a67f4b451a68535ff4d519ee05bdf8d2ded158e15537401abe0f3"
 }
